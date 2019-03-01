@@ -1,0 +1,831 @@
+2019-02-18 11:57:05,132 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin FileLogger
+2019-02-18 11:57:05,158 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin FirmwareUpdateChecker
+2019-02-18 11:57:05,174 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin FirmwareUpdater
+2019-02-18 11:57:05,193 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin GCodeGzReader
+2019-02-18 11:57:05,210 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin GCodeGzWriter
+2019-02-18 11:57:05,228 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin GCodeProfileReader
+2019-02-18 11:57:05,264 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin GCodeReader
+2019-02-18 11:57:05,283 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin GCodeWriter
+2019-02-18 11:57:05,303 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin ImageReader
+2019-02-18 11:57:05,318 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin LegacyProfileReader
+2019-02-18 11:57:05,336 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin LocalContainerProvider
+2019-02-18 11:57:05,357 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin LocalFileOutputDevice
+2019-02-18 11:57:05,373 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin MachineSettingsAction
+2019-02-18 11:57:05,390 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin ModelChecker
+2019-02-18 11:57:05,410 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin MonitorStage
+2019-02-18 11:57:05,430 - WARNING - [MainThread] UM.Preferences.getValue [97]: Tried to get the value of non-existing setting cura/active_mode.
+2019-02-18 11:57:05,434 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin PerObjectSettingsTool
+2019-02-18 11:57:05,454 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin PostProcessingPlugin
+2019-02-18 11:57:05,471 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin PrepareStage
+2019-02-18 11:57:05,487 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin PreviewStage
+2019-02-18 11:57:05,514 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin RemovableDriveOutputDevice
+2019-02-18 11:57:05,554 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin SimulationView
+2019-02-18 11:57:05,574 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin SliceInfoPlugin
+2019-02-18 11:57:05,595 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin SolidView
+2019-02-18 11:57:05,616 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin SupportEraser
+2019-02-18 11:57:05,661 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin Toolbox
+2019-02-18 11:57:05,686 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin CameraTool
+2019-02-18 11:57:05,710 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin MirrorTool
+2019-02-18 11:57:05,735 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin RotateTool
+2019-02-18 11:57:05,764 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin ScaleTool
+2019-02-18 11:57:05,783 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin SelectionTool
+2019-02-18 11:57:05,808 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin TranslateTool
+2019-02-18 11:57:05,844 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin UFPWriter
+2019-02-18 11:57:05,869 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin UltimakerMachineActions
+2019-02-18 11:57:06,045 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin UM3NetworkPrinting
+2019-02-18 11:57:06,072 - INFO - [Thread-1] UpdateChecker.UpdateCheckerJob.run [36]: Checking for new version of cura
+2019-02-18 11:57:06,077 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin UpdateChecker
+2019-02-18 11:57:06,134 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin USBPrinting
+2019-02-18 11:57:06,157 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin UserAgreement
+2019-02-18 11:57:06,199 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin VersionUpgrade21to22
+2019-02-18 11:57:06,223 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin VersionUpgrade22to24
+2019-02-18 11:57:06,252 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin VersionUpgrade25to26
+2019-02-18 11:57:06,284 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin VersionUpgrade26to27
+2019-02-18 11:57:06,317 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin VersionUpgrade27to30
+2019-02-18 11:57:06,343 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin VersionUpgrade30to31
+2019-02-18 11:57:06,369 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin VersionUpgrade32to33
+2019-02-18 11:57:06,391 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin VersionUpgrade33to34
+2019-02-18 11:57:06,418 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin VersionUpgrade34to35
+2019-02-18 11:57:06,441 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin SimpleView
+2019-02-18 11:57:06,474 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin X3DReader
+2019-02-18 11:57:06,514 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin XmlMaterialProfile
+2019-02-18 11:57:06,541 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [430]: Loaded plugin XRayView
+2019-02-18 11:57:06,583 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [143]: Looking for old configuration files to upgrade.
+2019-02-18 11:57:06,591 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-02-18 11:57:06,596 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-02-18 11:57:06,604 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-02-18 11:57:06,611 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-02-18 11:57:06,616 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-02-18 11:57:06,620 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-02-18 11:57:06,625 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-02-18 11:57:06,629 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-02-18 11:57:06,636 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-02-18 11:57:06,641 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-02-18 11:57:06,646 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-02-18 11:57:06,650 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-02-18 11:57:06,655 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-02-18 11:57:06,659 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-02-18 11:57:06,665 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [198]: The preferences file cannot be found, will use default values
+2019-02-18 11:57:06,670 - DEBUG - [MainThread] UM.Backend.Backend._onSocketError [211]: Socket was unable to bind to port, increasing port number to 49675
+2019-02-18 11:57:06,674 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [225]: Previous socket existed. Closing that first.
+2019-02-18 11:57:06,678 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [293]: Attempting to kill the engine process
+2019-02-18 11:57:06,682 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [225]: Previous socket existed. Closing that first.
+2019-02-18 11:57:06,690 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [207]: The preferences file 'None' cannot be found, will use default values
+2019-02-18 11:57:06,935 - DEBUG - [MainThread] UM.Backend.Backend._onSocketError [211]: Socket was unable to bind to port, increasing port number to 49676
+2019-02-18 11:57:06,938 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [225]: Previous socket existed. Closing that first.
+2019-02-18 11:57:06,942 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [293]: Attempting to kill the engine process
+2019-02-18 11:57:06,945 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [225]: Previous socket existed. Closing that first.
+2019-02-18 11:57:07,137 - DEBUG - [MainThread] UM.Backend.Backend._onSocketError [211]: Socket was unable to bind to port, increasing port number to 49677
+2019-02-18 11:57:07,140 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [225]: Previous socket existed. Closing that first.
+2019-02-18 11:57:07,144 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [293]: Attempting to kill the engine process
+2019-02-18 11:57:07,150 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [225]: Previous socket existed. Closing that first.
+2019-02-18 11:57:07,161 - DEBUG - [MainThread] UM.Backend.Backend._onSocketError [211]: Socket was unable to bind to port, increasing port number to 49678
+2019-02-18 11:57:07,164 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [225]: Previous socket existed. Closing that first.
+2019-02-18 11:57:07,170 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [293]: Attempting to kill the engine process
+2019-02-18 11:57:07,174 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [225]: Previous socket existed. Closing that first.
+2019-02-18 11:57:07,185 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [185]: Socket state changed to Listening
+2019-02-18 11:57:07,197 - INFO - [MainThread] UM.Backend.Backend.startEngine [81]: Started engine process: C:\Program Files\Ultimaker Cura 4.0\CuraEngine.exe
+2019-02-18 11:57:07,203 - DEBUG - [MainThread] UM.Backend.Backend._backendLog [101]: [Backend] Calling engine with: ['C:\\Program Files\\Ultimaker Cura 4.0\\CuraEngine.exe', 'connect', '127.0.0.1:49678', '']
+2019-02-18 11:57:07,266 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-02-18 11:57:07,269 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] Cura_SteamEngine version 4.0.0-BETA
+2019-02-18 11:57:07,273 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] Copyright (C) 2018 Ultimaker
+2019-02-18 11:57:07,276 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-02-18 11:57:07,277 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [189]: Socket state changed to Connected
+2019-02-18 11:57:07,282 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] This program is free software: you can redistribute it and/or modify
+2019-02-18 11:57:07,283 - DEBUG - [MainThread] UM.Backend.Backend._onSocketStateChanged [179]: Backend connected on port 49678
+2019-02-18 11:57:07,285 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] it under the terms of the GNU Affero General Public License as published by
+2019-02-18 11:57:07,289 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] the Free Software Foundation, either version 3 of the License, or
+2019-02-18 11:57:07,299 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] (at your option) any later version.
+2019-02-18 11:57:07,304 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-02-18 11:57:07,310 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] This program is distributed in the hope that it will be useful,
+2019-02-18 11:57:07,313 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] but WITHOUT ANY WARRANTY; without even the implied warranty of
+2019-02-18 11:57:07,315 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+2019-02-18 11:57:07,318 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] GNU Affero General Public License for more details.
+2019-02-18 11:57:07,322 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-02-18 11:57:07,327 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] You should have received a copy of the GNU Affero General Public License
+2019-02-18 11:57:07,332 - DEBUG - [Thread-18] UM.Backend.Backend._backendLog [101]: [Backend] along with this program.  If not, see <http://www.gnu.org/licenses/>.
+2019-02-18 11:57:10,028 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [103]: Select build plate: 0
+2019-02-18 11:57:10,031 - INFO - [MainThread] cura.CuraApplication.run [691]: Initializing variant manager
+2019-02-18 11:57:10,037 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker_s5_glass
+2019-02-18 11:57:10,044 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_glass] added.
+2019-02-18 11:57:10,045 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker_s5
+2019-02-18 11:57:10,129 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5] added.
+2019-02-18 11:57:10,135 - DEBUG - [MainThread] cura.Machines.VariantManager.initialize [59]: Exclude variant [empty_variant]
+2019-02-18 11:57:10,136 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker_s5_aluminum
+2019-02-18 11:57:10,142 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_aluminum] added.
+2019-02-18 11:57:10,148 - INFO - [MainThread] cura.CuraApplication.run [695]: Initializing material manager
+2019-02-18 11:57:10,276 - INFO - [MainThread] cura.CuraApplication.run [700]: Initializing quality manager
+2019-02-18 11:57:10,299 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-02-18 11:57:10,303 - INFO - [MainThread] cura.CuraApplication.run [705]: Initializing machine manager
+2019-02-18 11:57:10,313 - INFO - [MainThread] cura.CuraApplication.run [708]: Initializing container manager
+2019-02-18 11:57:10,317 - INFO - [MainThread] cura.CuraApplication.run [711]: Initializing machine error checker
+2019-02-18 11:57:12,029 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [280]: Creating post processing plugin view.
+2019-02-18 11:57:12,039 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: BQ_PauseAtHeight
+2019-02-18 11:57:12,046 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: ChangeAtZ
+2019-02-18 11:57:12,048 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2019-02-18 11:57:12,051 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: FilamentChange
+2019-02-18 11:57:12,055 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: PauseAtHeight
+2019-02-18 11:57:12,057 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: PauseAtHeightRepRapFirmwareDuet
+2019-02-18 11:57:12,060 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: PauseAtHeightforRepetier
+2019-02-18 11:57:12,062 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: SearchAndReplace
+2019-02-18 11:57:12,068 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: Stretch
+2019-02-18 11:57:12,258 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [172]: Loading theme file: C:\Program Files\Ultimaker Cura 4.0\resources\themes\cura-light\theme.json
+2019-02-18 11:57:12,415 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [244]: Loaded theme C:\Program Files\Ultimaker Cura 4.0\resources\themes\cura-light
+2019-02-18 11:57:12,456 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [290]: Post processing view created.
+2019-02-18 11:57:12,750 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:12,754 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [20]: No active GlobalStack, set CustomQualityProfilesDropDownMenuModel as empty.
+2019-02-18 11:57:12,758 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:12,761 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [57]: No active GlobalStack, set quality profile model as empty.
+2019-02-18 11:57:12,779 - WARNING - [MainThread] UM.Qt.Bindings.Theme.getImage [126]: No image header_pattern defined in Theme
+2019-02-18 11:57:12,790 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container fdmprinter
+2019-02-18 11:57:12,883 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [fdmprinter] added.
+2019-02-18 11:57:12,894 - DEBUG - [MainThread] cura.Machines.Models.BuildPlateModel._update [33]: Updating BuildPlateModel.
+2019-02-18 11:57:13,696 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:13,979 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:23:20: Unable to assign [undefined] to QString
+2019-02-18 11:57:13,982 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:13,985 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:13,989 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:19: TypeError: Cannot read property 'extruderList' of null
+2019-02-18 11:57:14,002 - DEBUG - [MainThread] UM3NetworkPrinting.src.DiscoverUM3Action._createAdditionalComponentsView [171]: Creating additional ui components for UM3.
+2019-02-18 11:57:14,075 - DEBUG - [MainThread] UM3NetworkPrinting.src.DiscoverUM3Action.startDiscovery [43]: Starting device discovery.
+2019-02-18 11:57:14,158 - DEBUG - [MainThread] UM.Controller.setActiveStage [159]: Setting active stage to PrepareStage
+2019-02-18 11:57:14,382 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:14,414 - DEBUG - [MainThread] UM.Controller.setActiveView [92]: Setting active view to SolidView
+2019-02-18 11:57:14,417 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [97]: Creating model checker view.
+2019-02-18 11:57:14,429 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [106]: Model checker view created.
+2019-02-18 11:57:14,431 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [82]: Creating dialog [MoreInfoWindow.qml]
+2019-02-18 11:57:14,515 - DEBUG - [MainThread] cura.CuraApplication.run [743]: Booting Cura took 11.016229391098022 seconds
+2019-02-18 11:57:14,823 - INFO - [MainThread] UserAgreement.UserAgreement.didAgree [35]: User agreed to the user agreement
+2019-02-18 11:57:15,516 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [183]: Support for Vertex Array Objects: True
+2019-02-18 11:57:15,524 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [99]: Initialized OpenGL subsystems.
+2019-02-18 11:57:15,526 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [100]: OpenGL Version:  4.1.0 - Build 24.20.100.6344
+2019-02-18 11:57:15,528 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [101]: OpenGL Vendor:   Intel
+2019-02-18 11:57:15,531 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [102]: OpenGL Renderer: Intel(R) HD Graphics 520
+2019-02-18 11:57:15,534 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\default.shader]...
+2019-02-18 11:57:15,554 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\selection.shader]...
+2019-02-18 11:57:15,570 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\default.shader]...
+2019-02-18 11:57:15,588 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\composite.shader]...
+2019-02-18 11:57:15,617 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\overhang.shader]...
+2019-02-18 11:57:15,643 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\striped.shader]...
+2019-02-18 11:57:15,676 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\transparent_object.shader]...
+2019-02-18 11:57:15,698 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\striped.shader]...
+2019-02-18 11:57:15,735 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\platform.shader]...
+2019-02-18 11:57:16,046 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [Ultimaker S5_settings] added.
+2019-02-18 11:57:16,050 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [Ultimaker S5_user] added.
+2019-02-18 11:57:16,052 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker_s5_aa04
+2019-02-18 11:57:16,058 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_aa04] added.
+2019-02-18 11:57:16,060 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker_s5_extruder_left
+2019-02-18 11:57:16,066 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_extruder_left] added.
+2019-02-18 11:57:16,068 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container generic_pla
+2019-02-18 11:57:16,097 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_plus] added.
+2019-02-18 11:57:16,101 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_plus_0.25_mm] added.
+2019-02-18 11:57:16,106 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_plus_0.4_mm] added.
+2019-02-18 11:57:16,110 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_plus_0.6_mm] added.
+2019-02-18 11:57:16,115 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_plus_0.8_mm] added.
+2019-02-18 11:57:16,118 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_extended_plus] added.
+2019-02-18 11:57:16,121 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_extended_plus_0.25_mm] added.
+2019-02-18 11:57:16,124 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_extended_plus_0.4_mm] added.
+2019-02-18 11:57:16,126 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_extended_plus_0.6_mm] added.
+2019-02-18 11:57:16,128 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_extended_plus_0.8_mm] added.
+2019-02-18 11:57:16,132 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2] added.
+2019-02-18 11:57:16,135 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_go] added.
+2019-02-18 11:57:16,139 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker2_extended] added.
+2019-02-18 11:57:16,142 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker_original] added.
+2019-02-18 11:57:16,144 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3] added.
+2019-02-18 11:57:16,150 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_BB_0.4] added.
+2019-02-18 11:57:16,154 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_BB_0.8] added.
+2019-02-18 11:57:16,157 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_AA_0.25] added.
+2019-02-18 11:57:16,159 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_AA_0.4] added.
+2019-02-18 11:57:16,162 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_AA_0.8] added.
+2019-02-18 11:57:16,168 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_extended] added.
+2019-02-18 11:57:16,170 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_extended_BB_0.4] added.
+2019-02-18 11:57:16,174 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_extended_BB_0.8] added.
+2019-02-18 11:57:16,180 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_extended_AA_0.25] added.
+2019-02-18 11:57:16,184 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_extended_AA_0.4] added.
+2019-02-18 11:57:16,188 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker3_extended_AA_0.8] added.
+2019-02-18 11:57:16,193 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker_s5] added.
+2019-02-18 11:57:16,195 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker_s5_BB_0.4] added.
+2019-02-18 11:57:16,198 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker_s5_BB_0.8] added.
+2019-02-18 11:57:16,202 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker_s5_CC_0.6] added.
+2019-02-18 11:57:16,205 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker_s5_AA_0.25] added.
+2019-02-18 11:57:16,207 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker_s5_AA_0.4] added.
+2019-02-18 11:57:16,210 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_ultimaker_s5_AA_0.8] added.
+2019-02-18 11:57:16,213 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_imade3d_jellybox] added.
+2019-02-18 11:57:16,215 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_imade3d_jellybox_0.4_mm] added.
+2019-02-18 11:57:16,218 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [generic_pla_imade3d_jellybox_0.4_mm_2-fans] added.
+2019-02-18 11:57:16,223 - WARNING - [MainThread] UM.Settings.ContainerRegistry.addContainer [360]: Container with ID generic_pla_ultimaker_s5_AA_0.4 was already added.
+2019-02-18 11:57:16,263 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_extruder_left #2_settings] added.
+2019-02-18 11:57:16,267 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_extruder_left #2_user] added.
+2019-02-18 11:57:16,269 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [100]: Extruder[ultimaker_s5_extruder_left #2] added to [Ultimaker S5] at position [0]
+2019-02-18 11:57:16,272 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_extruder_left #2] added.
+2019-02-18 11:57:16,274 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker_s5_extruder_right
+2019-02-18 11:57:16,279 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_extruder_right] added.
+2019-02-18 11:57:16,331 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_extruder_right #2_settings] added.
+2019-02-18 11:57:16,338 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_extruder_right #2_user] added.
+2019-02-18 11:57:16,342 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [100]: Extruder[ultimaker_s5_extruder_right #2] added to [Ultimaker S5] at position [1]
+2019-02-18 11:57:16,345 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker_s5_extruder_right #2] added.
+2019-02-18 11:57:16,348 - WARNING - [MainThread] UM.Settings.ContainerRegistry.addContainer [360]: Container with ID ultimaker_s5_extruder_right #2 was already added.
+2019-02-18 11:57:16,352 - WARNING - [MainThread] UM.Settings.ContainerRegistry.addContainer [360]: Container with ID ultimaker_s5_extruder_left #2 was already added.
+2019-02-18 11:57:16,353 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um_s5_global_Normal_Quality
+2019-02-18 11:57:16,358 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um_s5_global_Normal_Quality] added.
+2019-02-18 11:57:16,359 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um_s5_aa0.4_PLA_Normal_Quality
+2019-02-18 11:57:16,368 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um_s5_aa0.4_PLA_Normal_Quality] added.
+2019-02-18 11:57:16,372 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [Ultimaker S5] added.
+2019-02-18 11:57:16,375 - INFO - [MainThread] cura.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [ultimaker_s5]
+2019-02-18 11:57:16,590 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:16,593 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:16,595 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:16,659 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,662 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,667 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,677 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,682 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,685 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,720 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:16,725 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,729 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,732 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,737 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,742 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,746 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:16,792 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:16,795 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker_s5] in QualityChanges lookup table
+2019-02-18 11:57:16,798 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:16,801 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um_s5_global_Draft_Quality
+2019-02-18 11:57:16,811 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um_s5_global_Draft_Quality] added.
+2019-02-18 11:57:16,858 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um_s5_global_Fast_Quality
+2019-02-18 11:57:16,865 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um_s5_global_Fast_Quality] added.
+2019-02-18 11:57:16,899 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um_s5_global_High_Quality
+2019-02-18 11:57:16,904 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um_s5_global_High_Quality] added.
+2019-02-18 11:57:16,939 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um_s5_global_Superdraft_Quality
+2019-02-18 11:57:16,944 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um_s5_global_Superdraft_Quality] added.
+2019-02-18 11:57:16,975 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um_s5_global_Verydraft_Quality
+2019-02-18 11:57:16,980 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um_s5_global_Verydraft_Quality] added.
+2019-02-18 11:57:17,025 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,029 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,034 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,065 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,067 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,069 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,072 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,075 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,078 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,081 - DEBUG - [MainThread] cura.Machines.Models.BuildPlateModel._update [33]: Updating BuildPlateModel.
+2019-02-18 11:57:17,084 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:17,088 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,092 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,095 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,098 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:17,103 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:17,107 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,110 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,115 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,119 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:17,123 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,126 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,130 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,134 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:17,136 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker_s5] in QualityChanges lookup table
+2019-02-18 11:57:17,138 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:17,209 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:17,215 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker_s5] in QualityChanges lookup table
+2019-02-18 11:57:17,223 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:17,326 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [96]: Extruder [ultimaker_s5_extruder_right #2] has already been added to this stack [Ultimaker S5]
+2019-02-18 11:57:17,330 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [169]: Extruder [ultimaker_s5_extruder_right #2] has already been registered on machine [Ultimaker S5], not doing anything
+2019-02-18 11:57:17,337 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [96]: Extruder [ultimaker_s5_extruder_left #2] has already been added to this stack [Ultimaker S5]
+2019-02-18 11:57:17,341 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [169]: Extruder [ultimaker_s5_extruder_left #2] has already been registered on machine [Ultimaker S5], not doing anything
+2019-02-18 11:57:17,675 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,680 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,684 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,688 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,696 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,705 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,708 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,713 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,719 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,725 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,732 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:17,745 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:17,751 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker_s5] in QualityChanges lookup table
+2019-02-18 11:57:17,762 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:18,040 - INFO - [MainThread] cura.Settings.MachineManager._initMachineState [346]: Machine 'Ultimaker S5' quality set to 'normal'
+2019-02-18 11:57:18,053 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:18,060 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:18,295 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:18,306 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:18,432 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:18,445 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,459 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,475 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,505 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,507 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,510 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,543 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:18,547 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,552 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,555 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,561 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,564 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,568 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,628 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:18,632 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker_s5] in QualityChanges lookup table
+2019-02-18 11:57:18,634 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:18,650 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,654 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,656 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,658 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,661 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,664 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,668 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,671 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,674 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,678 - DEBUG - [MainThread] cura.Machines.Models.BuildPlateModel._update [33]: Updating BuildPlateModel.
+2019-02-18 11:57:18,681 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:18,686 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,690 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,692 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,695 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:18,698 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:18,704 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:18,710 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:18,713 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,718 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,722 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,727 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:18,732 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,735 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,738 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:18,742 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:18,744 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker_s5] in QualityChanges lookup table
+2019-02-18 11:57:18,746 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:18,801 - DEBUG - [MainThread] UM3NetworkPrinting.src.DiscoverUM3Action.reset [51]: Reset the list of found devices.
+2019-02-18 11:57:18,906 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [136]: New error check scheduled.
+2019-02-18 11:57:18,983 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\default.shader]...
+2019-02-18 11:57:19,003 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\grid.shader]...
+2019-02-18 11:57:19,046 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,050 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,053 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,056 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,059 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,063 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,067 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,072 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,074 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,076 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,079 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,083 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,087 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,090 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,095 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,099 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,102 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,105 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,108 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,112 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,118 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,123 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,127 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,131 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,135 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,138 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,141 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,144 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,148 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,153 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,173 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,176 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,178 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,181 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,185 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,190 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,192 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,197 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,202 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,208 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,213 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,218 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,224 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,230 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,235 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,243 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,247 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,252 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,257 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,260 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,264 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,268 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,271 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,275 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,278 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [92]: You have a(n) Ultimaker S5 in the printer list. Let's check the firmware!
+2019-02-18 11:57:19,321 - DEBUG - [MainThread] UM.Mesh.MeshData.approximateConvexHull [401]: approximateConvexHull(target_count=1024) Calculating 3D convex hull took 0.013962745666503906 seconds. 150 input vertices. 150 output vertices.
+2019-02-18 11:57:19,339 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [108]: Reading firmware version of Ultimaker S5: checked = 0.0.0 - latest = 5.1.8-20181207.0
+2019-02-18 11:57:19,359 - INFO - [MainThread] cura.Machines.MaterialManager._updateMaps [279]: Updating material lookup data ...
+2019-02-18 11:57:19,422 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,426 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,428 - INFO - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1233]: Updating quality/quality_changes due to material change
+2019-02-18 11:57:19,432 - DEBUG - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1240]: Current quality type = [normal]
+2019-02-18 11:57:19,434 - INFO - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1254]: Current available quality type [normal] is available, applying changes.
+2019-02-18 11:57:19,438 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:19,441 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker_s5] in QualityChanges lookup table
+2019-02-18 11:57:19,444 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:19,458 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,464 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,468 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,511 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,513 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,518 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,560 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,564 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,569 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker_s5
+2019-02-18 11:57:19,845 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-02-18 11:57:19,847 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:19,849 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker_s5] in QualityChanges lookup table
+2019-02-18 11:57:19,854 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:20,826 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._checkStack [140]: Need to check for errors again. Discard the current progress and reschedule a check.
+2019-02-18 11:57:21,014 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [136]: New error check scheduled.
+2019-02-18 11:57:21,828 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker3
+2019-02-18 11:57:21,976 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3] added.
+2019-02-18 11:57:22,022 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [Ultimaker 3_settings] added.
+2019-02-18 11:57:22,026 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [Ultimaker 3_user] added.
+2019-02-18 11:57:22,027 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker3_aa04
+2019-02-18 11:57:22,035 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3_aa04] added.
+2019-02-18 11:57:22,037 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker3_extruder_left
+2019-02-18 11:57:22,042 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3_extruder_left] added.
+2019-02-18 11:57:22,086 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3_extruder_left #2_settings] added.
+2019-02-18 11:57:22,089 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3_extruder_left #2_user] added.
+2019-02-18 11:57:22,092 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [100]: Extruder[ultimaker3_extruder_left #2] added to [Ultimaker 3] at position [0]
+2019-02-18 11:57:22,124 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3_extruder_left #2] added.
+2019-02-18 11:57:22,126 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker3_extruder_right
+2019-02-18 11:57:22,133 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3_extruder_right] added.
+2019-02-18 11:57:22,178 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3_extruder_right #2_settings] added.
+2019-02-18 11:57:22,183 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3_extruder_right #2_user] added.
+2019-02-18 11:57:22,186 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [100]: Extruder[ultimaker3_extruder_right #2] added to [Ultimaker 3] at position [1]
+2019-02-18 11:57:22,221 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker3_extruder_right #2] added.
+2019-02-18 11:57:22,224 - WARNING - [MainThread] UM.Settings.ContainerRegistry.addContainer [360]: Container with ID ultimaker3_extruder_right #2 was already added.
+2019-02-18 11:57:22,227 - WARNING - [MainThread] UM.Settings.ContainerRegistry.addContainer [360]: Container with ID ultimaker3_extruder_left #2 was already added.
+2019-02-18 11:57:22,229 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um3_global_Normal_Quality
+2019-02-18 11:57:22,235 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um3_global_Normal_Quality] added.
+2019-02-18 11:57:22,236 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um3_aa0.4_PLA_Normal_Quality
+2019-02-18 11:57:22,243 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um3_aa0.4_PLA_Normal_Quality] added.
+2019-02-18 11:57:22,245 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [Ultimaker 3] added.
+2019-02-18 11:57:22,248 - INFO - [MainThread] cura.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [ultimaker3]
+2019-02-18 11:57:22,449 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:22,453 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:22,463 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:22,465 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:22,480 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:22,542 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,546 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,554 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,570 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,575 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,581 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,612 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:22,616 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,619 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,623 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,630 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,633 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,637 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:22,763 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:22,766 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker3] in QualityChanges lookup table
+2019-02-18 11:57:22,768 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:22,771 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um3_global_Draft_Quality
+2019-02-18 11:57:22,776 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um3_global_Draft_Quality] added.
+2019-02-18 11:57:22,818 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um3_global_Fast_Quality
+2019-02-18 11:57:22,827 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um3_global_Fast_Quality] added.
+2019-02-18 11:57:22,891 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um3_global_High_Quality
+2019-02-18 11:57:22,898 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um3_global_High_Quality] added.
+2019-02-18 11:57:22,933 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um3_global_Superdraft_Quality
+2019-02-18 11:57:22,940 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um3_global_Superdraft_Quality] added.
+2019-02-18 11:57:22,976 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um3_global_Verydraft_Quality
+2019-02-18 11:57:22,982 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um3_global_Verydraft_Quality] added.
+2019-02-18 11:57:23,031 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,034 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,039 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,074 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,079 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,082 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,084 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,087 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,089 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,092 - DEBUG - [MainThread] cura.Machines.Models.BuildPlateModel._update [33]: Updating BuildPlateModel.
+2019-02-18 11:57:23,097 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,101 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,105 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,108 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:23,114 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:23,119 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:23,125 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:23,131 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,135 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,137 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,142 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:23,147 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,149 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,152 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:23,157 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:23,159 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker3] in QualityChanges lookup table
+2019-02-18 11:57:23,161 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:23,182 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:23,187 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker3] in QualityChanges lookup table
+2019-02-18 11:57:23,192 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:23,725 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [96]: Extruder [ultimaker3_extruder_right #2] has already been added to this stack [Ultimaker 3]
+2019-02-18 11:57:23,730 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [169]: Extruder [ultimaker3_extruder_right #2] has already been registered on machine [Ultimaker 3], not doing anything
+2019-02-18 11:57:23,736 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [96]: Extruder [ultimaker3_extruder_left #2] has already been added to this stack [Ultimaker 3]
+2019-02-18 11:57:23,741 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [169]: Extruder [ultimaker3_extruder_left #2] has already been registered on machine [Ultimaker 3], not doing anything
+2019-02-18 11:57:24,357 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,364 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,369 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,376 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,384 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,390 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,398 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,404 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,411 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,434 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,444 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:24,473 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:24,481 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker3] in QualityChanges lookup table
+2019-02-18 11:57:24,491 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:24,675 - INFO - [MainThread] cura.Settings.MachineManager._initMachineState [346]: Machine 'Ultimaker 3' quality set to 'normal'
+2019-02-18 11:57:24,689 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:24,698 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:24,948 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:24,959 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:25,074 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:25,097 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,108 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,124 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,227 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,244 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,253 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,293 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:25,296 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,300 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,304 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,310 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,313 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,316 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,385 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:25,389 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker3] in QualityChanges lookup table
+2019-02-18 11:57:25,393 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:25,408 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,411 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,415 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,418 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,422 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,425 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,427 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,430 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,433 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,436 - DEBUG - [MainThread] cura.Machines.Models.BuildPlateModel._update [33]: Updating BuildPlateModel.
+2019-02-18 11:57:25,440 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,444 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,448 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,451 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:25,458 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:25,462 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:25,471 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:25,475 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:25,482 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:25,486 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,490 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,493 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,498 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:25,502 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,506 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,508 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,513 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:25,517 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker3] in QualityChanges lookup table
+2019-02-18 11:57:25,520 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:25,568 - DEBUG - [MainThread] UM3NetworkPrinting.src.DiscoverUM3Action.reset [51]: Reset the list of found devices.
+2019-02-18 11:57:25,647 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._checkStack [140]: Need to check for errors again. Discard the current progress and reschedule a check.
+2019-02-18 11:57:25,666 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,669 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,672 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,675 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,680 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,684 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,689 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,692 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,695 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,697 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,700 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,703 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,708 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,711 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,714 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,718 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,722 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,725 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,729 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,732 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,735 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,737 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,740 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,743 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,746 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,748 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,751 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,754 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,757 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,761 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,777 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,780 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,784 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,786 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,789 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,792 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,795 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,797 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,799 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,802 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,805 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,809 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,813 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,816 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,819 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,826 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,829 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,832 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,836 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,840 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,844 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,849 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,851 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,854 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_petg, generic_hips for machine ultimaker3
+2019-02-18 11:57:25,857 - INFO - [Thread-1] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [92]: You have a(n) Ultimaker 3 in the printer list. Let's check the firmware!
+2019-02-18 11:57:25,934 - DEBUG - [MainThread] UM.Mesh.MeshData.approximateConvexHull [401]: approximateConvexHull(target_count=1024) Calculating 3D convex hull took 0.0249326229095459 seconds. 132 input vertices. 132 output vertices.
+2019-02-18 11:57:25,948 - WARNING - [Thread-1] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.getUrlResponse [47]: Could not reach 'http://software.ultimaker.com/releases/firmware/9066/stable/version.txt', if this URL is old, consider removal.
+2019-02-18 11:57:25,952 - INFO - [Thread-1] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [108]: Reading firmware version of Ultimaker 3: checked = 0.0.0 - latest = 4.3.3-20180529.0
+2019-02-18 11:57:26,509 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-02-18 11:57:26,512 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:26,516 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker3] in QualityChanges lookup table
+2019-02-18 11:57:26,520 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:26,583 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [136]: New error check scheduled.
+2019-02-18 11:57:27,134 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._checkStack [140]: Need to check for errors again. Discard the current progress and reschedule a check.
+2019-02-18 11:57:27,345 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [136]: New error check scheduled.
+2019-02-18 11:57:28,498 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker2_plus
+2019-02-18 11:57:28,599 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker2_plus] added.
+2019-02-18 11:57:28,634 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [Ultimaker 2+_settings] added.
+2019-02-18 11:57:28,638 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [Ultimaker 2+_user] added.
+2019-02-18 11:57:28,640 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker2_plus_0.4
+2019-02-18 11:57:28,646 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker2_plus_0.4] added.
+2019-02-18 11:57:28,648 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container ultimaker2_plus_extruder_0
+2019-02-18 11:57:28,655 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker2_plus_extruder_0] added.
+2019-02-18 11:57:28,705 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker2_plus_extruder_0 #2_settings] added.
+2019-02-18 11:57:28,709 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker2_plus_extruder_0 #2_user] added.
+2019-02-18 11:57:28,713 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [100]: Extruder[ultimaker2_plus_extruder_0 #2] added to [Ultimaker 2+] at position [0]
+2019-02-18 11:57:28,743 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [ultimaker2_plus_extruder_0 #2] added.
+2019-02-18 11:57:28,745 - WARNING - [MainThread] UM.Settings.ContainerRegistry.addContainer [360]: Container with ID ultimaker2_plus_extruder_0 #2 was already added.
+2019-02-18 11:57:28,747 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um2p_global_Normal_Quality
+2019-02-18 11:57:28,753 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um2p_global_Normal_Quality] added.
+2019-02-18 11:57:28,755 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container pla_0.4_normal
+2019-02-18 11:57:28,761 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [pla_0.4_normal] added.
+2019-02-18 11:57:28,764 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [Ultimaker 2+] added.
+2019-02-18 11:57:28,767 - INFO - [MainThread] cura.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [ultimaker2_plus]
+2019-02-18 11:57:28,978 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:28,981 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:28,993 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:28,997 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:29,009 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:29,105 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,109 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,113 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,120 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,123 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,127 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,272 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:29,275 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-02-18 11:57:29,277 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:29,279 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um2p_global_Coarse_Quality
+2019-02-18 11:57:29,284 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um2p_global_Coarse_Quality] added.
+2019-02-18 11:57:29,320 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um2p_global_Draft_Quality
+2019-02-18 11:57:29,326 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um2p_global_Draft_Quality] added.
+2019-02-18 11:57:29,357 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um2p_global_Extra_Coarse_Quality
+2019-02-18 11:57:29,363 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um2p_global_Extra_Coarse_Quality] added.
+2019-02-18 11:57:29,393 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um2p_global_Fast_Quality
+2019-02-18 11:57:29,401 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um2p_global_Fast_Quality] added.
+2019-02-18 11:57:29,439 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [56]: Loading container um2p_global_High_Quality
+2019-02-18 11:57:29,447 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [371]: Container [um2p_global_High_Quality] added.
+2019-02-18 11:57:29,495 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,497 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,503 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,533 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,537 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,540 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,543 - DEBUG - [MainThread] cura.Machines.Models.BuildPlateModel._update [33]: Updating BuildPlateModel.
+2019-02-18 11:57:29,546 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,548 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,551 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,554 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:29,561 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:29,566 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:29,569 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:29,572 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,576 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,580 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:29,585 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:29,589 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-02-18 11:57:29,592 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:29,615 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:29,622 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-02-18 11:57:29,627 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:30,287 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [96]: Extruder [ultimaker2_plus_extruder_0 #2] has already been added to this stack [Ultimaker 2+]
+2019-02-18 11:57:30,296 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [169]: Extruder [ultimaker2_plus_extruder_0 #2] has already been registered on machine [Ultimaker 2+], not doing anything
+2019-02-18 11:57:30,571 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,575 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,579 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,583 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,586 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,589 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,593 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,597 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:30,600 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-02-18 11:57:30,603 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:30,615 - INFO - [MainThread] cura.Settings.MachineManager._initMachineState [346]: Machine 'Ultimaker 2+' quality set to 'normal'
+2019-02-18 11:57:30,620 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:50: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:30,623 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/Menus/SettingsMenu.qml:43: TypeError: Cannot read property 'isEnabled' of null
+2019-02-18 11:57:30,632 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:30,636 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,639 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,643 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,651 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,655 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,657 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,696 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:30,698 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-02-18 11:57:30,700 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:30,716 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,718 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,720 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,725 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,728 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,730 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,733 - DEBUG - [MainThread] cura.Machines.Models.BuildPlateModel._update [33]: Updating BuildPlateModel.
+2019-02-18 11:57:30,737 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,742 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,745 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,748 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:30,754 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:30,760 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:30,763 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:30,770 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-02-18 11:57:30,773 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,778 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,782 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,787 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:30,789 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-02-18 11:57:30,792 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:30,856 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._checkStack [140]: Need to check for errors again. Discard the current progress and reschedule a check.
+2019-02-18 11:57:30,870 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,874 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,877 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,880 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,884 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,886 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,891 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,895 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,898 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,901 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,905 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,907 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,910 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,913 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,917 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,920 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,923 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,925 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,928 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,931 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,934 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,937 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,939 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,942 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,946 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,949 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,952 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,954 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,957 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,961 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,978 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,985 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,990 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:30,996 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:31,000 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:31,004 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [356]: Exclude materials generic_bam, generic_hips, ultimaker_tough_pla_white, ultimaker_bam, ultimaker_pva, ultimaker_tough_pla_green, ultimaker_tough_pla_black, generic_petg, ultimaker_tough_pla_red, generic_tough_pla, generic_pva for machine ultimaker2_plus
+2019-02-18 11:57:31,005 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [76]: No machine with name Ultimaker 2+ in list of firmware to check.
+2019-02-18 11:57:31,054 - DEBUG - [MainThread] UM.Mesh.MeshData.approximateConvexHull [401]: approximateConvexHull(target_count=1024) Calculating 3D convex hull took 0.011968374252319336 seconds. 265 input vertices. 265 output vertices.
+2019-02-18 11:57:31,502 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-02-18 11:57:31,505 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-02-18 11:57:31,508 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-02-18 11:57:31,512 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [52]: Updating QualityProfilesDropDownMenuModel.
+2019-02-18 11:57:32,172 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [136]: New error check scheduled.
+2019-02-18 11:57:32,593 - DEBUG - [MainThread] cura.TaskManagement.OnExitCallbackManager.triggerNextCallback [51]: No more on-app-exit callbacks to process. Tell the app to exit.
+2019-02-18 11:57:32,599 - INFO - [MainThread] cura.CuraApplication.closeApplication [543]: Close application
+2019-02-18 11:57:32,621 - DEBUG - [MainThread] UM.Qt.QtApplication.windowClosed [417]: Shutting down cura
+2019-02-18 11:57:32,885 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [293]: Attempting to kill the engine process
+2019-02-18 11:57:32,886 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [299]: Killing engine process
+2019-02-18 11:57:32,906 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [302]: Engine process is killed. Received return code 1
+2019-02-18 11:57:32,933 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [193]: Socket state changed to Closing
+2019-02-18 11:57:32,938 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [195]: Socket state changed to Closed
