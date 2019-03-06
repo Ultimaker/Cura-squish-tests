@@ -1,19 +1,22 @@
 # -*- coding: utf-8 -*-
 import names
-source(findFile("scripts", "get_objects_by_properties.py"))
+from pageobjects.page_object import PageObject
+from get_objects_by_properties import getObjectsByProperties
+import squish_module_helper as squish_module_helper
+import squish
 
-class AddPrinter():
-    DIALOG = names.addPrinterDialog
+class AddPrinter(PageObject):
+    squish_module_helper.import_squish_symbols()
     BUTTON_ADD = names.addPrinter
     BUTTON_FINISH = names.addPrinterFinish
     SELECTED_PRINTER = names.selectedPrinter
     
     def select(self, printer):
-        selected_printer_object = self.SELECTED_PRINTER.copy()
-        selected_printer_object["text"] = printer
-        
-        mouseClick(waitForObject(selected_printer_object))
+        printerObject = self.findObjectByText(self.SELECTED_PRINTER, printer)
+        squish.mouseClick(printerObject)
    
     def add(self):
-        mouseClick(waitForObject(self.BUTTON_ADD))
-        mouseClick(waitForObject(self.BUTTON_FINISH))
+        squish.mouseClick(waitForObject(self.BUTTON_ADD))
+
+    def finish(self):
+        squish.mouseClick(waitForObject(self.BUTTON_FINISH))

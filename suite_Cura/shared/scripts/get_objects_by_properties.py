@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # https://kb.froglogic.com/display/KB/Example+-+Finding+child+objects+by+type+and+property+values
+import squish
 class getObjectsByProperties:
 #     This class recursively searches for objects
 #     It goes through all descendants of the parent object
@@ -10,7 +11,7 @@ class getObjectsByProperties:
         Special property "type" allows searching for the object type."""
 
         return cls.get_objects_impl(
-            findObject(parent_obj),
+            squish.findObject(parent_obj),
             property_names_values,
             max_find_count,
             [],
