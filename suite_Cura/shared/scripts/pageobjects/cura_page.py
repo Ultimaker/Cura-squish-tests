@@ -10,9 +10,10 @@ class Cura(PageObject):
     MENU_ITEM = names.menuItem
     MAIN_WINDOW = names.mainWindow
     CONFIG_CURA = names.configureCura
+    BUTTON_PRINTERLIST = names.mainWindowPrinter
     
     def acceptAgreement(self):
-        mousePress(waitForObjectExists(Cura.BUTTON_AGREEMENT))
+        squish.mouseClick(waitForObjectExists(Cura.BUTTON_AGREEMENT))
         
     def navigateTo(self, menuItem, subMenuItem, property=None):
         menuObject = PageObject.findObjectByText(Cura.MENU_ITEM, menuItem, "plainText")
@@ -23,3 +24,6 @@ class Cura(PageObject):
             
     def curaIsStarted(self):
         waitForObjectExists(Cura.MAIN_WINDOW)
+        
+    def openPrinterList(self):
+        squish.mouseClick(waitForObject(self.BUTTON_PRINTERLIST))

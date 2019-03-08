@@ -4,9 +4,9 @@ from pageobjects.cura_page import Cura
 pageObject = PageObject()
 cura = Cura()
 
-@Given("Cura has been started |any|")
+@Given(r"Cura has been started?(.*)", regexp=True)
 def step(context, configurations):
-    if configurations is not None:     
+    if "with no configurations" in configurations:     
         pageObject.startCuraNoConfig()
     else:
         pageObject.startCura()

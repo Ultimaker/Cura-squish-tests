@@ -1,8 +1,10 @@
 from pageobjects.add_printer_page import AddPrinter
 from pageobjects.printer_page import Printer
+from pageobjects.cura_page import Cura
 
 printer = Printer()
 addPrinter = AddPrinter()
+cura = Cura()
 
 @Step("I add a |any| printer")
 def step(context, printerType):
@@ -17,4 +19,8 @@ def step(context, expectedPrinterType):
 @Step("I finish the Add Printer wizard")
 def step(context):
     addPrinter.finish()
+    
+@Step("I want to add a printer from the main menu")
+def step(context):
+    cura.openPrinterList()
 

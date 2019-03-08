@@ -1,6 +1,13 @@
 # -*- coding: utf-8 -*-
 # https://kb.froglogic.com/display/KB/Example+-+Finding+child+objects+by+type+and+property+values
 import squish
+import object
+import test
+import testData
+import objectMap
+import squishinfo
+from squish import *
+
 class getObjectsByProperties:
 #     This class recursively searches for objects
 #     It goes through all descendants of the parent object

@@ -6,10 +6,9 @@ preferences = Preferences()
 def step(context, menuItem):
     preferences.navigateTo(menuItem)
     
-@When("I want to |word| a printer from |any|")
-def step(context, action, location):
-    if "printer preferences" == location:
-        preferences.pressButton(action)
+@When("I want to |word| a printer from printer preferences")
+def step(context, action):
+    preferences.pressButton(action)
         
 @Then("the printer overview contains a |any| printer")
 def step(context, printerType):
