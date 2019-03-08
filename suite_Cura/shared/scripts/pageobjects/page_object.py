@@ -25,8 +25,7 @@ class PageObject:
         test.log("Starting Cura")
         self.presetPreferences()
         startApplication("Cura")
-        squish.mouseClick(waitForObjectExists(names.changelogClose, 50000))
-    
+
     def resetPreferences(self):
         if self.os == "Windows":
             shutil.rmtree(self.windowsDir, ignore_errors=True)

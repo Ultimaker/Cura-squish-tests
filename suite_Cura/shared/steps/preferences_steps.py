@@ -11,8 +11,9 @@ def step(context, action):
     preferences.pressButton(action)
         
 @Then("the printer overview contains a |any| printer")
-def step(context, expectedPrinterType):
-    printerList = preferences.getPrinterList(expectedPrinterType)
+def step(context, expectedPrinter):
+    printerList = preferences.getPrinterList(expectedPrinter)
     if len(printerList) != 0:
-        for n in printerList:
-            test.compare(expectedPrinterType, printerList)
+        test.compare(expectedPrinter, printerList[0].text)
+    else:
+        test.fail("Printer %s not found" % expectedPrinter)
