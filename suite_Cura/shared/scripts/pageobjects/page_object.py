@@ -9,10 +9,10 @@ import squish
 class PageObject:
     def __init__(self):
         self.os = platform.system()
-        homeDir = expanduser("~")
-        self.windowsDir = r'%s\AppData\Roaming\cura\4.0\\' % homeDir
-        self.linuxDir = {'local': r'%s/.local/share/cura/4.0' % homeDir,
-                         'config': r'%s/.config/cura/4.0' % homeDir}
+        self.homeDir = expanduser("~")
+        self.windowsDir = r'%s\AppData\Roaming\cura\4.0\\' % self.homeDir
+        self.linuxDir = {'local': r'%s/.local/share/cura/4.0' % self.homeDir,
+                         'config': r'%s/.config/cura/4.0' % self.homeDir}
         
         squish_module_helper.import_squish_symbols()
     
@@ -36,6 +36,15 @@ class PageObject:
         if self.os == "Windows":
             shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.windowsDir)
 #         TODO: add Linux/Mac
+
+    def setTextFieldValue(self, object, value):
+        if self.os in ("Windows", "Linux"):
+            clearCombination = "<Ctrl+A>"
+        elif self.os == "Darwin":
+            clearCombination = "<Command+A>"
+        
+        squish.type(waitForObject(object), clearCombination)
+        squish.type(waitForObject(object), value)       
 
     @staticmethod
     def findObjectByText(object, value, property=None):

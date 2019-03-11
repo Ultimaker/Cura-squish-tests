@@ -16,7 +16,7 @@ Feature: Adding printers
     Then the printer overview contains a Ultimaker 2+ printer
 
 #  Scenario: Add networked printer
-#    Given Cura has been started
+#    Given Cura is running
 #    When I want to add a printer from the main menu
 #    And I add a Ultimaker 3 printer
 #    And I add a network printer with address "10.183.1.1"
