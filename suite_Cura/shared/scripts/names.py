@@ -40,6 +40,18 @@ printerView = {"container": addPrinterDialog, "id": "machinesHolder", "type": "S
 printerList = {"container": printerView, "id": "machineList", "type": "ListView", "unnamed": 1, "visible": True}
 selectedPrinter = {"container": printerList, "id": "machineButton", "text": "", "type": "AbstractCheckable", "unnamed": 1, "visible": True}
 
+# Printer dialog - network
+addNetworkPrinter = {"container": addPrinterDialog, "id": "addButton", "text": "Add", "type": "Button", "unnamed": 1, "visible": True}
+printerAddressDialogue = {"title": "Printer Address", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+printerAddressInputField = {"container": printerAddressDialogue, "id": "addressField", "type": "TextField", "unnamed": 1, "visible": True}
+printerAddressOKButton = {"container": printerAddressDialogue, "id": "btnOk", "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
+connectNetworkPrinter = {"container": addPrinterDialog, "text": "Connect", "type": "Button", "unnamed": 1, "visible": True}
+
+
+# Menu
+menuBar = {"container": mainWindow, "id": "menuBarLoader", "type": "Loader", "unnamed": 1, "visible": True}
+menuItem = {"container": menuBar, "plainText": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
+
 # Preferences
 preferenceWindow = {"title": "Preferences", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 preferencesMenu = {"container": preferenceWindow, "id": "pagesList", "type": "TableView", "unnamed": 1, "visible": True}

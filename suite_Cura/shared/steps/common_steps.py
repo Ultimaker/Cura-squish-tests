@@ -22,3 +22,11 @@ def step(context):
 @Step("I navigate to |word| and |any|")
 def step(context, menuItem, subMenuItem):
     cura.navigateTo(menuItem, subMenuItem)
+
+@When("I add a network printer with address |any|")
+def step(context, printerIP):
+    cura.addNetworkPrinter(printerIP)  
+
+@Then("the networked printer \"10.183.1.1\" is available")
+def step(context):
+    test.warning("TODO implement the networked printer \"10.183.1.1\" is available")

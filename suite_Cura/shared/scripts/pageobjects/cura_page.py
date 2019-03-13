@@ -10,6 +10,10 @@ class Cura(PageObject):
     MAIN_WINDOW = names.mainWindow
     CONFIG_CURA = names.configureCura
     BUTTON_PRINTERLIST = names.mainWindowPrinter
+    ADD_NETWORKPRINTER = names.addNetworkPrinter
+    NETWORKPRINTER_INPUTFIELD = names.printerAddressInputField
+    NETWORKPRINTER_OK = names.printerAddressOKButton
+    CONNECT_NETWORKPRINTER = names.connectNetworkPrinter
     
     def __init__(self):
         squish_module_helper.import_squish_symbols()
@@ -29,3 +33,11 @@ class Cura(PageObject):
         
     def openPrinterList(self):
         squish.mouseClick(waitForObject(self.BUTTON_PRINTERLIST))
+        
+    def addNetworkPrinter(self, printerIP):
+        squish.mouseClick(waitForObject(self.ADD_NETWORKPRINTER))
+        squish.mouseClick(waitForObject(self.NETWORKPRINTER_INPUTFIELD))
+        squish.nativeType(printerIP);
+        squish.mouseClick(waitForObject(self.NETWORKPRINTER_OK))
+        squish.mouseClick(waitForObject(self.CONNECT_NETWORKPRINTER))
+        
