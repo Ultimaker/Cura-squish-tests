@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from pageobjects.add_printer_page import AddPrinter
 from pageobjects.printer_page import Printer
 from pageobjects.cura_page import Cura
@@ -24,4 +22,4 @@ def step(context):
     
 @Step("I want to add a printer from the main menu")
 def step(context):
-    cura.openPrinterList()
+    printer.openPrinterList()

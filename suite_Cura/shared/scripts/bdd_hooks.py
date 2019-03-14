@@ -1,17 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
 
-# @OnFeatureStart
-# def hook(context):
-# #     Set the CWD to the testdata folder
-#     configFile = findFile("testdata", "WindowsConfig/4.0/cura.cfg")
-#     testdataDir = os.getcwd() + "\\" +findFile("testdata","")
-#
-#     with open(configFile, "r+") as infile:
-#         for line in infile:
-#             if "local_file" in line:
-#                 infile.write("\n"+testdataDir)
-
 @OnFeatureEnd
 def hook(context):
     for ctx in applicationContextList():
