@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import platform
 from os.path import expanduser
+from os.path import getsize
 import shutil
 import names
 import squish_module_helper
@@ -54,6 +55,27 @@ class PageObject:
         obj = object.copy()
         obj[property] = value
         return waitForObject(obj)
+    
+    def fileSize(self, file):
+        return self.convertBytes(getsize(file))
+    
+    @staticmethod
+    def lineCount(fname):
+        with open(fname) as f:
+            for i, l in enumerate(f):
+                pass
+        return i + 1    
+    
+    def convertBytes(self, size, unit='KB', precision=2):
+        units = ['KB','MB','GB']
+        index = units.index(unit) + 1
+        i = 0
+        while i < index:
+            i += 1
+            size = size / float(1024)
+        if size < 1:
+            test.fail("Gcode file smaller than 1 KB")
+        return "%.2f" % size
     
     def activateMenuItem(self, menu_object_names):
         count = len(menu_object_names)
