@@ -55,11 +55,6 @@ printerAddressInputField = {"container": printerAddressDialogue, "id": "addressF
 printerAddressOKButton = {"container": printerAddressDialogue, "id": "btnOk", "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
 connectNetworkPrinter = {"container": addPrinterDialog, "text": "Connect", "type": "Button", "unnamed": 1, "visible": True}
 
-
-# Menu
-menuBar = {"container": mainWindow, "id": "menuBarLoader", "type": "Loader", "unnamed": 1, "visible": True}
-menuItem = {"container": menuBar, "plainText": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
-
 # Preferences
 preferenceWindow = {"title": "Preferences", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 preferencesMenu = {"container": preferenceWindow, "id": "pagesList", "type": "TableView", "unnamed": 1, "visible": True}
