@@ -26,7 +26,7 @@ class PageObject:
     def startCura(self):
         test.log("Starting Cura")
         self.presetPreferences()
-        startApplication("Cura")
+        startApplication("Cura -platformtheme none")
 
     def resetPreferences(self):
         if self.os == "Windows":

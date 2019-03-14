@@ -16,7 +16,7 @@ Cura (Master build, as this contains recently added id's required for several te
 
 ### Scripts
 
-In order for Squish to find the correct scripts, add the following to each testcase (test.py)
+In order for Squish to find the correct scripts, add the following to each new testcase (test.py)
 
 `source(findFile("scripts", "init.py"))`
 
@@ -26,5 +26,5 @@ It is possible to add extensions to Squish.
 There is one extension available that increases the amount of properties that are recorded for menu's specifically.
 
 In order to add it to your Squish installation, complete the following:
-1. Add MenusExt.qml (root of this repo) to SquishDirectory\lib\extensions\qt\qtquick\
+1. Add MenusExt.qml (root of this repo) to [SquishDirectory]\lib\extensions\qt\qtquick\
 2. Restart Squish
