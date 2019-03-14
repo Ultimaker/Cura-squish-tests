@@ -6,6 +6,7 @@ import shutil
 import names
 import squish_module_helper
 import squish
+import os
 
 class PageObject:
     def __init__(self):
@@ -37,7 +38,23 @@ class PageObject:
         if self.os == "Windows":
             shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.windowsDir)
 #         TODO: add Linux/Mac
-
+    #     Set the CWD to the testdata folder
+        configFile = findFile("testdata", "WindowsConfig/4.0/cura.cfg")
+        testdataDir = os.getcwd() + "\\" + findFile("testdata", "")
+    
+        with open(configFile, "r") as file:
+            content = file.readlines()
+            
+        with open(configFile, "w") as new_file:
+            for line in content:
+                if ("dialog_load_path" in line) or ("dialog_save_path" in line):
+                    continue
+                                
+                if line == "[local_file]\n":
+                    line = line + "dialog_load_path = "+testdataDir + "\ndialog_save_path = "+testdataDir + "\n"
+                    
+                new_file.write(line)
+                    
     def setTextFieldValue(self, object, value):
         if self.os in ("Windows", "Linux"):
             clearCombination = "<Ctrl+A>"
@@ -67,7 +84,7 @@ class PageObject:
         return i + 1    
     
     def convertBytes(self, size, unit='KB', precision=2):
-        units = ['KB','MB','GB']
+        units = ['KB', 'MB', 'GB']
         index = units.index(unit) + 1
         i = 0
         while i < index:
@@ -91,9 +108,9 @@ class PageObject:
         mouseMove(obj, x, y)
     
         # Minimal movement required to cause selection:
-        mouseMove(obj, x+1, y)
+        mouseMove(obj, x + 1, y)
         mouseMove(obj, x, y)
-        mouseMove(obj, x+1, y)
+        mouseMove(obj, x + 1, y)
     
         # Delay required else click on the next item may
         # not take place:

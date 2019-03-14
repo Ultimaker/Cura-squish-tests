@@ -27,7 +27,3 @@ Feature: Performance
     When I save a sliced model as cat.gcode
     Then I can verify the gcode size is greater than 1kb
     And the line size of the gcode is printed
-
-
-
-
