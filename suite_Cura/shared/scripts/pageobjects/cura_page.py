@@ -23,7 +23,10 @@ class Cura(PageObject):
     networkprinter_inputfield = names.printerAddressInputField
     networkprinter_ok = names.printerAddressOKButton
     connect_networkprinter = names.connectNetworkPrinter
-
+    file_exists_dialog = names.fileAlreadyExistsDialog
+    overwrite_file = names.overwriteFile
+    
+    
     def __init__(self):
         PageObject.__init__(self)
         squish_module_helper.import_squish_symbols()
@@ -70,6 +73,9 @@ class Cura(PageObject):
         squish.mouseClick(waitForObjectItem(self.file_type, "G-code File (*\\.gcode)"))
 
         squish.mouseClick(waitForObject(self.filedialog_save))
+        
+        if object.exists(self.file_exists_dialog):
+            squish.mouseClick(waitForObject(self.overwrite_file))
 
         return findFile("testdata", fileName)
 
