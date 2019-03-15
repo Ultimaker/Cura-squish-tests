@@ -22,6 +22,7 @@ def step(context, action):
 
 @When("I load file '|any|' in performance mode")
 def step(context, model):
+    context.userData = {}
     context.userData['file load'] = cura.loadFile(model, True)
 
 @Then("I can verify the gcode size is greater than 1kb")
@@ -43,4 +44,5 @@ def step(context):
     
 @When("I slice the object in performance mode")
 def step(context):
+    context.userData = {}
     context.userData['slice'] = cura.sliceObject(True)

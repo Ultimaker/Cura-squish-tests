@@ -21,6 +21,9 @@ openFile = {"text": "Open", "type": "QPushButton", "unnamed": 1, "visible": 1, "
 saveFile = {"text": "Save", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": fileDialog}
 fileType = {"name": "fileTypeCombo", "type": "QComboBox", "visible": 1, "window": fileDialog}
 
+fileAlreadyExistsDialog = {"type": "QMessageBox", "unnamed": 1, "visible": 1, "windowTitle": "File Already Exists"}
+overwriteFile = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": fileAlreadyExistsDialog}
+
 # Menu (top-level)
 menuBar = {"container": mainWindow, "id": "menuBarLoader", "type": "Loader", "unnamed": 1, "visible": True}
 menuItem = {"container": menuBar, "plainText": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
