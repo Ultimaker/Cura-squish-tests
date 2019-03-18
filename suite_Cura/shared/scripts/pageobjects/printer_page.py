@@ -23,7 +23,8 @@ class Printer(PageObject):
     def selectPrinter(self, printer):
         self.openPrinterList()
         
+        waitForObject(self.printerlist)              
         printerList = get_objects_by_properties.getObjectsByProperties.get_objects(self.printerlist, {"type": "MachineSelectorButton"})
         for obj in printerList:
             if obj.text == printer:
-                squish.mouseClick(obj)
+                squish.mouseClick(waitForObject(obj))

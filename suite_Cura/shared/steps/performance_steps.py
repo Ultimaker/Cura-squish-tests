@@ -33,10 +33,9 @@ def step(context, type, model):
 
 @Then("I can verify the gcode size is greater than 1kb")
 def step(context):
-    
     actualFileSize = pageObject.fileSize(context.userData['gcode'])
     if actualFileSize > 1:
-        test.passes("File size: %s KB"  % actualFileSize)
+        test.passes("File size: %s KB" % actualFileSize)
     else:
         test.fail("File size 1 KB or smaller ")
 
@@ -44,11 +43,17 @@ def step(context):
 def step(context):
     lineCount = pageObject.lineCount(context.userData['gcode'])
     if lineCount > 0:
-        test.passes("Line count: %.f"  % lineCount)
+        test.passes("Line count: %.f" % lineCount)
     else:
         test.fail("Empty or missing file")
     
-@When("I slice the object in performance mode")
+@Step("I slice the object in performance mode")
 def step(context):
     context.userData = {}
     context.userData['slice'] = cura.sliceObject(True)
+    
+@Step("I save the file as a project in performance mode")
+def step(context):
+    context.userData = {}
+    cura.navigateTo("File", "Save")
+    context.userData['writing'] = cura.saveAsProject(True)

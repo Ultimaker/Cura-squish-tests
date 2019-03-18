@@ -37,7 +37,7 @@ class Performance(PageObject):
     def trackSliceTime(self):
         start_time = time.time()
         
-        waitForObjectExists(self.button_preview).visible
+        waitForObject(self.button_preview, 500000)
         
         t = time.time() - start_time
         return t

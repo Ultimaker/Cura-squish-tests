@@ -21,9 +21,8 @@ def step(context, configurations):
 def step(context):
     cura.curaIsStarted()
 
-@Given("Cura is running and a model has been sliced")
+@Step("A model has been sliced")
 def step(context):
-    cura.curaIsStarted()
     cura.modelIsSliced()
 
 @Step("I accept the user agreement")
@@ -34,19 +33,29 @@ def step(context):
 def step(context, menuItem, subMenuItem):
     cura.navigateTo(menuItem, subMenuItem)
 
-@Step("I load file '|any|'")
-def step(context, model):
-    cura.loadFile(model)
+@Step(r"I load (file|project) '(.*)'", regexp=True)
+def step(context, type, model):    
+    if type == 'project':
+        cura.loadFile(model)
+        cura.openFileAsProject()
+        cura.openFileFromSummary()
+    else:
+        cura.loadFile(model)
 
-@When("I clear the buildplate")
+@Step("I clear the buildplate")
 def step(context):
     cura.navigateTo("Edit", "Clear Build Plate")
 
-@When("I select the '|any|' printer and '|word|' profile")
+@Step("I select the '|any|' printer and '|word|' profile")
 def step(context, printerType, profile):
     printer.selectPrinter(printerType)
     printSettings.selectProfile(profile)
 
-@When("I save a sliced model as |any|")
+@Step("I save a sliced model as '|any|'")
 def step(context, fileName):
+    context.userData = {}
     context.userData['gcode'] = cura.saveToFile(fileName)
+
+@Given("I slice the object")
+def step(context):
+    cura.sliceObject()
