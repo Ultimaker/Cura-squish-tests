@@ -20,10 +20,16 @@ def step(context, action):
     test.passes("{:.2f}".format(context.userData[action]))
     print(action + ' time through GUI: {:.2f}'.format(context.userData[action]))
 
-@When("I load file '|any|' in performance mode")
-def step(context, model):
+@When(r"I load (file|project) '(.*)' in performance mode", regexp=True)
+def step(context, type, model):
     context.userData = {}
-    context.userData['file load'] = cura.loadFile(model, True)
+
+    if type == 'project':
+        cura.loadFile(model)
+        cura.openFileAsProject()
+        context.userData['file load'] = cura.openFileFromSummary(True)
+    else:
+        context.userData['file load'] = cura.loadFile(model, True)
 
 @Then("I can verify the gcode size is greater than 1kb")
 def step(context):

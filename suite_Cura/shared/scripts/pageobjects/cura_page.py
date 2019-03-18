@@ -19,12 +19,10 @@ class Cura(PageObject):
     button_save_to_file = names.saveToFileButton
     button_preview = names.previewButton
     button_slice = names.sliceButton
-    add_networkprinter = names.addNetworkPrinter
-    networkprinter_inputfield = names.printerAddressInputField
-    networkprinter_ok = names.printerAddressOKButton
-    connect_networkprinter = names.connectNetworkPrinter
     file_exists_dialog = names.fileAlreadyExistsDialog
     overwrite_file = names.overwriteFile
+    button_open_as_project = names.openFileAsProject
+    button_open_from_summary = names.openProjectFromSummary
     
     
     def __init__(self):
@@ -78,10 +76,12 @@ class Cura(PageObject):
             squish.mouseClick(waitForObject(self.overwrite_file))
 
         return findFile("testdata", fileName)
-
-    def addNetworkPrinter(self, printerIP):
-        squish.mouseClick(waitForObject(self.add_networkprinter))
-        squish.mouseClick(waitForObject(self.networkprinter_inputfield))
-        squish.nativeType(printerIP);
-        squish.mouseClick(waitForObject(self.networkprinter_ok))
-        squish.mouseClick(waitForObject(self.connect_networkprinter))
+    
+    def openFileAsProject(self):
+        squish.mouseClick(waitForObject(self.button_open_as_project))
+        
+    def openFileFromSummary(self, trackTime=False):
+        squish.mouseClick(waitForObject(self.button_open_from_summary))
+        
+        if trackTime:
+            return Performance.trackFileloadTime()

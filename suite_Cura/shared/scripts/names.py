@@ -24,6 +24,11 @@ fileType = {"name": "fileTypeCombo", "type": "QComboBox", "visible": 1, "window"
 fileAlreadyExistsDialog = {"type": "QMessageBox", "unnamed": 1, "visible": 1, "windowTitle": "File Already Exists"}
 overwriteFile = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": fileAlreadyExistsDialog}
 
+# Open 3MF Dialog
+openFileDialog = {"title": Wildcard("Open*"), "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+openFileAsProject = {"container": openFileDialog, "id": "openAsProjectButton", "text": "Open as project", "type": "Button", "unnamed": 1, "visible": True}
+openProjectFromSummary = {"container": openFileDialog, "id": "ok_button", "text": "Open", "type": "Button", "unnamed": 1, "visible": True}
+
 # Menu (top-level)
 menuBar = {"container": mainWindow, "id": "menuBarLoader", "type": "Loader", "unnamed": 1, "visible": True}
 menuItem = {"container": menuBar, "plainText": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
