@@ -11,7 +11,7 @@ Feature: Performance of slicing, and gcode
 
   Scenario Outline: Slicing objects with profile: Fine and printer: UM3
     Given Cura is running
-    And I clear the buildplate
+    When I clear the buildplate
     And I load <File> '<FileName>'
     And I select the 'Ultimaker 3' printer and 'fine' profile
     And I slice the object in performance mode
