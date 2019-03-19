@@ -1,10 +1,15 @@
-before_script:
-  - setx SQUISH_LICENSEKEY_DIR %USERPROFILE%
-
 stages:
+  - build
   - test
 
-testJob:
+set-env-var:
+  stage: build
+  script:
+  - setx SQUISH_LICENSEKEY_DIR %USERPROFILE%
+  tags:
+    - windows
+
+execute-tests:
   stage: test
   script:
     - test.bat
