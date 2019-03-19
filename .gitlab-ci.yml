@@ -1,0 +1,10 @@
+stages:
+  - test
+
+testJob:
+  stage: test
+  script:
+    -squishserver.exe
+    -squishrunner --testsuite suite_Cura
+  tags:
+    - windows
