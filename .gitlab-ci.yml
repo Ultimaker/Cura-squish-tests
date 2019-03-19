@@ -3,10 +3,7 @@ stages:
 
 testJob:
   stage: test
-  variables:
-    SQUISHDIR: "C:\\Users\\s.biharie\\Squish for Qt 6.4-20190117-1156\\bin\\"
   script:
-    -$SQUISHDIR\squishserver.exe
-    -$SQUISHDIR\squishrunner --testsuite suite_Cura
+    - test.bat
   tags:
     - windows
