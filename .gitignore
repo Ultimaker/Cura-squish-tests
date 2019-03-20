@@ -1,2 +1,3 @@
 *.pyc
 .idea/
+suite_Cura/shared/testdata/**/*.cfg

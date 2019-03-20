@@ -14,6 +14,10 @@ Cura (Master build, as this contains recently added id's required for several te
 2. Add Cura to the Application Under Test(AUT) (Test Suite Settings next to the suite name)
 3. Set the working directory to custom and browse to "shared\testdata"
 
+### Gitlab
+
+https://gitlab.com/ultimaker/cura/Cura-squish-tests
+
 ### Scripts
 
 In order for Squish to find the correct scripts, add the following to each new testcase (test.py)
