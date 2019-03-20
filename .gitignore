@@ -1,3 +1,6 @@
 *.pyc
 .idea/
-suite_Cura/shared/testdata/**/*.cfg
+builds/
+config.xml
+envvars
+suite_Cura/**/errorImages/
