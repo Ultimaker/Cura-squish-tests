@@ -20,11 +20,11 @@ def step(context, action):
     test.passes("{:.2f}".format(context.userData[action]))
     print(action + ' time through GUI: {:.2f}'.format(context.userData[action]))
 
-@When(r"I load (file|project) '(.*)' in performance mode", regexp=True)
-def step(context, type, model):
+@When(r"I load |word| |any| in performance mode")
+def step(context, word, model):
     context.userData = {}
-
-    if type == 'project':
+    
+    if word == 'project':
         cura.loadFile(model)
         cura.openFileAsProject()
         context.userData['file load'] = cura.openFileFromSummary(True)
