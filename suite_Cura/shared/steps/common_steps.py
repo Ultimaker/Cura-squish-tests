@@ -32,6 +32,11 @@ def step(context):
 @Step("I navigate to |word| and |any|")
 def step(context, menuItem, subMenuItem):
     cura.navigateTo(menuItem, subMenuItem)
+    
+    
+@Step("I close the preferences")
+def step(context):
+    cura.pressCloseButton()
 
 @Step(r"I load (file|project) '(.*)'$", regexp=True)
 def step(context, type, model):    

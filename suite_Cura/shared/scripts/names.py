@@ -42,8 +42,7 @@ clearBuildplate = {"container": scrollView, "text": "Clear Build Plate", "type":
 saveAsProjectMenuItem = {"container": scrollView, "text": "&Save...", "type": "StyleItem1", "unnamed": 1, "visible": True}
 
 
-# Changelog
-changelogClose = {"container": qquickWindow, "text": "Close", "type": "Button", "unnamed": 1, "visible": True}
+closeButton = {"container": qquickWindow, "text": "Close", "type": "Button", "unnamed": 1, "visible": True}
 
 # Agreement
 agreementDialog = {"title": "User Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
@@ -85,4 +84,3 @@ printSettingsCustomButton = {"checkable": False, "container": mainWindow, "text"
 customPrintSettingsView = {"container": mainWindow, "id": "customPrintSetup", "type": "CustomPrintSetup", "unnamed": 1, "visible": True}
 printSettingsProfileSelection = {"container": customPrintSettingsView, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
 printSettingsFineProfile = {"container": scrollView, "text": "Fine - 0.1mm", "type": "StyleItem1", "unnamed": 1, "visible": True}
-
