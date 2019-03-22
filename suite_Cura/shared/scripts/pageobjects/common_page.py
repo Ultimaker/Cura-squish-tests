@@ -13,35 +13,47 @@ class PageObject:
         self.os = platform.system()
         self.homeDir = expanduser("~")
         self.windowsDir = r'%s\AppData\Roaming\cura\4.0\\' % self.homeDir
-        self.linuxDir = {'local': r'%s/.local/share/cura/4.0' % self.homeDir,
-                         'config': r'%s/.config/cura/4.0' % self.homeDir}
+        self.linuxDir = {'local': r'%s/.local/share/cura/4.0/' % self.homeDir,
+                         'config': r'%s/.config/cura/4.0/' % self.homeDir}
         
         squish_module_helper.import_squish_symbols()
     
     def startCuraNoConfig(self):
         test.log("Starting Cura with no user preferences")
         self.resetPreferences()
-        startApplication("Cura")
+        if self.os == "Windows":
+            startApplication("Cura")
+        elif self.os == "Linux":
+            startApplication("Cura.AppImage")
     
     def startCura(self):
         test.log("Starting Cura")
         self.presetPreferences()
-        startApplication("Cura -platformtheme none")
+        if self.os == "Windows":
+            startApplication("Cura -platformtheme none")
+        elif self.os == "Linux":
+            startApplication("Cura.AppImage -platformtheme none")
 
     def resetPreferences(self):
         if self.os == "Windows":
             shutil.rmtree(self.windowsDir, ignore_errors=True)
-#         TODO: add Linux/Mac
-
+        elif self.os == "Linux":
+            print("REMOVING SHIIITE")
+            shutil.rmtree(self.linuxDir["local"], ignore_errors=True)
+            shutil.rmtree(self.linuxDir["config"], ignore_errors=True)
+            
     def presetPreferences(self):
-        self.resetPreferences()
+        self.resetPreferences()    
         if self.os == "Windows":
-            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.windowsDir)
-#         TODO: add Linux/Mac
-    #     Set the CWD to the testdata folder
+            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.windowsDir)    
+        elif self.os == "Linux":
+            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.linuxDir["local"]) 
+            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.linuxDir["config"]) 
+
+        # Set the CWD to the testdata folder
         configFile = findFile("testdata", "WindowsConfig/4.0/cura.cfg")
-        testdataDir = os.getcwd() + "\\" + findFile("testdata", "")
-    
+        testdataDir = os.path.join(os.getcwd(), findFile("testdata", ""))
+
         with open(configFile, "r") as file:
             content = file.readlines()
             
@@ -51,7 +63,7 @@ class PageObject:
                     continue
                                 
                 if line == "[local_file]\n":
-                    line = line + "dialog_load_path = "+testdataDir + "\ndialog_save_path = "+testdataDir + "\n"
+                    line = line + "dialog_load_path = " + testdataDir + "\ndialog_save_path = " + testdataDir + "\n"
                     
                 new_file.write(line)
                     
