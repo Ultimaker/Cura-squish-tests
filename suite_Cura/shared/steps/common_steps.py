@@ -33,7 +33,7 @@ def step(context):
 def step(context, menuItem, subMenuItem):
     cura.navigateTo(menuItem, subMenuItem)
 
-@Step(r"I load (file|project) '(.*)'", regexp=True)
+@Step(r"I load (file|project) '(.*)'$", regexp=True)
 def step(context, type, model):    
     if type == 'project':
         cura.loadFile(model)
