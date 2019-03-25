@@ -43,13 +43,10 @@ class PageObject:
             shutil.rmtree(self.linuxDir["config"], ignore_errors=True)
             
     def presetPreferences(self):
-        self.resetPreferences()    
-        if self.os == "Windows":
-            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.windowsDir)    
-        elif self.os == "Linux":
-            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.linuxDir["local"]) 
-            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.linuxDir["config"]) 
-
+#         Make sure preferences are completely deleted before copying to that dir
+        while os.path.isdir(self.windowsDir):
+            self.resetPreferences()
+        
         # Set the CWD to the testdata folder
         configFile = findFile("testdata", "WindowsConfig/4.0/cura.cfg")
         testdataDir = os.path.join(os.getcwd(), findFile("testdata", ""))
@@ -65,7 +62,15 @@ class PageObject:
                 if line == "[local_file]\n":
                     line = line + "dialog_load_path = " + testdataDir + "\ndialog_save_path = " + testdataDir + "\n"
                     
-                new_file.write(line)
+                new_file.write(line) 
+         
+        if self.os == "Windows":
+            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.windowsDir)    
+        elif self.os == "Linux":
+            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.linuxDir["local"]) 
+            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.linuxDir["config"]) 
+
+        
                     
     def setTextFieldValue(self, object, value):
         if self.os in ("Windows", "Linux"):
