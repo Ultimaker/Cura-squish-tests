@@ -8,15 +8,16 @@ Feature: Adding printers
         Then I can see that a Ultimaker S5 printer has been selected
 
       Scenario: Add printer from printer preferences
-        Given Cura has been started
+        Given Cura is running
         When I navigate to file menu Preferences and Configure Cura
         And I navigate to Printers in preferences
         And I want to Add a printer from printer preferences
         And I add a Ultimaker 2+ printer
         Then the printer overview contains a Ultimaker 2+ printer
+        Then I close the preferences
 
     Scenario: Add networked printer
-        Given Cura has been started
+        Given Cura is running
         When I navigate to file menu Preferences and Configure Cura
         And I navigate to Printers in preferences
         And I want to Add a printer from printer preferences

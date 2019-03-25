@@ -98,7 +98,7 @@ autoOrientationPlugin = {"container": marketplace_viewDownloads_ScrollView, "tex
 barbarianUnitsPlugin = {"container": marketplace_ScrollView, "text": "Barbarian Units", "type": "Text", "unnamed": 1, "visible": True}
 customSupportsPlugin = {"container": marketplace_ScrollView, "text": "Custom Supports", "type": "Text", "unnamed": 1, "visible": True}
 
-#Plugin License Agreement 
+#Plugin License Agreement
 pluginLicenseAgreementWindow = {"title": "Plugin License Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 licenseAcceptButton = {"container": pluginLicenseAgreementWindow, "id": "acceptButton", "text": "Accept", "type": "Button", "unnamed": 1, "visible": True}
 installedPluginButton = {"checkable": False, "container": marketplace_ScrollView, "text": "Installed", "type": "ActionButton", "unnamed": 1, "visible": True}

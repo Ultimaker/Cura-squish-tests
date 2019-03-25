@@ -26,14 +26,18 @@ class Cura(PageObject):
     button_summary_open = names.openProjectFromSummary
     button_summary_save = names.saveFileAsProject
     marketplace_button = names.marketplaceButton
-    
+    close_button = names.closeButton
+
     def __init__(self):
         PageObject.__init__(self)
         squish_module_helper.import_squish_symbols()
 
     def acceptAgreement(self):
         squish.mouseClick(waitForObjectExists(self.button_agreement))
-        
+
+    def pressCloseButton(self):
+        squish.mouseClick(waitForObjectExists(self.close_button))
+
     def navigateTo(self, menuItem, subMenuItem, property=None):
         menuObject = PageObject.findObjectByText(self.menu_item, menuItem, "plainText")
         squish.mouseClick(waitForObject(menuObject))
@@ -48,7 +52,7 @@ class Cura(PageObject):
     def navigateToStageMenu(self, stageItem):
         if "Marketplace" in stageItem:
             squish.mouseClick(waitForObject(self.marketplace_button))
-            
+
     def curaIsStarted(self):
         waitForObjectExists(self.main_window)
         

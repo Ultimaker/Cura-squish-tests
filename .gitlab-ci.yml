@@ -2,19 +2,19 @@ stages:
   - build
   - test
 
-set-env-var:
-  stage: build
-  script:
-  - setx SQUISH_LICENSEKEY_DIR %USERPROFILE%
-  tags:
-    - windows
-
 execute-tests:
   stage: test
   script:
-    - test.bat
-  tags:
-    - windows
+    - echo %SQUISH_DIR%
+    - echo "Starting squishserver"
+    - START "SquishServer" %SQUISH_DIR%/bin/squishserver>server.log
+    - CALL %SQUISH_DIR%/bin/squishrunner --testsuite C:\Users\s.biharie\Develop\Squish\suite_Cura --testcase tst_Performance_Booting --reportgen junit,report.xml --reportgen stdout
+    - echo "Stopping squishserver"
+    - CALL %SQUISH_DIR%/bin/squishserver --stop
   artifacts:
+    reports:
+      junit: report.xml
     paths:
       - server.log
+  tags:
+    - windows

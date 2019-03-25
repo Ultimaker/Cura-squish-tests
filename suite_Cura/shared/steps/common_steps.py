@@ -17,7 +17,7 @@ def step(context, configurations):
     if "with no configurations" in configurations:     
         pageObject.startCuraNoConfig()
     elif "with preset configuration" in configurations:
-        pageObject.startCuraWithPresetConfig() 
+        pageObject.startCuraWithPresetConfig()
     else:
         pageObject.startCura()
 
@@ -41,8 +41,12 @@ def step(context, menuItem, subMenuItem):
 def step(context, stageItem):
     cura.navigateToStageMenu(stageItem)
 
-@Step(r"I load (file|project) '(.*)'", regexp=True)
-def step(context, type, model):    
+@Step("I close the preferences")
+def step(context):
+    cura.pressCloseButton()
+
+@Step(r"I load (file|project) '(.*)'$", regexp=True)
+def step(context, type, model):
     if type == 'project':
         cura.loadFile(model)
         cura.openFileAsProject()
@@ -63,7 +67,7 @@ def step(context, printerType, profile):
 def step(context, fileName):
     context.userData = {}
     context.userData['gcode'] = cura.saveToFile(fileName)
-    
+
 @Then("I close Cura from |any|")
 def step(context, location):
     cura.closeCura(location)
