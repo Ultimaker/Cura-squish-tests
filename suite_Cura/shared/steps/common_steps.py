@@ -3,17 +3,21 @@ from pageobjects.cura_page import Cura
 from pageobjects.printsettings_page import PrintSettings
 from pageobjects.printer_page import Printer
 from pageobjects.performance_page import Performance
+from pageobjects.marketplace_page import Marketplace
 
 pageObject = PageObject()
 cura = Cura()
 printSettings = PrintSettings()
 printer = Printer()
 performance = Performance()
+marketplace = Marketplace()
 
 @Given(r"Cura has been started?(.*)", regexp=True)
 def step(context, configurations):
     if "with no configurations" in configurations:     
         pageObject.startCuraNoConfig()
+    elif "with preset configuration" in configurations:
+        pageObject.startCuraWithPresetConfig() 
     else:
         pageObject.startCura()
 
@@ -29,9 +33,13 @@ def step(context):
 def step(context):
     cura.acceptAgreement()
 
-@Step("I navigate to |word| and |any|")
+@Step("I navigate to file menu |word| and |any|")
 def step(context, menuItem, subMenuItem):
     cura.navigateTo(menuItem, subMenuItem)
+
+@Step("I navigate to stage menu |word|")
+def step(context, stageItem):
+    cura.navigateToStageMenu(stageItem)
 
 @Step(r"I load (file|project) '(.*)'", regexp=True)
 def step(context, type, model):    
@@ -55,6 +63,10 @@ def step(context, printerType, profile):
 def step(context, fileName):
     context.userData = {}
     context.userData['gcode'] = cura.saveToFile(fileName)
+    
+@Then("I close Cura from |any|")
+def step(context, location):
+    cura.closeCura(location)
 
 @Given("I slice the object")
 def step(context):

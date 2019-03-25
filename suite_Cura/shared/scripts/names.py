@@ -86,3 +86,22 @@ customPrintSettingsView = {"container": mainWindow, "id": "customPrintSetup", "t
 printSettingsProfileSelection = {"container": customPrintSettingsView, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
 printSettingsFineProfile = {"container": scrollView, "text": "Fine - 0.1mm", "type": "StyleItem1", "unnamed": 1, "visible": True}
 
+#Marketplace Button
+marketplaceButton = {"checkable": False, "container": mainWindow, "id": "marketplaceButton", "text": "Marketplace", "type": "Button", "unnamed": 1, "visible": True}
+marketplace_QQuickWindowQmlImpl = {"title": "Marketplace", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+marketplace_viewDownloads_ScrollView = {"container": marketplace_QQuickWindowQmlImpl, "id": "viewDownloads", "type": "ScrollView", "unnamed": 1, "visible": True}
+marketplace_ScrollView = {"container": marketplace_QQuickWindowQmlImpl, "type": "ScrollView", "unnamed": 1, "visible": True}
+marketplaceInstallButton = {"container": marketplace_ScrollView, "text": "Install", "type": "Label", "unnamed": 1, "visible": True}
+marketplaceQuitCuraButton = {"checkable": False, "container": marketplace_QQuickWindowQmlImpl, "id": "restartButton", "text": "Quit Cura", "type": "ActionButton", "unnamed": 1, "visible": True}
+
+autoOrientationPlugin = {"container": marketplace_viewDownloads_ScrollView, "text": "Auto-Orientation", "type": "Text", "unnamed": 1, "visible": True}
+barbarianUnitsPlugin = {"container": marketplace_ScrollView, "text": "Barbarian Units", "type": "Text", "unnamed": 1, "visible": True}
+customSupportsPlugin = {"container": marketplace_ScrollView, "text": "Custom Supports", "type": "Text", "unnamed": 1, "visible": True}
+
+#Plugin License Agreement 
+pluginLicenseAgreementWindow = {"title": "Plugin License Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+licenseAcceptButton = {"container": pluginLicenseAgreementWindow, "id": "acceptButton", "text": "Accept", "type": "Button", "unnamed": 1, "visible": True}
+installedPluginButton = {"checkable": False, "container": marketplace_ScrollView, "text": "Installed", "type": "ActionButton", "unnamed": 1, "visible": True}
+
+
+

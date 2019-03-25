@@ -7,6 +7,7 @@ import names
 import squish_module_helper
 import squish
 import os
+from pageobjects.marketplace_page import Marketplace
 
 class PageObject:
     def __init__(self):
@@ -23,11 +24,20 @@ class PageObject:
         self.resetPreferences()
         startApplication("Cura")
     
-    def startCura(self):
+    def startCuraWithPresetConfig(self):
         test.log("Starting Cura")
         self.presetPreferences()
         startApplication("Cura -platformtheme none")
-
+        
+    def startCura(self):
+        startApplication("Cura -platformtheme none")
+    
+    def closeCura(self, location):
+        marketplace = Marketplace()
+        
+        if location == "Marketplace": 
+            marketplace.quitCura()
+            
     def resetPreferences(self):
         if self.os == "Windows":
             shutil.rmtree(self.windowsDir, ignore_errors=True)

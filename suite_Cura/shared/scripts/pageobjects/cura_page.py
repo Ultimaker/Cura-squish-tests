@@ -25,6 +25,7 @@ class Cura(PageObject):
     button_open_as_project = names.openFileAsProject
     button_summary_open = names.openProjectFromSummary
     button_summary_save = names.saveFileAsProject
+    marketplace_button = names.marketplaceButton
     
     def __init__(self):
         PageObject.__init__(self)
@@ -43,6 +44,10 @@ class Cura(PageObject):
             squish.mouseClick(waitForObject(self.menu_clear_buildplate))
         if "Save" in subMenuItem:
             squish.mouseClick(waitForObject(self.menu_save))
+            
+    def navigateToStageMenu(self, stageItem):
+        if "Marketplace" in stageItem:
+            squish.mouseClick(waitForObject(self.marketplace_button))
             
     def curaIsStarted(self):
         waitForObjectExists(self.main_window)
