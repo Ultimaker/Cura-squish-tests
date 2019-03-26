@@ -41,9 +41,8 @@ configureCura = {"container": scrollView, "text": Wildcard("Configure Cura*"), "
 clearBuildplate = {"container": scrollView, "text": "Clear Build Plate", "type": "StyleItem1", "unnamed": 1, "visible": True}
 saveAsProjectMenuItem = {"container": scrollView, "text": "&Save...", "type": "StyleItem1", "unnamed": 1, "visible": True}
 
-
-# Changelog
-changelogClose = {"container": qquickWindow, "text": "Close", "type": "Button", "unnamed": 1, "visible": True}
+# Generic close-button
+closeButton = {"container": qquickWindow, "text": "Close", "type": "Button", "unnamed": 1, "visible": True}
 
 # Agreement
 agreementDialog = {"title": "User Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
