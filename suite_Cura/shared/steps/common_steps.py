@@ -12,15 +12,15 @@ printer = Printer()
 performance = Performance()
 marketplace = Marketplace()
 
-@Given(r"Cura has been started?(.*)", regexp=True)
+@Given(r"Cura has been started ?(with no configurations|with preset configuration)?", regexp=True)
 def step(context, configurations):
-    if "with no configurations" in configurations:     
-        pageObject.startCuraNoConfig()
-    elif "with preset configuration" in configurations:
+    if configurations is None:
+        pageObject.startCura()
+    elif "with preset configuration" == configurations:     
         pageObject.startCuraWithPresetConfig()
     else:
-        pageObject.startCura()
-
+        pageObject.startCuraNoConfig()
+      
 @Given("Cura is running")
 def step(context):
     cura.curaIsStarted()

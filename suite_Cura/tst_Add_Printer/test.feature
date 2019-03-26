@@ -1,13 +1,13 @@
 Feature: Adding printers
 
-      Scenario: Add printer from launch
+    Scenario: Add printer from launch
         Given Cura has been started with no configurations
         And I accept the user agreement
         When I add a Ultimaker S5 printer
         And I finish the Add Printer wizard
         Then I can see that a Ultimaker S5 printer has been selected
 
-      Scenario: Add printer from printer preferences
+    Scenario: Add printer from printer preferences
         Given Cura is running
         When I navigate to file menu Preferences and Configure Cura
         And I navigate to Printers in preferences

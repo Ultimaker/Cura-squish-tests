@@ -1,7 +1,7 @@
 # encoding: UTF-8
 from objectmaphelper import *
 
-# Main window
+# Main Window
 mainWindow = {"title": "Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
 mainWindowOverlay = {"container": mainWindow, "type": "Overlay", "unnamed": 1, "visible": True}
 qquickWindow = {"type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
@@ -34,8 +34,12 @@ saveFileAsProject = {"container": qquickWindow, "id": "ok_button", "text": "Save
 menuBar = {"container": mainWindow, "id": "menuBarLoader", "type": "Loader", "unnamed": 1, "visible": True}
 menuItem = {"container": menuBar, "plainText": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
 
-o_QQuickMenuPopupWindow = {"type": "QQuickMenuPopupWindow1", "unnamed": 1, "visible": True}
-scrollView = {"container": o_QQuickMenuPopupWindow, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
+qquickMenuPopup = {"type": "QQuickMenuPopupWindow1", "unnamed": 1, "visible": True}
+scrollView = {"container": qquickMenuPopup, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
+
+# Generic sub-menu item
+submenuItem = {"container": scrollView, "text": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
+
 
 configureCura = {"container": scrollView, "text": Wildcard("Configure Cura*"), "type": "StyleItem1", "unnamed": 1, "visible": True}
 clearBuildplate = {"container": scrollView, "text": "Clear Build Plate", "type": "StyleItem1", "unnamed": 1, "visible": True}
@@ -85,7 +89,7 @@ customPrintSettingsView = {"container": mainWindow, "id": "customPrintSetup", "t
 printSettingsProfileSelection = {"container": customPrintSettingsView, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
 printSettingsFineProfile = {"container": scrollView, "text": "Fine - 0.1mm", "type": "StyleItem1", "unnamed": 1, "visible": True}
 
-#Marketplace Button
+# Marketplace Button
 marketplaceButton = {"checkable": False, "container": mainWindow, "id": "marketplaceButton", "text": "Marketplace", "type": "Button", "unnamed": 1, "visible": True}
 marketplace_QQuickWindowQmlImpl = {"title": "Marketplace", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 marketplace_viewDownloads_ScrollView = {"container": marketplace_QQuickWindowQmlImpl, "id": "viewDownloads", "type": "ScrollView", "unnamed": 1, "visible": True}
@@ -97,10 +101,20 @@ autoOrientationPlugin = {"container": marketplace_viewDownloads_ScrollView, "tex
 barbarianUnitsPlugin = {"container": marketplace_ScrollView, "text": "Barbarian Units", "type": "Text", "unnamed": 1, "visible": True}
 customSupportsPlugin = {"container": marketplace_ScrollView, "text": "Custom Supports", "type": "Text", "unnamed": 1, "visible": True}
 
-#Plugin License Agreement
+# Plugin License Agreement
 pluginLicenseAgreementWindow = {"title": "Plugin License Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 licenseAcceptButton = {"container": pluginLicenseAgreementWindow, "id": "acceptButton", "text": "Accept", "type": "Button", "unnamed": 1, "visible": True}
 installedPluginButton = {"checkable": False, "container": marketplace_ScrollView, "text": "Installed", "type": "ActionButton", "unnamed": 1, "visible": True}
 
+# Toolbar
+toolbarButton = {"checkable": True, "container": mainWindow, "text": "", "type": "ToolbarButton", "unnamed": 1, "visible": True}
 
+# Move Model
+moveModelXaxis = {"container": mainWindow, "id": "xTextField", "type": "TextField", "unnamed": 1, "visible": True}
+moveModelYaxis = {"container": mainWindow, "id": "yTextField", "type": "TextField", "unnamed": 1, "visible": True}
+
+# Scale Model
+scaleModelXaxis = {"container": mainWindow, "id": "xPercentage", "type": "TextField", "unnamed": 1, "visible": True}
+scaleModelYaxis = {"container": mainWindow, "id": "yPercentage", "type": "TextField", "unnamed": 1, "visible": True}
+uniformScaling = {"container": mainWindow, "id": "uniformScalingCheckbox", "text": "Uniform Scaling", "type": "CheckBox", "unnamed": 1, "visible": True}
 

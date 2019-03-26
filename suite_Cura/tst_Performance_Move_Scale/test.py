@@ -2,7 +2,7 @@ source(findFile("scripts", "init.py"))
 source(findFile('scripts', 'python/bdd.py'))
 
 setupHooks('../shared/scripts/bdd_hooks.py')
-collectStepDefinitions('../shared/steps')
+collectStepDefinitions('./steps', '../shared/steps')
 
 
 def main():

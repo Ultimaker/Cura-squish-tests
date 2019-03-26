@@ -34,6 +34,7 @@ def step(context, word, model):
 @Then("I can verify the gcode size is greater than 1kb")
 def step(context):
     actualFileSize = pageObject.fileSize(context.userData['gcode'])
+    
     if actualFileSize > 1:
         test.passes("File size: %s KB" % actualFileSize)
     else:
@@ -42,6 +43,7 @@ def step(context):
 @Then("the line size of the gcode is printed")
 def step(context):
     lineCount = pageObject.lineCount(context.userData['gcode'])
+    
     if lineCount > 0:
         test.passes("Line count: %.f" % lineCount)
     else:
@@ -57,3 +59,13 @@ def step(context):
     context.userData = {}
     cura.navigateTo("File", "Save")
     context.userData['writing'] = cura.saveAsProject(True)
+
+@When("I move the model |word| x |word| y")
+def step(context, xPos, yPos):
+    cura.navigateTo("Edit", "Select All Models")
+    cura.moveModel(xPos, yPos)
+
+@When("I scale the model to |word|% uniformly")
+def step(context, size):
+    cura.navigateTo("Edit", "Select All Models")
+    cura.scaleModel(size)

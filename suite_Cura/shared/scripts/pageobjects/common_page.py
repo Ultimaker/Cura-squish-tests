@@ -8,6 +8,7 @@ import squish_module_helper
 import squish
 import os
 from pageobjects.marketplace_page import Marketplace
+from objectmaphelper import Wildcard
 
 class PageObject:
     def __init__(self):
@@ -30,7 +31,6 @@ class PageObject:
     def startCuraWithPresetConfig(self):
         test.log("Starting Cura")
         self.presetPreferences()
-        startApplication("Cura -platformtheme none")
         if self.os == "Windows":
             startApplication("Cura -platformtheme none")
         elif self.os == "Linux":
@@ -90,7 +90,7 @@ class PageObject:
             clearCombination = "<Command+A>"
         
         squish.type(waitForObject(object), clearCombination)
-        squish.type(waitForObject(object), value)       
+        squish.type(waitForObject(object), value)
 
     @staticmethod
     def findObjectByText(object, value, property=None):
@@ -98,7 +98,7 @@ class PageObject:
             property = 'text'
             
         obj = object.copy()
-        obj[property] = value
+        obj[property] = Wildcard("*"+value+"*")
         return waitForObject(obj)
     
     def fileSize(self, file):

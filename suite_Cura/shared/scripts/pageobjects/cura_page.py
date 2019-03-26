@@ -8,11 +8,9 @@ from pageobjects.performance_page import Performance
 class Cura(PageObject):
     button_agreement = names.agreementButton
     menu_item = names.menuItem
+    submenu_item = names.submenuItem
     main_window = names.mainWindow
-    menu_config_cura = names.configureCura
-    menu_clear_buildplate = names.clearBuildplate
     menu_open_file = names.mainWindowOpenFile
-    menu_save = names.saveAsProjectMenuItem
     filedialog_input = names.fileNameInput
     filedialog_open = names.openFile
     filedialog_save = names.saveFile
@@ -27,7 +25,12 @@ class Cura(PageObject):
     button_summary_save = names.saveFileAsProject
     marketplace_button = names.marketplaceButton
     close_button = names.closeButton
-
+    move_model_x = names.moveModelXaxis
+    move_model_y = names.moveModelYaxis
+    toolbar_button = names.toolbarButton
+    scale_model_x = names.scaleModelXaxis
+    uniform_scaling = names.uniformScaling
+    
     def __init__(self):
         PageObject.__init__(self)
         squish_module_helper.import_squish_symbols()
@@ -38,16 +41,13 @@ class Cura(PageObject):
     def pressCloseButton(self):
         squish.mouseClick(waitForObjectExists(self.close_button))
 
+#     Top-level navigation bar
     def navigateTo(self, menuItem, subMenuItem, property=None):
         menuObject = PageObject.findObjectByText(self.menu_item, menuItem, "plainText")
         squish.mouseClick(waitForObject(menuObject))
-        
-        if "Configure Cura" in subMenuItem:
-            squish.mouseClick(waitForObject(self.menu_config_cura))
-        if "Clear Build Plate" in subMenuItem:
-            squish.mouseClick(waitForObject(self.menu_clear_buildplate))
-        if "Save" in subMenuItem:
-            squish.mouseClick(waitForObject(self.menu_save))
+
+        subMenuItemObj = PageObject.findObjectByText(self.submenu_item, subMenuItem)
+        squish.mouseClick(waitForObject(subMenuItemObj))
             
     def navigateToStageMenu(self, stageItem):
         if "Marketplace" in stageItem:
@@ -109,3 +109,17 @@ class Cura(PageObject):
             
         if trackTime:
             return Performance.trackFileloadTime()
+        
+    def moveModel(self, xPos, yPos):
+        self.setTextFieldValue(self.move_model_x, xPos)
+        self.setTextFieldValue(self.move_model_y, yPos)
+        squish.mouseClick(waitForObject(self.main_window))
+        
+    def scaleModel(self, size):
+        squish.mouseClick(self.findObjectByText(self.toolbar_button, "Scale"))
+        
+        if not waitForObject(self.uniform_scaling).checked:
+            squish.mouseClick(self.uniform_scaling)
+        
+        self.setTextFieldValue(self.scale_model_x, size)
+        squish.mouseClick(waitForObject(self.main_window))
