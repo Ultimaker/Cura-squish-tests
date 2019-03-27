@@ -1,20 +1,27 @@
-stages:
-  - build
-  - test
-
 execute-tests:
   stage: test
   script:
     - echo %SQUISH_DIR%
     - echo "Starting squishserver"
-    - START "SquishServer" %SQUISH_DIR%/bin/squishserver>server.log
-    - CALL %SQUISH_DIR%/bin/squishrunner --testsuite C:\Users\s.biharie\Develop\Squish\suite_Cura --testcase tst_Performance_Booting --reportgen junit,report.xml --reportgen stdout
+    - START %SQUISH_DIR%/bin/squishserver
+    - CALL %SQUISH_DIR%/bin/squishrunner --testsuite C:\Users\s.biharie\Develop\Squish\suite_Cura --testcase tst_Performance_Booting --reportgen html,reports --reportgen stdout
+    - ping 127.0.0.1 -n 6 > nul
     - echo "Stopping squishserver"
-    - CALL %SQUISH_DIR%/bin/squishserver --stop
+    - CALL %SQUISH_DIR%/bin/squishserver --stop &
   artifacts:
-    reports:
-      junit: report.xml
     paths:
-      - server.log
+      - reports/
   tags:
     - windows
+
+pages:
+  stage: deploy
+  dependencies:
+    - execute-tests
+  script:
+    - mv reports/ public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
