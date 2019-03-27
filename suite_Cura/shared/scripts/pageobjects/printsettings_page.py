@@ -9,12 +9,14 @@ class PrintSettings(PageObject):
     button_custom_printsettings = names.printSettingsCustomButton
     button_printsettings_profile = names.printSettingsProfileSelection
     printsettings_fine_profile = names.printSettingsFineProfile
+    printsettings_content = names.printSettingsContent
     
     def __init__(self):
         squish_module_helper.import_squish_symbols()
     
     def selectProfile(self, profile):
         squish.mouseClick(waitForObject(self.menu_printsettings))
+        waitForObject(self.printsettings_content)
         
 #         This check is required, in case custom settings are already opened
         if object.exists(self.button_custom_printsettings):

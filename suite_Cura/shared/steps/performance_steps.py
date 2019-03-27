@@ -35,7 +35,7 @@ def step(context, word, model):
 def step(context):
     actualFileSize = pageObject.fileSize(context.userData['gcode'])
     
-    if actualFileSize > 1:
+    if actualFileSize is not None and actualFileSize > 1:
         test.passes("File size: %s KB" % actualFileSize)
     else:
         test.fail("File size 1 KB or smaller ")

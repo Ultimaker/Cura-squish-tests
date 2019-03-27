@@ -22,6 +22,7 @@ class Preferences(PageObject):
         squish.mouseClick(button)
 
     def getPrinterList(self, expectedPrinterType):
+        waitForObject(self.printerlist)
         printerList = get_objects_by_properties.getObjectsByProperties.get_objects(self.printerlist, {"text": "%s" % expectedPrinterType})
         return printerList
     

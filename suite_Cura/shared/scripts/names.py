@@ -40,7 +40,6 @@ scrollView = {"container": qquickMenuPopup, "id": "scrollView", "type": "ScrollV
 # Generic sub-menu item
 submenuItem = {"container": scrollView, "text": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
 
-
 configureCura = {"container": scrollView, "text": Wildcard("Configure Cura*"), "type": "StyleItem1", "unnamed": 1, "visible": True}
 clearBuildplate = {"container": scrollView, "text": "Clear Build Plate", "type": "StyleItem1", "unnamed": 1, "visible": True}
 saveAsProjectMenuItem = {"container": scrollView, "text": "&Save...", "type": "StyleItem1", "unnamed": 1, "visible": True}
@@ -84,6 +83,7 @@ saveToFileButton = {"checkable": False, "container": mainWindow, "id": "saveToBu
 previewButton = {"checkable": False, "container": mainWindow, "id": "previewStageShortcut", "text": "Preview", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 # Print Settings
+printSettingsContent = {"container": mainWindow, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}
 printSettingsCustomButton = {"checkable": False, "container": mainWindow, "text": "Custom", "type": "ActionButton", "unnamed": 1, "visible": True}
 customPrintSettingsView = {"container": mainWindow, "id": "customPrintSetup", "type": "CustomPrintSetup", "unnamed": 1, "visible": True}
 printSettingsProfileSelection = {"container": customPrintSettingsView, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}

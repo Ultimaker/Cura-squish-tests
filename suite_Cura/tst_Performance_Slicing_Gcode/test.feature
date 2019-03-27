@@ -1,7 +1,7 @@
 Feature: Performance of slicing, and gcode
 
     Scenario: Save model to gcode and verify size
-        Given Cura has been started
+        Given Cura has been started with preset configurations
         And I load file 'Robot.STL'
         And I select the 'Ultimaker 3' printer and 'fine' profile
         And I slice the object
