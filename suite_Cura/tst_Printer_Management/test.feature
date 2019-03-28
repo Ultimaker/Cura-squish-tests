@@ -1,4 +1,4 @@
-Feature: Adding printers
+Feature: Printer management
 
     Scenario: Add printer from launch
         Given Cura has been started with no configurations
