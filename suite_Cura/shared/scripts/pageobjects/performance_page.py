@@ -51,7 +51,10 @@ class Performance(PageObject):
         print("---- ENGINE TIMES ----")
         for lines in file:
             if key in lines:
-                print(lines.split()[0] + ' ' + lines.split()[1] + ': ' + key + lines.split(key, 1)[1])
+                if key == 'TranslateOp':
+                    print(lines.split()[-1])
+                else:
+                    print(lines.split()[0] + ' ' + lines.split()[1] + ': ' + key + lines.split(key, 1)[1])
                 
     def tail(self, file, n=1, bs=1024):
         f = open(file)
@@ -74,7 +77,8 @@ class Performance(PageObject):
                   'boot time':'Booting Cura took',
                   'file load time':'Loading file took',
                   'slice time':'Slicing took',
-                  'writing time':'Writing file took'
+                  'writing time':'Writing file took',
+                  'movement time':'TranslateOp'
         }
         
         return switcher.get(action)

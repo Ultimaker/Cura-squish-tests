@@ -60,10 +60,10 @@ def step(context):
     cura.navigateTo("File", "Save")
     context.userData['writing'] = cura.saveAsProject(True)
 
-@When("I move the model |word| x |word| y")
-def step(context, xPos, yPos):
+@When("I move the model |word| x")
+def step(context, xPos):
     cura.navigateTo("Edit", "Select All Models")
-    cura.moveModel(xPos, yPos)
+    cura.moveModel(xPos)
 
 @When("I scale the model to |word|% uniformly")
 def step(context, size):

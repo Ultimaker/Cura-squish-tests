@@ -110,9 +110,8 @@ class Cura(PageObject):
         if trackTime:
             return Performance.trackFileloadTime()
         
-    def moveModel(self, xPos, yPos):
+    def moveModel(self, xPos):
         self.setTextFieldValue(self.move_model_x, xPos)
-        self.setTextFieldValue(self.move_model_y, yPos)
         squish.mouseClick(waitForObject(self.main_window))
         
     def scaleModel(self, size):
