@@ -1,5 +1,6 @@
 import inspect
 import sys
+# https://kb.froglogic.com/display/KB/Article+-+Using+Squish+functions+in+your+own+Python+modules+or+packages
 
 def import_squish_symbols(import_into_module=None):
     if import_into_module is None:
