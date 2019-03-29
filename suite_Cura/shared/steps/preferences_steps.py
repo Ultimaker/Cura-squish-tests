@@ -17,3 +17,11 @@ def step(context, expectedPrinter):
         test.compare(expectedPrinter, printerList[0].text)
     else:
         test.fail("Printer %s not found" % expectedPrinter)
+
+@When("I select printer |any| from the local printers")
+def step(context, printerType):
+    preferences.selectPrinter(printerType)
+   
+@When("I give the printer the '|any|' name")
+def step(context, printerName):
+    preferences.renamePrinter(printerName)

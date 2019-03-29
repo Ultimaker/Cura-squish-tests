@@ -76,6 +76,8 @@ preferencesMenuItem = {"container": preferencesMenu, "objectName": "label", "tex
 preferencesMenuButton = {"container": preferenceWindow, "text": "", "type": "Button", "unnamed": 1, "visible": True}
 printerListView = {"container": preferenceWindow, "id": "objectList", "type": "ListView", "unnamed": 1, "visible": True}
 printerListItem = {"container": printerListView, "text": Wildcard("*"), "type": "Text", "unnamed": 1, "visible": True}
+renamePrinterWindow = {"title": "Rename", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+renamePrinter = {"container": renamePrinterWindow, "id": "nameField", "type": "TextField", "unnamed": 1, "visible": True}
 
 # Slice & Save
 sliceButton = {"checkable": False, "container": mainWindow, "id": "sliceButton", "text": "Slice", "type": "ActionButton", "unnamed": 1, "visible": True}
