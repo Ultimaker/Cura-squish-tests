@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
 # Load this file at the beginning of each test case' test.py via...
-#
+#    
 #  source(findFile("scripts", "init.py"))
 #
+# It makes custom python modules possible (pageobjects) that are not in sys.path
 
 import os.path
 import sys

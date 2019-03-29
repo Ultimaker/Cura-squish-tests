@@ -3,10 +3,6 @@
 import squish
 import object
 import test
-import testData
-import objectMap
-import squishinfo
-from squish import *
 
 class getObjectsByProperties:
 #     This class recursively searches for objects

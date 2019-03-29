@@ -3,7 +3,6 @@ import platform
 from os.path import expanduser
 from os.path import getsize
 import shutil
-import names
 import squish_module_helper
 import squish
 import os
@@ -18,6 +17,7 @@ class PageObject:
         self.linuxDir = {'local': r'%s/.local/share/cura/4.0/' % self.homeDir,
                          'config': r'%s/.config/cura/4.0/' % self.homeDir}
         
+#         Imports functions and members of squish
         squish_module_helper.import_squish_symbols()
     
     def startCuraNoConfig(self):

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import names
-import get_objects_by_properties
 import squish_module_helper
 import squish
 

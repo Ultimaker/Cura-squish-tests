@@ -1,10 +1,17 @@
+setup:
+  stage: build
+  script:
+    - py suite_Cura/startup.py
+  tags:
+    - windows
+
 execute-tests:
   stage: test
   script:
     - echo %SQUISH_DIR%
     - echo "Starting squishserver"
     - START %SQUISH_DIR%/bin/squishserver
-    - CALL %SQUISH_DIR%/bin/squishrunner --testsuite C:\Users\s.biharie\Develop\Squish\suite_Cura --reportgen html,reports --reportgen stdout
+    - CALL %SQUISH_DIR%/bin/squishrunner --testsuite suite_Cura --reportgen html,reports --reportgen stdout
     - ping 127.0.0.1 -n 6 > nul
     - echo "Stopping squishserver"
     - CALL %SQUISH_DIR%/bin/squishserver --stop &
