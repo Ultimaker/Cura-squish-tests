@@ -1,7 +1,13 @@
+stages:
+  - build
+  - test
+  - deploy
+
 setup:
   stage: build
   script:
-    - py suite_Cura/startup.py
+    - echo %PYTHON%
+    - CALL %PYTHON% suite_Cura/startup.py
   tags:
     - windows
 
@@ -18,6 +24,7 @@ execute-tests:
   artifacts:
     paths:
       - reports/
+      - suite_Cura/shared/scripts/Performance.txt
   tags:
     - windows
 
@@ -30,5 +37,3 @@ pages:
   artifacts:
     paths:
       - public
-  only:
-    - master

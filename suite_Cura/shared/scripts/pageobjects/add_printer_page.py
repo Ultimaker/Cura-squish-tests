@@ -14,6 +14,7 @@ class AddPrinter(PageObject):
     connect_networkprinter = names.connectNetworkPrinter
 
     def __init__(self):
+        PageObject.__init__(self)
         squish_module_helper.import_squish_symbols()
             
     def select(self, printer):
@@ -29,6 +30,6 @@ class AddPrinter(PageObject):
     def addNetworkPrinter(self, printerIP):
         squish.mouseClick(waitForObject(self.add_networkprinter))
         squish.mouseClick(waitForObject(self.networkprinter_inputfield))
-        squish.nativeType(printerIP);
+        self.setTextFieldValue(self.networkprinter_inputfield, printerIP)
         squish.mouseClick(waitForObject(self.networkprinter_ok))
         squish.mouseClick(waitForObject(self.connect_networkprinter))
