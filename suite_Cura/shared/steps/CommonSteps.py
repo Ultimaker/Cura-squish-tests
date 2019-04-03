@@ -1,13 +1,13 @@
-from pageobjects.common_page import PageObject
-from pageobjects.cura_page import Cura
-from pageobjects.printsettings_page import PrintSettings
-from pageobjects.printer_page import Printer
-from pageobjects.performance_page import Performance
-from pageobjects.marketplace_page import Marketplace
+from PageObjects.CommonPage import PageObject
+from PageObjects.CuraPage import Cura
+from PageObjects.PrinterSettingsPage import PrintSettings
+from PageObjects.PrinterPage import Printer
+from PageObjects.PerformancePage import Performance
+from PageObjects.MarketplacePage import Marketplace
 
-pageObject = PageObject()
+page_object = PageObject()
 cura = Cura()
-printSettings = PrintSettings()
+print_settings = PrintSettings()
 printer = Printer()
 performance = Performance()
 marketplace = Marketplace()
@@ -15,11 +15,11 @@ marketplace = Marketplace()
 @Given(r"Cura has been started ?(with no configurations|with preset configuration)?", regexp=True)
 def step(context, configurations):
     if configurations is None:
-        pageObject.startCura()
+        page_object.startCura()
     elif "with preset configuration" == configurations:     
-        pageObject.startCuraWithPresetConfig()
+        page_object.startCuraWithPresetConfig()
     else:
-        pageObject.startCuraNoConfig()
+        page_object.startCuraNoConfig()
       
 @Given("Cura is running")
 def step(context):
@@ -70,7 +70,10 @@ def step(context, fileName):
 
 @Then("I close Cura from |any|")
 def step(context, location):
-    cura.closeCura(location)
+    if "Marketplace" == location:
+        marketplace.quitCura()
+    else:
+        test.fail(f"Closing cura from {location} not implemented")
 
 @Given("I slice the object")
 def step(context):

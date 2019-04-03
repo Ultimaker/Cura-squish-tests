@@ -1,8 +1,8 @@
-from pageobjects.common_page import PageObject
-from pageobjects.cura_page import Cura
-from pageobjects.performance_page import Performance
+from PageObjects.CommonPage import PageObject
+from PageObjects.CuraPage import Cura
+from PageObjects.PerformancePage import Performance
 
-pageObject = PageObject()
+page_object = PageObject()
 cura = Cura()
 performance = Performance()
 
@@ -33,7 +33,7 @@ def step(context, word, model):
 
 @Then("I can verify the gcode size is greater than 1kb")
 def step(context):
-    actualFileSize = pageObject.fileSize(context.userData['gcode'])
+    actualFileSize = page_object.fileSize(context.userData['gcode'])
     
     if actualFileSize is not None and actualFileSize > 1:
         test.passes("File size: %s KB" % actualFileSize)
@@ -42,7 +42,7 @@ def step(context):
 
 @Then("the line size of the gcode is printed")
 def step(context):
-    lineCount = pageObject.lineCount(context.userData['gcode'])
+    lineCount = page_object.lineCount(context.userData['gcode'])
     
     if lineCount > 0:
         test.passes("Line count: %.f" % lineCount)

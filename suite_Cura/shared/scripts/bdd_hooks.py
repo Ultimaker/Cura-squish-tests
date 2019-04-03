@@ -14,7 +14,7 @@ def hook(context):
 @OnScenarioEnd
 def hook(context):
     if context.userData:
-        input = findFile("testdata", "Performance.txt")
+        input = findFile("scripts", "Performance.txt")
         with open(input, "a") as new_file:
             new_file.write(json.dumps(context.title)+"\n")
             new_file.write(json.dumps(context.userData)+"\n")

@@ -89,7 +89,6 @@ printSettingsContent = {"container": mainWindow, "type": "PrintSetupSelectorCont
 printSettingsCustomButton = {"checkable": False, "container": mainWindow, "text": "Custom", "type": "ActionButton", "unnamed": 1, "visible": True}
 customPrintSettingsView = {"container": mainWindow, "id": "customPrintSetup", "type": "CustomPrintSetup", "unnamed": 1, "visible": True}
 printSettingsProfileSelection = {"container": customPrintSettingsView, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
-printSettingsFineProfile = {"container": scrollView, "text": "Fine - 0.1mm", "type": "StyleItem1", "unnamed": 1, "visible": True}
 
 # Marketplace Button
 marketplaceButton = {"checkable": False, "container": mainWindow, "id": "marketplaceButton", "text": "Marketplace", "type": "Button", "unnamed": 1, "visible": True}

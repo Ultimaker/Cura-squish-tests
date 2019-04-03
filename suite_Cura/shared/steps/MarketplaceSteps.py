@@ -1,4 +1,4 @@
-from pageobjects.marketplace_page import Marketplace
+from PageObjects.MarketplacePage import Marketplace
 
 marketplace = Marketplace()
 

@@ -1,25 +1,21 @@
 # -*- coding: utf-8 -*-
 import names
-from pageobjects.common_page import PageObject
-import squish_module_helper
-import squish
+from PageObjects.CommonPage import PageObject
+import SquishModuleHelper
 import time
 
+
 class Performance(PageObject):
-    main_window = names.mainWindow
-    button_slice = names.sliceButton
-    button_preview = names.previewButton
-    
     def __init__(self):
         PageObject.__init__(self)
-        squish_module_helper.import_squish_symbols()
+        SquishModuleHelper.importSquishSymbols()
         
     def trackBootTime(self):
         self.presetPreferences()
         start_time = time.time()
     
         startApplication("Cura -platformtheme none")
-        waitForObjectExists(self.main_window)    
+        waitForObjectExists(names.mainWindow)
         
         t = time.time() - start_time
         return t
@@ -28,7 +24,7 @@ class Performance(PageObject):
     def trackFileloadTime(self):
         start_time = time.time()
         
-        waitForObjectExists(self.button_slice).visible
+        waitForObjectExists(names.sliceButton).visible
         
         t = time.time() - start_time
         return t
@@ -37,13 +33,13 @@ class Performance(PageObject):
     def trackSliceTime(self):
         start_time = time.time()
         
-        waitForObject(self.button_preview, 500000)
+        waitForObject(names.previewButton, 500000)
         
         t = time.time() - start_time
         return t
     
     def retrieveFromLog(self, action):
-        f = '%s\cura.log' % self.windowsDir
+        f = '%s\cura.log' % self.windows_dir
         file = self.tail(f, 100)
                 
         key = self.logLine(action)

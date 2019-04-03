@@ -1,4 +1,4 @@
-from pageobjects.preferences_page import Preferences
+from PageObjects.PreferencesPage import Preferences
 
 preferences = Preferences()
 

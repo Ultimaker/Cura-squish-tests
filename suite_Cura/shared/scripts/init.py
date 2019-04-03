@@ -4,7 +4,7 @@
 #    
 #  source(findFile("scripts", "init.py"))
 #
-# It makes custom python modules possible (pageobjects) that are not in sys.path
+# It makes custom python modules possible (PageObjects) that are not in sys.path
 
 import os.path
 import sys

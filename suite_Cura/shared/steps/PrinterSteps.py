@@ -1,6 +1,6 @@
-from pageobjects.add_printer_page import AddPrinter
-from pageobjects.printer_page import Printer
-from pageobjects.cura_page import Cura
+from PageObjects.AddPrinterPage import AddPrinter
+from PageObjects.PrinterPage import Printer
+from PageObjects.CuraPage import Cura
 
 printer = Printer()
 addPrinter = AddPrinter()

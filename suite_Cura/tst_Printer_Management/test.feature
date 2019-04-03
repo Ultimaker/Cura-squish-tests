@@ -26,12 +26,12 @@ Feature: Printer management
         Then the networked printer "10.183.1.1" is available
 
 	Scenario: Customize the printers in printer manager
-	    Given Cura has been started with preset configurations
+	    Given Cura has been started with preset configuration
 	    When I navigate to file menu Preferences and Configure Cura
 	    And I navigate to Printers in preferences
 	    And I select printer Ultimaker 2+ from the local printers
 	    And I want to Activate a printer from printer preferences
 	    And I want to Rename a printer from printer preferences
 	    And I give the printer the '-my name' name
-	    #TODO: Implement this next step:
-	    Then the printer is renamed to '-my name'
+	    #TODO: Implement this next step: CURA-6360
+	    #Then the printer is renamed to '-my name'

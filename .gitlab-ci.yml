@@ -4,7 +4,7 @@ stages:
   - deploy
 
 setup:
-  stage: build
+  stage: test
   script:
     - echo %PYTHON%
     - CALL %PYTHON% suite_Cura/startup.py
@@ -17,7 +17,7 @@ execute-tests:
     - echo %SQUISH_DIR%
     - echo "Starting squishserver"
     - START %SQUISH_DIR%/bin/squishserver
-    - CALL %SQUISH_DIR%/bin/squishrunner --testsuite suite_Cura --reportgen html,reports --reportgen stdout
+    - CALL %SQUISH_DIR%/bin/squishrunner --testsuite suite_Cura --testcase tst_Performance_Booting --reportgen html,reports --reportgen stdout
     - ping 127.0.0.1 -n 6 > nul
     - echo "Stopping squishserver"
     - CALL %SQUISH_DIR%/bin/squishserver --stop &
