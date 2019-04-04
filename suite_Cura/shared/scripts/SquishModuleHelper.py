@@ -1,13 +1,14 @@
 import inspect
 import sys
-# https://kb.froglogic.com/display/KB/Article+-+Using+Squish+functions+in+your+own+Python+modules+or+packages
 
+
+# https://kb.froglogic.com/display/KB/Article+-+Using+Squish+functions+in+your+own+Python+modules+or+packages
 
 def importSquishSymbols(import_into_module=None):
     if import_into_module is None:
         frame = inspect.stack()[1]
         fn = frame[1]
-        mn = "PageObjects."+inspect.getmodulename(fn)
+        mn = "PageObjects." + inspect.getmodulename(fn)
         import_into_module = sys.modules[mn]
     squish_module = sys.modules["squish"]
     for n in dir(squish_module):

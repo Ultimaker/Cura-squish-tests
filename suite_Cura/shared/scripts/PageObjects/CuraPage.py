@@ -12,89 +12,89 @@ class Cura(PageObject):
         SquishModuleHelper.importSquishSymbols()
 
     def acceptAgreement(self):
-        self.click(names.agreementButton)
+        self.click(names.agr_btn_accept)
 
     def pressCloseButton(self):
-        self.click(names.closeButton)
+        self.click(names.btn_close)
 
-#     Top-level navigation bar
+    #     Top-level navigation bar
     def navigateTo(self, menu_item, submenu_item, property=None):
-        menu_object = PageObject.findObjectByText(names.menuItem, menu_item, "plainText")
+        menu_object = PageObject.findObjectByText(names.mnu_item, menu_item, "plainText")
         self.click(menu_object)
 
-        submenu_object = PageObject.findObjectByText(names.submenuItem, submenu_item)
+        submenu_object = PageObject.findObjectByText(names.sub_mnu_item, submenu_item)
         self.click(submenu_object)
-            
+
     def navigateToStageMenu(self, stage_item):
         if "Marketplace" in stage_item:
-            self.click(names.marketplaceButton)
+            self.click(names.mwi_btn_marketplace)
 
     def curaIsStarted(self):
-        waitForObjectExists(names.mainWindow)
-        
+        waitForObjectExists(names.mwi)
+
     def loadFile(self, model, track_time=False):
-        self.click(names.mainWindowOpenFile)
-        self.setTextFieldValue(names.fileNameInput, model)
-        squish.clickButton(waitForObject(names.openFile))
+        self.click(names.mwi_btn_open_file)
+        self.setTextFieldValue(names.fdg_input_name, model)
+        squish.clickButton(waitForObject(names.fdg_btn_open))
 
         if track_time:
             return Performance.trackFileloadTime()
 
     def modelIsSliced(self):
-        waitForObjectExists(names.saveToFileButton)
-        waitForObjectExists(names.previewButton)
+        waitForObjectExists(names.mwi_btn_save_to_file)
+        waitForObjectExists(names.mwi_btn_preview)
 
     def sliceObject(self, track_time=False):
-        self.click(names.sliceButton)
+        self.click(names.mwi_btn_slice)
 
         if track_time:
             return Performance.trackSliceTime()
 
-#     After model has been sliced
+    #     After model has been sliced
     def saveToFile(self, file_name):
-        self.click(names.saveToFileButton, 50000)
+        self.click(names.mwi_btn_save_to_file, 40000)
 
-        self.setTextFieldValue(names.fileNameInput, file_name)
+        self.setTextFieldValue(names.fdg_input_name, file_name)
 
-        self.click(names.fileType)
-        squish.mouseClick(waitForObjectItem(names.fileType, "G-code File (*\\.gcode)"))
+        self.click(names.fdg_cbo_file_type)
+        squish.mouseClick(waitForObjectItem(names.fdg_cbo_file_type, "G-code File (*\\.gcode)"))
 
-        self.click(names.saveFile)
-        
-        if object.exists(names.fileAlreadyExistsDialog):
-            self.click(names.overwriteFile)
+        self.click(names.fdg_btn_save)
+
+        if object.exists(names.mbo_file_exists):
+            self.click(names.mbo_btn_overwrite)
 
         return findFile("testdata", file_name)
-    
+
     def openFileAsProject(self):
-        self.click(names.openFileAsProject)
-        
+        self.click(names.btn_open_as_prj)
+
     def openFileFromSummary(self, track_time=False):
-        self.click(names.openProjectFromSummary)
-        
+        self.click(names.btn_open_prj_summary)
+
         if track_time:
             return Performance.trackFileloadTime()
-        
+
     def saveAsProject(self, track_time):
-        self.click(names.saveFileAsProject)
-        self.setTextFieldValue(names.fileNameInput, "UM3_Robot_SAVE.3mf")
-        self.click(names.saveFile)
-        
-        if object.exists(names.fileAlreadyExistsDialog):
-            self.click(names.overwriteFile)
-            
+        self.click(names.btn_save_as_prj)
+        self.setTextFieldValue(names.fdg_input_name, "UM3_Robot_SAVE.3mf")
+        self.click(names.fdg_btn_save)
+
+        if object.exists(names.mbo_file_exists):
+            self.click(names.mbo_btn_overwrite)
+
         if track_time:
             return Performance.trackFileloadTime()
-        
+
     def moveModel(self, x_pos):
-        self.setTextFieldValue(names.moveModelXaxis, x_pos)
-        self.click(names.mainWindow)
-        
+        self.setTextFieldValue(names.mwi_move_model_x, x_pos)
+        self.click(names.mwi)
+
     def scaleModel(self, size):
-        squish.mouseClick(self.findObjectByText(names.toolbarButton, "Scale"))
-        
-        if not waitForObject(names.uniformScaling).checked:
-            squish.mouseClick(names.uniformScaling)
-        
-        self.setTextFieldValue(names.scaleModelXaxis, size)
-        self.click(names.mainWindow)
+        squish.mouseClick(self.findObjectByText(names.mwi_btn_toolbar, "Scale"))
+
+        if not waitForObject(names.mwi_chk_uniform_scaling).checked:
+            squish.mouseClick(names.mwi_chk_uniform_scaling)
+
+        self.setTextFieldValue(names.mwi_scale_model_x, size)
+        self.click(names.mwi)

@@ -8,19 +8,19 @@ import SquishModuleHelper
 class Printer(PageObject):
     def __init__(self):
         SquishModuleHelper.importSquishSymbols()
-        
+
     def selectedPrinter(self):
-        printerType = waitForObject(names.mainWindowSelectedPrinter).text
-        return printerType
-    
+        printer_type = waitForObject(names.mwi_sel_printer).text
+        return printer_type
+
     def openPrinterList(self):
-        self.click(names.mainWindowPrinter)
-        
+        self.click(names.mwi_printer)
+
     def selectPrinter(self, printer):
         self.openPrinterList()
-        
-        waitForObject(names.mainWindowPrinterList)
-        printerList = ObjectDescendants.getObjects(names.mainWindowPrinterList, {"type": "MachineSelectorButton"})
-        for obj in printerList:
+
+        waitForObject(names.mwi_printer_list)
+        printer_list = ObjectDescendants.getObjects(names.mwi_printer_list, {"type": "MachineSelectorButton"})
+        for obj in printer_list:
             if obj.text == printer:
                 self.click(obj)

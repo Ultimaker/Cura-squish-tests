@@ -33,10 +33,10 @@ def step(context, word, model):
 
 @Then("I can verify the gcode size is greater than 1kb")
 def step(context):
-    actualFileSize = page_object.fileSize(context.userData['gcode'])
+    file_size = page_object.fileSize(context.userData['gcode'])
     
-    if actualFileSize is not None and actualFileSize > 1:
-        test.passes("File size: %s KB" % actualFileSize)
+    if file_size is not None and file_size > 1:
+        test.passes(f"File size: {file_size} KB")
     else:
         test.fail("File size 1 KB or smaller ")
 

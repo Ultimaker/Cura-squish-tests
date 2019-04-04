@@ -8,10 +8,11 @@ import objectMap
 import squishinfo
 from squish import *
 
+
 class ObjectDescendants:
-#     This class recursively searches for objects
-#     It goes through all descendants of the parent object
-    
+    # This class recursively searches for objects
+    # It goes through all descendants of the parent object
+
     @classmethod
     def getObjects(cls, parent_obj, property_names_values, max_find_count=-1, verbose=False):
         """Pass negative max_find_count parameter to find all matching objects.
@@ -27,7 +28,7 @@ class ObjectDescendants:
     @classmethod
     def getObjectsImpl(cls, parent_obj, properties_names_values, max_find_count, found_children=[], verbose=False):
         children = object.children(parent_obj)
-        
+
         # Look for matching children
         for c in children:
             if cls.hasPropertiesAndValues(c, properties_names_values, verbose):
@@ -63,7 +64,8 @@ class ObjectDescendants:
                 test.log(className(obj))
             if cn != properties_names_values["type"]:
                 if verbose:
-                    test.log('Type different: Found type "%s" != "%s"' % (cn, properties_names_values["type"]), "Object properties: %s" % cls.objectToStr(obj))
+                    test.log('Type different: Found type "%s" != "%s"' % (cn, properties_names_values["type"]),
+                             "Object properties: %s" % cls.objectToStr(obj))
                 return False
 
         for name, value in properties_names_values.items():
@@ -76,7 +78,9 @@ class ObjectDescendants:
                 return False
             elif obj[name] != value:
                 if verbose:
-                    test.log('Property different: Property: "%s", actual value: "%s" != "%s"' % (name, obj[name], value), "Object properties: %s" % cls.objectToStr(obj))
+                    test.log(
+                        'Property different: Property: "%s", actual value: "%s" != "%s"' % (name, obj[name], value),
+                        "Object properties: %s" % cls.objectToStr(obj))
                 return False
         if verbose:
             test.log("Object matched: %s" % cls.objectToStr(obj))

@@ -85,8 +85,8 @@ class PageObject:
         self.write(obj, value)
 
     @staticmethod
-    def click(obj):
-        squish.mouseClick(waitForObject(obj))
+    def click(obj, time_out=15000):
+        squish.mouseClick(waitForObject(obj, time_out))
 
     @staticmethod
     def write(obj, val):
@@ -107,21 +107,22 @@ class PageObject:
     @staticmethod
     def lineCount(fname):
         with open(fname) as f:
-            for i in enumerate(f):
+            for i, _ in enumerate(f):
                 pass
         return i + 1
 
     @staticmethod
     def convertBytes(size, unit='KB'):
+        # Size arrives in bytes
         units = ['KB', 'MB', 'GB']
         index = units.index(unit) + 1
         i = 0
         while i < index:
             i += 1
-            size = size / float(1024)
+            size = size / 1024
         if size < 1:
             test.fail("Gcode file smaller than 1 KB")
-        return "%.2f" % size
+        return round(size)
 
     @staticmethod
     def activateMenuItem(menu_object_names):

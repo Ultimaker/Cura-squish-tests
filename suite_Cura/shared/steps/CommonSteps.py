@@ -12,38 +12,46 @@ printer = Printer()
 performance = Performance()
 marketplace = Marketplace()
 
+
 @Given(r"Cura has been started ?(with no configurations|with preset configuration)?", regexp=True)
 def step(context, configurations):
     if configurations is None:
         page_object.startCura()
-    elif "with preset configuration" == configurations:     
+    elif "with preset configuration" == configurations:
         page_object.startCuraWithPresetConfig()
     else:
         page_object.startCuraNoConfig()
-      
+
+
 @Given("Cura is running")
 def step(context):
     cura.curaIsStarted()
+
 
 @Step("A model has been sliced")
 def step(context):
     cura.modelIsSliced()
 
+
 @Step("I accept the user agreement")
 def step(context):
     cura.acceptAgreement()
+
 
 @Step("I navigate to file menu |word| and |any|")
 def step(context, menuItem, subMenuItem):
     cura.navigateTo(menuItem, subMenuItem)
 
+
 @Step("I navigate to stage menu |word|")
 def step(context, stageItem):
     cura.navigateToStageMenu(stageItem)
 
+
 @Step("I close the preferences")
 def step(context):
     cura.pressCloseButton()
+
 
 @Step(r"I load (file|project) '(.*)'$", regexp=True)
 def step(context, type, model):
@@ -54,19 +62,23 @@ def step(context, type, model):
     else:
         cura.loadFile(model)
 
+
 @Step("I clear the buildplate")
 def step(context):
     cura.navigateTo("Edit", "Clear Build Plate")
 
+
 @Step("I select the '|any|' printer and '|word|' profile")
-def step(context, printerType, profile):
-    printer.selectPrinter(printerType)
-    printSettings.selectProfile(profile)
+def step(context, printer_type, profile):
+    printer.selectPrinter(printer_type)
+    print_settings.selectProfile(profile)
+
 
 @Step("I save a sliced model as '|any|'")
 def step(context, fileName):
     context.userData = {}
     context.userData['gcode'] = cura.saveToFile(fileName)
+
 
 @Then("I close Cura from |any|")
 def step(context, location):
@@ -74,6 +86,7 @@ def step(context, location):
         marketplace.quitCura()
     else:
         test.fail(f"Closing cura from {location} not implemented")
+
 
 @Given("I slice the object")
 def step(context):

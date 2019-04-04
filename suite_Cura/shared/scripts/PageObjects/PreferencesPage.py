@@ -9,28 +9,28 @@ class Preferences(PageObject):
     def __init__(self):
         PageObject.__init__(self)
         SquishModuleHelper.importSquishSymbols()
-            
-    def navigateTo(self, menuItem):
-        menu_object = self.findObjectByText(names.preferencesMenuItem, menuItem)
+
+    def navigateTo(self, menu_item):
+        menu_object = self.findObjectByText(names.mnu_item_preferences, menu_item)
         self.click(menu_object)
-        
+
     def pressButton(self, action):
-        button = self.findObjectByText(names.preferencesMenuButton, action)
+        button = self.findObjectByText(names.pps_mnu_btn, action)
         self.click(button)
 
-    def getPrinterList(self, expectedPrinterType):
-        waitForObject(names.printerListView)
-        printerList = ObjectDescendants.getObjects(names.printerListView, {"text": "%s" % expectedPrinterType})
-        return printerList
-    
-    def selectPrinter(self, printerType):
-        printerList = self.getPrinterList(printerType)
-        
-        if len(printerList) != 0:
-            self.click(printerList[0])
+    def getPrinterList(self, expected_printer_type):
+        waitForObject(names.pps_printer_list)
+        printer_list = ObjectDescendants.getObjects(names.pps_printer_list, {"text": f"{expected_printer_type}"})
+        return printer_list
+
+    def selectPrinter(self, printer_type):
+        printer_list = self.getPrinterList(printer_type)
+
+        if len(printer_list) != 0:
+            self.click(printer_list[0])
         else:
-            test.fail("Printer %s not found" % printerType)
-            
-    def renamePrinter(self, printerName):
-        self.click(names.renamePrinter)
-        self.setTextFieldValue(names.renamePrinter, printerName)
+            test.fail("Printer %s not found" % printer_type)
+
+    def renamePrinter(self, printer_name):
+        self.click(names.input_printer_name)
+        self.setTextFieldValue(names.input_printer_name, printer_name)

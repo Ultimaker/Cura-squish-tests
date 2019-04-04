@@ -2,6 +2,7 @@ from PageObjects.MarketplacePage import Marketplace
 
 marketplace = Marketplace()
 
+
 @Then("I can verify that the plugin is installed")
 def step(context):
     marketplace.verifyPluginInstalled()

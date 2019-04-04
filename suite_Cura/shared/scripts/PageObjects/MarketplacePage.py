@@ -7,22 +7,26 @@ import SquishModuleHelper
 class Marketplace(PageObject):
     def __init__(self):
         SquishModuleHelper.importSquishSymbols()
-        
-    def selectPlugin(self, pluginItem):
-        if "Auto-Orientation" in pluginItem:
-            self.click(names.autoOrientationPlugin)
-        if "Barbarian Plugin" in pluginItem:
-            self.click(names.barbarianUnitsPlugin)
-        if "Custom Supports" in pluginItem:
-            self.click(names.customSupportsPlugin)
-        
+
+    def selectPlugin(self, plugin_item):
+        plugin = self.getPlugin(plugin_item)
+        self.click(plugin)
+
+    def getPlugin(self, plugin):
+        switcher = {
+            'Auto-Orientation': names.plugin_auto_orientation,
+            'Barbarian Plugin': names.plugin_barbarian_units,
+            'Custom Supports': names.plugin_customer_supports
+        }
+
+        return switcher.get(plugin)
+
     def selectPluginInstall(self):
-        self.click(names.marketplaceInstallButton)
-        self.click(names.licenseAcceptButton)
+        self.click(names.mar_btn_install)
+        self.click(names.plugin_lcs_btn_accept)
 
     def quitCura(self):
-        self.click(names.marketplaceQuitCuraButton)
-        
+        self.click(names.mar_btn_quit_cura)
+
     def verifyPluginInstalled(self):
-        object.exists(names.installedPluginButton)
-        
+        object.exists(names.plugin_btn_installed)
