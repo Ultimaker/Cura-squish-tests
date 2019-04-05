@@ -9,22 +9,22 @@ Feature: A complete walkthrough of the onboarding flow
   Scenario: Accept user agreement
     Given I'm on the user agreement page of the onboarding flow
     When I accept the user agreement
-    Then the changelog is shown with title 'What's new in Ultimaker Cura'
+    Then the changelog page is shown with title 'What's new in Ultimaker Cura'
 
   Scenario: Confirm changelog changes
     Given I'm on the changelog page of the onboarding flow
     When I confirm the changelog changes
-    Then a data collection screen is shown with title 'Help us to improve Ultimaker Cura'
+    Then the data collection page is shown with title 'Help us to improve Ultimaker Cura'
 
   Scenario: Accept anonymous data collection
     Given I'm on the data collection page of the onboarding flow
     When I agree to my data being collected
-    Then a printer screen is shown with title 'Add a printer'
+    Then the printer page is shown with title 'Add a printer'
 
   Scenario: Add non-networked printer
     Given I'm on the printer screen of the onboarding flow
     When I add a non-networked Ultimaker S5 printer
-    Then the cloud screen is shown with title 'Ultimaker Cloud'
+    Then the cloud page is shown with title 'Ultimaker Cloud'
 
   Scenario: Finish onboarding flow and verify non-networked printer has been added
     Given I'm on the home page of Cura

@@ -29,6 +29,9 @@ mwi_scale_model_x = {"container": mwi, "id": "xPercentage", "type": "TextField",
 mwi_chk_uniform_scaling = {"container": mwi, "id": "uniformScalingCheckbox", "text": "Uniform Scaling", "type": "CheckBox", "unnamed": 1, "visible": True}
 
 # Onboarding (onb)
+onb_panel = {"container": mwi, "id": "stepPanel", "type": "WizardPanel", "unnamed": 1, "visible": True}
+obn_page_title = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
+
 onb_btn_get_started = {"checkable": False, "container": mwi, "id": "getStartedButton", "text": "Get started", "type": "ActionButton", "unnamed": 1, "visible": True}
 onb_btn_accept_agreement = {"checkable": False, "container": mwi, "id": "agreeButton", "text": "Agree", "type": "ActionButton", "unnamed": 1, "visible": True}
 onb_btn_next = {"checkable": False, "container": mwi, "id": "getStartedButton", "text": "Next", "type": "ActionButton", "unnamed": 1, "visible": True}
