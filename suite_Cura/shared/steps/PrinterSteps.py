@@ -6,7 +6,7 @@ printer = Printer()
 addPrinter = AddPrinter()
 cura = Cura()
 
-@Step("I add a |any| printer")
+@Step("I add an Ultimaker |any| printer")
 def step(context, printerType):
     addPrinter.select(printerType)
     addPrinter.add()

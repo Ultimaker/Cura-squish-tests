@@ -13,14 +13,24 @@ performance = Performance()
 marketplace = Marketplace()
 
 
-@Given(r"Cura has been started ?(with no configurations|with preset configuration)?", regexp=True)
-def step(context, configurations):
-    if configurations is None:
-        page_object.startCura()
-    elif "with preset configuration" == configurations:
-        page_object.startCuraWithPresetConfig()
-    else:
-        page_object.startCuraNoConfig()
+@Given("Cura has been started")
+def step(context):
+    page_object.startCura()
+
+
+@Given("Cura has been started with preset configurations")
+def step(context):
+    page_object.startCuraWithPresetConfig()
+
+
+@Given("Cura has been started with no configurations")
+def step(context):
+    page_object.startCuraNoConfig()
+
+
+@Given(r"Cura has been started with [+-]?([0-9]*[.][0-9])+ configuration", regexp=True)
+def step(context, version):
+    cura.startCuraConfigVersion(version)
 
 
 @Given("Cura is running")

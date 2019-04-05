@@ -28,6 +28,12 @@ mwi_move_model_x = {"container": mwi, "id": "xTextField", "type": "TextField", "
 mwi_scale_model_x = {"container": mwi, "id": "xPercentage", "type": "TextField", "unnamed": 1, "visible": True}
 mwi_chk_uniform_scaling = {"container": mwi, "id": "uniformScalingCheckbox", "text": "Uniform Scaling", "type": "CheckBox", "unnamed": 1, "visible": True}
 
+# Onboarding (onb)
+onb_btn_get_started = {"checkable": False, "container": mwi, "id": "getStartedButton", "text": "Get started", "type": "ActionButton", "unnamed": 1, "visible": True}
+onb_btn_accept_agreement = {"checkable": False, "container": mwi, "id": "agreeButton", "text": "Agree", "type": "ActionButton", "unnamed": 1, "visible": True}
+onb_btn_next = {"checkable": False, "container": mwi, "id": "getStartedButton", "text": "Next", "type": "ActionButton", "unnamed": 1, "visible": True}
+
+
 # File Dialog (fdg)
 fdg = {"name": "QFileDialog", "type": "QFileDialog", "visible": 1}
 fdg_lbl_name = {"name": "fdg_lbl_name", "type": "QLabel", "visible": 1, "window": fdg}
@@ -56,10 +62,6 @@ sub_mnu_item = {"container": scroll_view, "text": "", "type": "StyleItem1", "unn
 
 # Generic close-button
 btn_close = {"container": qqw_qml, "text": "Close", "type": "Button", "unnamed": 1, "visible": True}
-
-# Agreement (agr)
-win_agreement = {"title": "User Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
-agr_btn_accept = {"container": win_agreement, "text": "I understand and agree", "type": "Button", "unnamed": 1, "visible": True}
 
 # Add Printer dialog (pdg)
 win_add_printer = {"title": "Add Printer", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}

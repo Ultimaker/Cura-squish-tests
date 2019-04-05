@@ -10,10 +10,13 @@ from objectmaphelper import Wildcard
 
 
 class PageObject:
+    WIN_CURA = "Cura -platformtheme none"
+    LIN_CURA = "Cura.AppImage -platformtheme none"
+
     def __init__(self):
         self.os = platform.system()
         self.home_dir = expanduser("~")
-        self.windows_dir = r'%s\AppData\Roaming\cura\4.0\\' % self.home_dir
+        self.windows_dir = r'%s\AppData\Roaming\cura' % self.home_dir
         self.linux_dir = {'local': r'%s/.local/share/cura/4.0/' % self.home_dir,
                           'config': r'%s/.config/cura/4.0/' % self.home_dir}
 
@@ -21,59 +24,77 @@ class PageObject:
         SquishModuleHelper.importSquishSymbols()
 
     def startCuraNoConfig(self):
-        test.log("Starting Cura with no user preferences")
         self.resetPreferences()
-        if self.os == "Windows":
-            startApplication("Cura")
-        elif self.os == "Linux":
-            startApplication("Cura.AppImage")
+        self.startCura()
 
     def startCuraWithPresetConfig(self):
-        test.log("Starting Cura")
         self.presetPreferences()
-        if self.os == "Windows":
-            startApplication("Cura -platformtheme none")
-        elif self.os == "Linux":
-            startApplication("Cura.AppImage -platformtheme none")
+        self.startCura()
 
     def startCura(self):
-        startApplication("Cura -platformtheme none")
+        if self.os == "Windows":
+            startApplication(self.WIN_CURA)
+        elif self.os == "Linux":
+            startApplication(self.LIN_CURA)
+
+    def startCuraConfigVersion(self, config_version):
+        self.presetPreferences(config_version)
+        self.startCura()
 
     def resetPreferences(self):
         if self.os == "Windows":
-            shutil.rmtree(self.windows_dir, ignore_errors=True)
+            self.deleteContentFromDir(self.windows_dir)
         elif self.os == "Linux":
-            print("REMOVING SHIIITE")
-            shutil.rmtree(self.linux_dir["local"], ignore_errors=True)
-            shutil.rmtree(self.linux_dir["config"], ignore_errors=True)
+            self.deleteContentFromDir(self.linux_dir["local"])
+            self.deleteContentFromDir(self.linux_dir["config"])
 
-    def presetPreferences(self):
+    @staticmethod
+    def deleteContentFromDir(location):
+        for data in os.listdir(location):
+            file_path = os.path.join(location, data)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+                elif os.path.isdir(file_path):
+                    shutil.rmtree(file_path)
+            except Exception as e:
+                print(e)
+
+    # TODO: Expand this function for linux/mac
+    def presetPreferences(self, version=4.0):
         # Make sure preferences are completely deleted before copying to that dir
-        while os.path.isdir(self.windows_dir):
+        while os.listdir(self.windows_dir):
             self.resetPreferences()
 
-        # Set the CWD to the testdata folder
-        config_file = findFile("testdata", "WindowsConfig/4.0/cura.cfg")
-        testdata_dir = os.path.join(os.getcwd(), findFile("testdata", ""))
+        if version is 4.0:
+            self.setCwdInConfig()
 
-        with open(config_file, "r") as file:
-            content = file.readlines()
+        shutil.copytree(findFile("testdata", f"WindowsConfig/{version}"), self.windows_dir + "\\" + version)
 
-        with open(config_file, "w") as new_file:
-            for line in content:
-                if ("dialog_load_path" in line) or ("dialog_save_path" in line):
-                    continue
+    @staticmethod
+    def setCwdInConfig():
+        try:
+            config_file = findFile("testdata", "WindowsConfig/4.0/cura.cfg")
+            testdata_dir = os.path.join(os.getcwd(), findFile("testdata", ""))
 
-                if line == "[local_file]\n":
-                    line = line + "dialog_load_path = " + testdata_dir + "\ndialog_save_path = " + testdata_dir + "\n"
+            with open(config_file, "r") as file:
+                content = file.readlines()
 
-                new_file.write(line)
+            with open(config_file, "w") as new_file:
+                for line in content:
+                    if ("dialog_load_path" in line) or ("dialog_save_path" in line):
+                        continue
 
-        if self.os == "Windows":
-            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.windows_dir)
-        elif self.os == "Linux":
-            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.linux_dir["local"])
-            shutil.copytree(findFile("testdata", "WindowsConfig/4.0"), self.linux_dir["config"])
+                    if line == "[local_file]\n":
+                        line = line + "dialog_load_path = " + testdata_dir + "\ndialog_save_path = " + testdata_dir + "\n"
+
+                    new_file.write(line)
+        except LookupError:
+            test.log("File not found: cura.cfg")
+            raise
+        except:
+            test.log("Something went wrong with updating the config file")
+            raise
 
     def setTextFieldValue(self, obj, value):
         if self.os in ("Windows", "Linux"):

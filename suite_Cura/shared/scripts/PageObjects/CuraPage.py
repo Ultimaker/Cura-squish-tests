@@ -12,7 +12,7 @@ class Cura(PageObject):
         SquishModuleHelper.importSquishSymbols()
 
     def acceptAgreement(self):
-        self.click(names.agr_btn_accept)
+        self.click(names.onb_btn_accept_agreement)
 
     def pressCloseButton(self):
         self.click(names.btn_close)
