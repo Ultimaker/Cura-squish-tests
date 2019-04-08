@@ -89,6 +89,13 @@ pps_mnu_btn = {"container": win_preferences, "text": "", "type": "Button", "unna
 pps_printer_list = {"container": win_preferences, "id": "objectList", "type": "ListView", "unnamed": 1, "visible": True}
 win_rename_printer = {"title": "Rename", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 input_printer_name = {"container": win_rename_printer, "id": "nameField", "type": "TextField", "unnamed": 1, "visible": True}
+pps_local_printers = {"container": pps_printer_list, "text": "Local printers", "type": "Text", "unnamed": 1, "visible": True}
+rename_OK_Button = {"container": win_rename_printer, "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
+pps_machine_settings_button = {"container": win_preferences, "text": "Machine Settings", "type": "Button", "unnamed": 1, "visible": True}
+rename_Rectangle = {"container": win_preferences, "type": "Rectangle", "unnamed": 1, "visible": True}
+preferences_base_MachinesPage = {"container": win_preferences, "id": "base", "type": "MachinesPage", "unnamed": 1, "visible": True}
+base_Rename_Button = {"container": preferences_base_MachinesPage, "iconName": "edit-rename", "text": "Rename", "type": "Button", "unnamed": 1, "visible": True}
+
 
 # Print Settings (prs)
 win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}
@@ -112,3 +119,7 @@ plugin_customer_supports = {"container": mar_view, "text": "Custom Supports", "t
 win_plugin = {"title": "Plugin License Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 plugin_lcs_btn_accept = {"container": win_plugin, "id": "acceptButton", "text": "Accept", "type": "Button", "unnamed": 1, "visible": True}
 plugin_btn_installed = {"checkable": False, "container": mar_view, "text": "Installed", "type": "ActionButton", "unnamed": 1, "visible": True}
+base_styleitem_StyleItem1 = {"container": preferences_base_MachinesPage, "id": "styleitem", "occurrence": 4, "type": "StyleItem1", "unnamed": 1, "visible": True}
+
+
+

@@ -25,3 +25,8 @@ def step(context, printerType):
 @When("I give the printer the '|any|' name")
 def step(context, printerName):
     preferences.renamePrinter(printerName)
+    
+@Then("The printer is activated")
+def step(context):
+    preferences.verifyPrinterActivated()
+    

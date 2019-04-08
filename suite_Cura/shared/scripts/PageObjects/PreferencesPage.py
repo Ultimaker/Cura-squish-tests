@@ -19,7 +19,7 @@ class Preferences(PageObject):
         self.click(button)
 
     def getPrinterList(self, expected_printer_type):
-        waitForObject(names.pps_printer_list)
+        waitForObject(names.pps_local_printers)
         printer_list = ObjectDescendants.getObjects(names.pps_printer_list, {"text": f"{expected_printer_type}"})
         return printer_list
 
@@ -32,5 +32,11 @@ class Preferences(PageObject):
             test.fail("Printer %s not found" % printer_type)
 
     def renamePrinter(self, printer_name):
+        self.click(names.base_Rename_Button)
         self.click(names.input_printer_name)
         self.setTextFieldValue(names.input_printer_name, printer_name)
+        self.click(names.rename_OK_Button)
+        
+    def verifyPrinterActivated(self):
+        object.exists(names.pps_machine_settings_button)
+        
