@@ -69,7 +69,7 @@ class PageObject:
         if version is 4.0:
             self.setCwdInConfig()
 
-        shutil.copytree(findFile("testdata", f"WindowsConfig/{version}"), self.windows_dir + "\\" + version)
+        shutil.copytree(findFile("testdata", f"WindowsConfig/{version}"), self.windows_dir + "\\" + str(version))
 
     @staticmethod
     def setCwdInConfig():
