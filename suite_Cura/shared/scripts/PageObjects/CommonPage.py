@@ -16,7 +16,10 @@ class PageObject:
     def __init__(self):
         self.os = platform.system()
         self.home_dir = expanduser("~")
+        self.cura_version = '4.0'
         self.windows_dir = r'%s\AppData\Roaming\cura' % self.home_dir
+
+        #         TODO: fix these paths
         self.linux_dir = {'local': r'%s/.local/share/cura/4.0/' % self.home_dir,
                           'config': r'%s/.config/cura/4.0/' % self.home_dir}
 
@@ -38,6 +41,7 @@ class PageObject:
             startApplication(self.LIN_CURA)
 
     def startCuraConfigVersion(self, config_version):
+        self.cura_version = config_version
         self.presetPreferences(config_version)
         self.startCura()
 
@@ -61,20 +65,23 @@ class PageObject:
                 print(e)
 
     # TODO: Expand this function for linux/mac
-    def presetPreferences(self, version=4.0):
+    def presetPreferences(self, version=None):
         # Make sure preferences are completely deleted before copying to that dir
         while os.listdir(self.windows_dir):
             self.resetPreferences()
 
-        if version is 4.0:
+        if version is not None:
+            self.cura_version = version
+        #         Set cwd in testdata
+        if self.cura_version == '4.0':
             self.setCwdInConfig()
 
-        shutil.copytree(findFile("testdata", f"WindowsConfig/{version}"), self.windows_dir + "\\" + str(version))
+        shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}"),
+                        self.windows_dir + "\\" + self.cura_version)
 
-    @staticmethod
-    def setCwdInConfig():
+    def setCwdInConfig(self):
         try:
-            config_file = findFile("testdata", "WindowsConfig/4.0/cura.cfg")
+            config_file = findFile("testdata", f"WindowsConfig/{self.cura_version}/cura.cfg")
             testdata_dir = os.path.join(os.getcwd(), findFile("testdata", ""))
 
             with open(config_file, "r") as file:

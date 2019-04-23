@@ -17,18 +17,22 @@ marketplace = Marketplace()
 def step(context):
     page_object.startCura()
 
+
 @Given("Cura has been started with preset configurations")
 def step(context):
     page_object.startCuraWithPresetConfig()
-        
+
+
 @Given("Cura has been started with no configurations")
 def step(context):
     page_object.startCuraNoConfig()
 
+
 @Given(r"Cura has been started with [+-]?([0-9]*[.][0-9])+ configuration", regexp=True)
 def step(context, version):
     cura.startCuraConfigVersion(version)
-    
+
+
 @Given("Cura is running")
 def step(context):
     cura.curaIsStarted()
@@ -44,7 +48,7 @@ def step(context):
     cura.acceptAgreement()
 
 
-@Step("I navigate to file menu |word| and |any|")
+@Step("I navigate to menu |word| and |any|")
 def step(context, menuItem, subMenuItem):
     cura.navigateTo(menuItem, subMenuItem)
 

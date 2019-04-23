@@ -32,11 +32,10 @@ class Preferences(PageObject):
             test.fail("Printer %s not found" % printer_type)
 
     def renamePrinter(self, printer_name):
-        self.click(names.base_Rename_Button)
+        self.click(self.findObjectByText(names.pps_mnu_btn, "Rename"))
         self.click(names.input_printer_name)
         self.setTextFieldValue(names.input_printer_name, printer_name)
-        self.click(names.rename_OK_Button)
-        
+        self.click(names.btn_rename_confirm)
+
     def verifyPrinterActivated(self):
-        object.exists(names.pps_machine_settings_button)
-        
+        object.exists(names.pps_btn_machine_settings)

@@ -39,7 +39,7 @@ class Performance(PageObject):
         return t
 
     def retrieveFromLog(self, action):
-        f = f'{self.windows_dir}\cura.log'
+        f = self.windows_dir + f"\\{self.cura_version}" + '\cura.log'
         file = self.tail(f, 100)
 
         key = self.logLine(action)

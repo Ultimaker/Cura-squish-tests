@@ -13,6 +13,6 @@ class Onboarding(PageObject):
 
     def acceptAgreement(self):
         self.click(names.onb_btn_accept_agreement)
-        
+
     def fetchPageTitle(self, title):
         return self.findObjectByText(names.obn_page_title, title).text
