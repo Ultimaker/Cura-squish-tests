@@ -14,7 +14,7 @@ class Preferences(PageObject):
         menu_object = self.findObjectByText(names.mnu_item_preferences, menu_item)
         self.click(menu_object)
 
-    def pressButton(self, action):
+    def selectPrinterMenu(self, action):
         button = self.findObjectByText(names.pps_mnu_btn, action)
         self.click(button)
 

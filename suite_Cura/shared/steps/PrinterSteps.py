@@ -7,12 +7,6 @@ add_printer = AddPrinter()
 cura = Cura()
 
 
-@Step("I add an Ultimaker |any| printer")
-def step(context, printer_type):
-    add_printer.select(printer_type)
-    add_printer.add()
-
-
 @Step("I can see that a |any| printer has been selected")
 def step(context, expected_printer_type):
     actual_printer_type = printer.selectedPrinter()
@@ -22,11 +16,6 @@ def step(context, expected_printer_type):
 @When("I add a non-networked |any| printer")
 def step(context, printer):
     add_printer.addLocalPrinter(printer)
-
-
-@Step("I finish the Add Printer wizard")
-def step(context):
-    add_printer.finish()
 
 
 @Step("I want to add a printer from the main menu")
@@ -39,6 +28,6 @@ def step(context, printer_IP):
     add_printer.addNetworkPrinter(printer_IP)
 
 
-@Then("the networked printer \"10.183.1.1\" is available")
+@Then("the networked printer |any| is available")
 def step(context):
     test.warning("TODO implement the networked printer \"10.183.1.1\" is available")

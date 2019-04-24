@@ -10,7 +10,7 @@ def step(context, menu_item):
 
 @When("I |word| a printer from printer preferences")
 def step(context, action):
-    preferences.pressButton(action)
+    preferences.selectPrinterMenu(action)
 
 
 @Then("the printer overview contains a '|any|' printer")

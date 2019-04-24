@@ -81,38 +81,23 @@ sub_mnu_item = {"container": scroll_view, "text": "", "type": "StyleItem1", "unn
 btn_close = {"container": qqw_qml, "text": "Close", "type": "Button", "unnamed": 1, "visible": True}
 
 # Add Printer dialog (pdg)
-pdg_btn_add_printer = {"checkable": False, "container": mwi, "id": "nextButton", "type": "ActionButton", "unnamed": 1, "visible": True}
+win_add_printer = {"title": "Add Printer", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+pdg_btn_add_printer = {"checkable": False, "container": win_add_printer, "id": "nextButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 # network
-pdg_cbo_network_printer = {"container": mwi, "id": "addNetworkPrinterDropDown", "type": "DropDownWidget", "unnamed": 1, "visible": True}
-pdg_win_network_printer = {"container": mwi, "id": "networkPrinterScrollView", "type": "AddNetworkPrinterScrollView", "unnamed": 1, "visible": True}
+pdg_cbo_network_printer = {"container": win_add_printer, "id": "addNetworkPrinterDropDown", "type": "DropDownWidget", "unnamed": 1, "visible": True}
+pdg_win_network_printer = {"container": win_add_printer, "id": "networkPrinterScrollView", "type": "AddNetworkPrinterScrollView", "unnamed": 1, "visible": True}
 pdg_btn_troubleshoot = {"container": pdg_win_network_printer, "id": "troubleshootingButton", "type": "Item", "unnamed": 1, "visible": True}
 pdg_btn_refresh = {"checkable": False, "container": pdg_win_network_printer, "id": "refreshButton", "text": "Refresh", "type": "ActionButton", "unnamed": 1, "visible": True}
-pdg_btn_add_printer_ip = {"checkable": False, "container": pdg_win_network_printer, "id": "addPrinterByIpButton", "text": "Add printer by IP", "type": "ActionButton", "unnamed": 1, "visible": True}
+pdg_btn_add_printer_by_ip = {"checkable": False, "container": pdg_win_network_printer, "id": "addPrinterByIpButton", "text": "Add printer by IP", "type": "ActionButton", "unnamed": 1, "visible": True}
+pdg_input_address = {"container": win_add_printer, "echoMode": 0, "id": "hostnameField", "type": "TextField", "unnamed": 1, "visible": True}
+pdg_btn_add_ip_printer = {"checkable": False, "container": win_add_printer, "id": "addPrinterButton", "text": "Add", "type": "ActionButton", "unnamed": 1, "visible": True}
+pdg_btn_connect = {"checkable": False, "container": win_add_printer, "id": "connectButton", "text": "Connect", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 # local
-pdg_cbo_local_printer = {"container": mwi, "id": "addLocalPrinterDropDown", "type": "DropDownWidget", "unnamed": 1, "visible": True}
-pdg_win_local_printer = {"container": mwi, "id": "localPrinterSelectionItem", "type": "Item", "unnamed": 1, "visible": True}
+pdg_cbo_local_printer = {"container": win_add_printer, "id": "addLocalPrinterDropDown", "type": "DropDownWidget", "unnamed": 1, "visible": True}
+pdg_win_local_printer = {"container": win_add_printer, "id": "localPrinterSelectionItem", "type": "Item", "unnamed": 1, "visible": True}
 pdg_rbtn_printer = {"checkable": True, "container": pdg_win_local_printer, "id": "radioButton", "text": "", "type": "RadioButton", "unnamed": 1, "visible": True}
-
-
-# ---------- Old printer dialog flow ----------------
-win_add_printer = {"title": "Add Printer", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
-pdg_btn_add = {"container": win_add_printer, "id": "addPrinterButton", "text": "Add Printer", "type": "Button", "unnamed": 1, "visible": True}
-pdg_btn_finish = {"container": win_add_printer, "id": "nextButton", "text": "Finish", "type": "Button", "unnamed": 1, "visible": True}
-
-pdg_printer_view = {"container": win_add_printer, "id": "machinesHolder", "type": "ScrollView", "unnamed": 1, "visible": True}
-pdg_printer_list = {"container": pdg_printer_view, "id": "machineList", "type": "ListView", "unnamed": 1, "visible": True}
-pdg_btn_printer = {"container": pdg_printer_list, "id": "machineButton", "text": "", "type": "AbstractCheckable", "unnamed": 1, "visible": True}
-
-# Printer dialog - network
-pdg_btn_add_network = {"container": win_add_printer, "id": "addButton", "text": "Add", "type": "Button", "unnamed": 1, "visible": True}
-win_printer_address = {"title": "Printer Address", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
-pdg_input_address = {"container": win_printer_address, "id": "addressField", "type": "TextField", "unnamed": 1, "visible": True}
-pdg_address_btn_ok = {"container": win_printer_address, "id": "btnOk", "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
-pdg_btn_connect = {"container": win_add_printer, "text": "Connect", "type": "Button", "unnamed": 1, "visible": True}
-# ---------- Old printer dialog flow ----------------
-
 
 # Preferences
 win_preferences = {"title": "Preferences", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
