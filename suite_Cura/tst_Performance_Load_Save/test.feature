@@ -2,7 +2,7 @@ Feature: Performance of loading and saving files
 
   Scenario: Loading File
     Given Cura has been started with preset configurations
-    When I load file Robot.STL in performance mode
+    When I load file Robot.stl in performance mode
     Then the file load time is retrieved from the log
     And the file load time is printed
 

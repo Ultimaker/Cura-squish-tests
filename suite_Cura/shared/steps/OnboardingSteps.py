@@ -14,50 +14,30 @@ def step(context):
 
 @Step("the |any| page is shown with title '|any|'")
 def step(context, _, expected_title):
-    actual_title = onboarding.fetchPageTitle(title)
+    actual_title = onboarding.fetchPageTitle()
     test.compare(expected_title, actual_title)
 
 
-@Given("I'm on the user agreement page of the onboarding flow")
+@Step("I accept the user agreement")
 def step(context):
-    test.warning("TODO implement I'm on the user agreement page of the onboarding flow")
+    onboarding.acceptAgreement()
 
 
-@Given("I'm on the changelog page of the onboarding flow")
-def step(context):
-    test.warning("TODO implement I'm on the changelog page of the onboarding flow")
+@Given("I'm on the |any| page of the onboarding flow")
+def step(context, page):
+    onboarding.verifyPage(page)
 
 
 @When("I confirm the changelog changes")
 def step(context):
-    test.warning("TODO implement I confirm the changelog changes")
-
-
-@Given("I'm on the data collection page of the onboarding flow")
-def step(context):
-    test.warning("TODO implement I'm on the data collection page of the onboarding flow")
+    onboarding.navigateNextPage()
 
 
 @When("I agree to my data being collected")
 def step(context):
-    test.warning("TODO implement I agree to my data being collected")
-
-
-@Given("I'm on the printer screen of the onboarding flow")
-def step(context):
-    test.warning("TODO implement I'm on the printer screen of the onboarding flow")
-
-
-@When("I add a non-networked Ultimaker S5 printer")
-def step(context):
-    test.warning("TODO implement I add a non-networked Ultimaker S5 printer")
-
-
-@Given("I'm on the home page of Cura")
-def step(context):
-    test.warning("TODO implement I'm on the home page of Cura")
+    onboarding.navigateNextPage()
 
 
 @When("I finish the onboarding flow")
 def step(context):
-    test.warning("TODO implement I finish the onboarding flow")
+    onboarding.finishWizard()

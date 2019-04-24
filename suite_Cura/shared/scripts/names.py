@@ -29,17 +29,31 @@ mwi_scale_model_x = {"container": mwi, "id": "xPercentage", "type": "TextField",
 mwi_chk_uniform_scaling = {"container": mwi, "id": "uniformScalingCheckbox", "text": "Uniform Scaling", "type": "CheckBox", "unnamed": 1, "visible": True}
 
 # Onboarding (onb)
-onb_panel = {"container": mwi, "id": "stepPanel", "type": "WizardPanel", "unnamed": 1, "visible": True}
-obn_page_title = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
+onb_panel = {"container": mwi, "id": "wizardPanel", "type": "WizardPanel", "unnamed": 1, "visible": True}
+obn_page_title = {"container": onb_panel, "type": "Label", "unnamed": 1, "visible": True}
+onb_btn_next = {"checkable": False, "container": onb_panel, "id": "getStartedButton", "text": "Next", "type": "ActionButton", "unnamed": 1, "visible": True}
 
-onb_btn_get_started = {"checkable": False, "container": mwi, "id": "getStartedButton", "text": "Get started", "type": "ActionButton", "unnamed": 1, "visible": True}
-onb_btn_accept_agreement = {"checkable": False, "container": mwi, "id": "agreeButton", "text": "Agree", "type": "ActionButton", "unnamed": 1, "visible": True}
-onb_btn_next = {"checkable": False, "container": mwi, "id": "getStartedButton", "text": "Next", "type": "ActionButton", "unnamed": 1, "visible": True}
+# onb landing
+onb_btn_get_started = {"checkable": False, "container": onb_panel, "id": "getStartedButton", "text": "Get started", "type": "ActionButton", "unnamed": 1, "visible": True}
 
+# onb licence
+onb_btn_accept_agreement = {"checkable": False, "container": onb_panel, "id": "agreeButton", "text": "Agree", "type": "ActionButton", "unnamed": 1, "visible": True}
+onb_btn_decline_close = {"checkable": False, "container": mwi, "id": "declineButton", "text": "Decline and close", "type": "ActionButton", "unnamed": 1, "visible": True}
+
+# onb changelog
+onb_win_changelog = {"container": onb_panel, "id": "whatsNewTextArea", "type": "ScrollableTextArea", "unnamed": 1, "visible": True}
+
+# onb data collection
+onb_img_improve_cura = {"container": onb_panel, "id": "curaImage", "type": "Image", "unnamed": 1, "visible": True}
+
+# onb cloud
+onb_btn_create_acc = {"checkable": False, "container": mwi, "id": "createAccountButton", "text": "Create an account", "type": "ActionButton", "unnamed": 1, "visible": True}
+onb_btn_sign_in = {"container": mwi, "text": "Sign in", "type": "Label", "unnamed": 1, "visible": True}
+onb_btn_finish = {"checkable": False, "container": mwi, "id": "finishButton", "text": "Finish", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 # File Dialog (fdg)
 fdg = {"name": "QFileDialog", "type": "QFileDialog", "visible": 1}
-fdg_lbl_name = {"name": "fdg_lbl_name", "type": "QLabel", "visible": 1, "window": fdg}
+fdg_lbl_name = {"name": "fileNameLabel", "type": "QLabel", "visible": 1, "window": fdg}
 fdg_input_name = {"buddy": fdg_lbl_name, "name": "fileNameEdit", "type": "QLineEdit", "visible": 1}
 fdg_btn_open = {"text": "Open", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": fdg}
 fdg_btn_save = {"text": "Save", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": fdg}
@@ -67,6 +81,22 @@ sub_mnu_item = {"container": scroll_view, "text": "", "type": "StyleItem1", "unn
 btn_close = {"container": qqw_qml, "text": "Close", "type": "Button", "unnamed": 1, "visible": True}
 
 # Add Printer dialog (pdg)
+pdg_btn_add_printer = {"checkable": False, "container": mwi, "id": "nextButton", "type": "ActionButton", "unnamed": 1, "visible": True}
+
+# network
+pdg_cbo_network_printer = {"container": mwi, "id": "addNetworkPrinterDropDown", "type": "DropDownWidget", "unnamed": 1, "visible": True}
+pdg_win_network_printer = {"container": mwi, "id": "networkPrinterScrollView", "type": "AddNetworkPrinterScrollView", "unnamed": 1, "visible": True}
+pdg_btn_troubleshoot = {"container": pdg_win_network_printer, "id": "troubleshootingButton", "type": "Item", "unnamed": 1, "visible": True}
+pdg_btn_refresh = {"checkable": False, "container": pdg_win_network_printer, "id": "refreshButton", "text": "Refresh", "type": "ActionButton", "unnamed": 1, "visible": True}
+pdg_btn_add_printer_ip = {"checkable": False, "container": pdg_win_network_printer, "id": "addPrinterByIpButton", "text": "Add printer by IP", "type": "ActionButton", "unnamed": 1, "visible": True}
+
+# local
+pdg_cbo_local_printer = {"container": mwi, "id": "addLocalPrinterDropDown", "type": "DropDownWidget", "unnamed": 1, "visible": True}
+pdg_win_local_printer = {"container": mwi, "id": "localPrinterSelectionItem", "type": "Item", "unnamed": 1, "visible": True}
+pdg_rbtn_printer = {"checkable": True, "container": pdg_win_local_printer, "id": "radioButton", "text": "", "type": "RadioButton", "unnamed": 1, "visible": True}
+
+
+# ---------- Old printer dialog flow ----------------
 win_add_printer = {"title": "Add Printer", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 pdg_btn_add = {"container": win_add_printer, "id": "addPrinterButton", "text": "Add Printer", "type": "Button", "unnamed": 1, "visible": True}
 pdg_btn_finish = {"container": win_add_printer, "id": "nextButton", "text": "Finish", "type": "Button", "unnamed": 1, "visible": True}
@@ -81,6 +111,8 @@ win_printer_address = {"title": "Printer Address", "type": "QQuickWindowQmlImpl"
 pdg_input_address = {"container": win_printer_address, "id": "addressField", "type": "TextField", "unnamed": 1, "visible": True}
 pdg_address_btn_ok = {"container": win_printer_address, "id": "btnOk", "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
 pdg_btn_connect = {"container": win_add_printer, "text": "Connect", "type": "Button", "unnamed": 1, "visible": True}
+# ---------- Old printer dialog flow ----------------
+
 
 # Preferences
 win_preferences = {"title": "Preferences", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}

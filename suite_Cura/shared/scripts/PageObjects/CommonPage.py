@@ -7,6 +7,7 @@ import SquishModuleHelper
 import squish
 import os
 from objectmaphelper import Wildcard
+import names
 
 
 class PageObject:
@@ -16,10 +17,11 @@ class PageObject:
     def __init__(self):
         self.os = platform.system()
         self.home_dir = expanduser("~")
-        self.cura_version = '4.0'
+        self.cura_version = '4.1'
         self.windows_dir = r'%s\AppData\Roaming\cura' % self.home_dir
+        self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
 
-        #         TODO: fix these paths
+        # TODO: fix these
         self.linux_dir = {'local': r'%s/.local/share/cura/4.0/' % self.home_dir,
                           'config': r'%s/.config/cura/4.0/' % self.home_dir}
 
@@ -37,6 +39,7 @@ class PageObject:
     def startCura(self):
         if self.os == "Windows":
             startApplication(self.WIN_CURA)
+            waitForObject(names.mwi, 30000)
         elif self.os == "Linux":
             startApplication(self.LIN_CURA)
 
@@ -73,7 +76,7 @@ class PageObject:
         if version is not None:
             self.cura_version = version
         #         Set cwd in testdata
-        if self.cura_version == '4.0':
+        if self.cura_version == '4.1':
             self.setCwdInConfig()
 
         shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}"),
@@ -82,7 +85,6 @@ class PageObject:
     def setCwdInConfig(self):
         try:
             config_file = findFile("testdata", f"WindowsConfig/{self.cura_version}/cura.cfg")
-            testdata_dir = os.path.join(os.getcwd(), findFile("testdata", ""))
 
             with open(config_file, "r") as file:
                 content = file.readlines()
@@ -93,7 +95,7 @@ class PageObject:
                         continue
 
                     if line == "[local_file]\n":
-                        line = line + "dialog_load_path = " + testdata_dir + "\ndialog_save_path = " + testdata_dir + "\n"
+                        line = line + "dialog_load_path = " + self.testdata_dir + "\ndialog_save_path = " + self.testdata_dir + "\n"
 
                     new_file.write(line)
         except LookupError:

@@ -43,19 +43,14 @@ def step(context):
     cura.modelIsSliced()
 
 
-@Step("I accept the user agreement")
-def step(context):
-    cura.acceptAgreement()
-
-
 @Step("I navigate to menu |word| and |any|")
-def step(context, menuItem, subMenuItem):
-    cura.navigateTo(menuItem, subMenuItem)
+def step(context, menu_item, sub_menu_item):
+    cura.navigateTo(menu_item, sub_menu_item)
 
 
 @Step("I navigate to stage menu |word|")
-def step(context, stageItem):
-    cura.navigateToStageMenu(stageItem)
+def step(context, stage_item):
+    cura.navigateToStageMenu(stage_item)
 
 
 @Step("I close the preferences")
@@ -85,9 +80,9 @@ def step(context, printer_type, profile):
 
 
 @Step("I save a sliced model as '|any|'")
-def step(context, fileName):
+def step(context, file_name):
     context.userData = {}
-    context.userData['gcode'] = cura.saveToFile(fileName)
+    context.userData['gcode'] = cura.saveToFile(file_name)
 
 
 @Then("I close Cura from |any|")
@@ -100,4 +95,4 @@ def step(context, location):
 
 @Given("I slice the object")
 def step(context):
-    cura.sliceObject()
+    cura.sliceObject()

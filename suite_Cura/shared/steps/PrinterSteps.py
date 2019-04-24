@@ -3,30 +3,41 @@ from PageObjects.PrinterPage import Printer
 from PageObjects.CuraPage import Cura
 
 printer = Printer()
-addPrinter = AddPrinter()
+add_printer = AddPrinter()
 cura = Cura()
 
+
 @Step("I add an Ultimaker |any| printer")
-def step(context, printerType):
-    addPrinter.select(printerType)
-    addPrinter.add()
+def step(context, printer_type):
+    add_printer.select(printer_type)
+    add_printer.add()
+
 
 @Step("I can see that a |any| printer has been selected")
-def step(context, expectedPrinterType):
-    actualPrinterType = printer.selectedPrinter()
-    test.compare(expectedPrinterType, actualPrinterType)
-    
+def step(context, expected_printer_type):
+    actual_printer_type = printer.selectedPrinter()
+    test.compare(expected_printer_type, actual_printer_type)
+
+
+@When("I add a non-networked |any| printer")
+def step(context, printer):
+    add_printer.addLocalPrinter(printer)
+
+
 @Step("I finish the Add Printer wizard")
 def step(context):
-    addPrinter.finish()
-    
+    add_printer.finish()
+
+
 @Step("I want to add a printer from the main menu")
 def step(context):
     printer.openPrinterList()
 
+
 @When("I add a network printer with address |any|")
-def step(context, printerIP):
-    addPrinter.addNetworkPrinter(printerIP)
+def step(context, printer_IP):
+    add_printer.addNetworkPrinter(printer_IP)
+
 
 @Then("the networked printer \"10.183.1.1\" is available")
 def step(context):

@@ -11,9 +11,6 @@ class Cura(PageObject):
         PageObject.__init__(self)
         SquishModuleHelper.importSquishSymbols()
 
-    def acceptAgreement(self):
-        self.click(names.onb_btn_accept_agreement)
-
     def pressCloseButton(self):
         self.click(names.btn_close)
 
@@ -34,6 +31,11 @@ class Cura(PageObject):
 
     def loadFile(self, model, track_time=False):
         self.click(names.mwi_btn_open_file)
+
+        # Navigate to the correct dir first
+        self.setTextFieldValue(names.fdg_input_name, self.testdata_dir)
+        squish.clickButton(waitForObject(names.fdg_btn_open))
+
         self.setTextFieldValue(names.fdg_input_name, model)
         squish.clickButton(waitForObject(names.fdg_btn_open))
 

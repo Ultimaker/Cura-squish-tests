@@ -26,3 +26,8 @@ class AddPrinter(PageObject):
         self.setTextFieldValue(names.pdg_input_address, printer_ip)
         self.click(names.pdg_address_btn_ok)
         self.click(names.pdg_btn_connect)
+
+    def addLocalPrinter(self, printer):
+        self.click(names.pdg_cbo_local_printer)
+        self.click(self.findObjectByText(names.pdg_rbtn_printer, printer))
+        self.click(names.pdg_btn_add_printer)

@@ -10,8 +10,7 @@ class Printer(PageObject):
         SquishModuleHelper.importSquishSymbols()
 
     def selectedPrinter(self):
-        printer_type = waitForObject(names.mwi_sel_printer).text
-        return printer_type
+        return waitForObject(names.mwi_sel_printer).text
 
     def openPrinterList(self):
         self.click(names.mwi_printer)

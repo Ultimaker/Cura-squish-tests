@@ -1,0 +1,403 @@
+2019-04-24 11:42:24,107 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin FileLogger
+2019-04-24 11:42:24,135 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin FirmwareUpdateChecker
+2019-04-24 11:42:24,156 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin FirmwareUpdater
+2019-04-24 11:42:24,177 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin GCodeGzReader
+2019-04-24 11:42:24,205 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin GCodeGzWriter
+2019-04-24 11:42:24,232 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin GCodeProfileReader
+2019-04-24 11:42:24,268 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin GCodeReader
+2019-04-24 11:42:24,285 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin GCodeWriter
+2019-04-24 11:42:24,308 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin ImageReader
+2019-04-24 11:42:24,325 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin LegacyProfileReader
+2019-04-24 11:42:24,341 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin LocalContainerProvider
+2019-04-24 11:42:24,360 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin LocalFileOutputDevice
+2019-04-24 11:42:24,377 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin MachineSettingsAction
+2019-04-24 11:42:24,393 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin ModelChecker
+2019-04-24 11:42:24,414 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin MonitorStage
+2019-04-24 11:42:24,441 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin PerObjectSettingsTool
+2019-04-24 11:42:24,464 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin PostProcessingPlugin
+2019-04-24 11:42:24,492 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin PrepareStage
+2019-04-24 11:42:24,517 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin PreviewStage
+2019-04-24 11:42:24,544 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin RemovableDriveOutputDevice
+2019-04-24 11:42:24,578 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin SimulationView
+2019-04-24 11:42:24,614 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin SliceInfoPlugin
+2019-04-24 11:42:24,639 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin SolidView
+2019-04-24 11:42:24,665 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin SupportEraser
+2019-04-24 11:42:24,718 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [108]: No auth data to retrieve the access_token from
+2019-04-24 11:42:24,723 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin Toolbox
+2019-04-24 11:42:24,756 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin CameraTool
+2019-04-24 11:42:24,779 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin MirrorTool
+2019-04-24 11:42:24,805 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin RotateTool
+2019-04-24 11:42:24,830 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin ScaleTool
+2019-04-24 11:42:24,854 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin SelectionTool
+2019-04-24 11:42:24,881 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin TranslateTool
+2019-04-24 11:42:24,918 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin UFPReader
+2019-04-24 11:42:24,942 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin UFPWriter
+2019-04-24 11:42:24,972 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin UltimakerMachineActions
+2019-04-24 11:42:25,115 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin UM3NetworkPrinting
+2019-04-24 11:42:25,147 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin UpdateChecker
+2019-04-24 11:42:25,151 - INFO - [Thread-1] UpdateChecker.UpdateCheckerJob.run [36]: Checking for new version of cura
+2019-04-24 11:42:25,201 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin USBPrinting
+2019-04-24 11:42:25,238 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade21to22
+2019-04-24 11:42:25,263 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade22to24
+2019-04-24 11:42:25,294 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade25to26
+2019-04-24 11:42:25,318 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade26to27
+2019-04-24 11:42:25,343 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade27to30
+2019-04-24 11:42:25,368 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade30to31
+2019-04-24 11:42:25,394 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade32to33
+2019-04-24 11:42:25,418 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade33to34
+2019-04-24 11:42:25,444 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade34to35
+2019-04-24 11:42:25,470 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade35to40
+2019-04-24 11:42:25,496 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin VersionUpgrade40to41
+2019-04-24 11:42:25,520 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin SimpleView
+2019-04-24 11:42:25,555 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin X3DReader
+2019-04-24 11:42:25,591 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin XmlMaterialProfile
+2019-04-24 11:42:25,619 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [405]: Loaded plugin XRayView
+2019-04-24 11:42:25,640 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [143]: Looking for old configuration files to upgrade.
+2019-04-24 11:42:25,681 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\Ultimaker+2%2B_settings.inst.cfg] with type [definition_changes] and source version [4000005]
+2019-04-24 11:42:25,684 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\Ultimaker+3_settings.inst.cfg] with type [definition_changes] and source version [4000005]
+2019-04-24 11:42:25,687 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\Ultimaker+S5_settings.inst.cfg] with type [definition_changes] and source version [4000005]
+2019-04-24 11:42:25,691 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker2_plus_extruder_0+%232_settings.inst.cfg] with type [definition_changes] and source version [4000005]
+2019-04-24 11:42:25,694 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker3_extruder_left+%232_settings.inst.cfg] with type [definition_changes] and source version [4000005]
+2019-04-24 11:42:25,697 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker3_extruder_right+%232_settings.inst.cfg] with type [definition_changes] and source version [4000005]
+2019-04-24 11:42:25,701 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker_s5_extruder_left+%232_settings.inst.cfg] with type [definition_changes] and source version [4000005]
+2019-04-24 11:42:25,704 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker_s5_extruder_right+%232_settings.inst.cfg] with type [definition_changes] and source version [4000005]
+2019-04-24 11:42:25,736 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker2_plus_extruder_0+%232.extruder.cfg] with type [extruder_train] and source version [4000005]
+2019-04-24 11:42:25,739 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker3_extruder_left+%232.extruder.cfg] with type [extruder_train] and source version [4000005]
+2019-04-24 11:42:25,743 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker3_extruder_right+%232.extruder.cfg] with type [extruder_train] and source version [4000005]
+2019-04-24 11:42:25,746 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker_s5_extruder_left+%232.extruder.cfg] with type [extruder_train] and source version [4000005]
+2019-04-24 11:42:25,749 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker_s5_extruder_right+%232.extruder.cfg] with type [extruder_train] and source version [4000005]
+2019-04-24 11:42:25,773 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\Ultimaker+2%2B.global.cfg] with type [machine_stack] and source version [4000005]
+2019-04-24 11:42:25,776 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\Ultimaker+3.global.cfg] with type [machine_stack] and source version [4000005]
+2019-04-24 11:42:25,779 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\Ultimaker+S5.global.cfg] with type [machine_stack] and source version [4000005]
+2019-04-24 11:42:25,787 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-04-24 11:42:25,791 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-04-24 11:42:25,806 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: materials\duplicatePLA.xml.fdm_material, skip it
+2019-04-24 11:42:25,817 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-04-24 11:42:25,820 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-04-24 11:42:25,835 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: materials\duplicatePLA.xml.fdm_material, skip it
+2019-04-24 11:42:25,846 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-04-24 11:42:25,849 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-04-24 11:42:25,865 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: materials\duplicatePLA.xml.fdm_material, skip it
+2019-04-24 11:42:25,875 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-04-24 11:42:25,878 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-04-24 11:42:25,894 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: materials\duplicatePLA.xml.fdm_material, skip it
+2019-04-24 11:42:25,905 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-04-24 11:42:25,908 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-04-24 11:42:25,923 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: materials\duplicatePLA.xml.fdm_material, skip it
+2019-04-24 11:42:25,934 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-04-24 11:42:25,937 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-04-24 11:42:25,953 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: materials\duplicatePLA.xml.fdm_material, skip it
+2019-04-24 11:42:25,964 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-04-24 11:42:25,967 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-04-24 11:42:25,982 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: materials\duplicatePLA.xml.fdm_material, skip it
+2019-04-24 11:42:25,993 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-04-24 11:42:25,996 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-04-24 11:42:26,011 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: materials\duplicatePLA.xml.fdm_material, skip it
+2019-04-24 11:42:26,023 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-04-24 11:42:26,027 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-04-24 11:42:26,042 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: materials\duplicatePLA.xml.fdm_material, skip it
+2019-04-24 11:42:26,091 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\Ultimaker+2%2B_user.inst.cfg] with type [user] and source version [4000005]
+2019-04-24 11:42:26,095 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\Ultimaker+3_user.inst.cfg] with type [user] and source version [4000005]
+2019-04-24 11:42:26,098 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\Ultimaker+S5_user.inst.cfg] with type [user] and source version [4000005]
+2019-04-24 11:42:26,101 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker2_plus_extruder_0+%232_user.inst.cfg] with type [user] and source version [4000005]
+2019-04-24 11:42:26,105 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker3_extruder_left+%232_user.inst.cfg] with type [user] and source version [4000005]
+2019-04-24 11:42:26,108 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker3_extruder_right+%232_user.inst.cfg] with type [user] and source version [4000005]
+2019-04-24 11:42:26,111 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker_s5_extruder_left+%232_user.inst.cfg] with type [user] and source version [4000005]
+2019-04-24 11:42:26,114 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [299]: Create upgrade task for configuration file [.\ultimaker_s5_extruder_right+%232_user.inst.cfg] with type [user] and source version [4000005]
+2019-04-24 11:42:26,153 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\Ultimaker+2%2B_settings.inst.cfg to version 4000007.
+2019-04-24 11:42:26,158 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\Ultimaker+3_settings.inst.cfg to version 4000007.
+2019-04-24 11:42:26,163 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\Ultimaker+S5_settings.inst.cfg to version 4000007.
+2019-04-24 11:42:26,167 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker2_plus_extruder_0+%232_settings.inst.cfg to version 4000007.
+2019-04-24 11:42:26,172 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker3_extruder_left+%232_settings.inst.cfg to version 4000007.
+2019-04-24 11:42:26,177 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker3_extruder_right+%232_settings.inst.cfg to version 4000007.
+2019-04-24 11:42:26,182 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker_s5_extruder_left+%232_settings.inst.cfg to version 4000007.
+2019-04-24 11:42:26,187 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker_s5_extruder_right+%232_settings.inst.cfg to version 4000007.
+2019-04-24 11:42:26,192 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker2_plus_extruder_0+%232.extruder.cfg to version 4000007.
+2019-04-24 11:42:26,197 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker3_extruder_left+%232.extruder.cfg to version 4000007.
+2019-04-24 11:42:26,202 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker3_extruder_right+%232.extruder.cfg to version 4000007.
+2019-04-24 11:42:26,207 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker_s5_extruder_left+%232.extruder.cfg to version 4000007.
+2019-04-24 11:42:26,213 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker_s5_extruder_right+%232.extruder.cfg to version 4000007.
+2019-04-24 11:42:26,217 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\Ultimaker+2%2B.global.cfg to version 4000007.
+2019-04-24 11:42:26,223 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\Ultimaker+3.global.cfg to version 4000007.
+2019-04-24 11:42:26,228 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\Ultimaker+S5.global.cfg to version 4000007.
+2019-04-24 11:42:26,233 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\Ultimaker+2%2B_user.inst.cfg to version 4000007.
+2019-04-24 11:42:26,237 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\Ultimaker+3_user.inst.cfg to version 4000007.
+2019-04-24 11:42:26,243 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\Ultimaker+S5_user.inst.cfg to version 4000007.
+2019-04-24 11:42:26,248 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker2_plus_extruder_0+%232_user.inst.cfg to version 4000007.
+2019-04-24 11:42:26,252 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker3_extruder_left+%232_user.inst.cfg to version 4000007.
+2019-04-24 11:42:26,258 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker3_extruder_right+%232_user.inst.cfg to version 4000007.
+2019-04-24 11:42:26,262 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker_s5_extruder_left+%232_user.inst.cfg to version 4000007.
+2019-04-24 11:42:26,267 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [383]: Upgraded .\ultimaker_s5_extruder_right+%232_user.inst.cfg to version 4000007.
+2019-04-24 11:42:26,281 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [171]: Socket state changed to Listening
+2019-04-24 11:42:26,293 - INFO - [MainThread] UM.Backend.Backend.startEngine [81]: Started engine process: C:\Program Files\Ultimaker Cura 4.1\CuraEngine.exe
+2019-04-24 11:42:26,299 - DEBUG - [MainThread] UM.Backend.Backend._backendLog [101]: [Backend] Calling engine with: ['C:\\Program Files\\Ultimaker Cura 4.1\\CuraEngine.exe', 'connect', '127.0.0.1:49674', '']
+2019-04-24 11:42:26,521 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-04-24 11:42:26,526 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] Cura_SteamEngine version 4.1.0-BETA-20190424103940
+2019-04-24 11:42:26,528 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] Copyright (C) 2018 Ultimaker
+2019-04-24 11:42:26,531 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-04-24 11:42:26,534 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] This program is free software: you can redistribute it and/or modify
+2019-04-24 11:42:26,539 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] it under the terms of the GNU Affero General Public License as published by
+2019-04-24 11:42:26,543 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [175]: Socket state changed to Connected
+2019-04-24 11:42:26,544 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] the Free Software Foundation, either version 3 of the License, or
+2019-04-24 11:42:26,547 - DEBUG - [MainThread] UM.Backend.Backend._onSocketStateChanged [165]: Backend connected on port 49674
+2019-04-24 11:42:26,549 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] (at your option) any later version.
+2019-04-24 11:42:26,552 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-04-24 11:42:26,555 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] This program is distributed in the hope that it will be useful,
+2019-04-24 11:42:26,558 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] but WITHOUT ANY WARRANTY; without even the implied warranty of
+2019-04-24 11:42:26,562 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+2019-04-24 11:42:26,566 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] GNU Affero General Public License for more details.
+2019-04-24 11:42:26,569 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-04-24 11:42:26,572 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] You should have received a copy of the GNU Affero General Public License
+2019-04-24 11:42:26,574 - DEBUG - [Thread-10] UM.Backend.Backend._backendLog [101]: [Backend] along with this program.  If not, see <http://www.gnu.org/licenses/>.
+2019-04-24 11:42:29,304 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [339]: Loading metadata into container registry took 2.747999668121338 seconds
+2019-04-24 11:42:29,377 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [104]: Select build plate: 0
+2019-04-24 11:42:29,380 - INFO - [MainThread] cura.CuraApplication.run [719]: Initializing variant manager
+2019-04-24 11:42:29,386 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_glass
+2019-04-24 11:42:29,393 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_glass] added.
+2019-04-24 11:42:29,396 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5
+2019-04-24 11:42:29,555 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5] added.
+2019-04-24 11:42:29,566 - DEBUG - [MainThread] cura.Machines.VariantManager.initialize [59]: Exclude variant [empty_variant]
+2019-04-24 11:42:29,568 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_aluminum
+2019-04-24 11:42:29,578 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_aluminum] added.
+2019-04-24 11:42:29,588 - INFO - [MainThread] cura.CuraApplication.run [723]: Initializing material manager
+2019-04-24 11:42:29,751 - INFO - [MainThread] cura.CuraApplication.run [728]: Initializing quality manager
+2019-04-24 11:42:29,789 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-04-24 11:42:29,795 - INFO - [MainThread] cura.CuraApplication.run [733]: Initializing machine manager
+2019-04-24 11:42:29,803 - INFO - [MainThread] cura.CuraApplication.run [736]: Initializing container manager
+2019-04-24 11:42:29,810 - INFO - [MainThread] cura.CuraApplication.run [739]: Initializing machine error checker
+2019-04-24 11:42:30,027 - DEBUG - [MainThread] UM3NetworkPrinting.src.Cloud.CloudOutputDeviceManager._onLoginStateChanged [57]: Log in state changed to False
+2019-04-24 11:42:30,028 - DEBUG - [MainThread] UM3NetworkPrinting.src.Cloud.CloudOutputDeviceManager._onGetRemoteClustersFinished [80]: Parsed remote clusters to []
+2019-04-24 11:42:30,030 - DEBUG - [MainThread] UM3NetworkPrinting.src.Cloud.CloudOutputDeviceManager._onGetRemoteClustersFinished [81]: Removed: 0, added: 0, updates: 0
+2019-04-24 11:42:30,042 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Ultimaker 2+
+2019-04-24 11:42:30,049 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Ultimaker 2+_user
+2019-04-24 11:42:30,061 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [Ultimaker 2+_user] added.
+2019-04-24 11:42:30,063 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um2p_global_Normal_Quality
+2019-04-24 11:42:30,075 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um2p_global_Normal_Quality] added.
+2019-04-24 11:42:30,077 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Ultimaker 2+_settings
+2019-04-24 11:42:30,087 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [Ultimaker 2+_settings] added.
+2019-04-24 11:42:30,089 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker2_plus
+2019-04-24 11:42:30,495 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker2_plus] added.
+2019-04-24 11:42:30,497 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [Ultimaker 2+] added.
+2019-04-24 11:42:30,500 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [ultimaker2_plus]
+2019-04-24 11:42:30,504 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker2_plus_extruder_0 #2
+2019-04-24 11:42:30,507 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker2_plus_extruder_0 #2_user
+2019-04-24 11:42:30,513 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker2_plus_extruder_0 #2_user] added.
+2019-04-24 11:42:30,515 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container pla_0.4_normal
+2019-04-24 11:42:30,521 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [pla_0.4_normal] added.
+2019-04-24 11:42:30,522 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container generic_pla
+2019-04-24 11:42:30,541 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_plus] added.
+2019-04-24 11:42:30,544 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_plus_0.25_mm] added.
+2019-04-24 11:42:30,546 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_plus_0.4_mm] added.
+2019-04-24 11:42:30,548 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_plus_0.6_mm] added.
+2019-04-24 11:42:30,551 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_plus_0.8_mm] added.
+2019-04-24 11:42:30,553 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_extended_plus] added.
+2019-04-24 11:42:30,555 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_extended_plus_0.25_mm] added.
+2019-04-24 11:42:30,558 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_extended_plus_0.4_mm] added.
+2019-04-24 11:42:30,560 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_extended_plus_0.6_mm] added.
+2019-04-24 11:42:30,563 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_extended_plus_0.8_mm] added.
+2019-04-24 11:42:30,565 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2] added.
+2019-04-24 11:42:30,567 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_go] added.
+2019-04-24 11:42:30,569 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker2_extended] added.
+2019-04-24 11:42:30,572 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker_original] added.
+2019-04-24 11:42:30,575 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3] added.
+2019-04-24 11:42:30,577 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_BB_0.4] added.
+2019-04-24 11:42:30,579 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_BB_0.8] added.
+2019-04-24 11:42:30,582 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_AA_0.25] added.
+2019-04-24 11:42:30,584 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_AA_0.4] added.
+2019-04-24 11:42:30,586 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_AA_0.8] added.
+2019-04-24 11:42:30,589 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_extended] added.
+2019-04-24 11:42:30,591 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_extended_BB_0.4] added.
+2019-04-24 11:42:30,594 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_extended_BB_0.8] added.
+2019-04-24 11:42:30,596 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_extended_AA_0.25] added.
+2019-04-24 11:42:30,598 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_extended_AA_0.4] added.
+2019-04-24 11:42:30,600 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker3_extended_AA_0.8] added.
+2019-04-24 11:42:30,602 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker_s5] added.
+2019-04-24 11:42:30,605 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker_s5_BB_0.4] added.
+2019-04-24 11:42:30,608 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker_s5_BB_0.8] added.
+2019-04-24 11:42:30,610 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker_s5_CC_0.6] added.
+2019-04-24 11:42:30,613 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker_s5_AA_0.25] added.
+2019-04-24 11:42:30,615 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker_s5_AA_0.4] added.
+2019-04-24 11:42:30,617 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_ultimaker_s5_AA_0.8] added.
+2019-04-24 11:42:30,620 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_imade3d_jellybox] added.
+2019-04-24 11:42:30,622 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_imade3d_jellybox_0.4_mm] added.
+2019-04-24 11:42:30,624 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [generic_pla_imade3d_jellybox_0.4_mm_2-fans] added.
+2019-04-24 11:42:30,627 - WARNING - [MainThread] UM.Settings.ContainerRegistry.addContainer [376]: Container with ID generic_pla_ultimaker2_plus_0.4_mm was already added.
+2019-04-24 11:42:30,628 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker2_plus_0.4
+2019-04-24 11:42:30,633 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker2_plus_0.4] added.
+2019-04-24 11:42:30,634 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker2_plus_extruder_0 #2_settings
+2019-04-24 11:42:30,639 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker2_plus_extruder_0 #2_settings] added.
+2019-04-24 11:42:30,641 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker2_plus_extruder_0
+2019-04-24 11:42:30,645 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker2_plus_extruder_0] added.
+2019-04-24 11:42:30,648 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker2_plus_extruder_0 #2] added.
+2019-04-24 11:42:30,853 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: BQ_PauseAtHeight
+2019-04-24 11:42:30,857 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: ChangeAtZ
+2019-04-24 11:42:30,859 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2019-04-24 11:42:30,862 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: FilamentChange
+2019-04-24 11:42:30,864 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: InsertAtLayerChange
+2019-04-24 11:42:30,867 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: PauseAtHeight
+2019-04-24 11:42:30,871 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: PauseAtHeightRepRapFirmwareDuet
+2019-04-24 11:42:30,876 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: PauseAtHeightforRepetier
+2019-04-24 11:42:30,879 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: SearchAndReplace
+2019-04-24 11:42:30,884 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: Stretch
+2019-04-24 11:42:30,886 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: TimeLapse
+2019-04-24 11:42:30,888 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: UsePreviousProbeMeasurements
+2019-04-24 11:42:30,891 - DEBUG - [MainThread] UM3NetworkPrinting.src.UM3OutputDevicePlugin.checkCloudFlowIsPossible [493]: Checking if cloud connection is possible...
+2019-04-24 11:42:30,892 - DEBUG - [MainThread] UM3NetworkPrinting.src.UM3OutputDevicePlugin.checkCloudFlowIsPossible [515]: Cloud Flow not possible: User not logged in!
+2019-04-24 11:42:31,005 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [149]: Extruder[ultimaker2_plus_extruder_0 #2] added to [Ultimaker 2+] at position [0]
+2019-04-24 11:42:31,008 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [169]: Extruder [ultimaker2_plus_extruder_0 #2] has already been registered on machine [Ultimaker 2+], not doing anything
+2019-04-24 11:42:31,081 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [359]: Exclude materials generic_gffcpe, generic_cffpa, generic_tough_pla, generic_hips, ultimaker_tough_pla_white, generic_gffpa, ultimaker_bam, generic_petg, generic_bam, generic_pva, ultimaker_pva, structur3d_dap100silicone, generic_cffcpe, ultimaker_tough_pla_green, ultimaker_tough_pla_red, ultimaker_tough_pla_black for machine ultimaker2_plus
+2019-04-24 11:42:31,087 - INFO - [MainThread] cura.Settings.MachineManager._initMachineState [330]: Machine 'Ultimaker 2+' quality set to 'normal'
+2019-04-24 11:42:31,252 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [74]: No machine with name Ultimaker 2+ in list of firmware to check.
+2019-04-24 11:42:31,312 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [136]: New error check scheduled.
+2019-04-24 11:42:31,349 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._checkStack [140]: Need to check for errors again. Discard the current progress and reschedule a check.
+2019-04-24 11:42:33,019 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [280]: Creating post processing plugin view.
+2019-04-24 11:42:33,160 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [158]: Loading theme file: C:\Program Files\Ultimaker Cura 4.1\resources\themes\cura-light\theme.json
+2019-04-24 11:42:33,286 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [230]: Loaded theme C:\Program Files\Ultimaker Cura 4.1\resources\themes\cura-light
+2019-04-24 11:42:33,371 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [290]: Post processing view created.
+2019-04-24 11:42:33,567 - WARNING - [MainThread] UM.Decorators.deprecated_function [19]: <function MachineManager.activeMachineId at 0x000001ADBCC4F730> is deprecated (since 4.1): use Cura.MachineManager.activeMachine.id instead
+2019-04-24 11:42:33,572 - WARNING - [MainThread] UM.Decorators.deprecated_function [19]: <function MachineManager.activeDefinitionId at 0x000001ADBCC55AE8> is deprecated (since 4.1): use Cura.activeMachine.definition.id instead
+2019-04-24 11:42:33,601 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [87]: There was no auth data or access token
+2019-04-24 11:42:33,604 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [87]: There was no auth data or access token
+2019-04-24 11:42:33,609 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [87]: There was no auth data or access token
+2019-04-24 11:42:33,613 - WARNING - [MainThread] UM.Qt.Bindings.Theme.getImage [133]: No image header_pattern defined in Theme
+2019-04-24 11:42:33,626 - WARNING - [MainThread] UM.Decorators.deprecated_function [19]: <function MachineManager.activeVariantBuildplateName at 0x000001ADBCC559D8> is deprecated (since 4.1): use Cura.activeMachine.variant.name instead
+2019-04-24 11:42:33,629 - WARNING - [MainThread] UM.Decorators.deprecated_function [19]: <function MachineManager.activeMachineName at 0x000001ADBCC4F620> is deprecated (since 4.1): use Cura.MachineManager.activeMachine.name instead
+2019-04-24 11:42:33,634 - DEBUG - [MainThread] cura.Machines.Models.BuildPlateModel._update [33]: Updating BuildPlateModel.
+2019-04-24 11:42:35,224 - DEBUG - [MainThread] UM3NetworkPrinting.src.DiscoverUM3Action._createAdditionalComponentsView [175]: Creating additional ui components for UM3.
+2019-04-24 11:42:35,282 - DEBUG - [MainThread] UM3NetworkPrinting.src.DiscoverUM3Action.startDiscovery [52]: Starting device discovery.
+2019-04-24 11:42:35,299 - DEBUG - [MainThread] UM.Controller.setActiveStage [149]: Setting active stage to PrepareStage
+2019-04-24 11:42:35,458 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [359]: Exclude materials generic_gffcpe, generic_cffpa, generic_tough_pla, generic_hips, ultimaker_tough_pla_white, generic_gffpa, ultimaker_bam, generic_petg, generic_bam, generic_pva, ultimaker_pva, structur3d_dap100silicone, generic_cffcpe, ultimaker_tough_pla_green, ultimaker_tough_pla_red, ultimaker_tough_pla_black for machine ultimaker2_plus
+2019-04-24 11:42:35,461 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [359]: Exclude materials generic_gffcpe, generic_cffpa, generic_tough_pla, generic_hips, ultimaker_tough_pla_white, generic_gffpa, ultimaker_bam, generic_petg, generic_bam, generic_pva, ultimaker_pva, structur3d_dap100silicone, generic_cffcpe, ultimaker_tough_pla_green, ultimaker_tough_pla_red, ultimaker_tough_pla_black for machine ultimaker2_plus
+2019-04-24 11:42:35,465 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [359]: Exclude materials generic_gffcpe, generic_cffpa, generic_tough_pla, generic_hips, ultimaker_tough_pla_white, generic_gffpa, ultimaker_bam, generic_petg, generic_bam, generic_pva, ultimaker_pva, structur3d_dap100silicone, generic_cffcpe, ultimaker_tough_pla_green, ultimaker_tough_pla_red, ultimaker_tough_pla_black for machine ultimaker2_plus
+2019-04-24 11:42:35,472 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-04-24 11:42:35,482 - WARNING - [MainThread] UM.Decorators.deprecated_function [19]: <function MachineManager.activeVariantName at 0x000001ADBCC557B8> is deprecated (since 4.1): use Cura.activeStack.variant.name instead
+2019-04-24 11:42:35,488 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [359]: Exclude materials generic_gffcpe, generic_cffpa, generic_tough_pla, generic_hips, ultimaker_tough_pla_white, generic_gffpa, ultimaker_bam, generic_petg, generic_bam, generic_pva, ultimaker_pva, structur3d_dap100silicone, generic_cffcpe, ultimaker_tough_pla_green, ultimaker_tough_pla_red, ultimaker_tough_pla_black for machine ultimaker2_plus
+2019-04-24 11:42:35,493 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [359]: Exclude materials generic_gffcpe, generic_cffpa, generic_tough_pla, generic_hips, ultimaker_tough_pla_white, generic_gffpa, ultimaker_bam, generic_petg, generic_bam, generic_pva, ultimaker_pva, structur3d_dap100silicone, generic_cffcpe, ultimaker_tough_pla_green, ultimaker_tough_pla_red, ultimaker_tough_pla_black for machine ultimaker2_plus
+2019-04-24 11:42:35,497 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [359]: Exclude materials generic_gffcpe, generic_cffpa, generic_tough_pla, generic_hips, ultimaker_tough_pla_white, generic_gffpa, ultimaker_bam, generic_petg, generic_bam, generic_pva, ultimaker_pva, structur3d_dap100silicone, generic_cffcpe, ultimaker_tough_pla_green, ultimaker_tough_pla_red, ultimaker_tough_pla_black for machine ultimaker2_plus
+2019-04-24 11:42:35,501 - WARNING - [MainThread] UM.Decorators.deprecated_function [19]: <function MachineManager.activeMachineDefinitionName at 0x000001ADBCC4F510> is deprecated (since 4.1): use Cura.MachineManager.activeMachine.definition.name instead
+2019-04-24 11:42:35,624 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [369]: file:///C:/Program Files/Ultimaker Cura 4.1/resources/qml/ActionButton.qml:70:9: QML Label: Binding loop detected for property "width"
+2019-04-24 11:42:35,628 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [369]: file:///C:/Program Files/Ultimaker Cura 4.1/resources/qml/ActionButton.qml:70:9: QML Label: Binding loop detected for property "width"
+2019-04-24 11:42:35,632 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [369]: file:///C:/Program Files/Ultimaker Cura 4.1/plugins/PrepareStage/PrepareMain.qml:16:5: QML ActionPanelWidget: Binding loop detected for property "width"
+2019-04-24 11:42:35,636 - DEBUG - [MainThread] UM.Controller.setActiveView [91]: Setting active view to SolidView
+2019-04-24 11:42:35,641 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [107]: Creating model checker view.
+2019-04-24 11:42:35,655 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [116]: Model checker view created.
+2019-04-24 11:42:35,656 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [68]: Creating dialog [MoreInfoWindow.qml]
+2019-04-24 11:42:35,700 - INFO - [MainThread] Toolbox.src.Toolbox._makeRequestByType [528]: Requesting packages metadata from server.
+2019-04-24 11:42:37,023 - INFO - [MainThread] Toolbox.src.Toolbox._makeRequestByType [528]: Requesting authors metadata from server.
+2019-04-24 11:42:37,028 - DEBUG - [MainThread] cura.CuraApplication.run [776]: Booting Cura took 14.486517190933228 seconds
+2019-04-24 11:42:37,042 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [136]: New error check scheduled.
+2019-04-24 11:42:37,044 - INFO - [MainThread] cura.Machines.MaterialManager._updateMaps [279]: Updating material lookup data ...
+2019-04-24 11:42:37,097 - DEBUG - [MainThread] cura.Machines.MaterialManager.getAvailableMaterials [359]: Exclude materials generic_gffcpe, generic_cffpa, generic_tough_pla, generic_hips, ultimaker_tough_pla_white, generic_gffpa, ultimaker_bam, generic_petg, generic_bam, generic_pva, ultimaker_pva, structur3d_dap100silicone, generic_cffcpe, ultimaker_tough_pla_green, ultimaker_tough_pla_red, ultimaker_tough_pla_black for machine ultimaker2_plus
+2019-04-24 11:42:37,099 - INFO - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1276]: Updating quality/quality_changes due to material change
+2019-04-24 11:42:37,102 - DEBUG - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1283]: Current quality type = [normal]
+2019-04-24 11:42:37,105 - INFO - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1297]: Current available quality type [normal] is available, applying changes.
+2019-04-24 11:42:37,130 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-04-24 11:42:37,171 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Ultimaker S5
+2019-04-24 11:42:37,176 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Ultimaker S5_user
+2019-04-24 11:42:37,183 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [Ultimaker S5_user] added.
+2019-04-24 11:42:37,186 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um_s5_global_Normal_Quality
+2019-04-24 11:42:37,192 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um_s5_global_Normal_Quality] added.
+2019-04-24 11:42:37,194 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Ultimaker S5_settings
+2019-04-24 11:42:37,200 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [Ultimaker S5_settings] added.
+2019-04-24 11:42:37,204 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [Ultimaker S5] added.
+2019-04-24 11:42:37,204 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Ultimaker 3
+2019-04-24 11:42:37,208 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Ultimaker 3_user
+2019-04-24 11:42:37,213 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [Ultimaker 3_user] added.
+2019-04-24 11:42:37,214 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um3_global_Normal_Quality
+2019-04-24 11:42:37,220 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um3_global_Normal_Quality] added.
+2019-04-24 11:42:37,221 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Ultimaker 3_settings
+2019-04-24 11:42:37,226 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [Ultimaker 3_settings] added.
+2019-04-24 11:42:37,227 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3
+2019-04-24 11:42:37,610 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3] added.
+2019-04-24 11:42:37,620 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [Ultimaker 3] added.
+2019-04-24 11:42:37,665 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [61]: Updating QualityProfilesDropDownMenuModel.
+2019-04-24 11:42:37,666 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um2p_global_Coarse_Quality
+2019-04-24 11:42:37,672 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um2p_global_Coarse_Quality] added.
+2019-04-24 11:42:37,699 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um2p_global_Draft_Quality
+2019-04-24 11:42:37,704 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um2p_global_Draft_Quality] added.
+2019-04-24 11:42:37,729 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um2p_global_Extra_Coarse_Quality
+2019-04-24 11:42:37,735 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um2p_global_Extra_Coarse_Quality] added.
+2019-04-24 11:42:37,760 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um2p_global_Fast_Quality
+2019-04-24 11:42:37,765 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um2p_global_Fast_Quality] added.
+2019-04-24 11:42:37,790 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um2p_global_High_Quality
+2019-04-24 11:42:37,798 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um2p_global_High_Quality] added.
+2019-04-24 11:42:37,823 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um2p_global_Slightly_Coarse_Quality
+2019-04-24 11:42:37,828 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um2p_global_Slightly_Coarse_Quality] added.
+2019-04-24 11:42:37,861 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-04-24 11:42:37,864 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-04-24 11:42:37,873 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [84]: You have a(n) Ultimaker S5 in the printer list. Do firmware-check.
+2019-04-24 11:42:37,885 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [84]: You have a(n) Ultimaker 3 in the printer list. Do firmware-check.
+2019-04-24 11:42:37,968 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [101]: Reading firmware version of Ultimaker 3: checked = 0.0.0 - latest = 5.2.8-20190320.0
+2019-04-24 11:42:37,969 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [101]: Reading firmware version of Ultimaker S5: checked = 0.0.0 - latest = 5.2.8-20190320.0
+2019-04-24 11:42:38,421 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [181]: Support for Vertex Array Objects: True
+2019-04-24 11:42:38,425 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [99]: Initialized OpenGL subsystems.
+2019-04-24 11:42:38,427 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [100]: OpenGL Version:  4.1.0 - Build 24.20.100.6344
+2019-04-24 11:42:38,429 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [101]: OpenGL Vendor:   Intel
+2019-04-24 11:42:38,432 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [102]: OpenGL Renderer: Intel(R) HD Graphics 520
+2019-04-24 11:42:38,436 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\default.shader]...
+2019-04-24 11:42:38,455 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\selection.shader]...
+2019-04-24 11:42:38,470 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\default.shader]...
+2019-04-24 11:42:38,486 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\composite.shader]...
+2019-04-24 11:42:38,514 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\overhang.shader]...
+2019-04-24 11:42:38,539 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\striped.shader]...
+2019-04-24 11:42:38,567 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\transparent_object.shader]...
+2019-04-24 11:42:38,588 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\striped.shader]...
+2019-04-24 11:42:38,620 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\default.shader]...
+2019-04-24 11:42:38,637 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\grid.shader]...
+2019-04-24 11:42:38,655 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [56]: Loading shader file [C:\Program Files\Ultimaker Cura 4.1\resources\shaders\platform.shader]...
+2019-04-24 11:42:38,868 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-04-24 11:42:39,257 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [61]: Updating QualityProfilesDropDownMenuModel.
+2019-04-24 11:42:39,274 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-04-24 11:42:39,276 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-04-24 11:42:40,059 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [188]: Error check finished, result = False, time = 3.0s
+2019-04-24 11:42:47,977 - DEBUG - [MainThread] cura.AutoSave._onTimeout [56]: Autosaving preferences, instances and profiles
+2019-04-24 11:42:47,994 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_extruder_left #2
+2019-04-24 11:42:47,997 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_extruder_left #2_user
+2019-04-24 11:42:48,002 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_extruder_left #2_user] added.
+2019-04-24 11:42:48,004 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um_s5_aa0.4_PLA_Normal_Quality
+2019-04-24 11:42:48,010 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um_s5_aa0.4_PLA_Normal_Quality] added.
+2019-04-24 11:42:48,011 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_aa04
+2019-04-24 11:42:48,018 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_aa04] added.
+2019-04-24 11:42:48,019 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_extruder_left #2_settings
+2019-04-24 11:42:48,027 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_extruder_left #2_settings] added.
+2019-04-24 11:42:48,029 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_extruder_left
+2019-04-24 11:42:48,034 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_extruder_left] added.
+2019-04-24 11:42:48,036 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_extruder_left #2] added.
+2019-04-24 11:42:48,037 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3_extruder_left #2
+2019-04-24 11:42:48,041 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3_extruder_left #2_user
+2019-04-24 11:42:48,046 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3_extruder_left #2_user] added.
+2019-04-24 11:42:48,047 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container um3_aa0.4_PLA_Normal_Quality
+2019-04-24 11:42:48,053 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [um3_aa0.4_PLA_Normal_Quality] added.
+2019-04-24 11:42:48,055 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3_aa04
+2019-04-24 11:42:48,062 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3_aa04] added.
+2019-04-24 11:42:48,063 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3_extruder_left #2_settings
+2019-04-24 11:42:48,068 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3_extruder_left #2_settings] added.
+2019-04-24 11:42:48,069 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3_extruder_left
+2019-04-24 11:42:48,074 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3_extruder_left] added.
+2019-04-24 11:42:48,076 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3_extruder_left #2] added.
+2019-04-24 11:42:48,077 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3_extruder_right #2
+2019-04-24 11:42:48,080 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3_extruder_right #2_user
+2019-04-24 11:42:48,085 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3_extruder_right #2_user] added.
+2019-04-24 11:42:48,087 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3_extruder_right #2_settings
+2019-04-24 11:42:48,092 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3_extruder_right #2_settings] added.
+2019-04-24 11:42:48,093 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker3_extruder_right
+2019-04-24 11:42:48,098 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3_extruder_right] added.
+2019-04-24 11:42:48,100 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker3_extruder_right #2] added.
+2019-04-24 11:42:48,101 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_extruder_right #2
+2019-04-24 11:42:48,105 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_extruder_right #2_user
+2019-04-24 11:42:48,110 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_extruder_right #2_user] added.
+2019-04-24 11:42:48,112 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_extruder_right #2_settings
+2019-04-24 11:42:48,117 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_extruder_right #2_settings] added.
+2019-04-24 11:42:48,118 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_extruder_right
+2019-04-24 11:42:48,123 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_extruder_right] added.
+2019-04-24 11:42:48,126 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [387]: Container [ultimaker_s5_extruder_right #2] added.
+2019-04-24 11:42:48,531 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-04-24 11:42:48,636 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [61]: Updating QualityProfilesDropDownMenuModel.
+2019-04-24 11:42:48,654 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-04-24 11:42:48,657 - INFO - [MainThread] cura.Machines.QualityManager.getQualityChangesGroups [179]: Cannot find node for machine def [ultimaker2_plus] in QualityChanges lookup table
+2019-04-24 11:43:04,060 - DEBUG - [MainThread] cura.TaskManagement.OnExitCallbackManager.triggerNextCallback [51]: No more on-app-exit callbacks to process. Tell the app to exit.
+2019-04-24 11:43:04,062 - INFO - [MainThread] cura.CuraApplication.closeApplication [574]: Close application
+2019-04-24 11:43:04,081 - DEBUG - [MainThread] UM.Qt.QtApplication.windowClosed [434]: Shutting down cura
+2019-04-24 11:43:04,226 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [292]: Attempting to kill the engine process
+2019-04-24 11:43:04,227 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [298]: Killing engine process
+2019-04-24 11:43:04,234 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [301]: Engine process is killed. Received return code 1
