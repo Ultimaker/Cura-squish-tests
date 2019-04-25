@@ -8,18 +8,26 @@ def step(context, menu_item):
     preferences.navigateTo(menu_item)
 
 
-@When("I |word| a printer from printer preferences")
+@When("I select |word| printer")
 def step(context, action):
     preferences.selectPrinterMenu(action)
 
+    if action == "Remove":
+        preferences.removePrinter()
 
-@Then("the printer overview contains a '|any|' printer")
+
+@Then("The printer overview contains a '|any|' printer")
 def step(context, expected_printer):
     printer_list = preferences.getPrinterList(expected_printer)
     if len(printer_list) != 0:
         test.compare(expected_printer, printer_list[0].text)
     else:
         test.fail("Printer %s not found" % expected_printer)
+
+
+@Then(r"Printer (.*?) is not visible (?:anymore)?", regexp=True)
+def step(context, printer):
+    test.compare(True, preferences.verifyPrinterDeleted(printer), f"Object {printer} has been deleted")
 
 
 @When("I select printer |any| from the local printers")

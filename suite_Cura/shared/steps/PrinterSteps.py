@@ -26,8 +26,3 @@ def step(context):
 @When("I add a network printer with address |any|")
 def step(context, printer_IP):
     add_printer.addNetworkPrinter(printer_IP)
-
-
-@Then("the networked printer |any| is available")
-def step(context):
-    test.warning("TODO implement the networked printer \"10.183.1.1\" is available")

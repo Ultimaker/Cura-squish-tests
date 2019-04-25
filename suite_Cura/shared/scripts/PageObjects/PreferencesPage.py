@@ -18,6 +18,13 @@ class Preferences(PageObject):
         button = self.findObjectByText(names.pps_mnu_btn, action)
         self.click(button)
 
+    def removePrinter(self):
+        self.click(names.rpd_btn_confirm)
+
+    def verifyPrinterDeleted(self, printer):
+        obj = self.replaceObjectTextProperty(names.pps_printer_item, printer)
+        return self.verifyObjDeleted(obj)
+
     def getPrinterList(self, expected_printer_type):
         waitForObject(names.pps_local_printers)
         printer_list = ObjectDescendants.getObjects(names.pps_printer_list, {"text": f"{expected_printer_type}"})
@@ -32,7 +39,7 @@ class Preferences(PageObject):
             test.fail("Printer %s not found" % printer_type)
 
     def renamePrinter(self, printer_name):
-        self.click(self.findObjectByText(names.pps_mnu_btn, "Rename"))
+        self.selectPrinterMenu("Rename")
         self.click(names.input_printer_name)
         self.setTextFieldValue(names.input_printer_name, printer_name)
         self.click(names.btn_rename_confirm)

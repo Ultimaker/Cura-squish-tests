@@ -8,6 +8,7 @@ import squish
 import os
 from objectmaphelper import Wildcard
 import names
+import time
 
 
 class PageObject:
@@ -114,6 +115,23 @@ class PageObject:
         self.write(obj, clear_combination)
         self.write(obj, value)
 
+    def verifyObjDeleted(self, obj, wait_time=5):
+        testSettings.objectNotFoundDebugging = False
+        start_time = time.time()
+        end_time = 0.0
+        try:
+            while end_time - start_time <= wait_time:
+                waitForObject(obj, 0)
+                end_time = time.time()
+                snooze(1)
+
+            # Object still found after n seconds
+            testSettings.objectNotFoundDebugging = True
+            return False
+        except LookupError:
+            testSettings.objectNotFoundDebugging = True
+            return True
+
     @staticmethod
     def click(obj, time_out=15000):
         squish.mouseClick(waitForObject(obj, time_out))
@@ -130,6 +148,12 @@ class PageObject:
         obj = object.copy()
         obj[property] = Wildcard("*" + value + "*")
         return waitForObject(obj)
+
+    @staticmethod
+    def replaceObjectTextProperty(object, value):
+        obj = object.copy()
+        obj['text'] = value
+        return obj
 
     def fileSize(self, file):
         return self.convertBytes(getsize(file))

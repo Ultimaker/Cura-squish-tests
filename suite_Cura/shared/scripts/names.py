@@ -99,6 +99,10 @@ pdg_cbo_local_printer = {"container": win_add_printer, "id": "addLocalPrinterDro
 pdg_win_local_printer = {"container": win_add_printer, "id": "localPrinterSelectionItem", "type": "Item", "unnamed": 1, "visible": True}
 pdg_rbtn_printer = {"checkable": True, "container": pdg_win_local_printer, "id": "radioButton", "text": "", "type": "RadioButton", "unnamed": 1, "visible": True}
 
+# Remove printer dialog (rpd)
+rpd_win = {"type": "QMessageBox", "unnamed": 1, "visible": 1, "windowTitle": "Confirm Remove"}
+rpd_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": rpd_win}
+
 # Preferences
 win_preferences = {"title": "Preferences", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 mnu_preferences = {"container": win_preferences, "id": "pagesList", "type": "TableView", "unnamed": 1, "visible": True}
@@ -108,6 +112,7 @@ mnu_item_preferences = {"container": mnu_preferences, "objectName": "label", "te
 win_pps = {"container": win_preferences, "id": "base", "type": "MachinesPage", "unnamed": 1, "visible": True}
 pps_mnu_btn = {"container": win_pps, "text": "", "type": "Button", "unnamed": 1, "visible": True}
 pps_printer_list = {"container": win_preferences, "id": "objectList", "type": "ListView", "unnamed": 1, "visible": True}
+pps_printer_item = {"container": pps_printer_list, "text": "", "type": "Text", "unnamed": 1, "visible": True}
 pps_local_printers = {"container": pps_printer_list, "text": "Local printers", "type": "Text", "unnamed": 1, "visible": True}
 win_rename_printer = {"title": "Rename", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 input_printer_name = {"container": win_rename_printer, "id": "nameField", "type": "TextField", "unnamed": 1, "visible": True}
