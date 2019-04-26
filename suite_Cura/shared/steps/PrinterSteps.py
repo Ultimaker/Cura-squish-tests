@@ -13,9 +13,12 @@ def step(context, expected_printer_type):
     test.compare(expected_printer_type, actual_printer_type)
 
 
-@When("I add a non-networked |any| printer")
-def step(context, printer):
-    add_printer.addLocalPrinter(printer)
+@When(r"I add a non-networked (.*) printer?(.*)", regexp=True)
+def step(context, printer, location):
+    if "onboarding screen" in location:
+        add_printer.addLocalPrinterFromOnb(printer)
+    else:
+        add_printer.addLocalPrinter(printer)
 
 
 @Step("I want to add a printer from the main menu")

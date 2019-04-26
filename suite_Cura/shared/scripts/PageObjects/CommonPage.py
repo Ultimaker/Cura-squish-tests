@@ -3,12 +3,12 @@ import platform
 from os.path import expanduser
 from os.path import getsize
 import shutil
-import SquishModuleHelper
+from Helpers.SquishModuleHelper import importSquishSymbols
 import squish
 import os
 from objectmaphelper import Wildcard
-import names
 import time
+import names
 
 
 class PageObject:
@@ -27,7 +27,7 @@ class PageObject:
                           'config': r'%s/.config/cura/4.0/' % self.home_dir}
 
         # Imports functions and members of squish
-        SquishModuleHelper.importSquishSymbols()
+        importSquishSymbols()
 
     def startCuraNoConfig(self):
         self.resetPreferences()
@@ -45,7 +45,6 @@ class PageObject:
             startApplication(self.LIN_CURA)
 
     def startCuraConfigVersion(self, config_version):
-        self.cura_version = config_version
         self.presetPreferences(config_version)
         self.startCura()
 
@@ -71,8 +70,12 @@ class PageObject:
     # TODO: Expand this function for linux/mac
     def presetPreferences(self, version=None):
         # Make sure preferences are completely deleted before copying to that dir
-        while os.listdir(self.windows_dir):
-            self.resetPreferences()
+        try:
+            while os.listdir(self.windows_dir):
+                self.resetPreferences()
+
+        except FileNotFoundError:
+            test.fail("Cura directory in roaming does not exist!")
 
         if version is not None:
             self.cura_version = version
@@ -141,18 +144,15 @@ class PageObject:
         squish.type(waitForObject(obj), val)
 
     @staticmethod
-    def findObjectByText(object, value, property=None):
-        if property is None:
-            property = 'text'
-
+    def findObjectByText(object, value, property='text'):
         obj = object.copy()
         obj[property] = Wildcard("*" + value + "*")
         return waitForObject(obj)
 
     @staticmethod
-    def replaceObjectTextProperty(object, value):
+    def replaceObjectTextProperty(object, value, property='text'):
         obj = object.copy()
-        obj['text'] = value
+        obj[property] = value
         return obj
 
     def fileSize(self, file):

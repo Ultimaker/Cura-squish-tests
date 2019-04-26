@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-import names
 from PageObjects.CommonPage import PageObject
-import SquishModuleHelper
+from Helpers.SquishModuleHelper import importSquishSymbols
+import names
 
 
 class PrintSettings(PageObject):
     def __init__(self):
-        SquishModuleHelper.importSquishSymbols()
+        importSquishSymbols()
 
     def selectProfile(self, profile):
         self.click(names.mwi_print_settings)

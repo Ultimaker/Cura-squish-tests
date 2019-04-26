@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-import names
 from PageObjects.CommonPage import PageObject
-import SquishModuleHelper
+from Helpers.SquishModuleHelper import importSquishSymbols
+import names
 import time
 
 
 class Performance(PageObject):
     def __init__(self):
         PageObject.__init__(self)
-        SquishModuleHelper.importSquishSymbols()
+        importSquishSymbols()
 
     def trackBootTime(self):
         self.presetPreferences()

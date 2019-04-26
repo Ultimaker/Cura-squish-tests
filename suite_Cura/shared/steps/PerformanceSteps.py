@@ -3,8 +3,8 @@ from PageObjects.CuraPage import Cura
 from PageObjects.PerformancePage import Performance
 
 page_object = PageObject()
-cura = Cura()
 performance = Performance()
+cura = Cura()
 
 
 @Given("Cura is being started in performance mode")

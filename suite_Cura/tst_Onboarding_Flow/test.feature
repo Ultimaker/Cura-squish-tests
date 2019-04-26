@@ -23,7 +23,7 @@ Feature: A complete walkthrough of the onboarding flow
 
   Scenario: Add non-networked printer
     Given I'm on the Printer page of the onboarding flow
-    When I add a non-networked Ultimaker S5 printer
+    When I add a non-networked Ultimaker S5 printer from the onboarding screen
     Then the cloud page is shown with title 'Ultimaker Cloud'
 
   Scenario: Finish onboarding flow and verify non-networked printer has been added

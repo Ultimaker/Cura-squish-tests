@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-import names
 from PageObjects.CommonPage import PageObject
-import SquishModuleHelper
+from Helpers.SquishModuleHelper import importSquishSymbols
 import squish
 from PageObjects.PerformancePage import Performance
+import names
 
 
 class Cura(PageObject):
     def __init__(self):
         PageObject.__init__(self)
-        SquishModuleHelper.importSquishSymbols()
+        importSquishSymbols()
 
     def pressCloseButton(self):
         self.click(names.btn_close)

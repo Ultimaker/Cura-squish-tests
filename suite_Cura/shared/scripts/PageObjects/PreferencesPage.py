@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-import names
 from PageObjects.CommonPage import PageObject
-from GetObjectsByProperties import ObjectDescendants
-import SquishModuleHelper
+from Helpers.GetObjectsByProperties import ObjectDescendants
+from Helpers.SquishModuleHelper import importSquishSymbols
+import names
 
 
 class Preferences(PageObject):
     def __init__(self):
         PageObject.__init__(self)
-        SquishModuleHelper.importSquishSymbols()
+        importSquishSymbols()
 
     def navigateTo(self, menu_item):
         menu_object = self.findObjectByText(names.mnu_item_preferences, menu_item)

@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-import names
 from PageObjects.CommonPage import PageObject
-import SquishModuleHelper
+from Helpers.SquishModuleHelper import importSquishSymbols
+import names
 
 
 class Marketplace(PageObject):
     def __init__(self):
-        SquishModuleHelper.importSquishSymbols()
+        importSquishSymbols()
 
     def selectPlugin(self, plugin_item):
         plugin = self.getPlugin(plugin_item)

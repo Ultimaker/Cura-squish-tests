@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-import names
 from PageObjects.CommonPage import PageObject
-from GetObjectsByProperties import ObjectDescendants
-import SquishModuleHelper
+from Helpers.GetObjectsByProperties import ObjectDescendants
+from Helpers.SquishModuleHelper import importSquishSymbols
+import names
 
 
 class Printer(PageObject):
     def __init__(self):
-        SquishModuleHelper.importSquishSymbols()
+        importSquishSymbols()
 
     def selectedPrinter(self):
         return waitForObject(names.mwi_sel_printer).text
