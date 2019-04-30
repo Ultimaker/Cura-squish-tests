@@ -29,4 +29,4 @@ Feature: A complete walkthrough of the onboarding flow
   Scenario: Finish onboarding flow and verify non-networked printer has been added
     Given I'm on the Cloud page of the onboarding flow
     When I finish the onboarding flow
-    Then I can see that a Ultimaker S5 printer has been selected
+    Then An Ultimaker S5 printer has been selected

@@ -10,8 +10,9 @@ qqw_qml = {"type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 mwi_printer = {"container": mwi, "id": "machineSelection", "type": "MachineSelector", "unnamed": 1, "visible": True}
 mwi_sel_printer = {"container": mwi_printer, "type": "Label", "unnamed": 1, "visible": True}
 mwi_btn_open_file = {"checkable": False, "container": mwi, "id": "openFileButton", "type": "Button", "unnamed": 1, "visible": True}
-mwi_printer_list = {"container": mwi, "id": "machineSelectorList", "type": "MachineSelectorList", "unnamed": 1, "visible": True}
 mwi_print_settings = {"container": mwi, "id": "printSetupSelectorItem", "type": "Item", "unnamed": 1, "visible": True}
+mwi_printer_list = {"container": mwi_ovl, "id": "machineSelectorList", "type": "MachineSelectorList", "unnamed": 1, "visible": True}
+mwi_btn_manage_printers = {"checkable": False, "container": mwi_ovl, "text": "Printers beheren", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 # Slice & Save
 mwi_btn_slice = {"checkable": False, "container": mwi, "id": "sliceButton", "text": "Slice", "type": "ActionButton", "unnamed": 1, "visible": True}

@@ -5,14 +5,19 @@ Feature: Verify if configurations of older versions still work
 
   Scenario Outline: Regression scenario's for older configs
     Given Cura has been started with <version> configuration
-	# TODO: Implement checks for each version (CURA-6298)
+    Then 14 Printers are present
+    And It is possible to switch to a single extruder printer
+
+
 
     Examples:
       | version |
       | 2.7     |
-      | 3.0     |
-      | 3.1     |
-      | 3.2     |
-      | 3.3     |
-      | 3.4     |
-      | 3.5     |
+#      | 3.0     |
+#      | 3.1     |
+#      | 3.2     |
+#      | 3.3     |
+#      | 3.4     |
+#      | 3.5     |
+#      | 3.6     |
+#      | 4.0     |

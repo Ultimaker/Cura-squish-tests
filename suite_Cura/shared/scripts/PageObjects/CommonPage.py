@@ -9,7 +9,7 @@ import os
 from objectmaphelper import Wildcard
 import time
 import names
-
+import gettext
 
 class PageObject:
     WIN_CURA = "Cura -platformtheme none"
@@ -154,6 +154,12 @@ class PageObject:
         obj = object.copy()
         obj[property] = value
         return obj
+    
+    def getObjByLang(self, obj, lang='nl'):
+        t = gettext.translation('cura', findFile("scripts", "locale"), languages=[lang])
+        new_val = t.gettext(obj['text'])
+
+        return self.replaceObjectTextProperty(obj, new_val)
 
     def fileSize(self, file):
         return self.convertBytes(getsize(file))

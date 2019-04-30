@@ -7,7 +7,7 @@ add_printer = AddPrinter()
 cura = Cura()
 
 
-@Step("I can see that a |any| printer has been selected")
+@Step("An |any| printer has been selected")
 def step(context, expected_printer_type):
     actual_printer_type = printer.selectedPrinter()
     test.compare(expected_printer_type, actual_printer_type)
@@ -29,3 +29,12 @@ def step(context):
 @When("I add a network printer with address |any|")
 def step(context, printer_IP):
     add_printer.addNetworkPrinter(printer_IP)
+
+@Then("|integer| Printers are present")
+def step(context, expected_count):
+    printer.navigateToPrinterPreferences()
+    test.compare(expected_count, printer.retrievePrinterCount())
+
+@Then("It is possible to switch to a single extruder printer")
+def step(context):
+    test.warning("TODO implement switching to a single extruder printer succeeds")
