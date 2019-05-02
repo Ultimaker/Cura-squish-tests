@@ -16,10 +16,10 @@ class Cura(PageObject):
 
     #     Top-level navigation bar
     def navigateTo(self, menu_item, submenu_item, property=None):
-        menu_object = PageObject.findObjectByText(names.mnu_item, menu_item, "plainText")
+        menu_object = self.findObjectByText(names.mnu_item, menu_item, "plainText")
         self.click(menu_object)
 
-        submenu_object = PageObject.findObjectByText(names.sub_mnu_item, submenu_item)
+        submenu_object = self.findObjectByText(names.sub_mnu_item, submenu_item)
         self.click(submenu_object)
 
     def navigateToStageMenu(self, stage_item):
@@ -72,13 +72,13 @@ class Cura(PageObject):
         self.click(names.btn_open_as_prj)
 
     def openFileFromSummary(self, track_time=False):
-        self.click(names.btn_open_prj_summary)
+        self.click(names.btn_open_save_summary)
 
         if track_time:
             return Performance.trackFileloadTime()
 
     def saveAsProject(self, track_time):
-        self.click(names.btn_save_as_prj)
+        self.click(names.btn_open_save_summary)
         self.setTextFieldValue(names.fdg_input_name, "UM3_Robot_SAVE.3mf")
         self.click(names.fdg_btn_save)
 

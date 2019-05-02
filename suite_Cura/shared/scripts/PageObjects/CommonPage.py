@@ -40,7 +40,7 @@ class PageObject:
     def startCura(self):
         if self.os == "Windows":
             startApplication(self.WIN_CURA)
-            waitForObject(names.mwi, 30000)
+            waitForObject(names.mwi, 50000)
         elif self.os == "Linux":
             startApplication(self.LIN_CURA)
 
@@ -143,10 +143,11 @@ class PageObject:
     def write(obj, val):
         squish.type(waitForObject(obj), val)
 
-    @staticmethod
-    def findObjectByText(object, value, property='text'):
+    def findObjectByText(self, object, value, property='text'):
+        text = self.getTranslatedText(value)
+        
         obj = object.copy()
-        obj[property] = Wildcard("*" + value + "*")
+        obj[property] = Wildcard("*" + text + "*")
         return waitForObject(obj)
 
     @staticmethod
@@ -156,10 +157,13 @@ class PageObject:
         return obj
     
     def getObjByLang(self, obj, lang='nl'):
-        t = gettext.translation('cura', findFile("scripts", "locale"), languages=[lang])
-        new_val = t.gettext(obj['text'])
-
+        new_val = self.getTranslatedText(obj['text'], lang)
         return self.replaceObjectTextProperty(obj, new_val)
+    
+    @staticmethod
+    def getTranslatedText(text, lang='nl'):
+        t = gettext.translation('cura', findFile("scripts", "locale"), languages=[lang])
+        return t.gettext(text)
 
     def fileSize(self, file):
         return self.convertBytes(getsize(file))
