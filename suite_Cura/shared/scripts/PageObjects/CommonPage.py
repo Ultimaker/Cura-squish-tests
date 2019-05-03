@@ -75,7 +75,7 @@ class PageObject:
                 self.resetPreferences()
 
         except FileNotFoundError:
-            test.fail("Cura directory in roaming does not exist!")
+            os.mkdir(self.windows_dir)
 
         if version is not None:
             self.cura_version = version
