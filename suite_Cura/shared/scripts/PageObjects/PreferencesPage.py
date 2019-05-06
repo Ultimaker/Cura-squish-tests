@@ -15,13 +15,13 @@ class Preferences(PageObject):
         self.click(menu_object)
 
     def selectPrinterMenu(self, action):
-        button = self.replaceObjectProperty(names.pps_mnu_btn, self.getMenuBtn(action), 'id')
+        button = self.replaceObjectProperty(names.prf_mnu_btn, self.getMenuBtn(action), 'id')
         self.click(button)
         
     def getMenuBtn(self, menu_action):
         switcher = {
-            'Add': 'activateMenuButton',
-            'Activate': 'addMenuButton',
+            'Add': 'addMenuButton',
+            'Activate': 'activateMenuButton',
             'Remove': 'removeMenuButton',
             'Rename': 'renameMenuButton'
         }
@@ -48,18 +48,15 @@ class Preferences(PageObject):
 
         return printer_list
 
-    def getPrinterFromList(self, property_value):
-        printer = ObjectDescendants.getObjects(names.pps_printer_list, {"text": f"{property_value}"})
-        return printer
+    def getPrinterFromList(self, printer):
+        printer_obj = self.replaceObjectProperty(names.pps_printer_item, printer)
+        waitForObject(printer_obj, 5000)
+        return printer_obj
 
     def selectPrinter(self, printer_type):
-        printer_list = self.getPrinterList(printer_type)
-
-        if len(printer_list) != 0:
-            self.click(printer_list[0])
-        else:
-            test.fail("Printer %s not found" % printer_type)
-
+        printer_obj = self.getPrinterFromList(printer_type)
+        self.click(printer_obj)
+      
     def renamePrinter(self, printer_name):
         self.click(names.input_printer_name)
         self.setTextFieldValue(names.input_printer_name, printer_name)
