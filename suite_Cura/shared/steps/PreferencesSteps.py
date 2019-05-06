@@ -18,11 +18,11 @@ def step(context, action):
 
 @Then("The printer overview contains a '|any|' printer")
 def step(context, expected_printer):
-    printer_list = preferences.getPrinterList(expected_printer)
+    actual_printer = preferences.getPrinterFromList(expected_printer)
     if len(printer_list) != 0:
-        test.compare(expected_printer, printer_list[0].text)
+        test.compare(expected_printer, actual_printer[0].text)
     else:
-        test.fail("Printer %s not found" % expected_printer)
+        test.fail(f"Printer {expected_printer} not found")
 
 
 @Then(r"Printer (.*?) is not visible (?:anymore)?", regexp=True)
@@ -37,6 +37,7 @@ def step(context, printer_type):
 
 @When("I give the printer the '|any|' name")
 def step(context, printer_name):
+    preferences.selectPrinterMenu("Rename")
     preferences.renamePrinter(printer_name)
 
 

@@ -151,14 +151,14 @@ class PageObject:
         return waitForObject(obj)
 
     @staticmethod
-    def replaceObjectTextProperty(object, value, property='text'):
+    def replaceObjectProperty(object, value, property='text'):
         obj = object.copy()
         obj[property] = value
         return obj
     
     def getObjByLang(self, obj, lang='nl'):
         new_val = self.getTranslatedText(obj['text'], lang)
-        return self.replaceObjectTextProperty(obj, new_val)
+        return self.replaceObjectProperty(obj, new_val)
     
     @staticmethod
     def getTranslatedText(text, lang='nl'):

@@ -15,20 +15,42 @@ class Preferences(PageObject):
         self.click(menu_object)
 
     def selectPrinterMenu(self, action):
-        button = self.findObjectByText(names.pps_mnu_btn, action)
+        button = self.replaceObjectProperty(names.pps_mnu_btn, self.getMenuBtn(action), 'id')
         self.click(button)
+        
+    def getMenuBtn(self, menu_action):
+        switcher = {
+            'Add': 'activateMenuButton',
+            'Activate': 'addMenuButton',
+            'Remove': 'removeMenuButton',
+            'Rename': 'renameMenuButton'
+        }
+
+        return switcher.get(menu_action)
 
     def removePrinter(self):
         self.click(names.rpd_btn_confirm)
 
     def verifyPrinterDeleted(self, printer):
-        obj = self.replaceObjectTextProperty(names.pps_printer_item, printer)
+        obj = self.replaceObjectProperty(names.pps_printer_item, printer)
         return self.verifyObjDeleted(obj)
 
-    def getPrinterList(self, expected_printer_type):
-        waitForObject(names.pps_local_printers)
-        printer_list = ObjectDescendants.getObjects(names.pps_printer_list, {"text": f"{expected_printer_type}"})
+    def getPrinterListSize(self):
+        # This list contains non-printer objects, such as 'Local printers' and 'Network printers'
+        # As they are the same object type
+        printer_list = len(ObjectDescendants.getObjects(names.pps_printer_list, {"type": "QQuickRectangle"}))
+
+        # Check if 'Local/Network printers' exists, if so extract one item from the printer list
+        if object.exists(self.getObjByLang(names.pps_local_printers)):
+            printer_list -= 1
+        if object.exists(self.getObjByLang(names.pps_network_printers)):
+            printer_list -= 1
+
         return printer_list
+
+    def getPrinterFromList(self, property_value):
+        printer = ObjectDescendants.getObjects(names.pps_printer_list, {"text": f"{property_value}"})
+        return printer
 
     def selectPrinter(self, printer_type):
         printer_list = self.getPrinterList(printer_type)
@@ -39,7 +61,6 @@ class Preferences(PageObject):
             test.fail("Printer %s not found" % printer_type)
 
     def renamePrinter(self, printer_name):
-        self.selectPrinterMenu("Rename")
         self.click(names.input_printer_name)
         self.setTextFieldValue(names.input_printer_name, printer_name)
         self.click(names.btn_rename_confirm)

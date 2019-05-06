@@ -23,17 +23,12 @@ class Printer(PageObject):
         for obj in printer_list:
             if obj.text == printer:
                 self.click(obj)
-                
-    def retrievePrinterCount(self):
-        waitForObject(self.getObjByLang(names.pps_local_printers))
 
-        # TODO: Fix container of pps_printer_list (title of container is in english)
-
-        printer_list = ObjectDescendants.getObjects(names.pps_printer_list, {"type": "MachineSelectorButton"})
-        for obj in printer_list:
-            print(obj.text)
-        return len(printer_list)
-    
     def navigateToPrinterPreferences(self):
         self.openPrinterList()
-        self.click(self.getObjByLang(names.mwi_btn_manage_printers))
+        self.click(names.mwi_btn_manage_printers)
+        waitForObject(names.win_pps)
+
+    def getExtruderCount(self):
+        extruder_list = ObjectDescendants.getObjects(names.mwi_lst_extruders, {"id": "extruderIcon"})
+        return len(extruder_list)

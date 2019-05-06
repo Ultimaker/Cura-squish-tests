@@ -28,4 +28,4 @@ class AddPrinter(PageObject):
         self.click(self.replaceOnboardingObjProperty(names.pdg_btn_add_printer))
 
     def replaceOnboardingObjProperty(self, obj):
-        return self.replaceObjectTextProperty(obj, names.mwi, "container")
+        return self.replaceObjectProperty(obj, names.mwi, "container")

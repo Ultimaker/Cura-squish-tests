@@ -16,6 +16,7 @@ mwi_btn_manage_printers = {"checkable": False, "container": mwi_ovl, "id": "mana
 mwi_btn_slice = {"checkable": False, "container": mwi, "id": "sliceButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 mwi_btn_save_to_file = {"checkable": False, "container": mwi, "id": "saveToButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 mwi_btn_preview = {"checkable": False, "container": mwi, "id": "previewStageShortcut", "type": "ActionButton", "unnamed": 1, "visible": True}
+mwi_lst_extruders = {"container": mwi, "id": "extrudersList", "type": "ListView", "unnamed": 1, "visible": True}
 
 # Toolbar
 mwi_btn_toolbar = {"checkable": True, "container": mwi, "text": "", "type": "ToolbarButton", "unnamed": 1, "visible": True}
@@ -103,13 +104,14 @@ rpd_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible"
 # Preferences
 mnu_preferences = {"container": qqw_qml, "id": "pagesList", "type": "TableView", "unnamed": 1, "visible": True}
 mnu_item_preferences = {"container": mnu_preferences, "objectName": "label", "text": "", "type": "Text", "visible": True}
+prf_mnu_btn = {"container": qqw_qml, "id": "", "type": "Button", "unnamed": 1, "visible": True}
 
 # Printer preferences (pps)
 win_pps = {"container": qqw_qml, "id": "base", "type": "MachinesPage", "unnamed": 1, "visible": True}
-pps_mnu_btn = {"container": win_pps, "text": "", "type": "Button", "unnamed": 1, "visible": True}
-pps_printer_list = {"container": qqw_qml, "id": "objectList", "type": "ListView", "unnamed": 1, "visible": True}
+pps_printer_list = {"container": win_pps, "id": "objectList", "type": "ListView", "unnamed": 1, "visible": True}
 pps_printer_item = {"container": pps_printer_list, "text": "", "type": "Text", "unnamed": 1, "visible": True}
 pps_local_printers = {"container": pps_printer_list, "text": "Local printers", "type": "Text", "unnamed": 1, "visible": True}
+pps_network_printers = {"container": pps_printer_list, "text": "Network printers", "type": "Text", "unnamed": 1, "visible": True}
 win_rename_printer = {"title": "Rename", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 input_printer_name = {"container": win_rename_printer, "id": "nameField", "type": "TextField", "unnamed": 1, "visible": True}
 btn_rename_confirm = {"container": win_rename_printer, "text": "OK", "type": "Button", "unnamed": 1, "visible": True}

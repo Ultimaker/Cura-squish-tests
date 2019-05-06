@@ -96,3 +96,7 @@ def step(context, location):
 @Given("I slice the object")
 def step(context):
     cura.sliceObject()
+@Then("I close Cura")
+def step(context):
+    for ctx in applicationContextList():
+        ctx.detach()
