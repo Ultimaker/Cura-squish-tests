@@ -17,7 +17,9 @@ materials = Materials()
 def step(context, material_type):
     materials.navigateToMaterialsPreferences()
     materials.activateMaterial(material_type)
+    cura.pressCloseButton()
 
-@Then("Extruder one makes use of material 'Custom PLA Custom'")
-def step(context):
-    test.warning("TODO implement Extruder one makes use of material 'Custom PLA Custom'")
+@Then("Extruder one makes use of material '|any|'")
+def step(context, material_type):
+    material_used = materials.getExtruderOneMaterial()
+    test.compare(material_type, material_used)

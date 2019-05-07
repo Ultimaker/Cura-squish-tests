@@ -20,17 +20,15 @@ class Materials(PageObject):
         self.click(manage_materials)     
         
     def activateMaterial(self, material_type):
-        custom_material = names.mat_cbo_custom
-        self.click(custom_material)
-        
-        # Get grand-parent of custom_material, which is the wrapper of the whole custom section
-        wrapper_obj = self.getGrandParentObj(custom_material)
-        
-        # Get specific grandchild from this
-        pla_dropdown = ObjectDescendants.getObjects(objectMap.realName(wrapper_obj), {"text": "PLA"})
-        self.click(pla_dropdown[0])
-        
-        # Select material and activate
+        # Custom
+        self.click(names.mat_cbo_custom)
+        # Custom > PLA
+        self.click(names.mat_header_custom)
+        # Custom > PLA > Custom PLA Custom
         self.click(names.mat_custom_pla)
-        Preferences.selectPreferencesMenu("Activate")
         
+        preferences = Preferences()
+        preferences.selectPreferencesMenu("Activate")
+        
+    def getExtruderOneMaterial(self, material_type):
+        pass
