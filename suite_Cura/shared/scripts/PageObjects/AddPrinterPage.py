@@ -19,12 +19,12 @@ class AddPrinter(PageObject):
 
     def addLocalPrinter(self, printer):
         self.click(names.pdg_cbo_local_printer)
-        self.click(self.findObjectByText(names.pdg_rbtn_printer, printer))
+        self.click(self.findObjectWithText(names.pdg_rbtn_printer, printer))
         self.click(names.pdg_btn_add_printer)
 
     def addLocalPrinterFromOnb(self, printer):
         self.click(self.replaceOnboardingObjProperty(names.pdg_cbo_local_printer))
-        self.click(self.findObjectByText(self.replaceOnboardingObjProperty(names.pdg_rbtn_printer), printer))
+        self.click(self.findObjectWithText(self.replaceOnboardingObjProperty(names.pdg_rbtn_printer), printer))
         self.click(self.replaceOnboardingObjProperty(names.pdg_btn_add_printer))
 
     def replaceOnboardingObjProperty(self, obj):

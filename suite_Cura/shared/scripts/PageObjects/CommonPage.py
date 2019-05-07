@@ -11,6 +11,7 @@ import time
 import names
 import gettext
 
+
 class PageObject:
     WIN_CURA = "Cura -platformtheme none"
     LIN_CURA = "Cura.AppImage -platformtheme none"
@@ -136,6 +137,10 @@ class PageObject:
             return True
 
     @staticmethod
+    def getChildrenOfType(parent, typename):
+        return [children.append(x) for x in object.children(parent) if className(x) == typename]
+
+    @staticmethod
     def click(obj, time_out=15000):
         squish.mouseClick(waitForObject(obj, time_out))
 
@@ -143,9 +148,9 @@ class PageObject:
     def write(obj, val):
         squish.type(waitForObject(obj), val)
 
-    def findObjectByText(self, object, value, property='text'):
+    def findObjectWithText(self, object, value, property='text'):
         text = self.getTranslatedText(value)
-        
+
         obj = object.copy()
         obj[property] = Wildcard("*" + text + "*")
         return waitForObject(obj)
@@ -155,11 +160,11 @@ class PageObject:
         obj = object.copy()
         obj[property] = value
         return obj
-    
+
     def getObjByLang(self, obj, lang='nl'):
         new_val = self.getTranslatedText(obj['text'], lang)
         return self.replaceObjectProperty(obj, new_val)
-    
+
     @staticmethod
     def getTranslatedText(text, lang='nl'):
         t = gettext.translation('cura', findFile("scripts", "locale"), languages=[lang])
@@ -187,6 +192,10 @@ class PageObject:
         if size < 1:
             test.fail("Gcode file smaller than 1 KB")
         return round(size)
+
+    def getGrandParentObj(self, obj):
+        parent = object.parent(waitForObject(obj))
+        return object.parent(waitForObject(parent))
 
     @staticmethod
     def activateMenuItem(menu_object_names):

@@ -5,9 +5,11 @@ Feature: Verify if configurations of older versions still work
 
   Scenario Outline: Regression scenario's for older configs
     Given Cura has been started with <version> configuration
-    Then 14 Printers are present
+	When I activate material 'Custom PLA Custom'
+	Then Extruder one makes use of material 'Custom PLA Custom'
+    And 14 Printers are present
     And It is possible to switch to single extruder printer Ultimaker 2+
-	And I close Cura
+    And I close Cura
 
 
     Examples:

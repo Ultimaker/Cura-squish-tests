@@ -26,3 +26,7 @@ msgstr "Lokale printers"
 
 msgid "Network printers"
 msgstr "Netwerkprinters"
+
+msgid "Manage Materials"
+msgstr "Materialen Beheren"
+

@@ -10,7 +10,7 @@ def step(context, menu_item):
 
 @When("I select |word| printer")
 def step(context, action):
-    preferences.selectPrinterMenu(action)
+    preferences.selectPreferencesMenu(action)
 
     if action == "Remove":
         preferences.removePrinter()
@@ -34,7 +34,7 @@ def step(context, printer_type):
 
 @When("I give the printer the '|any|' name")
 def step(context, printer_name):
-    preferences.selectPrinterMenu("Rename")
+    preferences.selectPreferencesMenu("Rename")
     preferences.renamePrinter(printer_name)
 
 

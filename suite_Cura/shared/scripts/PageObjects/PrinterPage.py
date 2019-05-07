@@ -19,7 +19,8 @@ class Printer(PageObject):
         self.openPrinterList()
 
         waitForObject(names.mwi_printer_list)
-        printer_list = ObjectDescendants.getObjects(names.mwi_printer_list, {"type": "MachineSelectorButton"})
+        printer_list = self.getChildrenOfType(names.mwi_printer_list, "MachineSelectorButton")
+        
         for obj in printer_list:
             if obj.text == printer:
                 self.click(obj)

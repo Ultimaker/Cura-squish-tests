@@ -19,7 +19,7 @@ class PrintSettings(PageObject):
         self.click(names.prs_btn_sel_profile)
 
         if "fine" in profile:
-            self.click(self.findObjectByText(names.sub_mnu_item, "Fine - 0.1mm"))
+            self.click(self.findObjectWithText(names.sub_mnu_item, "Fine - 0.1mm"))
 
         # Close print settings in case it interferes with other steps
         self.click(names.mwi_print_settings)

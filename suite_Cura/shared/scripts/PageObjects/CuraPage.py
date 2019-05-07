@@ -16,10 +16,10 @@ class Cura(PageObject):
 
     #     Top-level navigation bar
     def navigateTo(self, menu_item, submenu_item, property=None):
-        menu_object = self.findObjectByText(names.mnu_item, menu_item, "plainText")
+        menu_object = self.findObjectWithText(names.mnu_item, menu_item, "plainText")
         self.click(menu_object)
 
-        submenu_object = self.findObjectByText(names.sub_mnu_item, submenu_item)
+        submenu_object = self.findObjectWithText(names.sub_mnu_item, submenu_item)
         self.click(submenu_object)
 
     def navigateToStageMenu(self, stage_item):
@@ -93,7 +93,7 @@ class Cura(PageObject):
         self.click(names.mwi)
 
     def scaleModel(self, size):
-        squish.mouseClick(self.findObjectByText(names.mwi_btn_toolbar, "Scale"))
+        squish.mouseClick(self.findObjectWithText(names.mwi_btn_toolbar, "Scale"))
 
         if not waitForObject(names.mwi_chk_uniform_scaling).checked:
             squish.mouseClick(names.mwi_chk_uniform_scaling)

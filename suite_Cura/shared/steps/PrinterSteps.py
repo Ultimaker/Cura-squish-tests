@@ -45,4 +45,4 @@ def step(context, expected_count):
 def step(context, printer_type):
     test.compare(2, printer.getExtruderCount())
     printer.selectPrinter(printer_type)
-    test.compare(1, printer.getExtruderCount())
+    test.compare(1, printer.getExtruderCount())

@@ -18,6 +18,13 @@ mwi_btn_save_to_file = {"checkable": False, "container": mwi, "id": "saveToButto
 mwi_btn_preview = {"checkable": False, "container": mwi, "id": "previewStageShortcut", "type": "ActionButton", "unnamed": 1, "visible": True}
 mwi_lst_extruders = {"container": mwi, "id": "extrudersList", "type": "ListView", "unnamed": 1, "visible": True}
 
+# Menu (mnu, top level menu bar)
+mnu_bar = {"container": mwi, "id": "menuBarLoader", "type": "Loader", "unnamed": 1, "visible": True}
+mnu_item = {"container": mnu_bar, "plainText": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
+
+qqm_mnu_popup = {"type": "QQuickMenuPopupWindow1", "unnamed": 1, "visible": True}
+scroll_view = {"container": qqm_mnu_popup, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
+
 # Toolbar
 mwi_btn_toolbar = {"checkable": True, "container": mwi, "text": "", "type": "ToolbarButton", "unnamed": 1, "visible": True}
 
@@ -66,13 +73,6 @@ mbo_btn_overwrite = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visibl
 btn_open_as_prj = {"container": qqw_qml, "id": "openAsProjectButton", "type": "Button", "unnamed": 1, "visible": True}
 btn_open_save_summary = {"container": qqw_qml, "id": "ok_button", "type": "Button", "unnamed": 1, "visible": True}
 
-# Menu (mnu, top level menu bar)
-mnu_bar = {"container": mwi, "id": "menuBarLoader", "type": "Loader", "unnamed": 1, "visible": True}
-mnu_item = {"container": mnu_bar, "plainText": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
-
-qqm_mnu_popup = {"type": "QQuickMenuPopupWindow1", "unnamed": 1, "visible": True}
-scroll_view = {"container": qqm_mnu_popup, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
-
 # Generic sub-menu item
 sub_mnu_item = {"container": scroll_view, "text": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
 
@@ -104,7 +104,15 @@ rpd_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible"
 # Preferences
 mnu_preferences = {"container": qqw_qml, "id": "pagesList", "type": "TableView", "unnamed": 1, "visible": True}
 mnu_item_preferences = {"container": mnu_preferences, "objectName": "label", "text": "", "type": "Text", "visible": True}
-prf_mnu_btn = {"container": qqw_qml, "id": "", "type": "Button", "unnamed": 1, "visible": True}
+prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button", "unnamed": 1, "visible": True}
+
+
+# Materials preferences (mat)
+mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
+mat_mnu_manage = {"container": scroll_view, "text": "Manage Materials...", "type": "StyleItem1", "unnamed": 1, "visible": True}
+mat_cbo_custom = {"container": qqw_qml, "text": "Custom", "type": "Text", "unnamed": 1, "visible": True}
+mat_custom_pla = {"container": qqw_qml, "text": "Custom PLA Custom", "type": "Text", "unnamed": 1, "visible": True}
+
 
 # Printer preferences (pps)
 win_pps = {"container": qqw_qml, "id": "base", "type": "MachinesPage", "unnamed": 1, "visible": True}
@@ -139,3 +147,4 @@ plugin_customer_supports = {"container": mar_view, "text": "Custom Supports", "t
 win_plugin = {"title": "Plugin License Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 plugin_lcs_btn_accept = {"container": win_plugin, "id": "acceptButton", "type": "Button", "unnamed": 1, "visible": True}
 plugin_btn_installed = {"checkable": False, "container": mar_view, "id": "installedButton", "type": "ActionButton", "unnamed": 1, "visible": True}
+
