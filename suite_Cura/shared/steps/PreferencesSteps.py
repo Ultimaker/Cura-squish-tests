@@ -41,3 +41,16 @@ def step(context, printer_name):
 @Then("The printer is activated")
 def step(context):
     preferences.verifyPrinterActivated()
+    
+@Step("I select |word| profile")
+def step(context, action):
+    preferences.selectPreferencesMenu(action)
+
+@Step("I give the new profile '|word|' name")
+def step(context, profile_name):
+    preferences.createProfile(profile_name)
+
+@Then("the profile overview contains '|word|' profile")
+def step(context, expected_pofile):
+    actual_printer = preferences.getPrinterFromList(expected_profile)
+    test.compare(expected_profile, actual_profile['text'])

@@ -125,11 +125,18 @@ input_printer_name = {"container": win_rename_printer, "id": "nameField", "type"
 btn_rename_confirm = {"container": win_rename_printer, "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
 pps_btn_machine_settings = {"container": qqw_qml, "text": "Machine Settings", "type": "Button", "unnamed": 1, "visible": True}
 
+# Profile preferences (pfs)
+win_create_profile = {"title": "Create Profile", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+input_profile_name = {"container": win_create_profile, "type": "Column", "unnamed": 1, "visible": True}
+btn_create_profile_confirm = {"container": win_create_profile, "type": "Button", "unnamed": 1, "visible": True}
+
+
 # Print Settings (prs)
 win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}
 prs_btn_custom = {"checkable": False, "container": mwi, "id": "customSettingsButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 prs_custom_view = {"container": mwi, "id": "customPrintSetup", "type": "CustomPrintSetup", "unnamed": 1, "visible": True}
 prs_btn_sel_profile = {"container": prs_custom_view, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
+prs_chk_gradual_infill = {"container": mwi, "id": "enableGradualInfillCheckBox", "type": "CheckBox", "unnamed": 1, "visible": True}
 
 # Marketplace (mar)
 mwi_btn_marketplace = {"checkable": False, "container": mwi, "id": "marketplaceButton", "type": "Button", "unnamed": 1, "visible": True}

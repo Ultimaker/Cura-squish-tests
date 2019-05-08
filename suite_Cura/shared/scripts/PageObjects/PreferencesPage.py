@@ -67,3 +67,13 @@ class Preferences(PageObject):
 
     def verifyPrinterActivated(self):
         object.exists(names.pps_btn_machine_settings)
+
+    def createProfile(self, profile_name):
+        self.click(names.input_profile_name)
+        self.setTextFieldValue(names.input_profile_name, profile_name)
+        self.click(names.btn_create_profile_confirm)
+        
+    def getProfileFromList(self, profile):
+        printer_obj = self.replaceObjectProperty(names.pps_profile_item, profile)
+        waitForObject(printer_obj, 5000)
+        return printer_obj
