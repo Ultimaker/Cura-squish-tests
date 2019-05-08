@@ -20,6 +20,6 @@ def step(context, material_type):
     cura.pressCloseButton()
 
 @Then("Extruder one makes use of material '|any|'")
-def step(context, material_type):
-    material_used = materials.getExtruderOneMaterial()
-    test.compare(material_type, material_used)
+def step(context, expected_material):
+    actual_material = materials.getExtruderOneMaterial()
+    test.compare(expected_material, actual_material.text)

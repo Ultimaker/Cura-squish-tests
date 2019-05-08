@@ -3,7 +3,6 @@ from PageObjects.CommonPage import PageObject
 from Helpers.SquishModuleHelper import importSquishSymbols
 import names
 from PageObjects.PreferencesPage import Preferences
-from Helpers.GetObjectsByProperties import ObjectDescendants
 
 class Materials(PageObject):
     def __init__(self):
@@ -30,5 +29,5 @@ class Materials(PageObject):
         preferences = Preferences()
         preferences.selectPreferencesMenu("Activate")
         
-    def getExtruderOneMaterial(self, material_type):
-        pass
+    def getExtruderOneMaterial(self):
+        return waitForObject(names.mwi_lbl_extruder)

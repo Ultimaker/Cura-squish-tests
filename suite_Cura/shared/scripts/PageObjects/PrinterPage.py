@@ -18,12 +18,14 @@ class Printer(PageObject):
     def selectPrinter(self, printer):
         self.openPrinterList()
 
-        waitForObject(names.mwi_printer_list)
-        printer_list = self.getChildrenOfType(names.mwi_printer_list, "MachineSelectorButton")
-        
+        printer_list_obj = waitForObject(names.mwi_printer_list)
+        printer_list = self.getChildrenOfType(printer_list_obj, "MachineSelectorButton")
+
         for obj in printer_list:
             if obj.text == printer:
                 self.click(obj)
+                return
+        test.fail(f"Printer {printer} not found")
 
     def navigateToPrinterPreferences(self):
         self.openPrinterList()

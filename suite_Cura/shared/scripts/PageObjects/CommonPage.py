@@ -136,9 +136,17 @@ class PageObject:
             testSettings.objectNotFoundDebugging = True
             return True
 
-    @staticmethod
-    def getChildrenOfType(parent, typename):
-        return [children.append(x) for x in object.children(parent) if className(x) == typename]
+    # This method looks for children by type recursively
+    def getChildrenOfType(self, parent, typename, child_obj_list=None):
+        if child_obj_list is None:
+            child_obj_list = []
+            
+        [child_obj_list.append(x) for x in object.children(parent) if typename in className(x)]
+
+        for x in object.children(parent):
+            child_obj_list = self.getChildrenOfType(x, typename, child_obj_list)
+        
+        return child_obj_list
 
     @staticmethod
     def click(obj, time_out=15000):
