@@ -27,8 +27,8 @@ class Cura(PageObject):
             self.click(names.mwi_btn_marketplace)
 
     def navigateToSettings(self):
-        self.click(names.mwi_print_settings)     
-        
+        self.click(names.mwi_print_settings)
+
     def curaIsStarted(self):
         waitForObjectExists(names.mwi)
 
@@ -103,6 +103,3 @@ class Cura(PageObject):
 
         self.setTextFieldValue(names.mwi_scale_model_x, size)
         self.click(names.mwi)
-    
-    def enableGradualInfill(self):
-        self.click(names.prs_chk_gradual_infill)

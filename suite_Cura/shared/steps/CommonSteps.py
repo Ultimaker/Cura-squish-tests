@@ -97,17 +97,13 @@ def step(context, location):
 def step(context):
     cura.sliceObject()
 
+
 @Then("I close Cura")
 def step(context):
     for ctx in applicationContextList():
         ctx.detach()
-@When("I open the settings bar")
+
+
+@When("I open Print Settings")
 def step(context):
     cura.navigateToSettings()
-
-@When("I enable Gradual infill")
-def step(context):
-    cura.enableGradualInfill()
-
-
-

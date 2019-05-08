@@ -146,7 +146,6 @@ win_create_profile = {"title": "Create Profile", "type": "QQuickWindowQmlImpl", 
 input_profile_name = {"container": win_create_profile, "type": "Column", "unnamed": 1, "visible": True}
 btn_create_profile_confirm = {"container": win_create_profile, "type": "Button", "unnamed": 1, "visible": True}
 
-
 # Print Settings (prs)
 win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}
 prs_btn_custom = {"checkable": False, "container": mwi, "id": "customSettingsButton", "type": "ActionButton", "unnamed": 1, "visible": True}
