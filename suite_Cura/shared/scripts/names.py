@@ -7,16 +7,26 @@ mwi_ovl = {"container": mwi, "type": "Overlay", "unnamed": 1, "visible": True}
 qqw_qml = {"type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 
 # Cura Main Page
+mwi_btn_open_file = {"checkable": False, "container": mwi, "id": "openFileButton", "type": "Button", "unnamed": 1, "visible": True}
+
+# Printers
 mwi_printer = {"container": mwi, "id": "machineSelection", "type": "MachineSelector", "unnamed": 1, "visible": True}
 mwi_sel_printer = {"container": mwi_printer, "type": "Label", "unnamed": 1, "visible": True}
-mwi_btn_open_file = {"checkable": False, "container": mwi, "id": "openFileButton", "type": "Button", "unnamed": 1, "visible": True}
-mwi_print_settings = {"container": mwi, "id": "printSetupSelectorItem", "type": "Item", "unnamed": 1, "visible": True}
-mwi_printer_list = {"container": mwi_ovl, "id": "machineSelectorList", "type": "MachineSelectorList", "unnamed": 1, "visible": True}
 mwi_btn_manage_printers = {"checkable": False, "container": mwi_ovl, "id": "managePrinterButton", "type": "ActionButton", "unnamed": 1, "visible": True}
+mwi_printer_list = {"container": mwi_ovl, "id": "machineSelectorList", "type": "MachineSelectorList", "unnamed": 1, "visible": True}
+
+# Print Settings
+mwi_print_settings = {"container": mwi, "id": "printSetupSelectorItem", "type": "Item", "unnamed": 1, "visible": True}
+
+# Slicing
 mwi_btn_slice = {"checkable": False, "container": mwi, "id": "sliceButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 mwi_btn_save_to_file = {"checkable": False, "container": mwi, "id": "saveToButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 mwi_btn_preview = {"checkable": False, "container": mwi, "id": "previewStageShortcut", "type": "ActionButton", "unnamed": 1, "visible": True}
+
+# Extruders
 mwi_lst_extruders = {"container": mwi, "id": "extrudersList", "type": "ListView", "unnamed": 1, "visible": True}
+mwi_item_extruder = {"container": mwi_lst_extruders, "index": 0, "type": "Item", "unnamed": 1, "visible": True}
+mwi_lbl_extruder = {"container": mwi_item_extruder, "type": "Label", "unnamed": 1, "visible": True}
 
 # Menu (mnu, top level menu bar)
 mnu_bar = {"container": mwi, "id": "menuBarLoader", "type": "Loader", "unnamed": 1, "visible": True}
@@ -106,13 +116,19 @@ mnu_preferences = {"container": qqw_qml, "id": "pagesList", "type": "TableView",
 mnu_item_preferences = {"container": mnu_preferences, "objectName": "label", "text": "", "type": "Text", "visible": True}
 prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button", "unnamed": 1, "visible": True}
 
-
 # Materials preferences (mat)
 mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
 mat_mnu_manage = {"container": scroll_view, "text": "Manage Materials...", "type": "StyleItem1", "unnamed": 1, "visible": True}
-mat_cbo_custom = {"container": qqw_qml, "text": "Custom", "type": "Text", "unnamed": 1, "visible": True}
-mat_custom_pla = {"container": qqw_qml, "text": "Custom PLA Custom", "type": "Text", "unnamed": 1, "visible": True}
 
+# custom brand
+mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
+
+# material section of brand
+mat_header = {"container": mat_cbo_custom, "id": "material_type_header", "type": "Row", "unnamed": 1, "visible": True}
+mat_header_custom = {"container": mat_header, "text": "PLA", "type": "Text", "unnamed": 1, "visible": True}
+
+# material of brand
+mat_custom_pla = {"container": mat_cbo_custom, "text": "Custom PLA Custom", "type": "Text", "unnamed": 1, "visible": True}
 
 # Printer preferences (pps)
 win_pps = {"container": qqw_qml, "id": "base", "type": "MachinesPage", "unnamed": 1, "visible": True}
@@ -154,4 +170,3 @@ plugin_customer_supports = {"container": mar_view, "text": "Custom Supports", "t
 win_plugin = {"title": "Plugin License Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 plugin_lcs_btn_accept = {"container": win_plugin, "id": "acceptButton", "type": "Button", "unnamed": 1, "visible": True}
 plugin_btn_installed = {"checkable": False, "container": mar_view, "id": "installedButton", "type": "ActionButton", "unnamed": 1, "visible": True}
-

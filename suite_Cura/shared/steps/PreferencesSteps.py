@@ -19,7 +19,7 @@ def step(context, action):
 @Then("The printer overview contains a '|any|' printer")
 def step(context, expected_printer):
     actual_printer = preferences.getPrinterFromList(expected_printer)
-    test.compare(expected_printer, actual_printer['text'])
+    test.compare(expected_printer, actual_printer.text)
 
 
 @Then(r"Printer (.*?) is not visible (?:anymore)?", regexp=True)

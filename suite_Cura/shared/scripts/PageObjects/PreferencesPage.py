@@ -41,7 +41,7 @@ class Preferences(PageObject):
     def getPrinterListSize(self):
         # This list contains non-printer objects, such as 'Local printers' and 'Network printers'
         # As they are the same object type
-        printer_list = len(self.getChildrenOfType(names.pps_printer_list, "QQuickRectangle"))
+        printer_list = len(self.getChildrenOfType(findObject(names.pps_printer_list), "QQuickRectangle"))
 
         # Check if 'Local/Network printers' exists, if so extract one item from the printer list
         if object.exists(self.getObjByLang(names.pps_local_printers)):
@@ -53,8 +53,7 @@ class Preferences(PageObject):
 
     def getPrinterFromList(self, printer):
         printer_obj = self.replaceObjectProperty(names.pps_printer_item, printer)
-        waitForObject(printer_obj, 5000)
-        return printer_obj
+        return waitForObject(printer_obj, 5000)
 
     def selectPrinter(self, printer_type):
         printer_obj = self.getPrinterFromList(printer_type)
