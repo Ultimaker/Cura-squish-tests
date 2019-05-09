@@ -137,13 +137,14 @@ class PageObject:
             return True
 
     # This method looks for children by type recursively
-    def getChildrenOfType(self, parent, typename, child_obj_list=None):
+    # Object.children(n) requires a real name (dict) and cannot be used with type 'Object'
+    def getChildrenOfType(self, parent_obj, typename, child_obj_list=None):
         if child_obj_list is None:
             child_obj_list = []
             
-        [child_obj_list.append(x) for x in object.children(parent) if typename in className(x)]
+        [child_obj_list.append(x) for x in object.children(parent_obj) if typename in className(x)]
 
-        for x in object.children(parent):
+        for x in object.children(parent_obj):
             child_obj_list = self.getChildrenOfType(x, typename, child_obj_list)
         
         return child_obj_list
@@ -156,12 +157,18 @@ class PageObject:
     def write(obj, val):
         squish.type(waitForObject(obj), val)
 
-    def findObjectWithText(self, object, value, property='text'):
-        text = self.getTranslatedText(value)
+    def findObjectWithText(self, object, value, property='text', lang=None):
+        if lang is not None:
+            value += self.getTranslatedText(value, lang)
 
         obj = object.copy()
-        obj[property] = Wildcard("*" + text + "*")
+        obj[property] = Wildcard("*" + value + "*")
         return waitForObject(obj)
+
+    @staticmethod
+    def getTranslatedText(text, lang='nl'):
+        t = gettext.translation('cura', findFile("scripts", "locale"), languages=[lang])
+        return t.gettext(text)
 
     @staticmethod
     def replaceObjectProperty(object, value, property='text'):
@@ -172,11 +179,6 @@ class PageObject:
     def getObjByLang(self, obj, lang='nl'):
         new_val = self.getTranslatedText(obj['text'], lang)
         return self.replaceObjectProperty(obj, new_val)
-
-    @staticmethod
-    def getTranslatedText(text, lang='nl'):
-        t = gettext.translation('cura', findFile("scripts", "locale"), languages=[lang])
-        return t.gettext(text)
 
     def fileSize(self, file):
         return self.convertBytes(getsize(file))

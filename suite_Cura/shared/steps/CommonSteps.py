@@ -106,4 +106,4 @@ def step(context):
 
 @When("I open Print Settings")
 def step(context):
-    cura.navigateToSettings()
+    cura.openPrintSettings()

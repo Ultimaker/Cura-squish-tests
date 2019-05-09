@@ -1,9 +1,8 @@
-from PageObjects.CommonPage import PageObject
 from PageObjects.MaterialsPage import Materials
+from PageObjects.CuraPage import Cura
 
-page_object = PageObject()
 materials = Materials()
-
+cura = Cura()
 
 @When("I activate material '|any|'")
 def step(context, material_type):

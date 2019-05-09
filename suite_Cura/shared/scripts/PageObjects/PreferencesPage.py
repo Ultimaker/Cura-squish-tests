@@ -9,8 +9,8 @@ class Preferences(PageObject):
         PageObject.__init__(self)
         importSquishSymbols()
 
-    def navigateTo(self, menu_item):
-        menu_object = self.findObjectWithText(names.mnu_item_preferences, menu_item)
+    def navigateTo(self, menu_item, lang=None):
+        menu_object = self.findObjectWithText(names.mnu_item_preferences, menu_item, lang=lang)
         self.click(menu_object)
 
     def selectPreferencesMenu(self, action):

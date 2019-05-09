@@ -33,7 +33,7 @@ def step(context, printer_IP):
     add_printer.addNetworkPrinter(printer_IP)
 
 
-@Then("|integer| Printers are present")
+@Step("|integer| Printers are present")
 def step(context, expected_count):
     printer.navigateToPrinterPreferences()
     printer_list = preferences.getPrinterListSize()
@@ -41,8 +41,8 @@ def step(context, expected_count):
     cura.pressCloseButton()
 
 
-@Then("It is possible to switch to single extruder printer |any|")
+@Step("It is possible to switch to single extruder printer |any|")
 def step(context, printer_type):
     test.compare(2, printer.getExtruderCount())
     printer.selectPrinter(printer_type)
-    test.compare(1, printer.getExtruderCount())
+    test.compare(1, printer.getExtruderCount())

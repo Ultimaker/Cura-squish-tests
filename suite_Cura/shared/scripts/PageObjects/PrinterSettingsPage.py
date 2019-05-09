@@ -8,6 +8,7 @@ class PrintSettings(PageObject):
     def __init__(self):
         importSquishSymbols()
 
+    # From Print Settings (not preferences)
     def selectProfile(self, profile):
         self.click(names.mwi_print_settings)
         waitForObject(names.win_print_settings)
@@ -23,3 +24,31 @@ class PrintSettings(PageObject):
 
         # Close print settings in case it interferes with other steps
         self.click(names.mwi_print_settings)
+
+    def enableGradualInfill(self):
+        self.click(names.prs_chk_gradual_infill)
+        
+    # Custom profiles have attribute 'isReadOnly' set to False
+    def getCustomProfiles(self, custom_profiles=None, custom_profiles_obj=None):
+        if custom_profiles is None:
+            custom_profiles = []
+        if custom_profiles_obj is None:
+            custom_profiles_obj = []
+
+        # Get all descendants of type QQuickRectangle
+        profiles = self.getChildrenOfType(findObject(names.pfs_profile_list), "QQuickRectangle")     
+        # Of all these types, add them to the list if property 'isReadOnly' is false    
+        [custom_profiles.append(x) for x in profiles if hasattr(x, 'isReadOnly') and not x.isReadOnly]
+        
+        # Get the QQuickText objects that are children of the custom profile objects
+        # They contain the actual name of the profiles
+        for x in custom_profiles:
+            profile_obj_list = self.getChildrenOfType(findObject(objectMap.realName(x)), "QQuickText")
+            if len(profile_obj_list) == 1:
+                custom_profiles_obj.append(profile_obj_list[0])
+            
+        return custom_profiles_obj
+    
+    def selectProfileFromPreferences(self, profile_list, profile):
+        [self.click(x) for x in profile_list if profile.text == x.text]
+        

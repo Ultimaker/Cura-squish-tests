@@ -1,9 +1,5 @@
-from PageObjects.CommonPage import PageObject
-from PageObjects.CuraPage import Cura
 from PageObjects.OnboardingPage import Onboarding
 
-page_object = PageObject()
-cura = Cura()
 onboarding = Onboarding()
 
 

@@ -142,9 +142,11 @@ btn_rename_confirm = {"container": win_rename_printer, "text": "OK", "type": "Bu
 pps_btn_machine_settings = {"container": qqw_qml, "text": "Machine Settings", "type": "Button", "unnamed": 1, "visible": True}
 
 # Profile preferences (pfs)
+win_pfs = {"container": qqw_qml, "id": "base", "type": "ProfilesPage", "unnamed": 1, "visible": True}
 win_create_profile = {"title": "Create Profile", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 input_profile_name = {"container": win_create_profile, "type": "Column", "unnamed": 1, "visible": True}
 btn_create_profile_confirm = {"container": win_create_profile, "type": "Button", "unnamed": 1, "visible": True}
+pfs_profile_list = {"container": win_pfs, "id": "qualityListView", "type": "ListView", "unnamed": 1, "visible": True}
 
 # Print Settings (prs)
 win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}
