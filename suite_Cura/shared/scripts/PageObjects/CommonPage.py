@@ -10,6 +10,7 @@ from objectmaphelper import Wildcard
 import time
 import names
 import gettext
+from pathlib import Path
 
 
 class PageObject:
@@ -20,12 +21,12 @@ class PageObject:
         self.os = platform.system()
         self.home_dir = expanduser("~")
         self.cura_version = '4.1'
+
         self.windows_dir = r'%s\AppData\Roaming\cura' % self.home_dir
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
 
-        # TODO: fix these
-        self.linux_dir = {'local': r'%s/.local/share/cura/4.0/' % self.home_dir,
-                          'config': r'%s/.config/cura/4.0/' % self.home_dir}
+        self.linux_dir = {'local': Path('%s/.local/share/cura' % self.home_dir),
+                          'config': Path('%s/.config/cura' % self.home_dir)}
 
         # Imports functions and members of squish
         importSquishSymbols()
@@ -49,12 +50,8 @@ class PageObject:
         self.presetPreferences(config_version)
         self.startCura()
 
-    def resetPreferences(self):
-        if self.os == "Windows":
-            self.deleteContentFromDir(self.windows_dir)
-        elif self.os == "Linux":
-            self.deleteContentFromDir(self.linux_dir["local"])
-            self.deleteContentFromDir(self.linux_dir["config"])
+    def resetPreferences(self, directory):
+        self.deleteContentFromDir(directory)
 
     @staticmethod
     def deleteContentFromDir(location):
@@ -70,22 +67,42 @@ class PageObject:
 
     # TODO: Expand this function for linux/mac
     def presetPreferences(self, version=None):
-        # Make sure preferences are completely deleted before copying to that dir
-        try:
-            while os.listdir(self.windows_dir):
-                self.resetPreferences()
-
-        except FileNotFoundError:
-            os.mkdir(self.windows_dir)
-
         if version is not None:
             self.cura_version = version
         #         Set cwd in testdata
         if self.cura_version == '4.1':
             self.setCwdInConfig()
 
-        shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}"),
-                        self.windows_dir + "\\" + self.cura_version)
+            # Make sure preferences are completely deleted before copying to that dir
+
+            # Linux config folder only contains .cfg and .log
+        if self.os == "Linux":
+            for key, value in self.linux_dir.items():
+                try:
+                    while os.listdir(value):
+                        self.resetPreferences(value)
+                        
+                        if key == "local":
+                            shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}/cura.cfg"),
+                                            Path(value / self.cura_version))
+                        if key == "config":
+                            shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}"),
+                                            Path(value / self.cura_version), ignore=ignore_patterns('*.cfg'))
+
+
+                        else:
+                            pass
+
+                except FileNotFoundError:
+                    os.mkdir(value)
+        else:
+            try:
+                while os.listdir(self.windows_dir):
+                    self.resetPreferences(self.windows_dir)
+                    shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}"),
+                                    self.windows_dir + "\\" + self.cura_version)
+            except FileNotFoundError:
+                os.mkdir(self.windows_dir)
 
     def setCwdInConfig(self):
         try:
@@ -141,12 +158,12 @@ class PageObject:
     def getChildrenOfType(self, parent_obj, typename, child_obj_list=None):
         if child_obj_list is None:
             child_obj_list = []
-            
+
         [child_obj_list.append(x) for x in object.children(parent_obj) if typename in className(x)]
 
         for x in object.children(parent_obj):
             child_obj_list = self.getChildrenOfType(x, typename, child_obj_list)
-        
+
         return child_obj_list
 
     @staticmethod

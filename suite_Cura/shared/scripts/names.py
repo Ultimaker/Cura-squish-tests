@@ -35,6 +35,9 @@ mnu_item = {"container": mnu_bar, "plainText": "", "type": "StyleItem1", "unname
 qqm_mnu_popup = {"type": "QQuickMenuPopupWindow1", "unnamed": 1, "visible": True}
 scroll_view = {"container": qqm_mnu_popup, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
 
+# Generic menu item
+gen_mnu_item = {"container": scroll_view, "text": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
+
 # Toolbar
 mwi_btn_toolbar = {"checkable": True, "container": mwi, "text": "", "type": "ToolbarButton", "unnamed": 1, "visible": True}
 
@@ -118,7 +121,7 @@ prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button
 
 # Materials preferences (mat)
 mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
-mat_mnu_manage = {"container": scroll_view, "text": "Manage Materials...", "type": "StyleItem1", "unnamed": 1, "visible": True}
+
 
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}

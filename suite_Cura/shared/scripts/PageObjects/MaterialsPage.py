@@ -15,7 +15,7 @@ class Materials(PageObject):
         self.selectExtruders()
         self.click(names.mat_btn_selection)
 
-        manage_materials = self.findObjectWithText(names.mat_mnu_manage, "Manage Materials", lang=lang)
+        manage_materials = self.findObjectWithText(names.gen_mnu_item, "Manage Materials", lang=lang)
         self.click(manage_materials)     
         
     def activateMaterial(self, material_type):
