@@ -11,8 +11,8 @@ Feature: Verify if configurations of older versions still work
       | UM3E_Fine |
       | UM3_Fast  |
       | Um3_Fine  |
-      #TODO: Finish this step!!
-    When I activate profile 'UM3_Fast'
+    When I Activate profile 'UM3_Fast'
+          #TODO: Finish this step!!
     Then The print settings display profile 'UM3_Fast'
     And 14 Printers are present
     And It is possible to switch to single extruder printer Ultimaker 2+

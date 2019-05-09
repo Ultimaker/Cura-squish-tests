@@ -159,7 +159,7 @@ class PageObject:
 
     def findObjectWithText(self, object, value, property='text', lang=None):
         if lang is not None:
-            value += self.getTranslatedText(value, lang)
+            value = self.getTranslatedText(value, lang)
 
         obj = object.copy()
         obj[property] = Wildcard("*" + value + "*")

@@ -50,5 +50,7 @@ class PrintSettings(PageObject):
         return custom_profiles_obj
     
     def selectProfileFromPreferences(self, profile_list, profile):
-        [self.click(x) for x in profile_list if profile.text == x.text]
-        
+        for x in profile_list:
+            if x.text == profile:
+                self.click(x)
+                break

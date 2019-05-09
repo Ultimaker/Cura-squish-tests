@@ -6,7 +6,7 @@ cura = Cura()
 
 @When("I activate material '|any|'")
 def step(context, material_type):
-    materials.navigateToMaterialsPreferences()
+    materials.navigateToMaterialsPreferences("nl")
     materials.activateMaterial(material_type)
     cura.pressCloseButton()
 
