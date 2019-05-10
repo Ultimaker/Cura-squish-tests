@@ -89,10 +89,10 @@ class PageObject:
                 if key == "config":
                     os.makedirs(destination_dir, exist_ok=True)
                     copy(findFile("testdata", f"Config/{self.cura_version}/cura.cfg"), destination_dir)
-                    break
+                    continue
                 if key == "local":
                     copytree(findFile("testdata", f"Config/{self.cura_version}"), destination_dir, ignore=ignore_patterns('cura.cfg'))
-                    break
+                    continue
                
         else:
             try:
