@@ -73,6 +73,6 @@ class Preferences(PageObject):
         self.click(names.btn_create_profile_confirm)
         
     def getProfileFromList(self, profile):
-        printer_obj = self.replaceObjectProperty(names.pps_profile_item, profile)
-        waitForObject(printer_obj, 5000)
-        return printer_obj
+        profile_obj = self.replaceObjectProperty(names.pfs_profile_item, profile)
+        waitForObject(profile_obj, 5000)
+        return profile_obj

@@ -150,6 +150,7 @@ win_create_profile = {"title": "Create Profile", "type": "QQuickWindowQmlImpl", 
 input_profile_name = {"container": win_create_profile, "type": "Column", "unnamed": 1, "visible": True}
 btn_create_profile_confirm = {"container": win_create_profile, "type": "Button", "unnamed": 1, "visible": True}
 pfs_profile_list = {"container": win_pfs, "id": "qualityListView", "type": "ListView", "unnamed": 1, "visible": True}
+pfs_profile_item = {"container": pfs_profile_list, "text": "", "type": "Text", "unnamed": 1, "visible": True}
 
 # Print Settings (prs)
 win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}
