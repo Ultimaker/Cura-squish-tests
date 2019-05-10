@@ -18,8 +18,8 @@ Feature: Profile Management
     Then the profile overview contains the profile: 'Fine'
     When I select the 'Fine' profile in preferences
     And I select Duplicate profile
-    And I give the duplicated profile 'duplicated' name
-    Then the profile overview contains the profile: 'duplicated'
+    And I give the duplicated profile 'DuplicateOfFine' name
+    Then the profile overview contains the profile: 'DuplicateOfFine'
 
 #
 #    Scenario: Exporting Profile
