@@ -50,7 +50,15 @@ def step(context, action):
 def step(context, profile_name):
     preferences.createProfile(profile_name)
 
+@Step("I give the duplicated profile '|word|' name")
+def step(context, profile_name):
+    preferences.duplicateProfile(profile_name)
+
+@Step("I select the '|word|' custom profile")
+def step(context, profile_name):
+    preferences.selectProfile(profile_name)
+
 @Then("the profile overview contains '|word|' profile")
-def step(context, expected_pofile):
-    actual_printer = preferences.getPrinterFromList(expected_profile)
+def step(context, expected_profile):
+    actual_profile = preferences.getProfileFromList(expected_profile)
     test.compare(expected_profile, actual_profile['text'])

@@ -75,6 +75,11 @@ class Preferences(PageObject):
         self.click(names.input_profile_name)
         self.setTextFieldValue(names.input_profile_name, profile_name)
         self.click(names.btn_create_profile_confirm)
+
+    def duplicateProfile(self, profile_name):
+        self.click(names.input_duplicate_profile_name)
+        self.setTextFieldValue(names.input_duplicate_profile_name, profile_name)
+        self.click(names.btn_duplicate_profile_confirm)
         
     def getProfileFromList(self, profile):
         profile_obj = self.replaceObjectProperty(names.pfs_profile_item, profile)
