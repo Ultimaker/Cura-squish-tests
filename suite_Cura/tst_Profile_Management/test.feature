@@ -8,18 +8,18 @@ Feature: Profile Management
     And I navigate to Profiles in preferences
     And I select Create profile
     And I give the new profile 'custom' name
-    Then the profile overview contains 'custom' profile
+    Then the profile overview contains the profile: 'custom'
 
 
   Scenario: Duplicating Profile
     Given Cura is running
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Profiles in preferences
-    Then the profile overview contains 'Fine' profile
+    Then the profile overview contains the profile: 'Fine'
     When I select the 'Fine' profile in preferences
     And I select Duplicate profile
     And I give the duplicated profile 'duplicated' name
-    Then the profile overview contains 'duplicated' profile
+    Then the profile overview contains the profile: 'duplicated'
 
 #
 #    Scenario: Exporting Profile
