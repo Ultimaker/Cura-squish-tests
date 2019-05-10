@@ -58,6 +58,10 @@ class Preferences(PageObject):
     def selectPrinter(self, printer_type):
         printer_obj = self.getPrinterFromList(printer_type)
         self.click(printer_obj)
+
+    def selectProfile(self, profile_name):
+        profile_obj = self.getProfileFromList(profile_name)
+        self.click(profile_obj)
       
     def renamePrinter(self, printer_name):
         self.click(names.input_printer_name)
