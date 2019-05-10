@@ -16,7 +16,7 @@ Feature: Profile Management
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Profiles in preferences
     Then the profile overview contains 'Fine' profile
-    When I select the 'Fine' custom profile
+    When I select the 'Fine' profile in preferences
     And I select Duplicate profile
     And I give the duplicated profile 'duplicated' name
     Then the profile overview contains 'duplicated' profile

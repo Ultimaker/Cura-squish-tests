@@ -54,7 +54,7 @@ def step(context, profile_name):
 def step(context, profile_name):
     preferences.duplicateProfile(profile_name)
 
-@Step("I select the '|word|' custom profile")
+@Step("I select the '|word|' profile in preferences")
 def step(context, profile_name):
     preferences.selectProfile(profile_name)
 
