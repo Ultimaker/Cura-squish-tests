@@ -1,23 +1,15 @@
-from PageObjects.CommonPage import PageObject
-from PageObjects.CuraPage import Cura
-from PageObjects.PrinterSettingsPage import PrintSettings
-from PageObjects.PrinterPage import Printer
-from PageObjects.PerformancePage import Performance
 from PageObjects.MaterialsPage import Materials
+from PageObjects.CuraPage import Cura
 
-page_object = PageObject()
-cura = Cura()
-print_settings = PrintSettings()
-printer = Printer()
-performance = Performance()
-marketplace = Marketplace()
 materials = Materials()
+cura = Cura()
 
 @When("I activate material '|any|'")
 def step(context, material_type):
-    materials.navigateToMaterialsPreferences()
+    materials.navigateToMaterialsPreferences("nl")
     materials.activateMaterial(material_type)
     cura.pressCloseButton()
+
 
 @Then("Extruder one makes use of material '|any|'")
 def step(context, expected_material):

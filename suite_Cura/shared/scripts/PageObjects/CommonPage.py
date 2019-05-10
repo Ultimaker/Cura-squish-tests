@@ -2,7 +2,6 @@
 import platform
 from os.path import expanduser
 from os.path import getsize
-import shutil
 from Helpers.SquishModuleHelper import importSquishSymbols
 import squish
 import os
@@ -10,6 +9,8 @@ from objectmaphelper import Wildcard
 import time
 import names
 import gettext
+from pathlib import Path
+from shutil import rmtree, copytree, copy, ignore_patterns
 
 
 class PageObject:
@@ -20,12 +21,12 @@ class PageObject:
         self.os = platform.system()
         self.home_dir = expanduser("~")
         self.cura_version = '4.1'
+
         self.windows_dir = r'%s\AppData\Roaming\cura' % self.home_dir
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
 
-        # TODO: fix these
-        self.linux_dir = {'local': r'%s/.local/share/cura/4.0/' % self.home_dir,
-                          'config': r'%s/.config/cura/4.0/' % self.home_dir}
+        self.linux_dir = {'local': Path('%s/.local/share/cura' % self.home_dir),
+                          'config': Path('%s/.config/cura' % self.home_dir)}
 
         # Imports functions and members of squish
         importSquishSymbols()
@@ -41,20 +42,17 @@ class PageObject:
     def startCura(self):
         if self.os == "Windows":
             startApplication(self.WIN_CURA)
-            waitForObject(names.mwi, 50000)
         elif self.os == "Linux":
             startApplication(self.LIN_CURA)
+            
+        waitForObject(names.mwi, 50000)
 
     def startCuraConfigVersion(self, config_version):
         self.presetPreferences(config_version)
         self.startCura()
 
-    def resetPreferences(self):
-        if self.os == "Windows":
-            self.deleteContentFromDir(self.windows_dir)
-        elif self.os == "Linux":
-            self.deleteContentFromDir(self.linux_dir["local"])
-            self.deleteContentFromDir(self.linux_dir["config"])
+    def resetPreferences(self, directory):
+        self.deleteContentFromDir(directory)
 
     @staticmethod
     def deleteContentFromDir(location):
@@ -64,32 +62,51 @@ class PageObject:
                 if os.path.isfile(file_path):
                     os.unlink(file_path)
                 elif os.path.isdir(file_path):
-                    shutil.rmtree(file_path)
+                    rmtree(file_path)
             except Exception as e:
                 print(e)
 
     # TODO: Expand this function for linux/mac
     def presetPreferences(self, version=None):
-        # Make sure preferences are completely deleted before copying to that dir
-        try:
-            while os.listdir(self.windows_dir):
-                self.resetPreferences()
-
-        except FileNotFoundError:
-            os.mkdir(self.windows_dir)
-
         if version is not None:
             self.cura_version = version
         #         Set cwd in testdata
         if self.cura_version == '4.1':
             self.setCwdInConfig()
 
-        shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}"),
-                        self.windows_dir + "\\" + self.cura_version)
+            # Make sure preferences are completely deleted before copying to that dir
+            # Linux config folder only contains .cfg and .log
+        if self.os == "Linux":
+            for key, value in self.linux_dir.items():
+                try:
+                    while os.listdir(value):
+                        self.resetPreferences(value)
+                except FileNotFoundError:
+                    os.mkdir(value)
+                           
+                destination_dir = Path(value / self.cura_version)
+                
+                if key == "config":
+                    os.makedirs(destination_dir, exist_ok=True)
+                    copy(findFile("testdata", f"Config/{self.cura_version}/cura.cfg"), destination_dir)
+                    break
+                if key == "local":
+                    copytree(findFile("testdata", f"Config/{self.cura_version}"), destination_dir, ignore=ignore_patterns('cura.cfg'))
+                    break
+               
+        else:
+            try:
+                while os.listdir(self.windows_dir):
+                    self.resetPreferences(self.windows_dir)
+            except FileNotFoundError:
+                os.mkdir(self.windows_dir)    
+            
+            copytree(findFile("testdata", f"Config/{self.cura_version}"), Path(self.windows_dir, self.cura_version))
+            
 
     def setCwdInConfig(self):
         try:
-            config_file = findFile("testdata", f"WindowsConfig/{self.cura_version}/cura.cfg")
+            config_file = findFile("testdata", f"Config/{self.cura_version}/cura.cfg")
 
             with open(config_file, "r") as file:
                 content = file.readlines()
@@ -137,15 +154,16 @@ class PageObject:
             return True
 
     # This method looks for children by type recursively
-    def getChildrenOfType(self, parent, typename, child_obj_list=None):
+    # Object.children(n) requires a real name (dict) and cannot be used with type 'Object'
+    def getChildrenOfType(self, parent_obj, typename, child_obj_list=None):
         if child_obj_list is None:
             child_obj_list = []
-            
-        [child_obj_list.append(x) for x in object.children(parent) if typename in className(x)]
 
-        for x in object.children(parent):
+        [child_obj_list.append(x) for x in object.children(parent_obj) if typename in className(x)]
+
+        for x in object.children(parent_obj):
             child_obj_list = self.getChildrenOfType(x, typename, child_obj_list)
-        
+
         return child_obj_list
 
     @staticmethod
@@ -156,12 +174,18 @@ class PageObject:
     def write(obj, val):
         squish.type(waitForObject(obj), val)
 
-    def findObjectWithText(self, object, value, property='text'):
-        text = self.getTranslatedText(value)
+    def findObjectWithText(self, object, value, property='text', lang=None):
+        if lang is not None:
+            value = self.getTranslatedText(value, lang)
 
         obj = object.copy()
-        obj[property] = Wildcard("*" + text + "*")
+        obj[property] = Wildcard("*" + value + "*")
         return waitForObject(obj)
+
+    @staticmethod
+    def getTranslatedText(text, lang='nl'):
+        t = gettext.translation('cura', findFile("scripts", "locale"), languages=[lang])
+        return t.gettext(text)
 
     @staticmethod
     def replaceObjectProperty(object, value, property='text'):
@@ -172,11 +196,6 @@ class PageObject:
     def getObjByLang(self, obj, lang='nl'):
         new_val = self.getTranslatedText(obj['text'], lang)
         return self.replaceObjectProperty(obj, new_val)
-
-    @staticmethod
-    def getTranslatedText(text, lang='nl'):
-        t = gettext.translation('cura', findFile("scripts", "locale"), languages=[lang])
-        return t.gettext(text)
 
     def fileSize(self, file):
         return self.convertBytes(getsize(file))

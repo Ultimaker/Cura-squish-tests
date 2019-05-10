@@ -30,3 +30,12 @@ msgstr "Netwerkprinters"
 msgid "Manage Materials"
 msgstr "Materialen Beheren"
 
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+msgid "Configure Cura"
+msgstr "Cura Configureren"
+
+msgid "Profiles"
+msgstr "Profielen"
+

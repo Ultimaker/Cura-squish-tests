@@ -9,8 +9,8 @@ class Preferences(PageObject):
         PageObject.__init__(self)
         importSquishSymbols()
 
-    def navigateTo(self, menu_item):
-        menu_object = self.findObjectWithText(names.mnu_item_preferences, menu_item)
+    def navigateTo(self, menu_item, lang=None):
+        menu_object = self.findObjectWithText(names.mnu_item_preferences, menu_item, lang=lang)
         self.click(menu_object)
 
     def selectPreferencesMenu(self, action):
@@ -66,3 +66,13 @@ class Preferences(PageObject):
 
     def verifyPrinterActivated(self):
         object.exists(names.pps_btn_machine_settings)
+
+    def createProfile(self, profile_name):
+        self.click(names.input_profile_name)
+        self.setTextFieldValue(names.input_profile_name, profile_name)
+        self.click(names.btn_create_profile_confirm)
+        
+    def getProfileFromList(self, profile):
+        printer_obj = self.replaceObjectProperty(names.pps_profile_item, profile)
+        waitForObject(printer_obj, 5000)
+        return printer_obj

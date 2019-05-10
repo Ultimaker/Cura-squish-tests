@@ -11,11 +11,11 @@ class Materials(PageObject):
     def selectExtruders(self):
         self.click(names.mwi_lst_extruders)
         
-    def navigateToMaterialsPreferences(self):
+    def navigateToMaterialsPreferences(self, lang=None):
         self.selectExtruders()
         self.click(names.mat_btn_selection)
 
-        manage_materials = self.findObjectWithText(names.mat_mnu_manage, "Manage Materials")
+        manage_materials = self.findObjectWithText(names.gen_mnu_item, "Manage Materials", lang=lang)
         self.click(manage_materials)     
         
     def activateMaterial(self, material_type):

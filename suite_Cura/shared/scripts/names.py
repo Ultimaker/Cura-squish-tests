@@ -35,6 +35,9 @@ mnu_item = {"container": mnu_bar, "plainText": "", "type": "StyleItem1", "unname
 qqm_mnu_popup = {"type": "QQuickMenuPopupWindow1", "unnamed": 1, "visible": True}
 scroll_view = {"container": qqm_mnu_popup, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
 
+# Generic menu item
+gen_mnu_item = {"container": scroll_view, "text": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
+
 # Toolbar
 mwi_btn_toolbar = {"checkable": True, "container": mwi, "text": "", "type": "ToolbarButton", "unnamed": 1, "visible": True}
 
@@ -118,7 +121,7 @@ prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button
 
 # Materials preferences (mat)
 mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
-mat_mnu_manage = {"container": scroll_view, "text": "Manage Materials...", "type": "StyleItem1", "unnamed": 1, "visible": True}
+
 
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
@@ -141,11 +144,19 @@ input_printer_name = {"container": win_rename_printer, "id": "nameField", "type"
 btn_rename_confirm = {"container": win_rename_printer, "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
 pps_btn_machine_settings = {"container": qqw_qml, "text": "Machine Settings", "type": "Button", "unnamed": 1, "visible": True}
 
+# Profile preferences (pfs)
+win_pfs = {"container": qqw_qml, "id": "base", "type": "ProfilesPage", "unnamed": 1, "visible": True}
+win_create_profile = {"title": "Create Profile", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+input_profile_name = {"container": win_create_profile, "type": "Column", "unnamed": 1, "visible": True}
+btn_create_profile_confirm = {"container": win_create_profile, "type": "Button", "unnamed": 1, "visible": True}
+pfs_profile_list = {"container": win_pfs, "id": "qualityListView", "type": "ListView", "unnamed": 1, "visible": True}
+
 # Print Settings (prs)
 win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}
 prs_btn_custom = {"checkable": False, "container": mwi, "id": "customSettingsButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 prs_custom_view = {"container": mwi, "id": "customPrintSetup", "type": "CustomPrintSetup", "unnamed": 1, "visible": True}
 prs_btn_sel_profile = {"container": prs_custom_view, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
+prs_chk_gradual_infill = {"container": mwi, "id": "enableGradualInfillCheckBox", "type": "CheckBox", "unnamed": 1, "visible": True}
 
 # Marketplace (mar)
 mwi_btn_marketplace = {"checkable": False, "container": mwi, "id": "marketplaceButton", "type": "Button", "unnamed": 1, "visible": True}

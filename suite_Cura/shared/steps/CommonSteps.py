@@ -95,8 +95,15 @@ def step(context, location):
 
 @Given("I slice the object")
 def step(context):
-    cura.sliceObject()
+    cura.sliceObject()
+
+
 @Then("I close Cura")
 def step(context):
     for ctx in applicationContextList():
         ctx.detach()
+
+
+@When("I open Print Settings")
+def step(context):
+    cura.openPrintSettings()

@@ -15,16 +15,19 @@ class Cura(PageObject):
         self.click(names.btn_close)
 
     #     Top-level navigation bar
-    def navigateTo(self, menu_item, submenu_item, property=None):
-        menu_object = self.findObjectWithText(names.mnu_item, menu_item, "plainText")
+    def navigateTo(self, menu_item, submenu_item, lang=None):
+        menu_object = self.findObjectWithText(names.mnu_item, menu_item, "plainText", lang=lang)
         self.click(menu_object)
 
-        submenu_object = self.findObjectWithText(names.sub_mnu_item, submenu_item)
+        submenu_object = self.findObjectWithText(names.sub_mnu_item, submenu_item, lang=lang)
         self.click(submenu_object)
 
     def navigateToStageMenu(self, stage_item):
         if "Marketplace" in stage_item:
             self.click(names.mwi_btn_marketplace)
+
+    def openPrintSettings(self):
+        self.click(names.mwi_print_settings)
 
     def curaIsStarted(self):
         waitForObjectExists(names.mwi)
