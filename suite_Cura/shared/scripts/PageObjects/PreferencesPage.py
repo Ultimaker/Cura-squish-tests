@@ -71,11 +71,13 @@ class Preferences(PageObject):
     def verifyPrinterActivated(self):
         object.exists(names.pps_btn_machine_settings)
 
+    ##  Fills in a name in the "create profile" dialog and clicks OK.
     def createProfile(self, profile_name):
         self.click(names.input_profile_name)
         self.setTextFieldValue(names.input_profile_name, profile_name)
         self.click(names.btn_create_profile_confirm)
 
+    ##  Fills in a name in the "duplicate profile" dialog and clicks OK.
     def duplicateProfile(self, profile_name):
         self.click(names.input_duplicate_profile_name)
         self.setTextFieldValue(names.input_duplicate_profile_name, profile_name)
