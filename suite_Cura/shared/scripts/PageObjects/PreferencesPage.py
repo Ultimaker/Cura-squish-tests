@@ -83,5 +83,4 @@ class Preferences(PageObject):
         
     def getProfileFromList(self, profile):
         profile_obj = self.replaceObjectProperty(names.pfs_profile_item, profile)
-        waitForObject(profile_obj, 5000)
-        return profile_obj
+        return waitForObject(profile_obj, 5000)
