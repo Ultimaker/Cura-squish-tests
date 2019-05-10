@@ -101,7 +101,7 @@ class PageObject:
             except FileNotFoundError:
                 os.mkdir(self.windows_dir)    
             
-            copytree(findFile("testdata", f"Config/{self.cura_version}"), Path(self.windows_dir / self.cura_version))
+            copytree(findFile("testdata", f"Config/{self.cura_version}"), Path(self.windows_dir, self.cura_version))
             
 
     def setCwdInConfig(self):
