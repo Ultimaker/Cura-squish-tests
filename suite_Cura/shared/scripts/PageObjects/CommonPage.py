@@ -2,7 +2,6 @@
 import platform
 from os.path import expanduser
 from os.path import getsize
-import shutil
 from Helpers.SquishModuleHelper import importSquishSymbols
 import squish
 import os
@@ -11,6 +10,7 @@ import time
 import names
 import gettext
 from pathlib import Path
+from shutil import rmtree, copytree, copy, ignore_patterns
 
 
 class PageObject:
@@ -42,9 +42,10 @@ class PageObject:
     def startCura(self):
         if self.os == "Windows":
             startApplication(self.WIN_CURA)
-            waitForObject(names.mwi, 50000)
         elif self.os == "Linux":
             startApplication(self.LIN_CURA)
+            
+        waitForObject(names.mwi, 50000)
 
     def startCuraConfigVersion(self, config_version):
         self.presetPreferences(config_version)
@@ -61,7 +62,7 @@ class PageObject:
                 if os.path.isfile(file_path):
                     os.unlink(file_path)
                 elif os.path.isdir(file_path):
-                    shutil.rmtree(file_path)
+                    rmtree(file_path)
             except Exception as e:
                 print(e)
 
@@ -74,39 +75,38 @@ class PageObject:
             self.setCwdInConfig()
 
             # Make sure preferences are completely deleted before copying to that dir
-
             # Linux config folder only contains .cfg and .log
         if self.os == "Linux":
             for key, value in self.linux_dir.items():
                 try:
                     while os.listdir(value):
                         self.resetPreferences(value)
-                        
-                        if key == "local":
-                            shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}/cura.cfg"),
-                                            Path(value / self.cura_version))
-                        if key == "config":
-                            shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}"),
-                                            Path(value / self.cura_version), ignore=ignore_patterns('*.cfg'))
-
-
-                        else:
-                            pass
-
                 except FileNotFoundError:
                     os.mkdir(value)
+                           
+                destination_dir = Path(value / self.cura_version)
+                
+                if key == "config":
+                    os.makedirs(destination_dir, exist_ok=True)
+                    copy(findFile("testdata", f"Config/{self.cura_version}/cura.cfg"), destination_dir)
+                    break
+                if key == "local":
+                    copytree(findFile("testdata", f"Config/{self.cura_version}"), destination_dir, ignore=ignore_patterns('cura.cfg'))
+                    break
+               
         else:
             try:
                 while os.listdir(self.windows_dir):
                     self.resetPreferences(self.windows_dir)
-                    shutil.copytree(findFile("testdata", f"WindowsConfig/{self.cura_version}"),
-                                    self.windows_dir + "\\" + self.cura_version)
             except FileNotFoundError:
-                os.mkdir(self.windows_dir)
+                os.mkdir(self.windows_dir)    
+            
+            copytree(findFile("testdata", f"Config/{self.cura_version}"), Path(self.windows_dir / self.cura_version))
+            
 
     def setCwdInConfig(self):
         try:
-            config_file = findFile("testdata", f"WindowsConfig/{self.cura_version}/cura.cfg")
+            config_file = findFile("testdata", f"Config/{self.cura_version}/cura.cfg")
 
             with open(config_file, "r") as file:
                 content = file.readlines()
