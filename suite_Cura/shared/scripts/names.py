@@ -147,9 +147,13 @@ pps_btn_machine_settings = {"container": qqw_qml, "text": "Machine Settings", "t
 # Profile preferences (pfs)
 win_pfs = {"container": qqw_qml, "id": "base", "type": "ProfilesPage", "unnamed": 1, "visible": True}
 win_create_profile = {"title": "Create Profile", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
-input_profile_name = {"container": win_create_profile, "type": "Column", "unnamed": 1, "visible": True}
-btn_create_profile_confirm = {"container": win_create_profile, "type": "Button", "unnamed": 1, "visible": True}
+input_profile_name = {"container": win_create_profile, "id": "nameField", "type": "TextField", "unnamed": 1, "visible": True}
+btn_create_profile_confirm = {"container": win_create_profile, "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
+win_duplicate_profile = {"title": "Duplicate Profile", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+input_duplicate_profile_name = {"container": win_duplicate_profile, "id": "nameField", "type": "TextField", "unnamed": 1, "visible": True}
+btn_duplicate_profile_confirm = {"container": win_duplicate_profile, "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
 pfs_profile_list = {"container": win_pfs, "id": "qualityListView", "type": "ListView", "unnamed": 1, "visible": True}
+pfs_profile_item = {"container": pfs_profile_list, "text": "", "type": "Text", "unnamed": 1, "visible": True}
 
 # Print Settings (prs)
 win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}

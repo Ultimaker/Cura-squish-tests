@@ -8,12 +8,19 @@ Feature: Profile Management
     And I navigate to Profiles in preferences
     And I select Create profile
     And I give the new profile 'custom' name
-    Then the profile overview contains 'custom' profile
+    Then the profile overview contains the profile: 'custom #2'
+	And I close the preferences
 
+  Scenario: Duplicating Profile
+    Given Cura is running
+    When I navigate to menu Preferences and Configure Cura
+    And I navigate to Profiles in preferences
+    Then the profile overview contains the profile: 'Fine'
+    When I select the 'Fine' profile in preferences
+    And I select Duplicate profile
+    And I give the duplicated profile 'DuplicateOfFine' name
+    Then the profile overview contains the profile: 'DuplicateOfFine'
 
-
-#    Scenario: Duplicating Profile
-#       When I give the printer the '|any|' name
 #
 #    Scenario: Exporting Profile
 #       When I give the printer the '|any|' name

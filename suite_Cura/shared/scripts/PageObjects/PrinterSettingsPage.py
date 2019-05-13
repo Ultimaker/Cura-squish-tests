@@ -27,27 +27,42 @@ class PrintSettings(PageObject):
 
     def enableGradualInfill(self):
         self.click(names.prs_chk_gradual_infill)
+
+    def getAllProfiles(self, profiles = None, profiles_obj = None):
+        if profiles is None:
+            profiles = []
+        if profiles_obj is None:
+            profiles_obj = []
+
+        #Get all descendants of type QQuickRectangle.
+        profiles = self.getChildrenOfType(findObject(names.pfd_profile_list), "QQuickRectangle")
+        for rect in profiles:
+            profile_obj_list = self.getChildrenOfType(findObject(objectMap.realName(rect)), "QQuickText")
+            if len(profile_obj_list) == 1:
+                profiles_obj.append(profile_obj_list[0])
+
+        return profile_obj_list
         
     # Custom profiles have attribute 'isReadOnly' set to False
-    def getCustomProfiles(self, custom_profiles=None, custom_profiles_obj=None):
-        if custom_profiles is None:
-            custom_profiles = []
-        if custom_profiles_obj is None:
-            custom_profiles_obj = []
+    def getCustomProfiles(self, custom_profiles = None, custom_profiles_obj = None):
+        all_profiles = self.getAllProfiles(custom_profiles, custom_profiles_obj)
+        custom_profiles = []
+        for profile in all_profiles:
+            rect = profile.parent()
+            if hasattr(rect, "isReadOnly") and not rect.isReadOnly:
+                custom_profiles.append(profile)
 
-        # Get all descendants of type QQuickRectangle
-        profiles = self.getChildrenOfType(findObject(names.pfs_profile_list), "QQuickRectangle")     
-        # Of all these types, add them to the list if property 'isReadOnly' is false    
-        [custom_profiles.append(x) for x in profiles if hasattr(x, 'isReadOnly') and not x.isReadOnly]
-        
-        # Get the QQuickText objects that are children of the custom profile objects
-        # They contain the actual name of the profiles
-        for x in custom_profiles:
-            profile_obj_list = self.getChildrenOfType(findObject(objectMap.realName(x)), "QQuickText")
-            if len(profile_obj_list) == 1:
-                custom_profiles_obj.append(profile_obj_list[0])
-            
-        return custom_profiles_obj
+        return custom_profiles
+
+    def getDefaultProfiles(self, default_profiles = None, default_profiles_obj = None):
+        all_profiles = self.getAllProfiles(default_profiles, default_profiles_obj)
+        default_profiles = []
+        for profile in all_profiles:
+            rect = profile.parent()
+            if not hasattr(rect, "isReadOnly") or rect.isReadOnly:
+                default_profiles.append(profile)
+
+        return default_profiles
     
     def selectProfileFromPreferences(self, profile_list, profile):
         for x in profile_list:
