@@ -16,7 +16,7 @@ Feature: Performance of loading and saving files
   Scenario: Saving file as project
     Given Cura is running
     And I clear the buildplate
-    When I load file 'Robot.STL'
+    When I load file 'Robot.stl'
     And I save the file as a project in performance mode
     Then the writing time is retrieved from the log
     And the writing time is printed
