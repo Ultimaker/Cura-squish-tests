@@ -58,7 +58,7 @@ def step(context, profile_name):
 def step(context, profile_name):
     preferences.selectProfile(profile_name)
 
-@Then("the profile overview contains the profile: '|word|'")
+@Then("the profile overview contains the profile: '|any|'")
 def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
-    test.compare(expected_profile, actual_profile['text'])
+    test.compare(expected_profile, actual_profile.text)

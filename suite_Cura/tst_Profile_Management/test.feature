@@ -8,8 +8,8 @@ Feature: Profile Management
     And I navigate to Profiles in preferences
     And I select Create profile
     And I give the new profile 'custom' name
-    Then the profile overview contains the profile: 'custom'
-
+    Then the profile overview contains the profile: 'custom #2'
+	And I close the preferences
 
   Scenario: Duplicating Profile
     Given Cura is running
