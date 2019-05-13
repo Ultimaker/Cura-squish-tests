@@ -17,6 +17,7 @@ mwi_printer_list = {"container": mwi_ovl, "id": "machineSelectorList", "type": "
 
 # Print Settings
 mwi_print_settings = {"container": mwi, "id": "printSetupSelectorItem", "type": "Item", "unnamed": 1, "visible": True}
+mwi_mnu_print_settings_profile = {"container": mwi_print_settings, "id": "printSetupSelectorProfileMenu", "type": "IconWithText", "unnamed": 1, "visible": True}
 
 # Slicing
 mwi_btn_slice = {"checkable": False, "container": mwi, "id": "sliceButton", "type": "ActionButton", "unnamed": 1, "visible": True}

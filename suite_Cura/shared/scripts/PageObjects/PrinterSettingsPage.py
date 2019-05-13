@@ -35,20 +35,20 @@ class PrintSettings(PageObject):
             profiles_obj = []
 
         #Get all descendants of type QQuickRectangle.
-        profiles = self.getChildrenOfType(findObject(names.pfd_profile_list), "QQuickRectangle")
+        profiles = self.getChildrenOfType(findObject(names.pfs_profile_list), "QQuickRectangle")
         for rect in profiles:
             profile_obj_list = self.getChildrenOfType(findObject(objectMap.realName(rect)), "QQuickText")
             if len(profile_obj_list) == 1:
                 profiles_obj.append(profile_obj_list[0])
 
-        return profile_obj_list
+        return profiles_obj
         
     # Custom profiles have attribute 'isReadOnly' set to False
     def getCustomProfiles(self, custom_profiles = None, custom_profiles_obj = None):
         all_profiles = self.getAllProfiles(custom_profiles, custom_profiles_obj)
         custom_profiles = []
         for profile in all_profiles:
-            rect = profile.parent()
+            rect = object.parent(profile)
             if hasattr(rect, "isReadOnly") and not rect.isReadOnly:
                 custom_profiles.append(profile)
 
@@ -69,3 +69,6 @@ class PrintSettings(PageObject):
             if x.text == profile:
                 self.click(x)
                 break
+            
+    def getCurrentPrintProfile(self):
+        return waitForObject(names.mwi_mnu_print_settings_profile)

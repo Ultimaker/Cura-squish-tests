@@ -34,7 +34,7 @@ def step(context):
     # context.table creates lists for each row. This statement merges them together
     expected_profiles = [item for sublist in expected_profiles for item in sublist]
 
-    test.compare(Counter(profile_list), Counter(expected_profiles), "Expected profiles do not match actual profiles")
+    test.compare(Counter(profile_list), Counter(expected_profiles))
     
 @When("I |word| profile '|any|'")
 def step(context, action, profile):
@@ -42,6 +42,8 @@ def step(context, action, profile):
     preferences.selectPreferencesMenu(action)
     cura.pressCloseButton()
 
-@Then("The print settings display profile 'UM3_Fast'")
-def step(context):
-    test.warning("TODO implement The print settings display profile 'UM3_Fast'")
+@Then("The print settings display profile '|any|'")
+def step(context, expected_profile):
+    # The print settings menu contains the layer height aswell. We only want the profile name.
+    current_profile = str(print_settings.getCurrentPrintProfile().text).split()[0]
+    test.compare(expected_profile, current_profile)

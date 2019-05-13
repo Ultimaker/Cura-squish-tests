@@ -70,9 +70,6 @@ class PageObject:
     def presetPreferences(self, version=None):
         if version is not None:
             self.cura_version = version
-        #         Set cwd in testdata
-        if self.cura_version == '4.1':
-            self.setCwdInConfig()
 
             # Make sure preferences are completely deleted before copying to that dir
             # Linux config folder only contains .cfg and .log
@@ -102,30 +99,6 @@ class PageObject:
                 os.mkdir(self.windows_dir)    
             
             copytree(findFile("testdata", f"Config/{self.cura_version}"), Path(self.windows_dir, self.cura_version))
-            
-
-    def setCwdInConfig(self):
-        try:
-            config_file = findFile("testdata", f"Config/{self.cura_version}/cura.cfg")
-
-            with open(config_file, "r") as file:
-                content = file.readlines()
-
-            with open(config_file, "w") as new_file:
-                for line in content:
-                    if ("dialog_load_path" in line) or ("dialog_save_path" in line):
-                        continue
-
-                    if line == "[local_file]\n":
-                        line = line + "dialog_load_path = " + self.testdata_dir + "\ndialog_save_path = " + self.testdata_dir + "\n"
-
-                    new_file.write(line)
-        except LookupError:
-            test.log("File not found: cura.cfg")
-            raise
-        except:
-            test.log("Something went wrong with updating the config file")
-            raise
 
     def setTextFieldValue(self, obj, value):
         if self.os in ("Windows", "Linux"):
