@@ -20,6 +20,7 @@ Feature: Profile Management
     And I select Duplicate profile
     And I give the duplicated profile 'DuplicateOfFine' name
     Then the profile overview contains the profile: 'DuplicateOfFine'
+    And I close the preferences
 
   Scenario: Exporting Profile
     Given Cura is running
