@@ -26,12 +26,15 @@ Feature: Profile Management
     Given Cura is running
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Profiles in preferences
-    #DuplicateOfFine was added by previous scenario: Duplicating Profile
-    Then the profile overview contains the profile: 'DuplicateOfFine'
-    When I select the 'DuplicateOfFine' profile in preferences
+    Then the profile overview contains the profile: 'Fine'
+    When I select the 'Fine' profile in preferences
+    And I select Duplicate profile
+    And I give the duplicated profile 'ToDelete' name
+    Then the profile overview contains the profile: 'ToDelete'
+    When I select the 'ToDelete' profile in preferences
     And I select Remove profile
     And I confirm removing the profile
-    Then the profile 'DuplicateOfFine' doesn't exist anymore
+    Then the profile 'ToDelete' doesn't exist anymore
     And I close the preferences
 
 #
