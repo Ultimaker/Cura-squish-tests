@@ -58,7 +58,15 @@ def step(context, profile_name):
 def step(context, profile_name):
     preferences.selectProfile(profile_name)
 
+@Step("I confirm removing the profile")
+def step(context):
+    preferences.removeProfile()
+
 @Then("the profile overview contains the profile: '|any|'")
 def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
     test.compare(expected_profile, actual_profile.text)
+
+@Then("the profile overview doesnt contain the profile: '|any|'")
+def step(context, forbidden_profile):
+    preferences.verifyProfileDeleted(forbidden_profile)
