@@ -31,7 +31,7 @@ Feature: Profile Management
     When I select the 'DuplicateOfFine' profile in preferences
     And I select Remove profile
     And I confirm removing the profile
-    Then the profile overview doesnt contain the profile: 'DuplicateOfFine'
+    Then the profile 'DuplicateOfFine' doesn't exist anymore
     And I close the preferences
 
 #

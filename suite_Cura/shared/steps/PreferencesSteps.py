@@ -22,7 +22,7 @@ def step(context, expected_printer):
     test.compare(expected_printer, actual_printer.text)
 
 
-@Then(r"Printer (.*?) is not visible (?:anymore)?", regexp=True)
+@Then(r"the printer (.*?) doesn't exist (?:anymore)?", regexp = True)
 def step(context, printer):
     test.compare(True, preferences.verifyPrinterDeleted(printer), f"Object {printer} has been deleted")
 
@@ -67,6 +67,6 @@ def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
     test.compare(expected_profile, actual_profile.text)
 
-@Then("the profile overview doesnt contain the profile: '|any|'")
+@Then(r"the profile '(.*?)' doesn't exist (?:anymore)?", regexp = True)
 def step(context, forbidden_profile):
     preferences.verifyProfileDeleted(forbidden_profile)
