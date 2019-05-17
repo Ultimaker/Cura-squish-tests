@@ -20,12 +20,22 @@ Feature: Profile Management
     And I select Duplicate profile
     And I give the duplicated profile 'DuplicateOfFine' name
     Then the profile overview contains the profile: 'DuplicateOfFine'
+    And I close the preferences
+
+  Scenario: Deleting Profile
+    Given Cura is running
+    When I navigate to menu Preferences and Configure Cura
+    And I navigate to Profiles in preferences
+    #DuplicateOfFine was added by previous scenario: Duplicating Profile
+    Then the profile overview contains the profile: 'DuplicateOfFine'
+    When I select the 'DuplicateOfFine' profile in preferences
+    And I select Remove profile
+    And I confirm removing the profile
+    Then the profile overview doesnt contain the profile: 'DuplicateOfFine'
+    And I close the preferences
 
 #
 #    Scenario: Exporting Profile
-#       When I give the printer the '|any|' name
-#
-#    Scenario: Deleting Profile
 #       When I give the printer the '|any|' name
 #
 #    Scenario: Importing Profile
