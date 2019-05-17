@@ -88,8 +88,8 @@ class Preferences(PageObject):
         self.setTextFieldValue(names.fdg_input_name, "ToExport.curaprofile")
         self.click(names.fdg_btn_save)
 
-        if object.exists(names.mbo_confirm_dialog):
-            self.click(names.mbo_btn_confirm)
+        if object.exists(names.mbo_file_exists):
+            self.click(names.mbo_btn_overwrite)
         
     def getProfileFromList(self, profile):
         profile_obj = self.replaceObjectProperty(names.pfs_profile_item, profile)
