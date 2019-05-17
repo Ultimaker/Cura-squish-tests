@@ -58,6 +58,10 @@ def step(context, profile_name):
 def step(context, profile_name):
     preferences.selectProfile(profile_name)
 
+@Step("I save the file as a profile")
+def step(context):
+    preferences.saveAsProfile()
+
 @Then("the profile overview contains the profile: '|any|'")
 def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
