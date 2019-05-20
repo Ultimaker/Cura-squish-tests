@@ -14,9 +14,6 @@ from shutil import rmtree, copytree, copy, ignore_patterns
 
 
 class PageObject:
-    WIN_CURA = "Cura -platformtheme none"
-    LIN_CURA = "Cura.AppImage -platformtheme none"
-
     def __init__(self):
         self.os = platform.system()
         self.home_dir = expanduser("~")
@@ -40,11 +37,18 @@ class PageObject:
         self.startCura()
 
     def startCura(self):
-        if self.os == "Windows":
-            startApplication(self.WIN_CURA)
-        elif self.os == "Linux":
-            startApplication(self.LIN_CURA)
-            
+        # Get registred AUT name from conf file
+        suite_conf = Path(squishinfo.testCase) / "../suite.conf"
+        aut = None
+        
+        with open(suite_conf) as file:
+            line = file.readline()
+            while line:
+                if line.startswith("AUT="):
+                    aut = (line.split("AUT=")[1]).rstrip()
+                    break
+        
+        startApplication(aut)
         waitForObject(names.mwi, 50000)
 
     def startCuraConfigVersion(self, config_version):
