@@ -3,7 +3,7 @@ from PageObjects.CommonPage import PageObject
 from Helpers.SquishModuleHelper import importSquishSymbols
 import names
 import time
-
+from pathlib import Path
 
 class Performance(PageObject):
     def __init__(self):
@@ -15,7 +15,7 @@ class Performance(PageObject):
         start_time = time.time()
 
         startApplication("Cura -platformtheme none")
-        waitForObjectExists(names.mwi)
+        waitForObjectExists(names.mwi, 50000)
 
         t = time.time() - start_time
         return t
@@ -39,7 +39,7 @@ class Performance(PageObject):
         return t
 
     def retrieveFromLog(self, action):
-        f = self.windows_dir + f"\\{self.cura_version}" + '\cura.log'
+        f = Path(self.windows_dir , 'stderr.log')
         file = self.tail(f, 100)
 
         key = self.logLine(action)

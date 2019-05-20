@@ -36,9 +36,12 @@ def step(context, word, model):
         context.userData['file load'] = cura.loadFile(model, True)
 
 
-@Then("I can verify the gcode size is greater than 1kb")
-def step(context):
-    file_size = page_object.fileSize(context.userData['gcode'])
+@Then("I can verify the gcode size of '|any|' is greater than 1kb")
+def step(context, file_name):
+    file_size = page_object.fileSize(findFile("testdata", file_name))
+
+    context.userData = {}
+    context.userData['gcode'] = file_size
 
     if file_size is not None and file_size > 1:
         test.passes(f"File size: {file_size} KB")
@@ -46,9 +49,9 @@ def step(context):
         test.fail("File size 1 KB or smaller ")
 
 
-@Then("the line size of the gcode is printed")
-def step(context):
-    lineCount = page_object.lineCount(context.userData['gcode'])
+@Then("the line size of '|any|' is printed")
+def step(context, file_name):
+    lineCount = page_object.lineCount(findFile("testdata", file_name))
 
     if lineCount > 0:
         test.passes("Line count: %.f" % lineCount)

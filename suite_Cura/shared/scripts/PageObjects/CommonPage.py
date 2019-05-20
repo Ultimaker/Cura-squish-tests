@@ -66,7 +66,7 @@ class PageObject:
             except Exception as e:
                 print(e)
 
-    # TODO: Expand this function for linux/mac
+    # TODO: Expand this function for mac
     def presetPreferences(self, version=None):
         if version is not None:
             self.cura_version = version
