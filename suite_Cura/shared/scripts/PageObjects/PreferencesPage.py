@@ -86,3 +86,6 @@ class Preferences(PageObject):
     def getProfileFromList(self, profile):
         profile_obj = self.replaceObjectProperty(names.pfs_profile_item, profile)
         return waitForObject(profile_obj, 5000)
+    
+    def createMaterial(self):
+       self.click(names.mat_create_material)
