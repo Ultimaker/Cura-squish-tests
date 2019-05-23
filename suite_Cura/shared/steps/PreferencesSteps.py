@@ -62,3 +62,4 @@ def step(context, profile_name):
 def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
     test.compare(expected_profile, actual_profile.text)
+    

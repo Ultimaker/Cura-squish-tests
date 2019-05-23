@@ -122,6 +122,7 @@ prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button
 
 # Materials preferences (mat)
 mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
+mat_create_material = {"container": ":win_mps", "iconName": "list-add", "text": "Create", "type": "Button", "unnamed": 1, "visible": True}
 
 
 # custom brand
@@ -133,6 +134,7 @@ mat_header_custom = {"container": mat_header, "text": "PLA", "type": "Text", "un
 
 # material of brand
 mat_custom_pla = {"container": mat_cbo_custom, "text": "Custom PLA Custom", "type": "Text", "unnamed": 1, "visible": True}
+mat_custom_material = {"container": mat_cbo_custom, "text": "", "type": "Text", "unnamed": 1, "visible": True}
 
 # Printer preferences (pps)
 win_pps = {"container": qqw_qml, "id": "base", "type": "MachinesPage", "unnamed": 1, "visible": True}

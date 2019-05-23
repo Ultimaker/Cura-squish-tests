@@ -13,6 +13,7 @@ class Cura(PageObject):
 
     def pressCloseButton(self):
         self.click(names.btn_close)
+        waitForObject(names.mwi)
 
     #     Top-level navigation bar
     def navigateTo(self, menu_item, submenu_item, lang=None):
