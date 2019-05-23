@@ -1,5 +1,7 @@
 from PageObjects.MaterialsPage import Materials
 from PageObjects.CuraPage import Cura
+from PageObjects.PreferencesPage import Preferences
+
 
 materials = Materials()
 cura = Cura()
@@ -19,3 +21,7 @@ def step(context, expected_material):
 @Then("the material '|any|' has been added")
 def step(context, material_name):
     materials.verifyMaterialPresent(material_name)
+
+@Step("I select |word| material")
+def step(context, action):
+    preferences.selectPreferencesMenu(action)

@@ -1,5 +1,6 @@
 from PageObjects.PreferencesPage import Preferences
 
+
 preferences = Preferences()
 
 
