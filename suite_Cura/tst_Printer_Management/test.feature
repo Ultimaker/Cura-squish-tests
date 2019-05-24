@@ -1,5 +1,17 @@
 Feature: Printer management
 
+  Scenario: Switching extruders should cause profile change
+    Given Cura has been started with preset configurations
+    And I select the 'Ultimaker 3' printer and '0.1' profile
+    When The 1 nozzle is of type 'AA 0.4'
+    And The 2 nozzle is of type 'AA 0.4'
+	And I select the 2 extruder
+	And I select printcore 'AA 0.8'
+	And I show all settings
+	Then The setting 'Layer Height' in 'Quality' is '0.2'
+	And The setting 'Line Width' in 'Quality' is '0.75'
+	And I close the extruder selector
+
   Scenario: Add printer from printer preferences
     Given Cura has been started with preset configurations
     When I navigate to menu Preferences and Configure Cura

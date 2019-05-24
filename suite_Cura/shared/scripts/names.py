@@ -181,3 +181,8 @@ plugin_customer_supports = {"container": mar_view, "text": "Custom Supports", "t
 win_plugin = {"title": "Plugin License Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 plugin_lcs_btn_accept = {"container": win_plugin, "id": "acceptButton", "type": "Button", "unnamed": 1, "visible": True}
 plugin_btn_installed = {"checkable": False, "container": mar_view, "id": "installedButton", "type": "ActionButton", "unnamed": 1, "visible": True}
+
+ext_btn_variant = {"container": mwi_ovl, "id": "variantSelection", "type": "Button", "unnamed": 1, "visible": True}
+settings_scrollview = {"container": mwi, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
+gen_settings_entry = {"container": settings_scrollview, "id": "mouse", "type": "MouseArea", "unnamed": 1, "visible": True}
+btn_settings_visibility = {"container": mwi, "id": "settingVisibilityMenu", "type": "Button", "unnamed": 1, "visible": True}
