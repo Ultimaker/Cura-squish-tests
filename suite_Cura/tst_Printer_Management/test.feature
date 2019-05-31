@@ -13,7 +13,7 @@ Feature: Printer management
 	And I close the extruder selector
 
   Scenario: Add printer from printer preferences
-    Given Cura has been started with preset configurations
+    Given Cura is running
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Printers in preferences
     And I select Add printer

@@ -124,10 +124,6 @@ def step(context, extruder_nr, nozzle_type):
 def step(context, print_core):
     cura.selectPrintCore(print_core)
 
-#@Then("The active profile is '|any|'")
-#def step(context, profile_name):
-#    assert(cura.checkCurrentProfile(profile_name))
-
 @Then("The setting '|any|' in '|any|' is '|any|'")
 def step(context, setting_name, setting_tab, setting_value):
     print_settings.checkTextboxSetting(setting_tab, setting_name, setting_value)
