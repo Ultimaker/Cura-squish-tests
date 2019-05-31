@@ -31,3 +31,7 @@ class Materials(PageObject):
         
     def getExtruderOneMaterial(self):
         return waitForObject(names.mwi_lbl_extruder)
+    
+    def verifyMaterialPresent(self, material_name):
+        self.findObjectWithText(names.mat_custom_material, material_name)
+        

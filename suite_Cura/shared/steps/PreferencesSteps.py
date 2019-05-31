@@ -1,5 +1,6 @@
 from PageObjects.PreferencesPage import Preferences
 
+
 preferences = Preferences()
 
 
@@ -66,3 +67,4 @@ def step(context):
 def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
     test.compare(expected_profile, actual_profile.text)
+    

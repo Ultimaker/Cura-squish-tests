@@ -6,8 +6,8 @@ Feature: Performance of slicing, and gcode
     And I select the 'Ultimaker 3' printer and 'fine' profile
     And I slice the object
     When I save a sliced model as 'Robot.gcode'
-    Then I can verify the gcode size is greater than 1kb
-    And the line size of the gcode is printed
+    Then I can verify the gcode size of 'Robot.gcode' is greater than 1kb
+    And the line size of 'Robot.gcode' is printed
 
   Scenario Outline: Slicing objects with profile: Fine and printer: UM3
     Given Cura is running

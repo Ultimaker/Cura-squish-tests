@@ -81,8 +81,7 @@ def step(context, printer_type, profile):
 
 @Step("I save a sliced model as '|any|'")
 def step(context, file_name):
-    context.userData = {}
-    context.userData['gcode'] = cura.saveToFile(file_name)
+    cura.saveToFile(file_name)
 
 
 @Then("I close Cura from |any|")
@@ -107,3 +106,4 @@ def step(context):
 @When("I open Print Settings")
 def step(context):
     cura.openPrintSettings()
+
