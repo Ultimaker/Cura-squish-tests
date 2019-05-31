@@ -84,8 +84,8 @@ class Preferences(PageObject):
         self.click(names.btn_duplicate_profile_confirm)
 
     ##  Navigates the save file dialogue to export a profile.
-    def saveAsProfile(self):
-        self.setTextFieldValue(names.fdg_input_name, "ToExport.curaprofile")
+    def saveAsProfile(self, file_name = "output.curaprofile"):
+        self.setTextFieldValue(names.fdg_input_name, file_name)
         self.click(names.fdg_btn_save)
 
         if object.exists(names.mbo_file_exists):

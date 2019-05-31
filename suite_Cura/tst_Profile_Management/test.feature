@@ -33,7 +33,7 @@ Feature: Profile Management
     Then the profile overview contains the profile: 'ToExport'
     When I select the 'ToExport' profile in preferences
     And I select Export profile
-    And I save the file as a profile
+    And I save the profile as 'ToExport.curaprofile'
 #
 #    Scenario: Deleting Profile
 #       When I give the printer the '|any|' name

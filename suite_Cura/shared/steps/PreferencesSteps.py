@@ -59,9 +59,9 @@ def step(context, profile_name):
 def step(context, profile_name):
     preferences.selectProfile(profile_name)
 
-@Step("I save the file as a profile")
-def step(context):
-    preferences.saveAsProfile()
+@Step("I save the profile as '|any|'")
+def step(context, file_name):
+    preferences.saveAsProfile(file_name)
 
 @Then("the profile overview contains the profile: '|any|'")
 def step(context, expected_profile):
