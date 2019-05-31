@@ -97,8 +97,7 @@ class PrintSettings(PageObject):
         self.click(obj_tab)
 
         # Find setting-item:
-        obj_label = self.findObjectWithText({"container": names.settings_scrollview, "type": "Label", "unnamed": 1, "visible": True}, setting_name)
-        assert(obj_label.text == setting_name)
+        obj_label = self.findObjectWithText({"container": names.settings_scrollview, "type": "Label", "unnamed": 1, "visible": True}, setting_name, exact_match=True)
         child_list = self.getChildrenOfType(object.parent(obj_label), "QQuickTextInput")
 
         # Close the tab again, so it can be reopened next time (workaround because it's hard to know if it's collapsed or not):
