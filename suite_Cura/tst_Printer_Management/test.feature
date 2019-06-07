@@ -21,7 +21,22 @@ Feature: Printer management
     Then The printer overview contains a 'Ultimaker 2 Extended+' printer
     And I close the preferences
 
-  Scenario: Add networked printer from printer preferences
+  Scenario: Add detected networked printer from printer preferences
+	Given Cura is running
+    When I navigate to menu Preferences and Configure Cura
+    And I navigate to Printers in preferences
+    And I select Add printer
+    And I add a network printer with name 'Frankie'
+    Then The printer overview contains a 'Frankie' printer
+    And I close the preferences
+
+  Scenario: Check if networked printers show up in the monitor page
+	Given Cura is running
+	And I select the 'Frankie' printer and '0.1' profile
+	And I synchronize with the printers configuration
+	Then I observe 'Frankie' in the monitor page
+
+  Scenario: Add networked printer via IP from printer preferences
     Given Cura is running
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Printers in preferences

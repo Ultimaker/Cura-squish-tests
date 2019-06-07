@@ -30,8 +30,11 @@ def step(context):
 
 @When("I add a network printer with address |any|")
 def step(context, printer_IP):
-    add_printer.addNetworkPrinter(printer_IP)
+    add_printer.addNetworkPrinterByIP(printer_IP)
 
+@When("I add a network printer with name '|any|'")
+def step(context, printer_name):
+    add_printer.addNetworkPrinterByName(printer_name)
 
 @Step("|integer| Printers are present")
 def step(context, expected_count):
@@ -40,9 +43,16 @@ def step(context, expected_count):
     test.compare(expected_count, printer_list)
     cura.pressCloseButton()
 
-
 @Step("It is possible to switch to single extruder printer |any|")
 def step(context, printer_type):
     test.compare(2, printer.getExtruderCount())
     printer.selectPrinter(printer_type)
     test.compare(1, printer.getExtruderCount())
+
+@Given("I synchronize with the printers configuration")
+def step(context):
+    printer.syncConfig()
+
+@Then("I observe '|any|' in the monitor page")
+def step(context, printer_name):
+    printer.isInMonitorPage(printer_name)

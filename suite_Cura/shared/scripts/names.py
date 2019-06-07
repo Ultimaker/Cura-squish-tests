@@ -186,3 +186,14 @@ ext_btn_variant = {"container": mwi_ovl, "id": "variantSelection", "type": "Butt
 settings_scrollview = {"container": mwi, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
 gen_settings_entry = {"container": settings_scrollview, "id": "mouse", "type": "MouseArea", "unnamed": 1, "visible": True}
 btn_settings_visibility = {"container": mwi, "id": "settingVisibilityMenu", "type": "Button", "unnamed": 1, "visible": True}
+
+win_add_printer = {"title": "Add Printer", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+gen_net_printer_view = {"container": win_add_printer, "id": "networkPrinterScrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
+btn_net_printer = {"text": "", "checkable": False, "container": gen_net_printer_view, "type": "MachineSelectorButton", "unnamed": 1, "visible": True}
+btn_add_printer = {"container": win_add_printer, "text": "Add", "type": "Label", "unnamed": 1, "visible": True}
+btn_printer_sync = {"checkable": True, "container": mwi_ovl, "type": "ConfigurationItem", "unnamed": 1, "visible": True}
+btn_to_config = {"container": mwi_ovl, "text": "Configurations", "type": "Label", "unnamed": 1, "visible": True}
+mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Rectangle", "unnamed": 1, "visible": True}
+mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
+mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
+lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}

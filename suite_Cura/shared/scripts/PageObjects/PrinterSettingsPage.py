@@ -11,8 +11,9 @@ class PrintSettings(PageObject):
     # Note case sensitive, but you only need the first part of the profile name.
     # From Print Settings (not preferences)
     def selectProfile(self, profile):
-        self.click(names.mwi_print_settings)
-        waitForObject(names.win_print_settings)
+        if not object.exists(names.win_print_settings):
+            self.click(names.mwi_print_settings)
+            waitForObject(names.win_print_settings)
 
         # This check is required, in case custom settings are already opened
         if object.exists(names.prs_btn_custom):
