@@ -5,7 +5,7 @@ Feature: Verify if configurations of older versions still work
 
   Scenario Outline: Regression scenario's for older configs
     Given Cura has been started with <version> configuration
-    And The following custom profiles are available
+    And the following custom profiles are available
       | profiles  |
       | UM3E_Fast |
       | UM3E_Fine |

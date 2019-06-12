@@ -11,7 +11,7 @@ cura = Cura()
 def step(context):
     print_settings.enableGradualInfill()
 
-@Step("The following custom profiles are available")
+@Step("the following custom profiles are available")
 def step(context):
     # Navigate to Preferences > Profiles
     cura.navigateTo("Preferences", "Configure Cura", "nl")
@@ -42,7 +42,7 @@ def step(context, action, profile):
     preferences.selectPreferencesMenu(action)
     cura.pressCloseButton()
 
-@Then("The print settings display profile '|any|'")
+@Then("the print settings display profile '|any|'")
 def step(context, expected_profile):
     # The print settings menu contains the layer height aswell. We only want the profile name.
     current_profile = str(print_settings.getCurrentPrintProfile().text).split()[0]

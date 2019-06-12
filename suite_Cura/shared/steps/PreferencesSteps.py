@@ -17,13 +17,13 @@ def step(context, action):
         preferences.removePrinter()
 
 
-@Then("The printer overview contains a '|any|' printer")
+@Then("the printer overview contains a '|any|' printer")
 def step(context, expected_printer):
     actual_printer = preferences.getPrinterFromList(expected_printer)
     test.compare(expected_printer, actual_printer.text)
 
 
-@Then(r"Printer (.*?) is not visible (?:anymore)?", regexp=True)
+@Then(r"printer (.*?) is not visible (?:anymore)?", regexp=True)
 def step(context, printer):
     test.compare(True, preferences.verifyPrinterDeleted(printer), f"Object {printer} has been deleted")
 
