@@ -5,12 +5,12 @@ Feature: Printer management
     And I select the 'Ultimaker 3' printer and '0.1' profile
     When the 1 nozzle is of type 'AA 0.4'
     And the 2 nozzle is of type 'AA 0.4'
-	And I select the 2 extruder
-	And I select printcore 'AA 0.8'
-	And I show all settings
-	Then the setting 'Layer Height' in 'Quality' is '0.2'
-	And the setting 'Line Width' in 'Quality' is '0.75'
-	And I close the extruder selector
+    And I select the 2 extruder
+    And I select printcore 'AA 0.8'
+    And I show all settings
+    Then the setting 'Layer Height' in 'Quality' is '0.2'
+    And the setting 'Line Width' in 'Quality' is '0.75'
+    And I close the extruder selector
 
   Scenario: Add printer from printer preferences
     Given Cura is running
@@ -53,4 +53,4 @@ Feature: Printer management
     And I navigate to Printers in preferences
     And I select printer terri from the local printers
     And I select Remove printer
-    Then Printer terri is not visible anymore
+    Then printer terri is not visible anymore

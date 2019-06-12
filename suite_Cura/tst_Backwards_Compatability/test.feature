@@ -13,9 +13,9 @@ Feature: Verify if configurations of older versions still work
       | Um3_Fine  |
     When I Activate profile 'UM3_Fast'
           #TODO: Finish this step!!
-    Then The print settings display profile 'UM3_Fast'
+    Then the print settings display profile 'UM3_Fast'
     And 14 Printers are present
-    And It is possible to switch to single extruder printer Ultimaker 2+
+    And it is possible to switch to single extruder printer Ultimaker 2+
     When I activate material 'Custom PLA Custom'
     Then Extruder one makes use of material 'Custom PLA Custom'
     And I close Cura
