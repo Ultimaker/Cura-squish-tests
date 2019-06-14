@@ -9,7 +9,7 @@ add_printer = AddPrinter()
 cura = Cura()
 
 
-@Step("An |any| printer has been selected")
+@Step("an |any| printer has been selected")
 def step(context, printer_type):
     actual_printer_type = printer.selectedPrinter()
     test.compare(printer_type, actual_printer_type)
@@ -43,7 +43,7 @@ def step(context, expected_count):
     test.compare(expected_count, printer_list)
     cura.pressCloseButton()
 
-@Step("It is possible to switch to single extruder printer |any|")
+@Step("it is possible to switch to single extruder printer |any|")
 def step(context, printer_type):
     test.compare(2, printer.getExtruderCount())
     printer.selectPrinter(printer_type)
