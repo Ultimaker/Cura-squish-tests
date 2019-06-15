@@ -122,3 +122,10 @@ class Cura(PageObject):
 
         self.setTextFieldValue(names.mwi_scale_model_x, size)
         self.click(names.mwi)
+    
+    def openPOS(self):
+        squish.mouseClick(names.mwi_per_model_btn)
+    
+    def modifyPOSSetting(self, infill_density):
+        squish.mouseClick(names.field_per_model)
+        self.setTextFieldValue(names.field_per_model, infill_density)

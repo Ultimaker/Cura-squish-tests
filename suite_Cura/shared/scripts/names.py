@@ -42,6 +42,10 @@ gen_mnu_item = {"container": scroll_view, "text": "", "type": "StyleItem1", "unn
 # Toolbar
 mwi_btn_toolbar = {"checkable": True, "container": mwi, "text": "", "type": "ToolbarButton", "unnamed": 1, "visible": True}
 
+mwi_per_model_btn = {"checkable": True, "container": mwi, "text": "Per Model Settings", "type": "ToolbarButton", "unnamed": 1, "visible": True}
+mwi_per_model = {"container": mwi, "type": "ScrollView", "unnamed": 1, "visible": True}
+field_per_model = {"backgroundcolor": "#ffffff", "container": mwi_per_model, "echoMode": 0, "id": "input", "occurrence": 2, "type": "TextInput", "unnamed": 1, "visible": True}
+
 # Move Model
 mwi_move_model_x = {"container": mwi, "id": "xTextField", "type": "TextField", "unnamed": 1, "visible": True}
 
@@ -186,3 +190,6 @@ ext_btn_variant = {"container": mwi_ovl, "id": "variantSelection", "type": "Butt
 settings_scrollview = {"container": mwi, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
 gen_settings_entry = {"container": settings_scrollview, "id": "mouse", "type": "MouseArea", "unnamed": 1, "visible": True}
 btn_settings_visibility = {"container": mwi, "id": "settingVisibilityMenu", "type": "Button", "unnamed": 1, "visible": True}
+
+
+
