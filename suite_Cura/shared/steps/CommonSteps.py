@@ -131,3 +131,7 @@ def step(context, setting_name, setting_tab, setting_value):
 @When("I show all settings")
 def step(context):
     print_settings.showAllSettings()
+    
+@Step("I select the models")
+def step(context):
+    cura.navigateTo("Edit", "Select All Models")
