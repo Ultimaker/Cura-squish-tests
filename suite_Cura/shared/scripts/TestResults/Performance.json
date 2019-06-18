@@ -1,18 +1,3 @@
 {
-    "data": [
-        {
-            "measurements": "POS Slicing",
-            "datetime": "2019-06-18 16:35:35",
-            "fields": {
-                "GUI": 2.8927524089813232
-            }
-        },
-        {
-            "measurements": "POS Slicing",
-            "datetime": "2019-06-18 16:38:04",
-            "fields": {
-                "GUI": 2.9095876216888428
-            }
-        }
-    ]
+    "data": []
 }
