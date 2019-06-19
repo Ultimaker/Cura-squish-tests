@@ -5,7 +5,7 @@ import squish
 from PageObjects.PerformancePage import Performance
 import names
 
-import builtins
+import builtins  # For casting to int, since Squish defines its own int().
 
 class Cura(PageObject):
     def __init__(self):
