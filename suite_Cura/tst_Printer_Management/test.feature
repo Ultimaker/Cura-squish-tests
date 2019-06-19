@@ -41,8 +41,8 @@ Feature: Printer management
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Printers in preferences
     And I select Add printer
-    And I add a network printer with address 10.183.0.54
-    Then the printer overview contains a '0Lily' printer
+    And I add a network printer with address 10.180.2.61
+    Then the printer overview contains a 'Johnny' printer
     And I close the preferences
 
   Scenario: Activating a printer in printer manager
