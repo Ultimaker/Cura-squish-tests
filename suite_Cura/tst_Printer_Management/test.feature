@@ -26,23 +26,23 @@ Feature: Printer management
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Printers in preferences
     And I select Add printer
-    And I add a network printer with name 'Frankie'
-    Then the printer overview contains a 'Frankie' printer
+    And I add a network printer with name '0Frankie'
+    Then the printer overview contains a '0Frankie' printer
     And I close the preferences
 
   Scenario: Check if networked printers show up in the monitor page
     Given Cura is running
-    And I select the 'Frankie' printer and '0.1' profile
+    And I select the '0Frankie' printer and '0.1' profile
     And I synchronize with the printers configuration
-    Then I observe 'Frankie' in the monitor page
+    Then I observe '0Frankie' in the monitor page
 
   Scenario: Add networked printer via IP from printer preferences
     Given Cura is running
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Printers in preferences
     And I select Add printer
-    And I add a network printer with address 10.180.2.61
-    Then the printer overview contains a 'Johnny' printer
+    And I add a network printer with address 10.183.2.64
+    Then the printer overview contains a '0Frankie' printer
     And I close the preferences
 
   Scenario: Activating a printer in printer manager
