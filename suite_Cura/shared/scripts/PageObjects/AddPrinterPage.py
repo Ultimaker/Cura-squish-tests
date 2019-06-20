@@ -17,7 +17,7 @@ class AddPrinter(PageObject):
         self.click(names.pdg_btn_add_ip_printer)
         self.click(names.pdg_btn_connect)
 
-    def   addNetworkPrinterByName(self, printer_name):
+    def addNetworkPrinterByName(self, printer_name):
         self.click(names.pdg_cbo_network_printer)
         obj_printer_label = self.findObjectWithText(names.btn_net_printer, printer_name)
         self.click(obj_printer_label)
