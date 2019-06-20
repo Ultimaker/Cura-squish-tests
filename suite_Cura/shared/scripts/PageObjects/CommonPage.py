@@ -157,7 +157,7 @@ class PageObject:
 
         obj = object.copy()
         if exact_match:
-            obj[property] = Wildcard(value)
+            obj[property] = value
         else:
             obj[property] = Wildcard("*" + value + "*")
         return waitForObject(obj)

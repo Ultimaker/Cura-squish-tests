@@ -1,3 +1,46 @@
 {
-    "data": []
+    "data": [
+        {
+            "measurements": "Save model to gcode and verify size",
+            "datetime": "2019-06-20 12:07:28",
+            "fields": {
+                "GUI": 2574
+            }
+        },
+        {
+            "measurements": "Slicing objects with profile: Fine and printer: UM3",
+            "datetime": "2019-06-20 12:07:42",
+            "fields": {
+                "GUI": 9.821588039398193
+            }
+        },
+        {
+            "measurements": "Slicing objects with profile: Fine and printer: UM3",
+            "datetime": "2019-06-20 12:08:06",
+            "fields": {
+                "GUI": 16.336534023284912
+            }
+        },
+        {
+            "measurements": "Save model to gcode and verify size",
+            "datetime": "2019-06-20 12:11:12",
+            "fields": {
+                "GUI": 7083
+            }
+        },
+        {
+            "measurements": "Slicing objects with profile: Fine and printer: UM3",
+            "datetime": "2019-06-20 12:11:22",
+            "fields": {
+                "GUI": 5.572296380996704
+            }
+        },
+        {
+            "measurements": "Slicing objects with profile: Fine and printer: UM3",
+            "datetime": "2019-06-20 12:11:39",
+            "fields": {
+                "GUI": 8.714757680892944
+            }
+        }
+    ]
 }

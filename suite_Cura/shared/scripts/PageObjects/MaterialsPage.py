@@ -35,3 +35,9 @@ class Materials(PageObject):
     def verifyMaterialPresent(self, material_name):
         self.findObjectWithText(names.mat_custom_material, material_name)
         
+    def unlinkMaterial(self, action):
+        self.click(names.mat_btn_unlink)
+        
+
+        
+    

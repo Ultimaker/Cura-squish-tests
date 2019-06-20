@@ -10,6 +10,16 @@ Feature: Material manager
     	Then Extruder one makes use of material 'Custom Custom Material'
 
 
+	Scenario: Duplicate material
+	    Given Cura is running
+	    When I navigate to menu Preferences and Configure Cura
+	    And I navigate to Materials in preferences
+	    And I select Duplicate material
+	    Then the material 'Custom Custom Material' has been added
+	    Then I select 'Unlink Material'
+
+
+
     #Scenario: Customise a material
     	#And I create a new material with the following properties
     	 #|Display Name |Brand|
