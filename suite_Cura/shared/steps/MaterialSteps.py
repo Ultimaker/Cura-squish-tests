@@ -25,3 +25,7 @@ def step(context, material_name):
 @Step("I select |word| material")
 def step(context, action):
     preferences.selectPreferencesMenu(action)
+    
+@Step("I select '|any|'")
+def step(context, action):
+    materials.unlinkMaterial(action)

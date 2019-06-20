@@ -20,7 +20,7 @@ class PrintSettings(PageObject):
             self.click(names.prs_btn_custom)
 
         self.click(names.prs_btn_sel_profile)
-        self.click(self.findObjectWithText(names.sub_mnu_item, profile))
+        self.click(self.findObjectWithText(names.sub_mnu_item, profile, exact_match=True))
 
         # Close print settings in case it interferes with other steps
         self.click(names.mwi_print_settings)

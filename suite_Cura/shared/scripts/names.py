@@ -125,9 +125,10 @@ mnu_item_preferences = {"container": mnu_preferences, "objectName": "label", "te
 prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button", "unnamed": 1, "visible": True}
 
 # Materials preferences (mat)
+#mat_base_page = {"container": qqw_qml, "id": "base", "type": "MaterialsPage", "unnamed": 1, "visible": True}
 mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
 mat_create_material = {"container": ":win_mps", "iconName": "list-add", "text": "Create", "type": "Button", "unnamed": 1, "visible": True}
-
+mat_btn_unlink = {"container": qqw_qml, "id": "unlinkMaterialButton", "text": "Unlink Material", "type": "Button", "unnamed": 1, "visible": True}
 
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
@@ -201,3 +202,5 @@ mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Re
 mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
 mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
+
+

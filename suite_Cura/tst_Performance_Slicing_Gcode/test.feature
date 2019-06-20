@@ -13,7 +13,7 @@ Feature: Performance of slicing, and gcode
     Given Cura is running
     When I clear the buildplate
     And I load <File> '<FileName>'
-    And I select the 'Ultimaker 3' printer and 'fine' profile
+    And I select the 'Ultimaker 3' printer and 'Fine - 0.1mm' profile
     And I slice the object in performance mode
     Then the slice time is retrieved from the log
     And the slice time is printed
