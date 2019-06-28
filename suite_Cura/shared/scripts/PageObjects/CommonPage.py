@@ -37,10 +37,10 @@ class PageObject:
         self.startCura()
 
     def startCura(self):
-        # Get registred AUT name from conf file
+        # Get registered AUT name from conf file
         suite_conf = Path(squishinfo.testCase) / "../suite.conf"
         aut = None
-        
+
         with open(suite_conf) as file:
             line = file.readline()
             while line:

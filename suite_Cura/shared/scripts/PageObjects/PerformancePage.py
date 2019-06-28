@@ -11,10 +11,21 @@ class Performance(PageObject):
         importSquishSymbols()
 
     def trackBootTime(self):
+        # Get registered AUT name from conf file
+        suite_conf = Path(squishinfo.testCase) / "../suite.conf"
+        aut = None
+
+        with open(suite_conf) as file:
+            line = file.readline()
+            while line:
+                if line.startswith("AUT="):
+                    aut = (line.split("AUT=")[1]).rstrip()
+                    break
+
         self.presetPreferences()
         start_time = time.time()
 
-        startApplication("Cura -platformtheme none")
+        startApplication(aut)
         waitForObjectExists(names.mwi, 50000)
 
         t = time.time() - start_time
