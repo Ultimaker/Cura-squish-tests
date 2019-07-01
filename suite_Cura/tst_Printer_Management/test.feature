@@ -2,7 +2,7 @@ Feature: Printer management
 
   Scenario: Switching extruders should cause profile change
     Given Cura has been started with preset configurations
-    And I select the 'Ultimaker 3' printer and '0.1' profile
+    And I select the 'Ultimaker 3' printer and 'Fine - 0.1mm' profile
     When the 1 nozzle is of type 'AA 0.4'
     And the 2 nozzle is of type 'AA 0.4'
     And I select the 2 extruder
@@ -32,7 +32,7 @@ Feature: Printer management
 
   Scenario: Check if networked printers show up in the monitor page
     Given Cura is running
-    And I select the '0Frankie' printer and '0.1' profile
+    And I select the '0Frankie' printer and 'Fine - 0.1mm' profile
     And I synchronize with the printers configuration
     Then I observe '0Frankie' in the monitor page
 
