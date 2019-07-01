@@ -129,3 +129,6 @@ class Cura(PageObject):
     def modifyPOSSetting(self, infill_density):
         squish.mouseClick(names.field_per_model)
         self.setTextFieldValue(names.field_per_model, infill_density)
+
+    def openRecommendedView(self):
+        squish.mouseClick(names.prs_btn_recommended)

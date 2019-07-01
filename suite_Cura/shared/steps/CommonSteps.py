@@ -135,3 +135,7 @@ def step(context):
 @Step("I select the models")
 def step(context):
     cura.navigateTo("Edit", "Select All Models")
+
+@Step("I navigate to Recommended settings")
+def step(context):
+    cura.openRecommendedView()
