@@ -1,6 +1,5 @@
 from PageObjects.PreferencesPage import Preferences
 
-
 preferences = Preferences()
 
 
@@ -23,7 +22,7 @@ def step(context, expected_printer):
     test.compare(expected_printer, actual_printer.text)
 
 
-@Then(r"printer (.*?) is not visible (?:anymore)?", regexp=True)
+@Then(r"the printer (.*?) doesn't exist (?:anymore)?", regexp = True)
 def step(context, printer):
     test.compare(True, preferences.verifyPrinterDeleted(printer), f"Object {printer} has been deleted")
 
@@ -59,8 +58,15 @@ def step(context, profile_name):
 def step(context, profile_name):
     preferences.selectProfile(profile_name)
 
+@Step("I confirm removing the profile")
+def step(context):
+    preferences.removeProfile()
+
 @Then("the profile overview contains the profile: '|any|'")
 def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
     test.compare(expected_profile, actual_profile.text)
-    
+
+@Then(r"the profile '(.*?)' doesn't exist (?:anymore)?", regexp = True)
+def step(context, forbidden_profile):
+    preferences.verifyProfileDeleted(forbidden_profile)

@@ -85,8 +85,8 @@ class Cura(PageObject):
 
         self.click(names.fdg_btn_save)
 
-        if object.exists(names.mbo_file_exists):
-            self.click(names.mbo_btn_overwrite)
+        if object.exists(names.mbo_confirm_dialog):
+            self.click(names.mbo_btn_confirm)
 
         return findFile("testdata", file_name)
 
@@ -104,8 +104,8 @@ class Cura(PageObject):
         self.setTextFieldValue(names.fdg_input_name, "UM3_Robot_SAVE.3mf")
         self.click(names.fdg_btn_save)
 
-        if object.exists(names.mbo_file_exists):
-            self.click(names.mbo_btn_overwrite)
+        if object.exists(names.mbo_confirm_dialog):
+            self.click(names.mbo_btn_confirm)
 
         if track_time:
             return Performance.trackFileloadTime()

@@ -34,8 +34,15 @@ class Preferences(PageObject):
     def removePrinter(self):
         self.click(names.rpd_btn_confirm)
 
+    def removeProfile(self):
+        self.click(names.mbo_btn_confirm)
+
     def verifyPrinterDeleted(self, printer):
         obj = self.replaceObjectProperty(names.pps_printer_item, printer)
+        return self.verifyObjDeleted(obj)
+
+    def verifyProfileDeleted(self, profile):
+        obj = self.replaceObjectProperty(names.pfs_profile_item, profile)
         return self.verifyObjDeleted(obj)
 
     def getPrinterListSize(self):

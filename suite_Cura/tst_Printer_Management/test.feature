@@ -68,4 +68,4 @@ Feature: Printer management
     And I navigate to Printers in preferences
     And I select printer terri from the local printers
     And I select Remove printer
-    Then printer terri is not visible anymore
+    Then the printer 'terri' doesn't exist anymore
