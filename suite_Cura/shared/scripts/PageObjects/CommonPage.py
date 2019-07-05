@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-import platform
+import distutils.dir_util
 from os.path import expanduser
 from os.path import getsize
 from Helpers.SquishModuleHelper import importSquishSymbols
+from Helpers.CuraResources import CuraResources
 import squish
 import os
 from objectmaphelper import Wildcard
@@ -11,19 +12,16 @@ import names
 import gettext
 from pathlib import Path
 from shutil import rmtree, copytree, copy, ignore_patterns
+import sys #To get the current operating system.
 
 
 class PageObject:
     def __init__(self):
-        self.os = platform.system()
         self.home_dir = expanduser("~")
-        self.cura_version = '4.1'
+        self.cura_version = '4.2'
 
-        self.windows_dir = r'%s\AppData\Roaming\cura' % self.home_dir
+        self.cura_resources = CuraResources(self.cura_version)
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
-
-        self.linux_dir = {'local': Path('%s/.local/share/cura' % self.home_dir),
-                          'config': Path('%s/.config/cura' % self.home_dir)}
 
         # Imports functions and members of squish
         importSquishSymbols()
@@ -56,53 +54,27 @@ class PageObject:
         self.startCura()
 
     def resetPreferences(self, directory):
-        self.deleteContentFromDir(directory)
+        try:
+            rmtree(directory)
+        except FileNotFoundError:
+            pass #If it's not found, then it was already deleted but that's okay.
 
-    @staticmethod
-    def deleteContentFromDir(location):
-        for data in os.listdir(location):
-            file_path = os.path.join(location, data)
-            try:
-                if os.path.isfile(file_path):
-                    os.unlink(file_path)
-                elif os.path.isdir(file_path):
-                    rmtree(file_path)
-            except Exception as e:
-                print(e)
+    def presetPreferences(self):
+        #Make sure preferences are completely deleted before copying to that dir.
+        self.resetPreferences(self.cura_resources.config)
+        self.resetPreferences(self.cura_resources.data)
+        self.resetPreferences(self.cura_resources.cache)
 
-    # TODO: Expand this function for mac
-    def presetPreferences(self, version=None):
-        if version is not None:
-            self.cura_version = version
+        #Copy the cfg file to the config directory.
+        os.makedirs(self.cura_resources.config, exist_ok = True)
+        copy(squish.findFile("testdata", f"Config/{self.cura_version}/cura.cfg"), self.cura_resources.config)
+        copy(squish.findFile("testdata", f"Config/{self.cura_version}/plugins.json"), self.cura_resources.config)
 
-            # Make sure preferences are completely deleted before copying to that dir
-            # Linux config folder only contains .cfg and .log
-        if self.os == "Linux":
-            for key, value in self.linux_dir.items():
-                try:
-                    while os.listdir(value):
-                        self.resetPreferences(value)
-                except FileNotFoundError:
-                    os.mkdir(value)
-                           
-                destination_dir = Path(value / self.cura_version)
-                
-                if key == "config":
-                    os.makedirs(destination_dir, exist_ok=True)
-                    copy(findFile("testdata", f"Config/{self.cura_version}/cura.cfg"), destination_dir)
-                    continue
-                if key == "local":
-                    copytree(findFile("testdata", f"Config/{self.cura_version}"), destination_dir, ignore=ignore_patterns('cura.cfg'))
-                    continue
-               
-        else:
-            try:
-                while os.listdir(self.windows_dir):
-                    self.resetPreferences(self.windows_dir)
-            except FileNotFoundError:
-                os.mkdir(self.windows_dir)    
-            
-            copytree(findFile("testdata", f"Config/{self.cura_version}"), Path(self.windows_dir, self.cura_version))
+        #Copy the rest to the data directory (we don't copy any cache files).
+        os.makedirs(self.cura_resources.data, exist_ok = True)
+        distutils.dir_util.copy_tree(squish.findFile("testdata", f"Config/{self.cura_version}"), self.cura_resources.data)
+        os.remove(os.path.join(self.cura_resources.data, "cura.cfg"))
+        os.remove(os.path.join(self.cura_resources.data, "plugins.json"))
 
     def setTextFieldValue(self, obj, value):
         if self.os in ("Windows", "Linux"):
