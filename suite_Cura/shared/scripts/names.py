@@ -84,8 +84,8 @@ fdg_btn_open = {"text": "Open", "type": "QPushButton", "unnamed": 1, "visible": 
 fdg_btn_save = {"text": "Save", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": fdg}
 fdg_cbo_file_type = {"name": "fileTypeCombo", "type": "QComboBox", "visible": 1, "window": fdg}
 
-mbo_file_exists = {"type": "QMessageBox", "unnamed": 1, "visible": 1}
-mbo_btn_overwrite = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_file_exists}
+mbo_confirm_dialog = {"type": "QMessageBox", "unnamed": 1, "visible": 1}
+mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
 
 # Open 3MF Dialog
 btn_open_as_prj = {"container": qqw_qml, "id": "openAsProjectButton", "type": "Button", "unnamed": 1, "visible": True}
@@ -167,6 +167,7 @@ pfs_profile_item = {"container": pfs_profile_list, "text": "", "type": "Text", "
 win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}
 prs_btn_custom = {"checkable": False, "container": mwi, "id": "customSettingsButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 prs_custom_view = {"container": mwi, "id": "customPrintSetup", "type": "CustomPrintSetup", "unnamed": 1, "visible": True}
+prs_btn_recommended = {"container": mwi, "text": "Recommended", "type": "Label", "unnamed": 1, "visible": True}
 prs_btn_sel_profile = {"container": prs_custom_view, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
 prs_chk_gradual_infill = {"container": mwi, "id": "enableGradualInfillCheckBox", "type": "CheckBox", "unnamed": 1, "visible": True}
 
@@ -202,5 +203,3 @@ mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Re
 mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
 mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
-
-
