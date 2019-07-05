@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
 import distutils.dir_util
-from os.path import expanduser
-from os.path import getsize
 from Helpers.SquishModuleHelper import importSquishSymbols
 from Helpers.CuraResources import CuraResources
 import squish
 import os
+import os.path
 from objectmaphelper import Wildcard
 import time
 import names
 import gettext
-from pathlib import Path
-from shutil import rmtree, copytree, copy, ignore_patterns
+import shutil
 import sys #To get the current operating system.
 
 
@@ -33,7 +31,7 @@ class PageObject:
 
     def startCura(self):
         # Get registered AUT name from conf file
-        suite_conf = Path(squishinfo.testCase) / "../suite.conf"
+        suite_conf = os.path.join(squishinfo.testCase, "..", "suite.conf")
         aut = None
 
         with open(suite_conf) as file:
@@ -52,7 +50,7 @@ class PageObject:
 
     def resetPreferences(self, directory):
         try:
-            rmtree(directory)
+            shutil.rmtree(directory)
         except FileNotFoundError:
             pass #If it's not found, then it was already deleted but that's okay.
 
@@ -64,8 +62,8 @@ class PageObject:
 
         #Copy the cfg file to the config directory.
         os.makedirs(self.cura_resources.config, exist_ok = True)
-        copy(squish.findFile("testdata", f"Config/{self.cura_version}/cura.cfg"), self.cura_resources.config)
-        copy(squish.findFile("testdata", f"Config/{self.cura_version}/plugins.json"), self.cura_resources.config)
+        shutil.copy(squish.findFile("testdata", f"Config/{self.cura_version}/cura.cfg"), self.cura_resources.config)
+        shutil.copy(squish.findFile("testdata", f"Config/{self.cura_version}/plugins.json"), self.cura_resources.config)
 
         #Copy the rest to the data directory (we don't copy any cache files).
         os.makedirs(self.cura_resources.data, exist_ok = True)
@@ -147,7 +145,7 @@ class PageObject:
         return self.replaceObjectProperty(obj, new_val)
 
     def fileSize(self, file):
-        return self.convertBytes(getsize(file))
+        return self.convertBytes(os.path.getsize(file))
 
     @staticmethod
     def lineCount(fname):
