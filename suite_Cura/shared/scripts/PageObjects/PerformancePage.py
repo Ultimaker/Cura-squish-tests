@@ -50,17 +50,17 @@ class Performance(PageObject):
         return t
 
     def retrieveFromLog(self, action):
-        f = Path(self.windows_dir , 'stderr.log')
+        f = Path(self.cura_resources.data , "cura.log")
         file = self.tail(f, 100)
 
         key = self.logLine(action)
 
         for lines in file:
             if key in lines:
-                if key == 'TranslateOp':
+                if key == "TranslateOp":
                     print(lines.split()[-1])
                 else:
-                    print(lines.split()[0] + ' ' + lines.split()[1] + ': ' + key + lines.split(key, 1)[1])
+                    print(lines.split()[0] + " " + lines.split()[1] + ": " + key + lines.split(key, 1)[1])
 
     def tail(self, file, n=1, bs=1024):
         f = open(file)
