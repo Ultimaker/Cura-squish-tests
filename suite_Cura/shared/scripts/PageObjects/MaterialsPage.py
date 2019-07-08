@@ -39,6 +39,14 @@ class Materials(PageObject):
     def unlinkMaterial(self, action):
         self.click(names.mat_btn_unlink)
 
+    def renameMaterial(self, new_name):
+        textbox = waitForObject(names.mat_input_name)
+        input = self.getChildrenOfType(textbox, "TextInputWithHandles")[0] #Should only be one TextInputWithHandles in here.
+        self.clear(input)
+        self.write(input, new_name)
+        squish.keyPress("<Return>") #Clear the focus.
+        squish.keyRelease("<Return>")
+
     def setProperty(self, property_name, property_value):
         property_name_to_obj = {
             "Density": names.mat_input_density,
