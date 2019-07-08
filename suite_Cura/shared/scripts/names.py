@@ -126,9 +126,15 @@ prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button
 
 # Materials preferences (mat)
 #mat_base_page = {"container": qqw_qml, "id": "base", "type": "MaterialsPage", "unnamed": 1, "visible": True}
+mat_win = {"title": "Preferences", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+mat_panel_details = {"container": mat_win, "id": "materialDetailsView", "type": "MaterialsView", "unnamed": 1, "visible": True}
 mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
 mat_create_material = {"container": ":win_mps", "iconName": "list-add", "text": "Create", "type": "Button", "unnamed": 1, "visible": True}
 mat_btn_unlink = {"container": qqw_qml, "id": "unlinkMaterialButton", "text": "Unlink Material", "type": "Button", "unnamed": 1, "visible": True}
+mat_input_density = {"container": mat_panel_details, "id": "densitySpinBox", "type": "ReadOnlySpinBox", "unnamed": 1, "visible": True}
+mat_input_diameter = {"container": mat_panel_details, "id": "diameterSpinBox", "type": "ReadOnlySpinBox", "unnamed": 1, "visible": True}
+mat_input_cost = {"container": mat_panel_details, "id": "spoolCostSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
+mat_input_weight = {"container": mat_panel_details, "id": "spoolWeightSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
 
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
