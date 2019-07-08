@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from PageObjects.CommonPage import PageObject
 from Helpers.SquishModuleHelper import importSquishSymbols
+import squish
 import names
 from PageObjects.PreferencesPage import Preferences
 
@@ -55,3 +56,5 @@ class Materials(PageObject):
             property_value = property_value.replace(",", ".")
 
         self.write(input, property_value)
+        squish.keyPress("<Return>") #Clear the focus.
+        squish.keyRelease("<Return>")
