@@ -147,6 +147,15 @@ class PageObject:
     def click(obj, time_out=15000):
         squish.mouseClick(waitForObject(obj, time_out))
 
+    ##  Clears a text field.
+    @staticmethod
+    def clear(obj):
+        item = waitForObject(obj)
+        squish.doubleClick(item)
+        squish.mouseClick(item)
+        squish.keyPress("<Delete>")
+        squish.keyRelease("<Delete>")
+
     @staticmethod
     def write(obj, val):
         squish.type(waitForObject(obj), val)
