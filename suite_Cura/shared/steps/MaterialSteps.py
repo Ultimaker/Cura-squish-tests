@@ -29,3 +29,7 @@ def step(context, action):
 @Step("I select '|any|'")
 def step(context, action):
     materials.unlinkMaterial(action)
+
+@Step("I change the material property '|word|' to '|any|'")
+def step(context, property_name, property_value):
+    materials.setProperty(property_name, property_value)

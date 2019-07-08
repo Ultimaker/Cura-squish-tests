@@ -16,7 +16,7 @@ class Materials(PageObject):
         self.click(names.mat_btn_selection)
 
         manage_materials = self.findObjectWithText(names.gen_mnu_item, "Manage Materials", lang=lang)
-        self.click(manage_materials)     
+        self.click(manage_materials)
         
     def activateMaterial(self, material_type):
         # Custom
@@ -37,7 +37,21 @@ class Materials(PageObject):
         
     def unlinkMaterial(self, action):
         self.click(names.mat_btn_unlink)
-        
 
-        
-    
+    def setProperty(self, property_name, property_value):
+        property_name_to_obj = {
+            "Density": names.mat_input_density,
+            "Diameter": names.mat_input_diameter,
+            "Filament Cost": names.mat_input_cost,
+            "Filament Weight": names.mat_input_weight,
+        }
+        spinbox = waitForObject(property_name_to_obj[property_name])
+        input = self.getChildrenOfType(spinbox, "TextInputWithHandles")[0] #Should only be one TextInputWithHandles in here.
+
+        #These property spinboxes are localised, annoyingly, which makes them sometimes use periods and sometimes use commas as radix.
+        if "," in str(input.text): #Naively detect if the localisation is using commas. Doesn't work if the current value happens to have round numbers.
+            property_value = property_value.replace(".", ",")
+        else:
+            property_value = property_value.replace(",", ".")
+
+        self.write(input, property_value)
