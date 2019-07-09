@@ -66,3 +66,6 @@ class Materials(PageObject):
         self.write(input, property_value)
         squish.keyPress("<Return>") #Clear the focus.
         squish.keyRelease("<Return>")
+
+    def confirmDialog(self):
+        self.click(names.mbo_btn_confirm)
