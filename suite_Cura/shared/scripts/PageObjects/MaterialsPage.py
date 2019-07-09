@@ -61,9 +61,9 @@ class Materials(PageObject):
         textbox = waitForObject(names.mat_input_name)
         input = self.getChildrenOfType(textbox, "TextInputWithHandles")[0] #Should only be one TextInputWithHandles in here.
         self.clear(input)
+        self.write(input, "<Ctrl+A>")
         self.write(input, new_name)
-        squish.keyPress("<Return>") #Clear the focus.
-        squish.keyRelease("<Return>")
+        self.write(input, "<Return>") #Clear the focus.
 
     def getProperty(self, property_name):
         spinbox = waitForObject(self.property_name_to_obj[property_name])
