@@ -38,6 +38,10 @@ def step(context):
     cura.curaIsStarted()
 
 
+@Step("I restart Cura")
+def step(context):
+    page_object.restartCura()
+
 @Step("A model has been sliced")
 def step(context):
     cura.modelIsSliced()

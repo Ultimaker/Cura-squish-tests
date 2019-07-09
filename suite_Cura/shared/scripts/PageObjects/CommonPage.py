@@ -52,6 +52,11 @@ class PageObject:
         startApplication(aut)
         waitForObject(names.mwi, 50000)
 
+    def restartCura(self):
+        squish.snooze(12) #Allow autosave to kick in.
+        squish.currentApplicationContext().detach()
+        self.startCura()
+
     def startCuraConfigVersion(self, config_version):
         self.presetPreferences(config_version)
         self.startCura()
@@ -160,7 +165,7 @@ class PageObject:
         squish.type(waitForObject(obj), val)
 
     def findObjectWithText(self, object, value, property='text', lang=None, exact_match=False, delay = 0, time_out = 15000):
-        time.sleep(delay / 1000.0)
+        squish.snooze(delay / 1000.0)
         if lang is not None:
             value = self.getTranslatedText(value, lang)
 
@@ -172,7 +177,7 @@ class PageObject:
         return waitForObject(obj, time_out)
 
     def objectWithTextExists(self, object_template, value, property = "text", lang = None, exact_match = False, pause = 0):
-        time.sleep(pause / 1000.0) #Possibly we need to wait for the interface to update.
+        squish.snooze(pause / 1000.0) #Possibly we need to wait for the interface to update.
         if lang is not None:
             value = self.getTranslatedText(value, lang)
 
