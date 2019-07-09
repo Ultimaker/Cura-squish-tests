@@ -152,13 +152,8 @@ class PageObject:
     @staticmethod
     def clear(obj):
         item = waitForObject(obj)
-        squish.doubleClick(item)
-        squish.mouseClick(item)
-        squish.keyPress("<Delete>")
-        squish.keyRelease("<Delete>")
-        squish.doubleClick(item)
-        squish.keyPress("<Delete>")
-        squish.keyRelease("<Delete>")
+        squish.type(item, "<Ctrl+A>")
+        squish.type(item, "<Delete>")
 
     @staticmethod
     def write(obj, val):
