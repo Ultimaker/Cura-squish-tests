@@ -7,6 +7,13 @@ import test
 from PageObjects.PreferencesPage import Preferences
 
 class Materials(PageObject):
+    property_name_to_obj = {
+        "Density": names.mat_input_density,
+        "Diameter": names.mat_input_diameter,
+        "Filament Cost": names.mat_input_cost,
+        "Filament Weight": names.mat_input_weight,
+    }
+
     def __init__(self):
         importSquishSymbols()
 
@@ -52,14 +59,15 @@ class Materials(PageObject):
         squish.keyPress("<Return>") #Clear the focus.
         squish.keyRelease("<Return>")
 
+    def getProperty(self, property_name):
+        spinbox = waitForObject(self.property_name_to_obj[property_name])
+        input = self.getChildrenOfType(spinbox, "TextInputWithHandles")[0] #Should only be one TextInputWithHandles in here.
+
+        #These property spinboxes are localised, annoyingly, which makes them sometimes use periods and sometimes use commas as radix.
+        return str(input.text).replace(",", ".") #Our code must always work with periods as radix.
+
     def setProperty(self, property_name, property_value):
-        property_name_to_obj = {
-            "Density": names.mat_input_density,
-            "Diameter": names.mat_input_diameter,
-            "Filament Cost": names.mat_input_cost,
-            "Filament Weight": names.mat_input_weight,
-        }
-        spinbox = waitForObject(property_name_to_obj[property_name])
+        spinbox = waitForObject(self.property_name_to_obj[property_name])
         input = self.getChildrenOfType(spinbox, "TextInputWithHandles")[0] #Should only be one TextInputWithHandles in here.
 
         #These property spinboxes are localised, annoyingly, which makes them sometimes use periods and sometimes use commas as radix.

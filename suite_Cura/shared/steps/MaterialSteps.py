@@ -26,6 +26,12 @@ def step(context, material_name):
 def step(context, material_name):
     materials.verifyMaterialNotPresent(material_name)
 
+@Then("the material property '|word|' is '|any|'")
+def step(context, property_name, property_value):
+    actual_value = materials.getProperty(property_name)
+    if actual_value != property_value:
+        test.fail(f"The property {property_name} was {actual_value} instead of {property_value}.")
+
 @Step("I select |word| material")
 def step(context, action):
     preferences.selectPreferencesMenu(action)
