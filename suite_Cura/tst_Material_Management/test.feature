@@ -28,14 +28,18 @@ Feature: Material manager
         Then the material 'Custom Custom Material' has been added
         When I change the material name to 'Diameter Test'
         Then the material 'Custom Diameter Test' has been added
+        And the material property 'Diameter' is '2.85 mm'
         When I change the material property 'Diameter' to '3.25'
         Then the material 'Custom Diameter Test' has been added
+        And the material property 'Diameter' is '3.25 mm'
         When I change the material property 'Diameter' to '1.75'
         And I deny changing the diameter
         Then the material 'Custom Diameter Test' has been added
+        And the material property 'Diameter' is '3.25 mm'
         When I change the material property 'Diameter' to '1.75'
         And I confirm changing the diameter
         Then the material 'Custom Diameter Test' has not been added
+        And the material property 'Diameter' is '2.85 mm'
 
     #Scenario: Customise a material
     	#And I create a new material with the following properties
