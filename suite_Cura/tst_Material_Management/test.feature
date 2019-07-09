@@ -40,6 +40,7 @@ Feature: Material manager
         And I confirm changing the diameter
         Then the material 'Custom Diameter Test' has not been added
         And the material property 'Diameter' is '2.85 mm'
+        And the material 'PLA' is selected
 
     #Scenario: Customise a material
     	#And I create a new material with the following properties
