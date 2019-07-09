@@ -41,6 +41,28 @@ Feature: Material manager
         Then the material 'Custom Diameter Test' has not been added
         And the material property 'Diameter' is '2.85 mm'
         And the material 'PLA' is selected
+        And I close the preferences
+
+
+	Scenario: Material diameter after restarting
+	    Given Cura is running
+	    When I navigate to menu Preferences and Configure Cura
+	    And I navigate to Materials in preferences
+	    And I select Create material
+	    Then the material 'Custom Custom Material' has been added
+	    When I change the material name to 'Diameter Restart'
+	    Then the material 'Diameter Restart' has been added
+	    And the material property 'Diameter' is '2.85 mm'
+	    When I change the material property 'Diameter' to '3.33'
+	    Then the material 'Diameter Restart' has been added
+	    And the material property 'Diameter' is '3.33 mm'
+	    When I close the preferences
+	    And I restart Cura
+	    And I navigate to menu Preferences and Configure Cura
+	    And I navigate to Materials in preferences
+	    Then the material 'Diameter Restart' has been added
+	    And the material property 'Diameter' is '3.33 mm'
+	    And I close the preferences
 
     #Scenario: Customise a material
     	#And I create a new material with the following properties
