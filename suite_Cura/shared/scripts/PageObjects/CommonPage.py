@@ -159,7 +159,8 @@ class PageObject:
     def write(obj, val):
         squish.type(waitForObject(obj), val)
 
-    def findObjectWithText(self, object, value, property='text', lang=None, exact_match=False, time_out = 15000):
+    def findObjectWithText(self, object, value, property='text', lang=None, exact_match=False, delay = 0, time_out = 15000):
+        time.sleep(delay / 1000.0)
         if lang is not None:
             value = self.getTranslatedText(value, lang)
 
