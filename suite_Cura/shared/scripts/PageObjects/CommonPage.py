@@ -156,6 +156,9 @@ class PageObject:
         squish.mouseClick(item)
         squish.keyPress("<Delete>")
         squish.keyRelease("<Delete>")
+        squish.doubleClick(item)
+        squish.keyPress("<Delete>")
+        squish.keyRelease("<Delete>")
 
     @staticmethod
     def write(obj, val):
