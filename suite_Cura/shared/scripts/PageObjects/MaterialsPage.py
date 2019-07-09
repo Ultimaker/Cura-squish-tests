@@ -3,6 +3,7 @@ from PageObjects.CommonPage import PageObject
 from Helpers.SquishModuleHelper import importSquishSymbols
 import squish
 import names
+import test
 from PageObjects.PreferencesPage import Preferences
 
 class Materials(PageObject):
@@ -35,6 +36,10 @@ class Materials(PageObject):
     
     def verifyMaterialPresent(self, material_name):
         self.findObjectWithText(names.mat_custom_material, material_name)
+
+    def verifyMaterialNotPresent(self, material_name):
+        if self.objectWithTextExists(names.mat_custom_material, material_name, pause = 1000):
+            test.fail(f"Material {material_name} was present.")
         
     def unlinkMaterial(self, action):
         self.click(names.mat_btn_unlink)

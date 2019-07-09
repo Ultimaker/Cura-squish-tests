@@ -22,6 +22,10 @@ def step(context, expected_material):
 def step(context, material_name):
     materials.verifyMaterialPresent(material_name)
 
+@Then("the material '|any|' has not been added")
+def step(context, material_name):
+    materials.verifyMaterialNotPresent(material_name)
+
 @Step("I select |word| material")
 def step(context, action):
     preferences.selectPreferencesMenu(action)
