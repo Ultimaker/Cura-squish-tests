@@ -74,3 +74,6 @@ class Materials(PageObject):
 
     def confirmDialog(self):
         self.click(names.mbo_btn_confirm)
+
+    def denyDialog(self):
+        self.click(names.mbo_btn_deny)

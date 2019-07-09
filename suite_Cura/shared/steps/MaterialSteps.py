@@ -45,3 +45,7 @@ def step(context, property_name, property_value):
 @Step("I confirm changing the diameter")
 def step(context):
     materials.confirmDialog()
+
+@Step("I deny changing the diameter")
+def step(context):
+    materials.denyDialog()
