@@ -26,6 +26,10 @@ def step(context, material_name):
 def step(context, material_name):
     materials.verifyMaterialNotPresent(material_name)
 
+@Then("the material '|any|' is selected")
+def step(context, material_name):
+    materials.verifyMaterialSelected(material_name)
+
 @Then("the material property '|word|' is '|any|'")
 def step(context, property_name, property_value):
     actual_value = materials.getProperty(property_name)

@@ -8,6 +8,7 @@ from PageObjects.PreferencesPage import Preferences
 
 class Materials(PageObject):
     property_name_to_obj = {
+        "Name": names.mat_input_name,
         "Density": names.mat_input_density,
         "Diameter": names.mat_input_diameter,
         "Filament Cost": names.mat_input_cost,
@@ -47,7 +48,12 @@ class Materials(PageObject):
     def verifyMaterialNotPresent(self, material_name):
         if self.objectWithTextExists(names.mat_custom_material, material_name, pause = 1000):
             test.fail(f"Material {material_name} was present.")
-        
+
+    def verifyMaterialSelected(self, material_name):
+        actual_material_name = self.getProperty("Name")
+        if actual_material_name != material_name:
+            test.fail(f"The material {actual_material_name} was active instead of {material_name}.")
+
     def unlinkMaterial(self, action):
         self.click(names.mat_btn_unlink)
 
