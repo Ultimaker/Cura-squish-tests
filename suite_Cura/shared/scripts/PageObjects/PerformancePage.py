@@ -21,6 +21,8 @@ class Performance(PageObject):
                 if line.startswith("AUT="):
                     aut = (line.split("AUT=")[1]).rstrip()
                     break
+        if aut is None:
+            raise RuntimeError("Could not find AUT from [{suite_conf}]".format(suite_conf = suite_conf))
 
         self.presetPreferences()
         start_time = time.time()
