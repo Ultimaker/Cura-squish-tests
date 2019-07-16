@@ -86,6 +86,7 @@ fdg_cbo_file_type = {"name": "fileTypeCombo", "type": "QComboBox", "visible": 1,
 
 mbo_confirm_dialog = {"type": "QMessageBox", "unnamed": 1, "visible": 1}
 mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
+mbo_btn_deny = {"text": "No", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
 
 # Open 3MF Dialog
 btn_open_as_prj = {"container": qqw_qml, "id": "openAsProjectButton", "type": "Button", "unnamed": 1, "visible": True}
@@ -126,9 +127,16 @@ prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button
 
 # Materials preferences (mat)
 #mat_base_page = {"container": qqw_qml, "id": "base", "type": "MaterialsPage", "unnamed": 1, "visible": True}
+mat_win = {"title": "Preferences", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+mat_panel_details = {"container": mat_win, "id": "materialDetailsView", "type": "MaterialsView", "unnamed": 1, "visible": True}
 mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
 mat_create_material = {"container": ":win_mps", "iconName": "list-add", "text": "Create", "type": "Button", "unnamed": 1, "visible": True}
 mat_btn_unlink = {"container": qqw_qml, "id": "unlinkMaterialButton", "text": "Unlink Material", "type": "Button", "unnamed": 1, "visible": True}
+mat_input_name = {"container": mat_panel_details, "id": "displayNameTextField", "type": "ReadOnlyTextField", "unnamed": 1, "visible": True}
+mat_input_density = {"container": mat_panel_details, "id": "densitySpinBox", "type": "ReadOnlySpinBox", "unnamed": 1, "visible": True}
+mat_input_diameter = {"container": mat_panel_details, "id": "diameterSpinBox", "type": "ReadOnlySpinBox", "unnamed": 1, "visible": True}
+mat_input_cost = {"container": mat_panel_details, "id": "spoolCostSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
+mat_input_weight = {"container": mat_panel_details, "id": "spoolWeightSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
 
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}

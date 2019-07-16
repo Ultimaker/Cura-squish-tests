@@ -4,6 +4,7 @@ from os.path import expanduser
 from os.path import getsize
 from Helpers.SquishModuleHelper import importSquishSymbols
 import squish
+import object
 import os
 from objectmaphelper import Wildcard
 import time
@@ -50,6 +51,11 @@ class PageObject:
         
         startApplication(aut)
         waitForObject(names.mwi, 50000)
+
+    def restartCura(self):
+        squish.snooze(12) #Allow autosave to kick in.
+        squish.currentApplicationContext().detach()
+        self.startCura()
 
     def startCuraConfigVersion(self, config_version):
         self.presetPreferences(config_version)
@@ -147,11 +153,19 @@ class PageObject:
     def click(obj, time_out=15000):
         squish.mouseClick(waitForObject(obj, time_out))
 
+    ##  Clears a text field.
+    @staticmethod
+    def clear(obj):
+        item = waitForObject(obj)
+        squish.type(item, "<Ctrl+A>")
+        squish.type(item, "<Delete>")
+
     @staticmethod
     def write(obj, val):
         squish.type(waitForObject(obj), val)
 
-    def findObjectWithText(self, object, value, property='text', lang=None, exact_match=False):
+    def findObjectWithText(self, object, value, property='text', lang=None, exact_match=False, delay = 0, time_out = 15000):
+        squish.snooze(delay / 1000.0)
         if lang is not None:
             value = self.getTranslatedText(value, lang)
 
@@ -160,7 +174,19 @@ class PageObject:
             obj[property] = value
         else:
             obj[property] = Wildcard("*" + value + "*")
-        return waitForObject(obj)
+        return waitForObject(obj, time_out)
+
+    def objectWithTextExists(self, object_template, value, property = "text", lang = None, exact_match = False, pause = 0):
+        squish.snooze(pause / 1000.0) #Possibly we need to wait for the interface to update.
+        if lang is not None:
+            value = self.getTranslatedText(value, lang)
+
+        obj = object_template.copy()
+        if exact_match:
+            obj[property] = value
+        else:
+            obj[property] = Wildcard("*" + value + "*")
+        return object.exists(obj)
 
     @staticmethod
     def getTranslatedText(text, lang='nl'):
