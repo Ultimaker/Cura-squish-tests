@@ -27,6 +27,7 @@ class Cura(PageObject):
     def navigateToStageMenu(self, stage_item):
         if "Marketplace" in stage_item:
             self.click(names.mwi_btn_marketplace)
+            return
         obj = self.replaceObjectProperty(names.mwi_btn_stage, stage_item, "stageId")
         self.click(obj)
 
