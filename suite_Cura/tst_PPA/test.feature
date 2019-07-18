@@ -6,3 +6,4 @@ Feature: Print Profile Assistant
 	Scenario: Run all experiments once
 	    Given Cura has been started with preset configurations
 	    And the PPA plug-in is installed
+	    When I navigate to stage menu CuraPrintProfileCreator

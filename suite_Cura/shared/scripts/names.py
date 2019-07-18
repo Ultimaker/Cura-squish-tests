@@ -8,6 +8,7 @@ qqw_qml = {"type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 
 # Cura Main Page
 mwi_btn_open_file = {"checkable": False, "container": mwi, "id": "openFileButton", "type": "Button", "unnamed": 1, "visible": True}
+mwi_btn_stage = {"container": mwi, "id": "stageSelectorButton", "type": "Button", "unnamed": 1, "visible": True} #Generic stage selector button. Fill in the stageId property to select specific buttons.
 
 # Printers
 mwi_printer = {"container": mwi, "id": "machineSelection", "type": "MachineSelector", "unnamed": 1, "visible": True}
