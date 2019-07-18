@@ -1,5 +1,6 @@
 # Copyright (c) 2019 Ultimaker B.V.
 
+import names #The UI elements to interact with.
 import os #To install the PPA plug-in.
 import os.path #To install the PPA plug-in.
 import shutil #To install the PPA plug-in.
@@ -20,3 +21,7 @@ class PPA(PageObject):
         if os.path.exists(target_location):
             os.remove(target_location) #Copytree fails if it already exists. Remove first so we guarantee that it copies properly.
         shutil.copytree(source_location, target_location)
+
+    ##  Creates a new PPA experiment (clicks the primary button).
+    def new_experiment(self):
+        self.click(names.ppa_btn_create_experiment)

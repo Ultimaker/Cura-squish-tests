@@ -212,3 +212,6 @@ mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Re
 mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
 mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
+
+# PPA
+ppa_btn_create_experiment = {"container": mwi, "text": "Create new experiment", "type": "ActionButton", "unnamed": 1, "visible": True}
