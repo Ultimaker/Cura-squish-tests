@@ -41,7 +41,7 @@ Feature: Printer management
     When I navigate to menu Preferences and Configure Cura
     And I navigate to Printers in preferences
     And I select Add printer
-    And I add a network printer with address 10.183.2.64
+    And I add a network printer with address 10.183.3.145
     Then the printer overview contains a '0Frankie' printer
     And I close the preferences
 

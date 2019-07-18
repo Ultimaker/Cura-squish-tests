@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import platform
 import distutils.dir_util
 from Helpers.SquishModuleHelper import importSquishSymbols
 from Helpers.CuraResources import CuraResources
@@ -15,6 +16,7 @@ import sys #To get the current operating system.
 
 class PageObject:
     def __init__(self):
+        self.os = platform.system()
         self.cura_version = '4.2'
         self.cura_resources = CuraResources(self.cura_version)
 
