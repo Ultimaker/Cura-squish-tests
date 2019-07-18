@@ -24,11 +24,11 @@ class PageObject:
         importSquishSymbols()
 
     def startCuraNoConfig(self):
-        self.resetPreferences()
+        self.resetAllPreferences()
         self.startCura()
 
     def startCuraWithPresetConfig(self):
-        self.presetPreferences()
+        self.presetAllPreferences()
         self.startCura()
 
     def startCura(self):
@@ -47,7 +47,7 @@ class PageObject:
         waitForObject(names.mwi, 50000)
 
     def startCuraConfigVersion(self, config_version):
-        self.presetPreferences(config_version)
+        self.presetPreferences()
         self.startCura()
 
     def resetPreferences(self, directory):
@@ -55,6 +55,13 @@ class PageObject:
             shutil.rmtree(directory)
         except FileNotFoundError:
             pass #If it's not found, then it was already deleted but that's okay.
+        
+    def resetAllPreferences(self):
+        temp_resources = CuraResources("")
+        
+        self.resetPreferences(temp_resources.config)
+        self.resetPreferences(temp_resources.data)
+        self.resetPreferences(temp_resources.cache)
 
     def presetPreferences(self):
         #Make sure preferences are completely deleted before copying to that dir.
