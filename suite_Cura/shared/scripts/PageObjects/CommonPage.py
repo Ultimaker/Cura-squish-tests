@@ -19,6 +19,7 @@ class PageObject:
         self.os = platform.system()
         self.cura_version = '4.2'
         self.cura_resources = CuraResources(self.cura_version)
+        self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
 
         # Imports functions and members of squish
         importSquishSymbols()
@@ -28,7 +29,7 @@ class PageObject:
         self.startCura()
 
     def startCuraWithPresetConfig(self):
-        self.presetAllPreferences()
+        self.presetPreferences()
         self.startCura()
 
     def startCura(self):
