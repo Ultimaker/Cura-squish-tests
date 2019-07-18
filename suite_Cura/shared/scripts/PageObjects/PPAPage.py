@@ -23,5 +23,8 @@ class PPA(PageObject):
         shutil.copytree(source_location, target_location)
 
     ##  Creates a new PPA experiment (clicks the primary button).
-    def new_experiment(self):
+    #   \param experiment_name The name of the new experiment.
+    def new_experiment(self, experiment_name):
         self.click(names.ppa_btn_create_experiment)
+        self.write(names.ppa_input_experiment_name, experiment_name)
+        self.click(names.ppa_btn_experiment_name_ok)

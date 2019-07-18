@@ -7,4 +7,4 @@ Feature: Print Profile Assistant
 	    Given Cura has been started with preset configurations
 	    And the PPA plug-in is installed
 	    When I navigate to stage menu CuraPrintProfileCreator
-	    And I create a new PPA experiment
+	    And I create a new PPA experiment called 'Walkthrough'

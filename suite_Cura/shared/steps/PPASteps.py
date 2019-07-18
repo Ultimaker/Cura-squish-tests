@@ -10,6 +10,6 @@ ppa = PPA()
 def step(context):
     ppa.install()
 
-@When("I create a new PPA experiment")
-def step(context):
-    ppa.new_experiment()
+@When("I create a new PPA experiment called '|any|'")
+def step(context, experiment_name):
+    ppa.new_experiment(experiment_name)
