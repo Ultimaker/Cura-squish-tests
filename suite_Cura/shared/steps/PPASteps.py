@@ -13,3 +13,7 @@ def step(context):
 @When("I create a new PPA experiment called '|any|'")
 def step(context, experiment_name):
     ppa.new_experiment(experiment_name)
+
+@When("I set the PPA experiment configuration '|any|' to '|any|'")
+def step(context, configuration_name, value):
+    ppa.set_configuration(configuration_name, value)

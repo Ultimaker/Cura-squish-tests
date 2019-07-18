@@ -8,3 +8,4 @@ Feature: Print Profile Assistant
 	    And the PPA plug-in is installed
 	    When I navigate to stage menu CuraPrintProfileCreator
 	    And I create a new PPA experiment called 'Walkthrough'
+	    And I set the PPA experiment configuration 'Printer' to 'Ultimaker S5'

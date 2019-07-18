@@ -214,7 +214,11 @@ mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnam
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
 
 # PPA
+ppa_sidebar = {"container": mwi, "id": "profileCreatorBase", "type": "Rectangle", "unnamed": 1, "visible": True}
 ppa_btn_create_experiment = {"container": mwi, "text": "Create new experiment", "type": "ActionButton", "unnamed": 1, "visible": True}
 ppa_win_experiment_name = {"title": "Create Experiment", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 ppa_input_experiment_name = {"container": ppa_win_experiment_name, "id": "textInput", "type": "TextInputWithHandles", "unnamed": 1, "visible": True}
 ppa_btn_experiment_name_ok = {"container": ppa_win_experiment_name, "text": "OK", "type": "Button", "unnamed": 1, "visible": True}
+ppa_page_scrollview = {"container": ppa_sidebar, "type": "Flickable", "unnamed": 1, "visible": True}
+ppa_page_configuration_row = {"container": ppa_page_scrollview, "type": "DropDownBasic", "unnamed": 1, "visible": True}
+ppa_btn_dropdown = {"id": "selection", "type": "Button"}

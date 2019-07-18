@@ -5,6 +5,7 @@ import os #To install the PPA plug-in.
 import os.path #To install the PPA plug-in.
 import shutil #To install the PPA plug-in.
 
+from Helpers.GetObjectsByProperties import ObjectDescendants
 from PageObjects.CommonPage import PageObject
 
 ##  Interacts with the PPA sidebar.
@@ -28,3 +29,8 @@ class PPA(PageObject):
         self.click(names.ppa_btn_create_experiment)
         self.write(names.ppa_input_experiment_name, experiment_name)
         self.click(names.ppa_btn_experiment_name_ok)
+
+    def set_configuration(self, configuration_name, value):
+        dropdowns = ObjectDescendants.getObjects(names.ppa_page_configuration_row, names.ppa_btn_dropdown)
+        self.click(dropdowns[0]) #Needs to have at least 1 drop-down in this row.
+        self.click(self.findObjectWithText(names.sub_mnu_item, value))
