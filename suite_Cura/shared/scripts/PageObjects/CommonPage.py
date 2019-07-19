@@ -150,7 +150,8 @@ class PageObject:
         return child_obj_list
 
     @staticmethod
-    def click(obj, time_out=15000):
+    def click(obj, time_out = 15000, snooze = 100):
+        squish.snooze(snooze / 1000)
         squish.mouseClick(waitForObject(obj, time_out))
 
     ##  Clears a text field.
