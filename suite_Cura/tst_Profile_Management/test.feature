@@ -37,7 +37,6 @@ Feature: Profile Management
     And I confirm removing the profile
     Then the profile 'ToDelete' doesn't exist anymore
     And I close the preferences
-    And I close the preferences
 
   Scenario: Exporting Profile
     Given Cura is running
@@ -52,9 +51,6 @@ Feature: Profile Management
     And I select Export profile
     And I save the profile as 'ToExport.curaprofile'
     Then the file 'ToExport.curaprofile' is a valid profile
-#
-#    Scenario: Deleting Profile
-#       When I give the printer the '|any|' name
-#
+
 #    Scenario: Importing Profile
 #       When I give the printer the '|any|' name
