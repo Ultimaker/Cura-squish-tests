@@ -51,6 +51,13 @@ Feature: Profile Management
     And I select Export profile
     And I save the profile as 'ToExport.curaprofile'
     Then the file 'ToExport.curaprofile' is a valid profile
+    And I close the preferences
 
-#    Scenario: Importing Profile
-#       When I give the printer the '|any|' name
+  Scenario: Importing Profile
+    Given Cura is running
+    When I navigate to menu Preferences and Configure Cura
+    And I navigate to Profiles in preferences
+    And I select Import profile
+    And I choose to load 'ToExport.curaprofile'
+    Then the profile overview contains the profile: 'ToExport #2'
+    And I close the preferences

@@ -143,3 +143,7 @@ def step(context):
 @Step("I navigate to Recommended settings")
 def step(context):
     cura.openRecommendedView()
+
+@Step("I choose to load '|any|'")
+def step(context, filename):
+    cura.loadOtherTypeFiles(filename)        

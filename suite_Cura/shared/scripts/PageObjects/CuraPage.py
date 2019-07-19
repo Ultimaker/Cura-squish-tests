@@ -132,3 +132,12 @@ class Cura(PageObject):
 
     def openRecommendedView(self):
         squish.mouseClick(names.prs_btn_recommended)
+    
+    def loadOtherTypeFiles(self, filename):
+        # Navigate to the correct dir first
+        self.setTextFieldValue(names.fdg_input_name, self.testdata_dir)
+        squish.clickButton(waitForObject(names.fdg_btn_open))
+
+        self.setTextFieldValue(names.fdg_input_name, filename)
+        squish.clickButton(waitForObject(names.fdg_btn_open))
+        squish.clickButton(waitForObject(names.mbo_btn_ok))
