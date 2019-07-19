@@ -8,19 +8,19 @@ class PrintSettings(PageObject):
     def __init__(self):
         importSquishSymbols()
 
+    # Note case sensitive, but you only need the first part of the profile name.
     # From Print Settings (not preferences)
     def selectProfile(self, profile):
-        self.click(names.mwi_print_settings)
-        waitForObject(names.win_print_settings)
+        if not object.exists(names.win_print_settings):
+            self.click(names.mwi_print_settings)
+            waitForObject(names.win_print_settings)
 
         # This check is required, in case custom settings are already opened
         if object.exists(names.prs_btn_custom):
             self.click(names.prs_btn_custom)
 
         self.click(names.prs_btn_sel_profile)
-
-        if "fine" in profile:
-            self.click(self.findObjectWithText(names.sub_mnu_item, "Fine - 0.1mm"))
+        self.click(self.findObjectWithText(names.sub_mnu_item, profile, exact_match=True))
 
         # Close print settings in case it interferes with other steps
         self.click(names.mwi_print_settings)
@@ -69,6 +69,41 @@ class PrintSettings(PageObject):
             if x.text == profile:
                 self.click(x)
                 break
-            
+
     def getCurrentPrintProfile(self):
         return waitForObject(names.mwi_mnu_print_settings_profile)
+
+    def gotoCustomSettings(self):
+        # This check is required, in case the settings are already opened
+        if not object.exists(names.win_print_settings):
+            self.click(names.mwi_print_settings)
+            waitForObject(names.win_print_settings)
+
+        # This check is required, in case custom settings are already opened
+        if object.exists(names.prs_btn_custom):
+            self.click(names.prs_btn_custom)
+
+    def showAllSettings(self):
+        self.gotoCustomSettings()
+        self.click(names.btn_settings_visibility)
+        submenu_object = self.findObjectWithText(names.sub_mnu_item, "Show All Settings")
+        self.click(submenu_object)
+
+    def checkTextboxSetting(self, tab_name, setting_name, setting_value_str):
+        self.gotoCustomSettings()
+
+        # Open tab:
+        obj_tab = {"container": names.settings_scrollview, "text": tab_name, "type": "Label", "unnamed": 1, "visible": True}
+        waitForObject(obj_tab)
+        self.click(obj_tab)
+
+        # Find setting-item:
+        obj_label = self.findObjectWithText({"container": names.settings_scrollview, "type": "Label", "unnamed": 1, "visible": True}, setting_name, exact_match=True)
+        child_list = self.getChildrenOfType(object.parent(obj_label), "QQuickTextInput")
+
+        # Close the tab again, so it can be reopened next time (workaround because it's hard to know if it's collapsed or not):
+        self.click(obj_tab)
+
+        # Compare and return:
+        assert(len(child_list) > 0)
+        return (child_list[0].text == setting_value_str)

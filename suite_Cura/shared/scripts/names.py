@@ -42,6 +42,10 @@ gen_mnu_item = {"container": scroll_view, "text": "", "type": "StyleItem1", "unn
 # Toolbar
 mwi_btn_toolbar = {"checkable": True, "container": mwi, "text": "", "type": "ToolbarButton", "unnamed": 1, "visible": True}
 
+mwi_per_model_btn = {"checkable": True, "container": mwi, "text": "Per Model Settings", "type": "ToolbarButton", "unnamed": 1, "visible": True}
+mwi_per_model = {"container": mwi, "type": "ScrollView", "unnamed": 1, "visible": True}
+field_per_model = {"backgroundcolor": "#ffffff", "container": mwi_per_model, "echoMode": 0, "id": "input", "occurrence": 2, "type": "TextInput", "unnamed": 1, "visible": True}
+
 # Move Model
 mwi_move_model_x = {"container": mwi, "id": "xTextField", "type": "TextField", "unnamed": 1, "visible": True}
 
@@ -80,8 +84,9 @@ fdg_btn_open = {"text": "Open", "type": "QPushButton", "unnamed": 1, "visible": 
 fdg_btn_save = {"text": "Save", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": fdg}
 fdg_cbo_file_type = {"name": "fileTypeCombo", "type": "QComboBox", "visible": 1, "window": fdg}
 
-mbo_file_exists = {"type": "QMessageBox", "unnamed": 1, "visible": 1}
-mbo_btn_overwrite = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_file_exists}
+mbo_confirm_dialog = {"type": "QMessageBox", "unnamed": 1, "visible": 1}
+mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
+mbo_btn_deny = {"text": "No", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
 
 # Open 3MF Dialog
 btn_open_as_prj = {"container": qqw_qml, "id": "openAsProjectButton", "type": "Button", "unnamed": 1, "visible": True}
@@ -121,9 +126,17 @@ mnu_item_preferences = {"container": mnu_preferences, "objectName": "label", "te
 prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button", "unnamed": 1, "visible": True}
 
 # Materials preferences (mat)
+#mat_base_page = {"container": qqw_qml, "id": "base", "type": "MaterialsPage", "unnamed": 1, "visible": True}
+mat_win = {"title": "Preferences", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+mat_panel_details = {"container": mat_win, "id": "materialDetailsView", "type": "MaterialsView", "unnamed": 1, "visible": True}
 mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
 mat_create_material = {"container": ":win_mps", "iconName": "list-add", "text": "Create", "type": "Button", "unnamed": 1, "visible": True}
-
+mat_btn_unlink = {"container": qqw_qml, "id": "unlinkMaterialButton", "text": "Unlink Material", "type": "Button", "unnamed": 1, "visible": True}
+mat_input_name = {"container": mat_panel_details, "id": "displayNameTextField", "type": "ReadOnlyTextField", "unnamed": 1, "visible": True}
+mat_input_density = {"container": mat_panel_details, "id": "densitySpinBox", "type": "ReadOnlySpinBox", "unnamed": 1, "visible": True}
+mat_input_diameter = {"container": mat_panel_details, "id": "diameterSpinBox", "type": "ReadOnlySpinBox", "unnamed": 1, "visible": True}
+mat_input_cost = {"container": mat_panel_details, "id": "spoolCostSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
+mat_input_weight = {"container": mat_panel_details, "id": "spoolWeightSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
 
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
@@ -162,6 +175,7 @@ pfs_profile_item = {"container": pfs_profile_list, "text": "", "type": "Text", "
 win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "unnamed": 1, "visible": True}
 prs_btn_custom = {"checkable": False, "container": mwi, "id": "customSettingsButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 prs_custom_view = {"container": mwi, "id": "customPrintSetup", "type": "CustomPrintSetup", "unnamed": 1, "visible": True}
+prs_btn_recommended = {"container": mwi, "text": "Recommended", "type": "Label", "unnamed": 1, "visible": True}
 prs_btn_sel_profile = {"container": prs_custom_view, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
 prs_chk_gradual_infill = {"container": mwi, "id": "enableGradualInfillCheckBox", "type": "CheckBox", "unnamed": 1, "visible": True}
 
@@ -181,3 +195,19 @@ plugin_customer_supports = {"container": mar_view, "text": "Custom Supports", "t
 win_plugin = {"title": "Plugin License Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 plugin_lcs_btn_accept = {"container": win_plugin, "id": "acceptButton", "type": "Button", "unnamed": 1, "visible": True}
 plugin_btn_installed = {"checkable": False, "container": mar_view, "id": "installedButton", "type": "ActionButton", "unnamed": 1, "visible": True}
+
+ext_btn_variant = {"container": mwi_ovl, "id": "variantSelection", "type": "Button", "unnamed": 1, "visible": True}
+settings_scrollview = {"container": mwi, "id": "scrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
+gen_settings_entry = {"container": settings_scrollview, "id": "mouse", "type": "MouseArea", "unnamed": 1, "visible": True}
+btn_settings_visibility = {"container": mwi, "id": "settingVisibilityMenu", "type": "Button", "unnamed": 1, "visible": True}
+
+win_add_printer = {"title": "Add Printer", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+gen_net_printer_view = {"container": win_add_printer, "id": "networkPrinterScrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
+btn_net_printer = {"text": "", "checkable": False, "container": gen_net_printer_view, "type": "MachineSelectorButton", "unnamed": 1, "visible": True}
+btn_add_printer = {"container": win_add_printer, "text": "Add", "type": "Label", "unnamed": 1, "visible": True}
+btn_printer_sync = {"checkable": True, "container": mwi_ovl, "type": "ConfigurationItem", "unnamed": 1, "visible": True}
+btn_to_config = {"container": mwi_ovl, "text": "Configurations", "type": "Label", "unnamed": 1, "visible": True}
+mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Rectangle", "unnamed": 1, "visible": True}
+mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
+mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
+lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}

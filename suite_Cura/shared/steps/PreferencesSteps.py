@@ -20,13 +20,13 @@ def step(context, action):
         preferences.removePrinter()
 
 
-@Then("The printer overview contains a '|any|' printer")
+@Then("the printer overview contains a '|any|' printer")
 def step(context, expected_printer):
     actual_printer = preferences.getPrinterFromList(expected_printer)
     test.compare(expected_printer, actual_printer.text)
 
 
-@Then(r"Printer (.*?) is not visible (?:anymore)?", regexp=True)
+@Then(r"the printer (.*?) doesn't exist (?:anymore)?", regexp = True)
 def step(context, printer):
     test.compare(True, preferences.verifyPrinterDeleted(printer), f"Object {printer} has been deleted")
 
@@ -66,6 +66,10 @@ def step(context, profile_name):
 def step(context, file_name):
     preferences.saveAsProfile(os.path.join(preferences.testdata_dir, file_name))
 
+@Step("I confirm removing the profile")
+def step(context):
+    preferences.removeProfile()
+
 @Then("the profile overview contains the profile: '|any|'")
 def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
@@ -80,3 +84,7 @@ def step(context, file_name):
                 profile = configparser.ConfigParser()
                 profile.read_string(contents) #If this raises an exception, the file is invalid.
     test.passes("Profile is valid.") #If it got here, none of the aforementioned exceptions occurred so it is valid.
+
+@Then(r"the profile '(.*?)' doesn't exist (?:anymore)?", regexp = True)
+def step(context, forbidden_profile):
+    preferences.verifyProfileDeleted(forbidden_profile)

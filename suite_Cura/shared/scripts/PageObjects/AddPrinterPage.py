@@ -9,13 +9,20 @@ class AddPrinter(PageObject):
         PageObject.__init__(self)
         importSquishSymbols()
 
-    def addNetworkPrinter(self, printer_ip):
+    def addNetworkPrinterByIP(self, printer_ip):
         self.click(names.pdg_cbo_network_printer)
         self.click(names.pdg_btn_add_printer_by_ip)
         self.click(names.pdg_input_address)
         self.setTextFieldValue(names.pdg_input_address, printer_ip)
         self.click(names.pdg_btn_add_ip_printer)
         self.click(names.pdg_btn_connect)
+
+    def addNetworkPrinterByName(self, printer_name):
+        self.click(names.pdg_cbo_network_printer)
+        obj_printer_label = self.findObjectWithText(names.btn_net_printer, printer_name)
+        self.click(obj_printer_label)
+        obj_add_button = waitForObject(names.btn_add_printer)
+        self.click(obj_add_button)
 
     def addLocalPrinter(self, printer):
         self.click(names.pdg_cbo_local_printer)

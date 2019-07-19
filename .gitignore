@@ -4,3 +4,5 @@ builds/
 config.xml
 envvars
 suite_Cura/**/errorImages/
+suite_Cura/shared/scripts/TestResults/*
+**.gcode

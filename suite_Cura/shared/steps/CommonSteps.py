@@ -38,6 +38,10 @@ def step(context):
     cura.curaIsStarted()
 
 
+@Step("I restart Cura")
+def step(context):
+    page_object.restartCura()
+
 @Step("A model has been sliced")
 def step(context):
     cura.modelIsSliced()
@@ -73,7 +77,7 @@ def step(context):
     cura.navigateTo("Edit", "Clear Build Plate")
 
 
-@Step("I select the '|any|' printer and '|word|' profile")
+@Step("I select the '|any|' printer and '|any|' profile")
 def step(context, printer_type, profile):
     printer.selectPrinter(printer_type)
     print_settings.selectProfile(profile)
@@ -107,3 +111,35 @@ def step(context):
 def step(context):
     cura.openPrintSettings()
 
+@Step("I close the extruder selector")
+def step(context):
+    cura.selectExtruderTab("0") # NOTE: Only if already open!
+
+# @Then("I select the [1-8] extruder", regexp=True)
+@When("I select the |any| extruder")
+def step(context, extruder_nr):
+    cura.selectExtruderTab(extruder_nr)
+
+@Step("the |any| nozzle is of type '|any|'")
+def step(context, extruder_nr, nozzle_type):
+    assert(cura.checkNozzleTypeText(extruder_nr, nozzle_type))
+
+@When("I select printcore '|any|'")
+def step(context, print_core):
+    cura.selectPrintCore(print_core)
+
+@Then("the setting '|any|' in '|any|' is '|any|'")
+def step(context, setting_name, setting_tab, setting_value):
+    print_settings.checkTextboxSetting(setting_tab, setting_name, setting_value)
+
+@When("I show all settings")
+def step(context):
+    print_settings.showAllSettings()
+    
+@Step("I select the models")
+def step(context):
+    cura.navigateTo("Edit", "Select All Models")
+
+@Step("I navigate to Recommended settings")
+def step(context):
+    cura.openRecommendedView()

@@ -5,6 +5,7 @@ import squish
 from PageObjects.PerformancePage import Performance
 import names
 
+import builtins  # For casting to int, since Squish defines its own int().
 
 class Cura(PageObject):
     def __init__(self):
@@ -26,6 +27,23 @@ class Cura(PageObject):
     def navigateToStageMenu(self, stage_item):
         if "Marketplace" in stage_item:
             self.click(names.mwi_btn_marketplace)
+
+    def selectExtruderTab(self, extruder_nr_str):
+        self.click(names.mwi_lst_extruders)  # NOTE: Only if not open yet!
+        extruder_nr = builtins.int(extruder_nr_str)
+        if extruder_nr > 0:
+            self.click({"checkable": True, "container": names.mwi_ovl, "occurrence": extruder_nr, "type": "TabButton", "unnamed": 1, "visible": True})
+
+    def checkNozzleTypeText(self, extruder_nr_str, nozzle_text):
+        extruder_nr = builtins.int(extruder_nr_str)
+        obj_extruder_container = {"container": names.mwi_lst_extruders, "index": (extruder_nr - 1), "type": "Item", "unnamed": 1, "visible": True}
+        obj_nozzle_label = {"container": obj_extruder_container, "text": nozzle_text, "type": "Label", "unnamed": 1, "visible": True}
+        return object.exists(obj_nozzle_label)
+
+    def selectPrintCore(self, print_core):
+        self.click(names.ext_btn_variant)
+        btn_print_core = self.findObjectWithText(names.gen_mnu_item, print_core)
+        self.click(btn_print_core)
 
     def openPrintSettings(self):
         self.click(names.mwi_print_settings)
@@ -67,8 +85,8 @@ class Cura(PageObject):
 
         self.click(names.fdg_btn_save)
 
-        if object.exists(names.mbo_file_exists):
-            self.click(names.mbo_btn_overwrite)
+        if object.exists(names.mbo_confirm_dialog):
+            self.click(names.mbo_btn_confirm)
 
         return findFile("testdata", file_name)
 
@@ -86,8 +104,8 @@ class Cura(PageObject):
         self.setTextFieldValue(names.fdg_input_name, "UM3_Robot_SAVE.3mf")
         self.click(names.fdg_btn_save)
 
-        if object.exists(names.mbo_file_exists):
-            self.click(names.mbo_btn_overwrite)
+        if object.exists(names.mbo_confirm_dialog):
+            self.click(names.mbo_btn_confirm)
 
         if track_time:
             return Performance.trackFileloadTime()
@@ -104,3 +122,13 @@ class Cura(PageObject):
 
         self.setTextFieldValue(names.mwi_scale_model_x, size)
         self.click(names.mwi)
+    
+    def openPOS(self):
+        squish.mouseClick(names.mwi_per_model_btn)
+    
+    def modifyPOSSetting(self, infill_density):
+        squish.mouseClick(names.field_per_model)
+        self.setTextFieldValue(names.field_per_model, infill_density)
+
+    def openRecommendedView(self):
+        squish.mouseClick(names.prs_btn_recommended)
