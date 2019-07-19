@@ -74,3 +74,5 @@ Feature: Material manager
         Then the material 'Customized' has been added
         When I change the material property 'Density' to '2'
         Then the material property 'Density' is '2.00 g/cm³'
+        When I change the material property 'Filament Cost' to '45'
+        Then the material property 'Filament Cost' is '€ 45.00'

@@ -30,7 +30,7 @@ def step(context, material_name):
 def step(context, material_name):
     materials.verifyMaterialSelected(material_name)
 
-@Then("the material property '|word|' is '|any|'")
+@Then("the material property '|any|' is '|any|'")
 def step(context, property_name, property_value):
     actual_value = materials.getProperty(property_name)
     if actual_value != property_value:
@@ -48,7 +48,7 @@ def step(context, action):
 def step(context, new_name):
     materials.renameMaterial(new_name)
 
-@Step("I change the material property '|word|' to '|any|'")
+@Step("I change the material property '|any|' to '|any|'")
 def step(context, property_name, property_value):
     materials.setProperty(property_name, property_value)
 
