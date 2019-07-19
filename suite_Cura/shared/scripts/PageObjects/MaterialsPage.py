@@ -82,9 +82,7 @@ class Materials(PageObject):
         else:
             property_value = property_value.replace(",", ".")
 
-        self.write(input, property_value)
-        squish.keyPress("<Return>") #Clear the focus.
-        squish.keyRelease("<Return>")
+        self.setTextFieldValue(input, property_value)
 
     def confirmDialog(self):
         self.click(names.mbo_btn_confirm)
