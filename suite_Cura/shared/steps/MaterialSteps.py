@@ -40,10 +40,10 @@ def step(context, property_name, property_value):
 def step(context, action):
     preferences.selectPreferencesMenu(action)
     
-@Step("I select '|any|'")
+@Step("I select '|any|' in material manager")
 def step(context, action):
-    materials.unlinkMaterial(action)
-
+    materials.selectButton(action)
+    
 @Step("I change the material name to '|any|'")
 def step(context, new_name):
     materials.renameMaterial(new_name)
@@ -59,3 +59,7 @@ def step(context):
 @Step("I deny changing the diameter")
 def step(context):
     materials.denyDialog()
+    
+@Step("I select '|any|' tab")
+def step(context, action):
+    materials.selectTab(action)

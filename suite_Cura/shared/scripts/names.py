@@ -138,6 +138,8 @@ mat_input_diameter = {"container": mat_panel_details, "id": "diameterSpinBox", "
 mat_input_cost = {"container": mat_panel_details, "id": "spoolCostSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
 mat_input_weight = {"container": mat_panel_details, "id": "spoolWeightSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
 mat_material_item = {"container": mat_win, "text": "Custom Custom Material", "type": "Text", "unnamed": 1, "visible": True}
+
+
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
 
@@ -211,4 +213,5 @@ mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Re
 mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
 mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
+
 

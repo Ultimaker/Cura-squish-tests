@@ -54,8 +54,11 @@ class Materials(PageObject):
         if actual_material_name != material_name:
             test.fail(f"The material {actual_material_name} was active instead of {material_name}.")
 
-    def unlinkMaterial(self, action):
+    def selectButton(self, action):
         self.click(names.mat_btn_unlink)
+        
+    def selectTab(self, action):
+        self.click(names.mat_tab_button)
 
     def renameMaterial(self, new_name):
         textbox = waitForObject(names.mat_input_name)

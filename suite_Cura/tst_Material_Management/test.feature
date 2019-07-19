@@ -15,7 +15,7 @@ Feature: Material manager
         And I navigate to Materials in preferences
         And I select Duplicate material
         Then the material 'Custom Custom Material' has been added
-        Then I select 'Unlink Material'
+        Then I select 'Unlink Material' in material manager
         And I change the material name to 'Baby'
         And I close the preferences
 
@@ -25,7 +25,7 @@ Feature: Material manager
 	    And I navigate to Materials in preferences
 	    And I select 'Custom Custom Material' material in preferences
 	    And I select Remove material
-	    Then I confirm the removal
+	    And I confirm the removal
 	    Then the material 'Custom Custom Material' has not been added
 	    And I close the preferences
 
@@ -79,3 +79,18 @@ Feature: Material manager
     	#And I give the new material 'andreea' name
     	#Then the material overview contains the name: 'andreea'
 		#And I close the preferences
+
+ 	Scenario: Export material
+ 		Given Cura has been started with preset configurations
+ 		When I navigate to menu Preferences and Configure Cura
+	    And I navigate to Materials in preferences
+	    And I select Duplicate material
+	    And I change the material name to 'Export'
+	    And I select 'Print settings' tab
+
+
+
+
+
+
+
