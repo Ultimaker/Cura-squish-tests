@@ -34,7 +34,7 @@ Feature: Profile Management
     Then the profile overview contains the profile: 'ToDelete'
     When I select the 'ToDelete' profile in preferences
     And I select Remove profile
-    And I confirm removing the profile
+    And I confirm the removal
     Then the profile 'ToDelete' doesn't exist anymore
     And I close the preferences
 

@@ -58,9 +58,9 @@ def step(context, profile_name):
 def step(context, profile_name):
     preferences.selectProfile(profile_name)
 
-@Step("I confirm removing the profile")
+@Step("I confirm the removal")
 def step(context):
-    preferences.removeProfile()
+    preferences.confirmAction()
 
 @Then("the profile overview contains the profile: '|any|'")
 def step(context, expected_profile):
@@ -70,3 +70,7 @@ def step(context, expected_profile):
 @Then(r"the profile '(.*?)' doesn't exist (?:anymore)?", regexp = True)
 def step(context, forbidden_profile):
     preferences.verifyProfileDeleted(forbidden_profile)
+    
+@Step("I select '|any|' material in preferences")
+def step(context, material_name):
+    preferences.selectMaterial(material_name)

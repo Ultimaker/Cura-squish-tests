@@ -34,7 +34,7 @@ class Preferences(PageObject):
     def removePrinter(self):
         self.click(names.rpd_btn_confirm)
 
-    def removeProfile(self):
+    def confirmAction(self):
         self.click(names.mbo_btn_confirm)
 
     def verifyPrinterDeleted(self, printer):
@@ -98,5 +98,9 @@ class Preferences(PageObject):
        self.click(names.mat_create_material)
            
     def getMaterialFromList(self, material):
-        material_obj = self.replaceObjectProperty(names.pfs_profile_item, material)
+        material_obj = self.replaceObjectProperty(names.mat_material_item, material)
         return waitForObject(material_obj, 5000)
+    
+    def selectMaterial(self, material_name):
+        material_obj = self.getMaterialFromList(material_name)
+        self.click(material_obj)   

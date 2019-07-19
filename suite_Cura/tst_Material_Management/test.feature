@@ -9,7 +9,6 @@ Feature: Material manager
         And I close the preferences
         Then Extruder one makes use of material 'Custom Custom Material'
 
-
     Scenario: Duplicate material
         Given Cura is running
         When I navigate to menu Preferences and Configure Cura
@@ -17,8 +16,18 @@ Feature: Material manager
         And I select Duplicate material
         Then the material 'Custom Custom Material' has been added
         Then I select 'Unlink Material'
+        And I change the material name to 'Baby'
         And I close the preferences
 
+	Scenario: Remove material
+	    Given Cura is running
+	    When I navigate to menu Preferences and Configure Cura
+	    And I navigate to Materials in preferences
+	    And I select 'Custom Custom Material' material in preferences
+	    And I select Remove material
+	    Then I confirm the removal
+	    Then the material 'Custom Custom Material' has not been added
+	    And I close the preferences
 
     Scenario: Adjust material diameter
         Given Cura is running
@@ -42,7 +51,6 @@ Feature: Material manager
         And the material property 'Diameter' is '2.85 mm'
         And the material 'PLA' is selected
         And I close the preferences
-
 
 	Scenario: Material diameter after restarting
 	    Given Cura is running
