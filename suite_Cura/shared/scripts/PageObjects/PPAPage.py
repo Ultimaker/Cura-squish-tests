@@ -31,6 +31,8 @@ class PPA(PageObject):
         self.click(names.ppa_btn_experiment_name_ok)
 
     def set_configuration(self, configuration_name, value):
-        dropdowns = ObjectDescendants.getObjects(names.ppa_page_configuration_row, names.ppa_btn_dropdown)
+        row_obj = self.replaceObjectProperty(names.ppa_page_configuration_row, configuration_name, property = "labelText")
+        dropdowns = ObjectDescendants.getObjects(row_obj, names.ppa_btn_dropdown)
         self.click(dropdowns[0]) #Needs to have at least 1 drop-down in this row.
-        self.click(self.findObjectWithText(names.sub_mnu_item, value))
+        for menu_item_name in value.split("/"):
+            self.click(self.findObjectWithText(names.sub_mnu_item, menu_item_name))
