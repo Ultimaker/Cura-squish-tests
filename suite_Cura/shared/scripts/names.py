@@ -214,4 +214,7 @@ mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnam
 mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
 
+preferences_base_MaterialsPage = {"container": mat_win, "id": "base", "type": "MaterialsPage", "unnamed": 1, "visible": True}
+base_styleitem_StyleItem1 = {"container": preferences_base_MaterialsPage, "text": "Print settings", "id": "styleitem", "type": "StyleItem1", "unnamed": 1, "visible": True}
+
 

@@ -61,5 +61,5 @@ def step(context):
     materials.denyDialog()
     
 @Step("I select '|any|' tab")
-def step(context, action):
-    materials.selectTab(action)
+def step(context, tabname):
+    materials.selectTab(tabname)

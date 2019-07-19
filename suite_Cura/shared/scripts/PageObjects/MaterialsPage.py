@@ -57,8 +57,8 @@ class Materials(PageObject):
     def selectButton(self, action):
         self.click(names.mat_btn_unlink)
         
-    def selectTab(self, action):
-        self.click(names.mat_tab_button)
+    def selectTab(self, tabname):
+        self.click(self.findObjectWithText(names.base_styleitem_StyleItem1, tabname, exact_match=True))
 
     def renameMaterial(self, new_name):
         textbox = waitForObject(names.mat_input_name)
