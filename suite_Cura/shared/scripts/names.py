@@ -87,6 +87,7 @@ fdg_cbo_file_type = {"name": "fileTypeCombo", "type": "QComboBox", "visible": 1,
 mbo_confirm_dialog = {"type": "QMessageBox", "unnamed": 1, "visible": 1}
 mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
 mbo_btn_deny = {"text": "No", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
+mbo_btn_ok = {"text": "OK", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
 
 # Open 3MF Dialog
 btn_open_as_prj = {"container": qqw_qml, "id": "openAsProjectButton", "type": "Button", "unnamed": 1, "visible": True}
@@ -211,4 +212,3 @@ mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Re
 mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
 mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
-
