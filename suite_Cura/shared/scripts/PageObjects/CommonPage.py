@@ -78,13 +78,14 @@ class PageObject:
         os.remove(os.path.join(self.cura_resources.data, "plugins.json"))
 
     def setTextFieldValue(self, obj, value):
-        if self.os in ("Windows", "Linux"):
+        if sys.platform in ("win32", "linux"):
             clear_combination = "<Ctrl+A>"
-        elif self.os == "Darwin":
+        elif sys.platform == "darwin":
             clear_combination = "<Command+A>"
 
         self.write(obj, clear_combination)
         self.write(obj, value)
+        self.write(obj, "<Tab>") #Clear the focus.
 
     def verifyObjDeleted(self, obj, wait_time=5):
         testSettings.objectNotFoundDebugging = False
