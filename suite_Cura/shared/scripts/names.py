@@ -133,21 +133,20 @@ mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "B
 mat_create_material = {"container": ":win_mps", "iconName": "list-add", "text": "Create", "type": "Button", "unnamed": 1, "visible": True}
 mat_btn_unlink = {"container": qqw_qml, "id": "unlinkMaterialButton", "text": "Unlink Material", "type": "Button", "unnamed": 1, "visible": True}
 mat_input_name = {"container": mat_panel_details, "id": "displayNameTextField", "type": "ReadOnlyTextField", "unnamed": 1, "visible": True}
+mat_input_brand = {"container": mat_panel_details, "id": "brandTextField", "type": "ReadOnlyTextField", "unnamed": 1, "visible": True}
 mat_input_density = {"container": mat_panel_details, "id": "densitySpinBox", "type": "ReadOnlySpinBox", "unnamed": 1, "visible": True}
 mat_input_diameter = {"container": mat_panel_details, "id": "diameterSpinBox", "type": "ReadOnlySpinBox", "unnamed": 1, "visible": True}
 mat_input_cost = {"container": mat_panel_details, "id": "spoolCostSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
 mat_input_weight = {"container": mat_panel_details, "id": "spoolWeightSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
-
-# custom brand
-mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
+mat_list_view = {"container": mat_win, "id": "materialListView", "type": "MaterialsList", "unnamed": 1, "visible": True}
+mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
 
 # material section of brand
 mat_header = {"container": mat_cbo_custom, "id": "material_type_header", "type": "Row", "unnamed": 1, "visible": True}
 mat_header_custom = {"container": mat_header, "text": "PLA", "type": "Text", "unnamed": 1, "visible": True}
 
-# material of brand
 mat_custom_pla = {"container": mat_cbo_custom, "text": "Custom PLA Custom", "type": "Text", "unnamed": 1, "visible": True}
-mat_custom_material = {"container": mat_cbo_custom, "text": "", "type": "Text", "unnamed": 1, "visible": True}
+mat_any_material = {"container": mat_list_view, "text": "", "type": "Text", "unnamed": 1, "visible": True} #Fill in the text property to find a particular material.
 
 # Printer preferences (pps)
 win_pps = {"container": qqw_qml, "id": "base", "type": "MachinesPage", "unnamed": 1, "visible": True}

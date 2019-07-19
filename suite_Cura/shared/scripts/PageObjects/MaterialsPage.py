@@ -13,6 +13,7 @@ class Materials(PageObject):
         "Diameter": names.mat_input_diameter,
         "Filament Cost": names.mat_input_cost,
         "Filament Weight": names.mat_input_weight,
+        "Brand": names.mat_input_brand
     }
 
     def __init__(self):
@@ -43,10 +44,10 @@ class Materials(PageObject):
         return waitForObject(names.mwi_lbl_extruder)
     
     def verifyMaterialPresent(self, material_name):
-        self.findObjectWithText(names.mat_custom_material, material_name, delay = 1000) #Delay is required because the materials list updates asynchronously.
+        self.findObjectWithText(names.mat_any_material, material_name, delay = 1000) #Delay is required because the materials list updates asynchronously.
 
     def verifyMaterialNotPresent(self, material_name):
-        if self.objectWithTextExists(names.mat_custom_material, material_name, pause = 1000):
+        if self.objectWithTextExists(names.mat_any_material, material_name, pause = 1000):
             test.fail(f"Material {material_name} was present.")
 
     def verifyMaterialSelected(self, material_name):

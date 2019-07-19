@@ -71,10 +71,13 @@ Feature: Material manager
         And I select Create material
         Then the material 'Custom Custom Material' has been added
         When I change the material name to 'Customized'
-        Then the material 'Customized' has been added
+        Then the material 'Custom Customized' has been added
         When I change the material property 'Density' to '2'
         Then the material property 'Density' is '2.00 g/cm³'
         When I change the material property 'Filament Cost' to '45'
         Then the material property 'Filament Cost' is '€ 45.00'
         When I change the material property 'Filament Weight' to '750'
         Then the material property 'Filament Weight' is '750 g'
+        When I change the material property 'Brand' to 'Ghostkeeper'
+        Then the material property 'Brand' is 'Ghostkeeper'
+        And the material 'Ghostkeeper Customized' has been added
