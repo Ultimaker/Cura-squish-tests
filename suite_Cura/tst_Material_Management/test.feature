@@ -64,10 +64,11 @@ Feature: Material manager
 	    And the material property 'Diameter' is '3.33 mm'
 	    And I close the preferences
 
-    #Scenario: Customise a material
-    	#And I create a new material with the following properties
-    	 #|Display Name |Brand|
-    	 #|customAndreea | ABC|
-    	#And I give the new material 'andreea' name
-    	#Then the material overview contains the name: 'andreea'
-		#And I close the preferences
+    Scenario: Customise a material
+        Given Cura is running
+        When I navigate to menu Preferences and Configure Cura
+        And I navigate to Materials in preferences
+        And I select Create material
+        Then the material 'Custom Custom Material' has been added
+        When I change the material name to 'Customized'
+        Then the material 'Customized' has been added
