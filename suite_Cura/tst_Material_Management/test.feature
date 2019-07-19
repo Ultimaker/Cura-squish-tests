@@ -72,3 +72,5 @@ Feature: Material manager
         Then the material 'Custom Custom Material' has been added
         When I change the material name to 'Customized'
         Then the material 'Customized' has been added
+        When I change the material property 'Density' to '2'
+        Then the material property 'Density' is '2.00 g/cm³'
