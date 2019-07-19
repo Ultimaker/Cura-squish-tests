@@ -38,9 +38,19 @@ Feature: Profile Management
     Then the profile 'ToDelete' doesn't exist anymore
     And I close the preferences
 
-#
-#    Scenario: Exporting Profile
-#       When I give the printer the '|any|' name
-#
+  Scenario: Exporting Profile
+    Given Cura is running
+    When I navigate to menu Preferences and Configure Cura
+    And I navigate to Profiles in preferences
+    Then the profile overview contains the profile: 'Fine'
+    When I select the 'Fine' profile in preferences
+    And I select Duplicate profile
+    And I give the duplicated profile 'ToExport' name
+    Then the profile overview contains the profile: 'ToExport'
+    When I select the 'ToExport' profile in preferences
+    And I select Export profile
+    And I save the profile as 'ToExport.curaprofile'
+    Then the file 'ToExport.curaprofile' is a valid profile
+
 #    Scenario: Importing Profile
 #       When I give the printer the '|any|' name
