@@ -16,7 +16,6 @@ import sys #To get the current operating system.
 
 class PageObject:
     def __init__(self):
-        self.os = platform.system()
         self.cura_version = '4.2'
         self.cura_resources = CuraResources(self.cura_version)
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
@@ -82,9 +81,9 @@ class PageObject:
         os.remove(os.path.join(self.cura_resources.data, "plugins.json"))
 
     def setTextFieldValue(self, obj, value):
-        if self.os in ("Windows", "Linux"):
+        if sys.platform in ("win32", "linux"):
             clear_combination = "<Ctrl+A>"
-        elif self.os == "Darwin":
+        elif sys.platform == "darwin":
             clear_combination = "<Command+A>"
 
         self.write(obj, clear_combination)
