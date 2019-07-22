@@ -19,5 +19,5 @@ Feature: Performance of slicing, and gcode
     And the slice time is printed
     Examples:
       | File    | FileName      |
-      | file    | Robot.STL     |
+      | file    | Robot.stl     |
       | project | UM3_Robot.3mf |
