@@ -1,36 +1,31 @@
 # -*- coding: utf-8 -*-
 import platform
-from os.path import expanduser
-from os.path import getsize
+import distutils.dir_util
 from Helpers.SquishModuleHelper import importSquishSymbols
+from Helpers.CuraResources import CuraResources
 import squish
 import object
 import os
+import os.path
 from objectmaphelper import Wildcard
 import time
 import names
 import gettext
-from pathlib import Path
-from shutil import rmtree, copytree, copy, ignore_patterns
+import shutil
+import sys #To get the current operating system.
 
 
 class PageObject:
     def __init__(self):
-        self.os = platform.system()
-        self.home_dir = expanduser("~")
-        self.cura_version = '4.1'
-
-        self.windows_dir = r'%s\AppData\Roaming\cura' % self.home_dir
+        self.cura_version = '4.2'
+        self.cura_resources = CuraResources(self.cura_version)
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
-
-        self.linux_dir = {'local': Path('%s/.local/share/cura' % self.home_dir),
-                          'config': Path('%s/.config/cura' % self.home_dir)}
 
         # Imports functions and members of squish
         importSquishSymbols()
 
     def startCuraNoConfig(self):
-        self.resetPreferences()
+        self.resetAllPreferences()
         self.startCura()
 
     def startCuraWithPresetConfig(self):
@@ -38,10 +33,10 @@ class PageObject:
         self.startCura()
 
     def startCura(self):
-        # Get registred AUT name from conf file
-        suite_conf = Path(squishinfo.testCase) / "../suite.conf"
+        # Get registered AUT name from conf file
+        suite_conf = os.path.join(squishinfo.testCase, "..", "suite.conf")
         aut = None
-        
+
         with open(suite_conf) as file:
             line = file.readline()
             while line:
@@ -58,62 +53,43 @@ class PageObject:
         self.startCura()
 
     def startCuraConfigVersion(self, config_version):
-        self.presetPreferences(config_version)
+        self.presetPreferences()
         self.startCura()
 
     def resetPreferences(self, directory):
-        self.deleteContentFromDir(directory)
+        try:
+            shutil.rmtree(directory)
+        except FileNotFoundError:
+            pass #If it's not found, then it was already deleted but that's okay.
+        
+    def resetAllPreferences(self):
+        temp_resources = CuraResources("")
+        
+        self.resetPreferences(temp_resources.config)
+        self.resetPreferences(temp_resources.data)
+        self.resetPreferences(temp_resources.cache)
 
-    @staticmethod
-    def deleteContentFromDir(location):
-        for data in os.listdir(location):
-            file_path = os.path.join(location, data)
-            try:
-                if os.path.isfile(file_path):
-                    os.unlink(file_path)
-                elif os.path.isdir(file_path):
-                    rmtree(file_path)
-            except Exception as e:
-                print(e)
+    def presetPreferences(self):
+        #Make sure preferences are completely deleted before copying to that dir.
+        self.resetPreferences(self.cura_resources.config)
+        self.resetPreferences(self.cura_resources.data)
+        self.resetPreferences(self.cura_resources.cache)
 
-    # TODO: Expand this function for mac
-    def presetPreferences(self, version=None):
-        if version is not None:
-            self.cura_version = version
+        #Copy the cfg file to the config directory.
+        os.makedirs(self.cura_resources.config, exist_ok = True)
+        shutil.copy(squish.findFile("testdata", f"Config/{self.cura_version}/cura.cfg"), self.cura_resources.config)
+        shutil.copy(squish.findFile("testdata", f"Config/{self.cura_version}/plugins.json"), self.cura_resources.config)
 
-            # Make sure preferences are completely deleted before copying to that dir
-            # Linux config folder only contains .cfg and .log
-        if self.os == "Linux":
-            for key, value in self.linux_dir.items():
-                try:
-                    while os.listdir(value):
-                        self.resetPreferences(value)
-                except FileNotFoundError:
-                    os.mkdir(value)
-                           
-                destination_dir = Path(value / self.cura_version)
-                
-                if key == "config":
-                    os.makedirs(destination_dir, exist_ok=True)
-                    copy(findFile("testdata", f"Config/{self.cura_version}/cura.cfg"), destination_dir)
-                    continue
-                if key == "local":
-                    copytree(findFile("testdata", f"Config/{self.cura_version}"), destination_dir, ignore=ignore_patterns('cura.cfg'))
-                    continue
-               
-        else:
-            try:
-                while os.listdir(self.windows_dir):
-                    self.resetPreferences(self.windows_dir)
-            except FileNotFoundError:
-                os.mkdir(self.windows_dir)    
-            
-            copytree(findFile("testdata", f"Config/{self.cura_version}"), Path(self.windows_dir, self.cura_version))
+        #Copy the rest to the data directory (we don't copy any cache files).
+        os.makedirs(self.cura_resources.data, exist_ok = True)
+        distutils.dir_util.copy_tree(squish.findFile("testdata", f"Config/{self.cura_version}"), self.cura_resources.data)
+        os.remove(os.path.join(self.cura_resources.data, "cura.cfg"))
+        os.remove(os.path.join(self.cura_resources.data, "plugins.json"))
 
     def setTextFieldValue(self, obj, value):
-        if self.os in ("Windows", "Linux"):
+        if sys.platform in ("win32", "linux"):
             clear_combination = "<Ctrl+A>"
-        elif self.os == "Darwin":
+        elif sys.platform == "darwin":
             clear_combination = "<Command+A>"
 
         self.write(obj, clear_combination)
@@ -205,7 +181,7 @@ class PageObject:
         return self.replaceObjectProperty(obj, new_val)
 
     def fileSize(self, file):
-        return self.convertBytes(getsize(file))
+        return self.convertBytes(os.path.getsize(file))
 
     @staticmethod
     def lineCount(fname):

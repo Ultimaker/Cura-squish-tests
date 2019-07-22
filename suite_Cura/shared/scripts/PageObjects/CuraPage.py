@@ -46,7 +46,8 @@ class Cura(PageObject):
         self.click(btn_print_core)
 
     def openPrintSettings(self):
-        self.click(names.mwi_print_settings)
+        if not object.exists(names.win_print_settings):
+            self.click(names.mwi_print_settings)
 
     def curaIsStarted(self):
         waitForObjectExists(names.mwi)
@@ -131,7 +132,7 @@ class Cura(PageObject):
         self.setTextFieldValue(names.field_per_model, infill_density)
 
     def openRecommendedView(self):
-        squish.mouseClick(names.prs_btn_recommended)
+        self.click(names.prs_btn_recommended)
     
     def loadOtherTypeFiles(self, filename):
         # Navigate to the correct dir first

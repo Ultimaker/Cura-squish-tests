@@ -11,10 +11,23 @@ class Performance(PageObject):
         importSquishSymbols()
 
     def trackBootTime(self):
+        # Get registered AUT name from conf file
+        suite_conf = Path(squishinfo.testCase) / "../suite.conf"
+        aut = None
+
+        with open(suite_conf) as file:
+            line = file.readline()
+            while line:
+                if line.startswith("AUT="):
+                    aut = (line.split("AUT=")[1]).rstrip()
+                    break
+        if aut is None:
+            raise RuntimeError("Could not find AUT from [{suite_conf}]".format(suite_conf = suite_conf))
+
         self.presetPreferences()
         start_time = time.time()
 
-        startApplication("Cura -platformtheme none")
+        startApplication(aut)
         waitForObjectExists(names.mwi, 50000)
 
         t = time.time() - start_time
@@ -39,17 +52,17 @@ class Performance(PageObject):
         return t
 
     def retrieveFromLog(self, action):
-        f = Path(self.windows_dir , 'stderr.log')
+        f = Path(self.cura_resources.data , "cura.log")
         file = self.tail(f, 100)
 
         key = self.logLine(action)
 
         for lines in file:
             if key in lines:
-                if key == 'TranslateOp':
+                if key == "TranslateOp":
                     print(lines.split()[-1])
                 else:
-                    print(lines.split()[0] + ' ' + lines.split()[1] + ': ' + key + lines.split(key, 1)[1])
+                    print(lines.split()[0] + " " + lines.split()[1] + ": " + key + lines.split(key, 1)[1])
 
     def tail(self, file, n=1, bs=1024):
         f = open(file)
