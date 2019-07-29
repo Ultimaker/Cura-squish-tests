@@ -58,7 +58,7 @@ class Materials(PageObject):
         self.click(names.mat_btn_unlink)
         
     def selectTab(self, tabname):
-        self.click(self.findObjectWithText(names.base_styleitem_StyleItem1, tabname, exact_match=True))
+        self.click(self.findObjectWithText(names.mat_printsettings_tab, tabname, exact_match=True))
 
     def renameMaterial(self, new_name):
         textbox = waitForObject(names.mat_input_name)
@@ -67,6 +67,15 @@ class Materials(PageObject):
         self.write(input, "<Ctrl+A>")
         self.write(input, new_name)
         self.write(input, "<Return>") #Clear the focus.
+        
+    def setPrintSettingsProperty(self, property_name, property_value):
+        tooltip_area = waitForObject(self.replaceObjectProperty(names.mat_setting_line, property_name))
+        input = self.getChildrenOfType(tooltip_area, "ReadOnlySpinBox")[0] #Should only be one Spinbox in here.
+        self.clear(input)
+        self.write(input, "<Ctrl+A>")
+        self.write(input, property_value )
+        self.write(input, "<Return>") #Clear the focus.
+
 
     def getProperty(self, property_name):
         spinbox = waitForObject(self.property_name_to_obj[property_name])

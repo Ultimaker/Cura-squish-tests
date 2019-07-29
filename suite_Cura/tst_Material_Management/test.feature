@@ -86,7 +86,9 @@ Feature: Material manager
 	    And I navigate to Materials in preferences
 	    And I select Duplicate material
 	    And I change the material name to 'Export'
-	    And I select 'Print settings' tab
+	    Then I select 'Print settings' tab
+	    Then I change the material print settings 'Default Printing Temperature' property to '220'
+
 
 
 
