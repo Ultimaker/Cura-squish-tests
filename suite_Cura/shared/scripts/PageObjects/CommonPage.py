@@ -83,9 +83,11 @@ class PageObject:
         #Copy the rest to the data directory (we don't copy any cache files).
         os.makedirs(self.cura_resources.data, exist_ok = True)
         distutils.dir_util.copy_tree(squish.findFile("testdata", f"Config/{self.cura_version}"), self.cura_resources.data)
-        os.remove(os.path.join(self.cura_resources.data, "cura.cfg"))
-        os.remove(os.path.join(self.cura_resources.data, "plugins.json"))
-
+                
+        if self.cura_resources.data != self.cura_resources.config:
+            os.remove(os.path.join(self.cura_resources.data, "cura.cfg"))
+            os.remove(os.path.join(self.cura_resources.data, "plugins.json"))
+    
     def setTextFieldValue(self, obj, value):
         if sys.platform in ("win32", "linux"):
             clear_combination = "<Ctrl+A>"
