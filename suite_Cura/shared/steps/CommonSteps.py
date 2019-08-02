@@ -142,4 +142,5 @@ def step(context):
 
 @Step("I navigate to Recommended settings")
 def step(context):
-    cura.openRecommendedView()
+    cura.openRecommendedView()
+

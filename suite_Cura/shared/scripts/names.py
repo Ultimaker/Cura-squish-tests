@@ -140,7 +140,11 @@ mat_input_weight = {"container": mat_panel_details, "id": "spoolWeightSpinBox", 
 mat_material_item = {"container": mat_win, "text": "Custom Custom Material", "type": "Text", "unnamed": 1, "visible": True}
 mat_setting_line = {"container": mat_panel_details, "type": "TooltipArea", "unnamed": 1, "visible": True}
 mat_printsettings_tab = {"container": mat_panel_details, "id": "styleitem", "type": "StyleItem1", "unnamed": 1, "visible": True}
-
+mat_input_build_temperature = {"container": mat_panel_details, "index": 1, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_input_retraction_distance = {"container": mat_panel_details, "index": 2, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_input_retraction_speed = {"container": mat_panel_details, "index": 3, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_input_standby_temperature = {"container": mat_panel_details, "index": 4, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_input_fan_speed = {"container": mat_panel_details, "index": 5, "type": "TooltipArea", "unnamed": 1, "visible": True}
 
 
 # custom brand
@@ -216,6 +220,3 @@ mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Re
 mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
 mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
-
-
-

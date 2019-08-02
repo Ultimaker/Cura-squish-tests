@@ -13,6 +13,12 @@ class Materials(PageObject):
         "Diameter": names.mat_input_diameter,
         "Filament Cost": names.mat_input_cost,
         "Filament Weight": names.mat_input_weight,
+        "Default Printing Temperature": names.mat_setting_line,
+        "Default Build Plate Temperature": names.mat_input_build_temperature,
+        "Retraction Distance": names.mat_input_retraction_distance,
+        "Retraction Speed": names.mat_input_retraction_speed,
+        "Standby Temperature": names.mat_input_standby_temperature,
+        "Fan Speed": names.mat_input_fan_speed,
     }
 
     def __init__(self):
@@ -70,10 +76,9 @@ class Materials(PageObject):
         
     def setPrintSettingsProperty(self, property_name, property_value):
         tooltip_area = waitForObject(self.replaceObjectProperty(names.mat_setting_line, property_name))
-        input = self.getChildrenOfType(tooltip_area, "ReadOnlySpinBox")[0] #Should only be one Spinbox in here.
+        input = self.getChildrenOfType(tooltip_area, "TextInputWithHandles")[0] #Should only be one Spinbox in here.      
         self.clear(input)
-        self.write(input, "<Ctrl+A>")
-        self.write(input, property_value )
+        self.write(input, property_value)
         self.write(input, "<Return>") #Clear the focus.
 
 

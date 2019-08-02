@@ -87,7 +87,16 @@ Feature: Material manager
 	    And I select Duplicate material
 	    And I change the material name to 'Export'
 	    Then I select 'Print settings' tab
-	    Then I change the material print settings 'Default Printing Temperature' property to '220'
+	    And I change the material print settings 'Default Printing Temperature' property to '220'
+	    And I change the material print settings 'Default Build Plate Temperature' property to '65'
+   		And I change the material print settings 'Retraction Distance' property to '8'
+   		And I change the material print settings 'Retraction Speed' property to '30'
+   		And I change the material print settings 'Standby Temperature' property to '190'
+   		And I change the material print settings 'Fan Speed' property to '75'
+   		Then I select Export material
+   		And I save the file as 'materialExport'
+   		Then the file 'materialExport.xml.fdm_material' is a valid file
+
 
 
 

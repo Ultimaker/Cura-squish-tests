@@ -62,9 +62,10 @@ def step(context, profile_name):
 def step(context, profile_name):
     preferences.selectProfile(profile_name)
 
-@Step("I save the profile as '|any|'")
+@Step("I save the file as '|any|'")
 def step(context, file_name):
     preferences.saveAsProfile(os.path.join(preferences.testdata_dir, file_name))
+    
 
 @Step("I confirm the removal")
 def step(context):
@@ -75,7 +76,7 @@ def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
     test.compare(expected_profile, actual_profile.text)
 
-@Then("the file '|any|' is a valid profile")
+@Then("the file '|any|' is a valid file")
 def step(context, file_name):
     with zipfile.ZipFile(os.path.join(preferences.testdata_dir, file_name)) as archive: #If this raises an exception, the file doesn't exist or is invalid.
         for archived_file in archive.namelist():
