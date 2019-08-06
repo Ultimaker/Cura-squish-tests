@@ -87,6 +87,10 @@ fdg_cbo_file_type = {"name": "fileTypeCombo", "type": "QComboBox", "visible": 1,
 mbo_confirm_dialog = {"type": "QMessageBox", "unnamed": 1, "visible": 1}
 mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
 mbo_btn_deny = {"text": "No", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
+mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
+mbo_btn_OK = {"text": "OK", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
+
+
 
 # Open 3MF Dialog
 btn_open_as_prj = {"container": qqw_qml, "id": "openAsProjectButton", "type": "Button", "unnamed": 1, "visible": True}

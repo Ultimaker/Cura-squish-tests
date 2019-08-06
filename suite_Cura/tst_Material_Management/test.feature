@@ -95,7 +95,7 @@ Feature: Material manager
    		And I change the material print settings 'Fan Speed' property to '75'
    		Then I select Export material
    		And I save the file as 'materialExport'
-   		Then the file 'materialExport.xml.fdm_material' is a valid file
+   		Then the file 'materialExport' is a valid 'material'
 
 
 

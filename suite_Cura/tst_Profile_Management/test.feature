@@ -50,7 +50,7 @@ Feature: Profile Management
     When I select the 'ToExport' profile in preferences
     And I select Export profile
     And I save the file as 'ToExport.curaprofile'
-    Then the file 'ToExport.curaprofile' is a valid file
+    Then the file 'ToExport.curaprofile' is a valid 'profile'
 
 #    Scenario: Importing Profile
 #       When I give the printer the '|any|' name

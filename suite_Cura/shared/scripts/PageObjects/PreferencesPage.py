@@ -37,6 +37,9 @@ class Preferences(PageObject):
     def confirmAction(self):
         self.click(names.mbo_btn_confirm)
 
+    def validateExport(self):
+        self.click(names.mbo_btn_OK)
+
     def verifyPrinterDeleted(self, printer):
         obj = self.replaceObjectProperty(names.pps_printer_item, printer)
         return self.verifyObjDeleted(obj)
@@ -113,3 +116,4 @@ class Preferences(PageObject):
     def selectMaterial(self, material_name):
         material_obj = self.getMaterialFromList(material_name)
         self.click(material_obj)   
+        
