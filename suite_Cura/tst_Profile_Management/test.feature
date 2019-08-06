@@ -51,6 +51,7 @@ Feature: Profile Management
     And I select Export profile
     And I save the file as 'ToExport.curaprofile'
     Then the file 'ToExport.curaprofile' is a valid 'profile'
+    And I close the preferences
 
   Scenario: Importing Profile
     Given Cura is running

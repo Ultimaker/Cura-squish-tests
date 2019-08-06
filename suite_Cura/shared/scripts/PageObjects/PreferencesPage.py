@@ -98,7 +98,6 @@ class Preferences(PageObject):
         self.setTextFieldValue(names.fdg_input_name, file_name)
         self.click(names.fdg_btn_save)
 
-
         if object.exists(names.mbo_confirm_dialog):
             self.click(names.mbo_btn_confirm)
         

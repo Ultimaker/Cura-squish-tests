@@ -17,7 +17,7 @@ import sys #To get the current operating system.
 
 class PageObject:
     def __init__(self):
-        self.cura_version = '4.2'
+        self.cura_version = '4.3'
         self.cura_resources = CuraResources(self.cura_version)
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
 

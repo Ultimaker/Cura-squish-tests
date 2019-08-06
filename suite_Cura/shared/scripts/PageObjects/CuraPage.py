@@ -141,4 +141,4 @@ class Cura(PageObject):
 
         self.setTextFieldValue(names.fdg_input_name, filename)
         squish.clickButton(waitForObject(names.fdg_btn_open))
-        squish.clickButton(waitForObject(names.mbo_btn_ok))
+        squish.clickButton(waitForObject(names.mbo_btn_OK))
