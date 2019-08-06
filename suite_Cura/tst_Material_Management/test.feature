@@ -72,16 +72,8 @@ Feature: Material manager
 	    And the material property 'Diameter' is '3.33 mm'
 	    And I close the preferences
 
-    #Scenario: Customise a material
-    	#And I create a new material with the following properties
-    	 #|Display Name |Brand|
-    	 #|customAndreea | ABC|
-    	#And I give the new material 'andreea' name
-    	#Then the material overview contains the name: 'andreea'
-		#And I close the preferences
-
  	Scenario: Export material
- 		Given Cura has been started with preset configurations
+ 		Given Cura is running
  		When I navigate to menu Preferences and Configure Cura
 	    And I navigate to Materials in preferences
 	    And I select Duplicate material
