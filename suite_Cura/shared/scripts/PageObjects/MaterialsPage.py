@@ -13,6 +13,12 @@ class Materials(PageObject):
         "Diameter": names.mat_input_diameter,
         "Filament Cost": names.mat_input_cost,
         "Filament Weight": names.mat_input_weight,
+        "Default Printing Temperature": names.mat_setting_line,
+        "Default Build Plate Temperature": names.mat_input_build_temperature,
+        "Retraction Distance": names.mat_input_retraction_distance,
+        "Retraction Speed": names.mat_input_retraction_speed,
+        "Standby Temperature": names.mat_input_standby_temperature,
+        "Fan Speed": names.mat_input_fan_speed,
     }
 
     def __init__(self):
@@ -54,8 +60,11 @@ class Materials(PageObject):
         if actual_material_name != material_name:
             test.fail(f"The material {actual_material_name} was active instead of {material_name}.")
 
-    def unlinkMaterial(self, action):
+    def selectButton(self, action):
         self.click(names.mat_btn_unlink)
+        
+    def selectTab(self, tabname):
+        self.click(self.findObjectWithText(names.mat_printsettings_tab, tabname, exact_match=True))
 
     def renameMaterial(self, new_name):
         textbox = waitForObject(names.mat_input_name)
@@ -64,6 +73,14 @@ class Materials(PageObject):
         self.write(input, "<Ctrl+A>")
         self.write(input, new_name)
         self.write(input, "<Return>") #Clear the focus.
+        
+    def setPrintSettingsProperty(self, property_name, property_value):
+        tooltip_area = waitForObject(self.replaceObjectProperty(names.mat_setting_line, property_name))
+        input = self.getChildrenOfType(tooltip_area, "TextInputWithHandles")[0] #Should only be one Spinbox in here.      
+        self.clear(input)
+        self.write(input, property_value)
+        self.write(input, "<Return>") #Clear the focus.
+
 
     def getProperty(self, property_name):
         spinbox = waitForObject(self.property_name_to_obj[property_name])

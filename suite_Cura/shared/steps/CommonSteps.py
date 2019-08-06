@@ -146,4 +146,4 @@ def step(context):
 
 @Step("I choose to load '|any|'")
 def step(context, filename):
-    cura.loadOtherTypeFiles(filename)        
+    cura.loadOtherTypeFiles(filename)

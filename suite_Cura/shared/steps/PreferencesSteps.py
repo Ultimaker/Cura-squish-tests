@@ -62,9 +62,10 @@ def step(context, profile_name):
 def step(context, profile_name):
     preferences.selectProfile(profile_name)
 
-@Step("I save the profile as '|any|'")
+@Step("I save the file as '|any|'")
 def step(context, file_name):
     preferences.saveAsProfile(os.path.join(preferences.testdata_dir, file_name))
+    
 
 @Step("I confirm the removal")
 def step(context):
@@ -75,15 +76,18 @@ def step(context, expected_profile):
     actual_profile = preferences.getProfileFromList(expected_profile)
     test.compare(expected_profile, actual_profile.text)
 
-@Then("the file '|any|' is a valid profile")
-def step(context, file_name):
-    with zipfile.ZipFile(os.path.join(preferences.testdata_dir, file_name)) as archive: #If this raises an exception, the file doesn't exist or is invalid.
-        for archived_file in archive.namelist():
-            with archive.open(archived_file) as f:
-                contents = f.read().decode("utf-8")
-                profile = configparser.ConfigParser()
-                profile.read_string(contents) #If this raises an exception, the file is invalid.
-    test.passes("Profile is valid.") #If it got here, none of the aforementioned exceptions occurred so it is valid.
+@Then("the file '|any|' is a valid '|any|'")
+def step(context, file_name, type):
+    if type == 'profile':
+        with zipfile.ZipFile(os.path.join(preferences.testdata_dir, file_name)) as archive: #If this raises an exception, the file doesn't exist or is invalid.
+            for archived_file in archive.namelist():
+                with archive.open(archived_file) as f:
+                    contents = f.read().decode("utf-8")
+                    profile = configparser.ConfigParser()
+                    profile.read_string(contents) #If this raises an exception, the file is invalid.
+        test.passes("Profile is valid.") #If it got here, none of the aforementioned exceptions occurred so it is valid.
+    else: 
+        preferences.validateExport()
 
 @Then(r"the profile '(.*?)' doesn't exist (?:anymore)?", regexp = True)
 def step(context, forbidden_profile):
@@ -92,3 +96,4 @@ def step(context, forbidden_profile):
 @Step("I select '|any|' material in preferences")
 def step(context, material_name):
     preferences.selectMaterial(material_name)
+    

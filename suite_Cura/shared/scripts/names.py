@@ -87,7 +87,10 @@ fdg_cbo_file_type = {"name": "fileTypeCombo", "type": "QComboBox", "visible": 1,
 mbo_confirm_dialog = {"type": "QMessageBox", "unnamed": 1, "visible": 1}
 mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
 mbo_btn_deny = {"text": "No", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
-mbo_btn_ok = {"text": "OK", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
+mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
+mbo_btn_OK = {"text": "OK", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
+
+
 
 # Open 3MF Dialog
 btn_open_as_prj = {"container": qqw_qml, "id": "openAsProjectButton", "type": "Button", "unnamed": 1, "visible": True}
@@ -139,6 +142,15 @@ mat_input_diameter = {"container": mat_panel_details, "id": "diameterSpinBox", "
 mat_input_cost = {"container": mat_panel_details, "id": "spoolCostSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
 mat_input_weight = {"container": mat_panel_details, "id": "spoolWeightSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
 mat_material_item = {"container": mat_win, "text": "Custom Custom Material", "type": "Text", "unnamed": 1, "visible": True}
+mat_setting_line = {"container": mat_panel_details, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_printsettings_tab = {"container": mat_panel_details, "id": "styleitem", "type": "StyleItem1", "unnamed": 1, "visible": True}
+mat_input_build_temperature = {"container": mat_panel_details, "index": 1, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_input_retraction_distance = {"container": mat_panel_details, "index": 2, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_input_retraction_speed = {"container": mat_panel_details, "index": 3, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_input_standby_temperature = {"container": mat_panel_details, "index": 4, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_input_fan_speed = {"container": mat_panel_details, "index": 5, "type": "TooltipArea", "unnamed": 1, "visible": True}
+
+
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
 
@@ -212,3 +224,4 @@ mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Re
 mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
 mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
+
