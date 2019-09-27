@@ -68,9 +68,6 @@ onb_btn_decline_close = {"checkable": False, "container": mwi, "id": "declineBut
 # onb changelog
 onb_win_changelog = {"container": onb_panel, "id": "whatsNewTextArea", "type": "ScrollableTextArea", "unnamed": 1, "visible": True}
 
-# onb data collection
-onb_img_improve_cura = {"container": onb_panel, "id": "curaImage", "type": "Image", "unnamed": 1, "visible": True}
-
 # onb cloud
 onb_btn_create_acc = {"checkable": False, "container": mwi, "id": "createAccountButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 onb_btn_sign_in = {"container": mwi, "id": "signInButton", "type": "Label", "unnamed": 1, "visible": True}

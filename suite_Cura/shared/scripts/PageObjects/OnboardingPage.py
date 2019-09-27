@@ -39,7 +39,7 @@ class Onboarding(PageObject):
         printer_list = [add_printer.replaceOnboardingObjProperty(x) for x in printer_list_objs]
         
         switcher = {
-            'Data Collection': [names.onb_btn_next, names.onb_img_improve_cura],
+            'Data Collection': [names.onb_btn_next],
             'Changelog': [names.onb_win_changelog, names.onb_btn_next],
             'User Agreement': [names.onb_btn_decline_close, names.onb_btn_accept_agreement],
             'Printer': printer_list,
