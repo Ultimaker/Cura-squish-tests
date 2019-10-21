@@ -15,6 +15,7 @@ import shutil
 import sys #To get the current operating system.
 
 
+
 class PageObject:
     def __init__(self):
         self.cura_version = '4.3'
@@ -33,6 +34,7 @@ class PageObject:
         self.startCura()
 
     def startCura(self):
+        
         # Get registered AUT name from conf file
         suite_conf = os.path.join(squishinfo.testCase, "..", "suite.conf")
         aut = None
@@ -43,14 +45,54 @@ class PageObject:
                 if line.startswith("AUT="):
                     aut = (line.split("AUT=")[1]).rstrip()
                     break
-        
+                  
         startApplication(aut)
         waitForObject(names.mwi, 50000)
+        
+    def startCuraWithArguments(self):
+        
+        # Get registered AUT name from conf file
+        suite_conf = os.path.join(squishinfo.testCase, "..", "suite.conf")
+        aut = None
 
+        with open(suite_conf) as file:
+            line = file.readline()
+            while line:
+                if line.startswith("AUT="):
+                    aut = (line.split("AUT=")[1]).rstrip()
+                    break
+        try:
+            projFile = "3mf" in aut
+            startApplication(aut)
+            waitForObject(names.open_project_file_QQuickWindowQmlImpl, 50000)
+        except LookupError:
+            print("No project file given as an argument to Cura")
+            
     def restartCura(self):
         squish.snooze(12) #Allow autosave to kick in.
         squish.currentApplicationContext().detach()
         self.startCura()
+        
+    def restartCuraWithArguments(self):
+        squish.snooze(12) #Allow autosave to kick in.
+        squish.currentApplicationContext().detach()
+                
+        # Get registered AUT name from conf file
+        suite_conf = os.path.join(squishinfo.testCase, "..", "suite.conf")
+        aut = None
+
+        with open(suite_conf) as file:
+            line = file.readline()
+            while line:
+                if line.startswith("AUT="):
+                    aut = (line.split("AUT=")[1]).rstrip()
+                    break
+        try:
+            projFile = "3mf" in aut
+            startApplication(aut)
+            waitForObject(names.open_Project_QQuickWindowQmlImpl, 50000)
+        except LookupError:
+            print("No project file given as an argument to Cura")
 
     def startCuraConfigVersion(self, config_version):
         self.presetPreferences()

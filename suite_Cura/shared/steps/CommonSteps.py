@@ -18,6 +18,11 @@ def step(context):
     page_object.startCura()
 
 
+@Given("Cura has been started with a project file as argument")
+def step(context):
+    page_object.startCuraWithArguments()
+
+
 @Given("Cura has been started with preset configurations")
 def step(context):
     page_object.startCuraWithPresetConfig()
@@ -41,6 +46,11 @@ def step(context):
 @Step("I restart Cura")
 def step(context):
     page_object.restartCura()
+    
+@Step("I restart Cura with a project file as argument")
+def step(context):
+    page_object.restartCuraWithArguments()
+
 
 @Step("A model has been sliced")
 def step(context):
@@ -111,39 +121,68 @@ def step(context):
 def step(context):
     cura.openPrintSettings()
 
+
 @Step("I close the extruder selector")
 def step(context):
     cura.selectExtruderTab("0") # NOTE: Only if already open!
+
 
 # @Then("I select the [1-8] extruder", regexp=True)
 @When("I select the |any| extruder")
 def step(context, extruder_nr):
     cura.selectExtruderTab(extruder_nr)
 
+
 @Step("the |any| nozzle is of type '|any|'")
 def step(context, extruder_nr, nozzle_type):
     assert(cura.checkNozzleTypeText(extruder_nr, nozzle_type))
+
 
 @When("I select printcore '|any|'")
 def step(context, print_core):
     cura.selectPrintCore(print_core)
 
+
 @Then("the setting '|any|' in '|any|' is '|any|'")
 def step(context, setting_name, setting_tab, setting_value):
     print_settings.checkTextboxSetting(setting_tab, setting_name, setting_value)
 
+
 @When("I show all settings")
 def step(context):
     print_settings.showAllSettings()
+ 
     
 @Step("I select the models")
 def step(context):
     cura.navigateTo("Edit", "Select All Models")
 
+
 @Step("I navigate to Recommended settings")
 def step(context):
     cura.openRecommendedView()
 
+
 @Step("I choose to load '|any|'")
 def step(context, filename):
     cura.loadOtherTypeFiles(filename)
+ 
+    
+@Step("I check the Remember my choice checkbox")
+def step(context):
+    cura.rememberMyChoice()
+  
+    
+@Step("I select open as project")
+def step(context):
+    cura.openFileAsProject()
+    cura.openFileFromSummary()
+    
+@Then("the open as project window does not appear")
+def step(context):
+    #test.compare(None, names.open_project_file_Remember_my_choice_CheckBox, f"The Open as Project Window does not appear anymore")
+    try:
+        names.open_project_file_Remember_my_choice_CheckBox
+    except NameError:
+        pass
+

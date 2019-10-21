@@ -12,7 +12,6 @@ def step(context, material_type):
     materials.activateMaterial(material_type)
     cura.pressCloseButton()
 
-
 @Then("Extruder one makes use of material '|any|'")
 def step(context, expected_material):
     actual_material = materials.getExtruderOneMaterial()

@@ -88,19 +88,19 @@ Feature: Material manager
    		Then I select Export material
    		And I save the file as 'materialExport'
    		Then the file 'materialExport' is a valid 'material'
-			
+
 	Scenario: Intent profiles for the same material type
-    		Given Cura has been started with preset configurations
-    		When I navigate to menu Preferences and Configure Cura
-    		And I navigate to Printers in preferences
-    		And I select Add printer
-    		And I add a non-networked Ultimaker S5 printer
-    		Then the printer overview contains a 'Ultimaker S5' printer
-    		And I navigate to Materials in preferences
-    		And I select 'Ultimaker Blue PLA' material in preferences
+    	Given Cura has been started with preset configurations
+    	When I navigate to menu Preferences and Configure Cura
+    	And I navigate to Printers in preferences
+    	And I select Add printer
+    	And I add a non-networked Ultimaker S5 printer
+    	Then the printer overview contains a 'Ultimaker S5' printer
+    	And I navigate to Materials in preferences
+    	And I select 'Ultimaker Blue PLA' material in preferences
    		And I select Activate material
-    		And I close the preferences
-    		Then Extruder one makes use of material 'Ultimaker Blue PLA'
+    	And I close the preferences
+    	Then Extruder one makes use of material 'Ultimaker Blue PLA'
 
 
 

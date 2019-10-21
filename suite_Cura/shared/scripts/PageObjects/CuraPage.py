@@ -142,3 +142,12 @@ class Cura(PageObject):
         self.setTextFieldValue(names.fdg_input_name, filename)
         squish.clickButton(waitForObject(names.fdg_btn_open))
         squish.clickButton(waitForObject(names.mbo_btn_OK))
+        
+    def rememberMyChoice(self):
+        checkBoxToVerify = waitForObject(names.open_project_file_Remember_my_choice_CheckBox)
+        if checkBoxToVerify.checked == False:
+            #test.log("Checkbox already checked")
+            self.click(checkBoxToVerify)
+        else:
+            return
+
