@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from PageObjects.CommonPage import PageObject
 from Helpers.SquishModuleHelper import importSquishSymbols
+from PageObjects.PrinterPage import Printer
 import names
 
 
@@ -20,7 +21,27 @@ class PrintSettings(PageObject):
             self.click(names.prs_btn_custom)
 
         self.click(names.prs_btn_sel_profile)
-        self.click(self.findObjectWithText(names.sub_mnu_item, profile, exact_match=True))
+        
+        # Verifying the whole profiles dropdown list is visible
+        waitForObject(names.prs_profile_list)
+        
+        # Differentiating between printers that have intent profiles and ones that don't, 
+        # since the dropdown will look different for each case
+        active_printer = Printer.selectedPrinter(self)
+        if Printer.isIntentPrinter(Printer, active_printer):
+            
+            # optional log
+            #test.log("The selected printer is: " + str(active_printer) + " and has intent profiles to choose from.")
+            
+            self.click(self.findObjectWithText(names.profile_sub_mnu_item, profile, exact_match=True))
+        else:
+            # optional log
+            #test.log("The " + str(active_printer) + " printer does not have any intent profiles, yet.")
+            
+            # choose the desired profile
+            self.click(self.findObjectWithText(names.profile_sub_mnu_item, profile, exact_match=True))
+            
+        #self.click(self.findObjectWithText(names.sub_mnu_item, profile, exact_match=True))
 
         # Close print settings in case it interferes with other steps
         self.click(names.mwi_print_settings)
@@ -86,7 +107,7 @@ class PrintSettings(PageObject):
     def showAllSettings(self):
         self.gotoCustomSettings()
         self.click(names.btn_settings_visibility)
-        submenu_object = self.findObjectWithText(names.sub_mnu_item, "Show All Settings")
+        submenu_object = self.findObjectWithText(names.sub_mnu_item, "All")
         self.click(submenu_object)
 
     def checkTextboxSetting(self, tab_name, setting_name, setting_value_str):

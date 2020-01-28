@@ -59,3 +59,16 @@ class Printer(PageObject):
         label = self.findObjectWithText(names.lbl_in_monitor, printer_name)
         self.click(names.mwi_prepare_tab)
         return label is not None
+    
+    def getIntentPrinters(self):
+        intents_list = ['Ultimaker S3', 'Ultimaker S5']
+        return intents_list
+        
+    def isIntentPrinter(self, printer):
+        printer_list = self.getIntentPrinters(self)
+        if printer in printer_list:
+            return True
+        else:
+            return False
+        
+        

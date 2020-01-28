@@ -2,7 +2,8 @@
 from objectmaphelper import *
 
 # Main Window (mwi)
-mwi = {"title": "Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
+mwi = {"type": "MainWindow", "unnamed": 1, "visible": True}
+mwi_untitled = {"title": "Untitled - Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
 mwi_ovl = {"container": mwi, "type": "Overlay", "unnamed": 1, "visible": True}
 qqw_qml = {"type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 
@@ -66,7 +67,9 @@ onb_btn_accept_agreement = {"checkable": False, "container": onb_panel, "id": "a
 onb_btn_decline_close = {"checkable": False, "container": mwi, "id": "declineButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 # onb changelog
-onb_win_changelog = {"container": onb_panel, "id": "whatsNewTextArea", "type": "ScrollableTextArea", "unnamed": 1, "visible": True}
+#onb_win_changelog = {"container": onb_panel, "id": "whatsNewTextArea", "type": "ScrollableTextArea", "unnamed": 1, "visible": True}
+mwi_changelog = {"container": mwi, "id": "panelBackground", "type": "Rectangle", "unnamed": 1, "visible": True}
+mwi_changelog_btn_close = {"checkable": False, "container": onb_panel, "id": "getStartedButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 # onb cloud
 onb_btn_create_acc = {"checkable": False, "container": mwi, "id": "createAccountButton", "type": "ActionButton", "unnamed": 1, "visible": True}
@@ -87,14 +90,13 @@ mbo_btn_deny = {"text": "No", "type": "QPushButton", "unnamed": 1, "visible": 1,
 mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
 mbo_btn_OK = {"text": "OK", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
 
-
-
 # Open 3MF Dialog
 btn_open_as_prj = {"container": qqw_qml, "id": "openAsProjectButton", "type": "Button", "unnamed": 1, "visible": True}
 btn_open_save_summary = {"container": qqw_qml, "id": "ok_button", "type": "Button", "unnamed": 1, "visible": True}
 
 # Generic sub-menu item
 sub_mnu_item = {"container": scroll_view, "text": "", "type": "StyleItem1", "unnamed": 1, "visible": True}
+profile_sub_mnu_item = {"checkable": True, "container": mwi_ovl, "id": "button", "text": "", "type": "MenuButton", "unnamed": 1, "visible": True}
 
 # Generic close-button
 btn_close = {"container": qqw_qml, "id": "closeButton", "type": "Button", "unnamed": 1, "visible": True}
@@ -186,7 +188,9 @@ win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "u
 prs_btn_custom = {"checkable": False, "container": mwi, "id": "customSettingsButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 prs_custom_view = {"container": mwi, "id": "customPrintSetup", "type": "CustomPrintSetup", "unnamed": 1, "visible": True}
 prs_btn_recommended = {"container": mwi, "text": "Recommended", "type": "Label", "unnamed": 1, "visible": True}
-prs_btn_sel_profile = {"container": prs_custom_view, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
+#prs_btn_sel_profile_43 = {"container": prs_custom_view, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
+prs_btn_sel_profile = {"checkable": False, "container": mwi, "id": "intentSelection", "type": "Button", "unnamed": 1, "visible": True} # new addition in v4.4 due to the intents
+prs_profile_list = {"container": mwi, "type": "PopupItem", "unnamed": 1, "visible": True}
 prs_chk_gradual_infill = {"container": mwi, "id": "enableGradualInfillCheckBox", "type": "CheckBox", "unnamed": 1, "visible": True}
 
 # Marketplace (mar)
