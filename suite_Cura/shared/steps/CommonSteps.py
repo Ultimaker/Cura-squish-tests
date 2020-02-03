@@ -102,8 +102,8 @@ def step(context, file_name):
 def step(context, location):
     if "Marketplace" == location:
         marketplace.quitCura()
-    else:
-        test.fail(f"Closing cura from {location} not implemented")
+    else: 
+        test.fail(f"Closing cura from {location} not implemented.")
 
 
 @Given("I slice the object")
