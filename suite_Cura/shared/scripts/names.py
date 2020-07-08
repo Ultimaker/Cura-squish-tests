@@ -83,6 +83,9 @@ fdg_input_name = {"buddy": fdg_lbl_name, "name": "fileNameEdit", "type": "QLineE
 fdg_btn_open = {"text": "Open", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": fdg}
 fdg_btn_save = {"text": "Save", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": fdg}
 fdg_cbo_file_type = {"name": "fileTypeCombo", "type": "QComboBox", "visible": 1, "window": fdg}
+fdg_save_view = {"name": "splitter", "type": "QSplitter", "visible": 1, "window": fdg}
+fdg_save_view_sidebar = {"container": fdg_save_view, "name": "sidebar", "type": "QSidebar", "visible": 1}
+fdg_save_userfolder = {"container": fdg_save_view_sidebar, "text": "", "type": "QModelIndex"}
 
 mbo_confirm_dialog = {"type": "QMessageBox", "unnamed": 1, "visible": 1}
 mbo_btn_confirm = {"text": "Yes", "type": "QPushButton", "unnamed": 1, "visible": 1, "window": mbo_confirm_dialog}
@@ -228,4 +231,5 @@ lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "
 open_project_file_QQuickWindowQmlImpl = {"title": "Open project file", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 open_project_file_Remember_my_choice_CheckBox = {"container": open_project_file_QQuickWindowQmlImpl, "id": "rememberChoiceCheckBox", "text": "Remember my choice", "type": "CheckBox", "unnamed": 1, "visible": True}
 open_Project_QQuickWindowQmlImpl = {"title": "Open Project", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+
 
