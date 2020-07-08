@@ -1,0 +1,347 @@
+2020-07-08 12:39:33,718 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FileLogger
+2020-07-08 12:39:33,729 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdateChecker
+2020-07-08 12:39:33,741 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdater
+2020-07-08 12:39:33,748 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzReader
+2020-07-08 12:39:33,756 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzWriter
+2020-07-08 12:39:33,763 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeProfileReader
+2020-07-08 12:39:33,783 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeReader
+2020-07-08 12:39:33,793 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeWriter
+2020-07-08 12:39:33,806 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ImageReader
+2020-07-08 12:39:33,815 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LegacyProfileReader
+2020-07-08 12:39:33,824 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalContainerProvider
+2020-07-08 12:39:33,838 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalFileOutputDevice
+2020-07-08 12:39:33,847 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MachineSettingsAction
+2020-07-08 12:39:33,857 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ModelChecker
+2020-07-08 12:39:33,867 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MonitorStage
+2020-07-08 12:39:33,885 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PerObjectSettingsTool
+2020-07-08 12:39:33,897 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PostProcessingPlugin
+2020-07-08 12:39:33,906 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PrepareStage
+2020-07-08 12:39:33,956 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PreviewStage
+2020-07-08 12:39:33,969 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RemovableDriveOutputDevice
+2020-07-08 12:39:33,978 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SentryLogger
+2020-07-08 12:39:34,008 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimulationView
+2020-07-08 12:39:34,019 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SliceInfoPlugin
+2020-07-08 12:39:34,033 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SolidView
+2020-07-08 12:39:34,044 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SupportEraser
+2020-07-08 12:39:34,084 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:39:34,087 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:39:34,089 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:39:34,092 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:39:34,095 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:39:34,097 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:39:34,099 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:39:34,102 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:39:34,107 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin Toolbox
+2020-07-08 12:39:34,117 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin CameraTool
+2020-07-08 12:39:34,130 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MirrorTool
+2020-07-08 12:39:34,146 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RotateTool
+2020-07-08 12:39:34,159 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ScaleTool
+2020-07-08 12:39:34,169 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SelectionTool
+2020-07-08 12:39:34,182 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TranslateTool
+2020-07-08 12:39:34,191 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TrimeshReader
+2020-07-08 12:39:34,205 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPReader
+2020-07-08 12:39:34,218 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPWriter
+2020-07-08 12:39:34,337 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UM3NetworkPrinting
+2020-07-08 12:39:34,370 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin USBPrinting
+2020-07-08 12:39:34,379 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UltimakerMachineActions
+2020-07-08 12:39:34,391 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UpdateChecker
+2020-07-08 12:39:34,392 - INFO - [Thread-1] UpdateChecker.UpdateCheckerJob.run [40]: Checking for new version of cura
+2020-07-08 12:39:34,415 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade21to22
+2020-07-08 12:39:34,423 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade22to24
+2020-07-08 12:39:34,433 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade25to26
+2020-07-08 12:39:34,443 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade26to27
+2020-07-08 12:39:34,451 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade27to30
+2020-07-08 12:39:34,460 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade30to31
+2020-07-08 12:39:34,469 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade32to33
+2020-07-08 12:39:34,476 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade33to34
+2020-07-08 12:39:34,484 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade34to35
+2020-07-08 12:39:34,492 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade35to40
+2020-07-08 12:39:34,501 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade40to41
+2020-07-08 12:39:34,511 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade41to42
+2020-07-08 12:39:34,520 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade42to43
+2020-07-08 12:39:34,530 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade43to44
+2020-07-08 12:39:34,540 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade44to45
+2020-07-08 12:39:34,549 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade45to46
+2020-07-08 12:39:34,558 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade460to462
+2020-07-08 12:39:34,567 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade462to47
+2020-07-08 12:39:34,576 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimpleView
+2020-07-08 12:39:34,595 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin X3DReader
+2020-07-08 12:39:34,604 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XRayView
+2020-07-08 12:39:34,626 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XmlMaterialProfile
+2020-07-08 12:39:34,633 - DEBUG - [MainThread] UM.PluginRegistry.loadPlugins [373]: Loading all plugins took 1.1956055164337158 seconds
+2020-07-08 12:39:34,640 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [163]: Looking for old configuration files to upgrade.
+2020-07-08 12:39:34,666 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10S+Pro_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,669 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-3_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,671 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_left+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,674 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_1+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,677 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+2%2B_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,679 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_2+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,682 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Custom+FFF+printer_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,685 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker2_plus_extruder_0+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,687 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_left+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,689 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+3_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,692 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_5+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,694 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%234_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,696 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%233_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,699 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_right+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,702 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_left+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,704 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-5_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,706 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,709 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_right+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,711 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S5_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,713 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_8+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,716 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S3_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,718 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_4+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,721 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_6+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,723 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_7+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,725 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_3+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,728 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,730 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_right+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,732 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%235_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,749 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_left+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,751 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_right+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,754 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%235.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,756 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_8+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,759 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_5+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,761 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_right+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,763 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,766 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_7+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,768 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_3+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,770 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_right+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,773 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_4+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,775 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_left+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,777 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%234.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,780 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%233.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,782 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker2_plus_extruder_0+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,785 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_left+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,788 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_2+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,790 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_6+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,792 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_1+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,802 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-3.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,805 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S3.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,807 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+2%2B.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,809 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+3.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,812 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-5.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,814 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,817 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S5.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,820 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10S+Pro.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,822 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Custom+FFF+printer.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,827 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./cura.cfg] with type [preferences] and source version [6000013]
+2020-07-08 12:39:34,850 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker2_plus_extruder_0+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,852 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_left+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,855 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_left+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,857 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_4+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,859 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+3_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,862 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,864 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_right+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,867 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S3_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,869 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_5+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,871 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_3+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,873 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%233_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,876 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-3_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,878 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%235_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,881 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_right+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,883 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_2+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,886 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_right+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,888 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-5_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,891 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10S+Pro_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,893 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Custom+FFF+printer_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,895 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_left+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,898 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+2%2B_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,900 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_6+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,903 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_8+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,905 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%234_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,907 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S5_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,910 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,912 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_7+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,915 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_1+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,933 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10S+Pro_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,944 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-3_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,953 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_left+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,961 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_1+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,969 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+2%2B_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,976 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_2+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,986 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Custom+FFF+printer_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,995 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker2_plus_extruder_0+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,007 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_left+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,015 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+3_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,024 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_5+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,032 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%234_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,042 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%233_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,051 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_right+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,059 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_left+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,067 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-5_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,075 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,083 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_right+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,093 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S5_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,102 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_8+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,111 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S3_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,125 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_4+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,138 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_6+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,147 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_7+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,155 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_3+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,164 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,173 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_right+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,181 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%235_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,197 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_left+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,208 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_right+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,218 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%235.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,227 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_8+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,235 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_5+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,245 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_right+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,255 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,263 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_7+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,271 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_3+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,286 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_right+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,297 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_4+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,306 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_left+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,324 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%234.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,337 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%233.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,346 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker2_plus_extruder_0+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,354 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_left+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,361 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_2+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,369 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_6+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,378 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_1+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,387 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-3.global.cfg to version 4000015.
+2020-07-08 12:39:35,396 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S3.global.cfg to version 4000015.
+2020-07-08 12:39:35,405 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+2%2B.global.cfg to version 4000015.
+2020-07-08 12:39:35,412 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+3.global.cfg to version 4000015.
+2020-07-08 12:39:35,420 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-5.global.cfg to version 4000015.
+2020-07-08 12:39:35,429 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10.global.cfg to version 4000015.
+2020-07-08 12:39:35,438 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S5.global.cfg to version 4000015.
+2020-07-08 12:39:35,446 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10S+Pro.global.cfg to version 4000015.
+2020-07-08 12:39:35,454 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Custom+FFF+printer.global.cfg to version 4000015.
+2020-07-08 12:39:35,469 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./cura.cfg to version 6000015.
+2020-07-08 12:39:35,483 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker2_plus_extruder_0+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,495 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_left+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,505 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_left+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,516 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_4+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,528 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+3_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,538 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,547 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_right+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,555 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S3_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,570 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_5+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,583 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_3+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,591 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%233_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,604 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-3_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,614 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%235_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,624 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_right+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,631 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_2+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,641 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_right+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,649 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-5_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,659 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10S+Pro_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,667 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Custom+FFF+printer_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,678 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_left+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,688 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+2%2B_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,696 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_6+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,704 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_8+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,712 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%234_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,721 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S5_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,731 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,740 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_7+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,749 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_1+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,752 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [175]: Checking and performing updates took 1.1129798889160156
+2020-07-08 12:39:37,403 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [361]: Loading metadata into container registry took 1.617210865020752 seconds
+2020-07-08 12:39:37,415 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [142]: Select build plate: 0
+2020-07-08 12:39:37,418 - INFO - [MainThread] cura.CuraApplication.run [781]: Initializing machine error checker
+2020-07-08 12:39:37,812 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender5 failed to pickle.
+2020-07-08 12:39:37,822 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [creality_ender5]
+2020-07-08 12:39:38,170 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_base failed to pickle.
+2020-07-08 12:39:38,227 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[creality_base_extruder_0 #5] added to [Creality Ender-5] at position [0]
+2020-07-08 12:39:38,228 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-5 in list of firmware to check.
+2020-07-08 12:39:38,797 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender5 took 0.5618131160736084 seconds.
+2020-07-08 12:39:38,812 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ChangeAtZ
+2020-07-08 12:39:38,815 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ColorMix
+2020-07-08 12:39:38,817 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2020-07-08 12:39:38,818 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayRemainingTimeOnLCD
+2020-07-08 12:39:38,820 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: FilamentChange
+2020-07-08 12:39:38,821 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: InsertAtLayerChange
+2020-07-08 12:39:38,826 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: PauseAtHeight
+2020-07-08 12:39:38,828 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: RetractContinue
+2020-07-08 12:39:38,829 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: SearchAndReplace
+2020-07-08 12:39:38,835 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: Stretch
+2020-07-08 12:39:38,837 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: TimeLapse
+2020-07-08 12:39:38,838 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: UsePreviousProbeMeasurements
+2020-07-08 12:39:38,871 - INFO - [MainThread] cura.CuraApplication.run [786]: Initializing machine manager
+2020-07-08 12:39:38,876 - INFO - [MainThread] cura.CuraApplication.run [791]: Initializing container manager
+2020-07-08 12:39:39,112 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition fdmprinter failed to pickle.
+2020-07-08 12:39:39,122 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-08 12:39:39,145 - DEBUG - [MainThread] UM.Scene.Camera._preferencesChanged [255]: Changing perspective mode to perspective.
+2020-07-08 12:39:39,297 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [158]: Loading theme file: /tmp/.mount_UltimaOjbGZT/usr/bin/resources/themes/cura-light/theme.json
+2020-07-08 12:39:39,944 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [246]: Loaded theme /tmp/.mount_UltimaOjbGZT/usr/bin/resources/themes/cura-light
+2020-07-08 12:39:41,433 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [336]: Creating post processing plugin view.
+2020-07-08 12:39:41,778 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [346]: Post processing view created.
+2020-07-08 12:39:42,530 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-08 12:39:42,941 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-08 12:39:42,944 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-08 12:39:42,964 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:39:43,316 - DEBUG - [MainThread] UM.Controller.setActiveStage [180]: Setting active stage to PrepareStage
+2020-07-08 12:39:43,513 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:39:43,626 - DEBUG - [MainThread] UM.Controller.setActiveView [108]: Setting active view to SolidView
+2020-07-08 12:39:43,629 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [117]: Creating model checker view.
+2020-07-08 12:39:43,641 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [126]: Model checker view created.
+2020-07-08 12:39:43,642 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [76]: Creating dialog [MoreInfoWindow.qml]
+2020-07-08 12:39:43,677 - DEBUG - [MainThread] Toolbox.src.Toolbox._makeRequestByType [551]: Requesting [updates] metadata from server.
+2020-07-08 12:39:43,684 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [124]: No auth data to retrieve the access_token from
+2020-07-08 12:39:43,688 - WARNING - [MainThread] UM.Logger.warning [128]: Cannot add authorization to Cloud Api request
+2020-07-08 12:39:44,035 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10spro failed to pickle.
+2020-07-08 12:39:44,045 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:44,058 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:44,092 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:44,480 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker2_plus failed to pickle.
+2020-07-08 12:39:44,782 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender3 failed to pickle.
+2020-07-08 12:39:45,090 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker3 failed to pickle.
+2020-07-08 12:39:45,100 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:45,570 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker_s5 failed to pickle.
+2020-07-08 12:39:45,889 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker_s3 failed to pickle.
+2020-07-08 12:39:45,898 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:46,221 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10 failed to pickle.
+2020-07-08 12:39:46,474 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition custom failed to pickle.
+2020-07-08 12:39:46,490 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:46,497 - DEBUG - [MainThread] cura.CuraApplication.run [830]: Booting Cura took 13.528033256530762 seconds
+2020-07-08 12:39:46,520 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10S Pro in list of firmware to check.
+2020-07-08 12:39:46,531 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Ultimaker 2+ in list of firmware to check.
+2020-07-08 12:39:46,533 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-3 in list of firmware to check.
+2020-07-08 12:39:46,540 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker 3 in the printer list. Do firmware-check.
+2020-07-08 12:39:46,545 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S5 in the printer list. Do firmware-check.
+2020-07-08 12:39:46,556 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10 in list of firmware to check.
+2020-07-08 12:39:46,556 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S3 in the printer list. Do firmware-check.
+2020-07-08 12:39:46,558 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Custom FFF printer in list of firmware to check.
+2020-07-08 12:39:46,830 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker 3: checked = 5.2.11-20190503.0 - latest = 5.2.11-20190503.0
+2020-07-08 12:39:46,837 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:39:46,849 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S3: checked = 5.7.2 - latest = 5.7.2
+2020-07-08 12:39:46,851 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S5: checked = 5.7.2 - latest = 5.7.2
+2020-07-08 12:39:46,855 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:39:47,020 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:39:47,030 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:39:47,695 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_cr10spro took 0.6920812129974365 seconds.
+2020-07-08 12:39:47,848 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [210]: Support for Vertex Array Objects: True
+2020-07-08 12:39:47,861 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [112]: Initialized OpenGL subsystems.
+2020-07-08 12:39:47,864 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [113]: OpenGL Version:  4.1.0 NVIDIA 435.21
+2020-07-08 12:39:47,867 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [114]: OpenGL Vendor:   NVIDIA Corporation
+2020-07-08 12:39:47,870 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [115]: OpenGL Renderer: Quadro P500/PCIe/SSE2
+2020-07-08 12:39:47,873 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [116]: GLSL Version:    4.0.0
+2020-07-08 12:39:47,877 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/default.shader]...
+2020-07-08 12:39:47,924 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/selection.shader]...
+2020-07-08 12:39:47,937 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/select_face.shader]...
+2020-07-08 12:39:47,949 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/default.shader]...
+2020-07-08 12:39:47,954 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/composite.shader]...
+2020-07-08 12:39:47,971 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/overhang.shader]...
+2020-07-08 12:39:47,990 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/striped.shader]...
+2020-07-08 12:39:48,007 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/transparent_object.shader]...
+2020-07-08 12:39:48,021 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/striped.shader]...
+2020-07-08 12:39:48,026 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/xray.shader]...
+2020-07-08 12:39:48,036 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/xray_composite.shader]...
+2020-07-08 12:39:48,056 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/default.shader]...
+2020-07-08 12:39:48,060 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/grid.shader]...
+2020-07-08 12:39:48,077 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/platform.shader]...
+2020-07-08 12:39:48,097 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/xray.shader]...
+2020-07-08 12:39:49,264 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker2_plus took 1.0645434856414795 seconds.
+2020-07-08 12:39:49,467 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 10.3s
+2020-07-08 12:39:50,515 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender3 took 0.740546703338623 seconds.
+2020-07-08 12:39:52,979 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker3 took 1.4583992958068848 seconds.
+2020-07-08 12:39:55,427 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker_s5 took 1.9431419372558594 seconds.
+2020-07-08 12:39:56,735 - DEBUG - [MainThread] cura.AutoSave._onTimeout [59]: Autosaving preferences, instances and profiles
+2020-07-08 12:39:58,051 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker_s3 took 2.1190249919891357 seconds.
+2020-07-08 12:39:59,195 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_cr10 took 0.6387083530426025 seconds.
+2020-07-08 12:40:00,063 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for custom took 0.36271119117736816 seconds.
