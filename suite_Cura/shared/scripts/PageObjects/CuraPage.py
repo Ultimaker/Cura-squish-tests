@@ -29,6 +29,7 @@ class Cura(PageObject):
     def navigateToStageMenu(self, stage_item):
         if "Marketplace" in stage_item:
             self.click(names.mwi_btn_marketplace)
+            waitForObject(names.mar_scroll_bar)
 
     def selectExtruderTab(self, extruder_nr_str):
         self.click(names.mwi_lst_extruders)  # NOTE: Only if not open yet!
