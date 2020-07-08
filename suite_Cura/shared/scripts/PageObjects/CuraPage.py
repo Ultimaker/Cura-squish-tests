@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
+import os
 from PageObjects.CommonPage import PageObject
 from Helpers.SquishModuleHelper import importSquishSymbols
 import squish
 from PageObjects.PerformancePage import Performance
 import names
-
-import builtins  # For casting to int, since Squish defines its own int().
+# For casting to int, since Squish defines its own int()
+import builtins
+import sys
 
 class Cura(PageObject):
     def __init__(self):
@@ -102,7 +104,8 @@ class Cura(PageObject):
 
     def saveAsProject(self, track_time):
         self.click(names.btn_open_save_summary)
-        self.setTextFieldValue(names.fdg_input_name, "UM3_Robot_SAVE.3mf")
+        self.click(self.findObjectWithText(names.fdg_save_userfolder, os.getlogin()))
+        self.setTextFieldValue(names.fdg_input_name, "UM3_Robot__Saved.3mf")
         self.click(names.fdg_btn_save)
 
         if object.exists(names.mbo_confirm_dialog):
@@ -146,7 +149,7 @@ class Cura(PageObject):
     def rememberMyChoice(self):
         checkBoxToVerify = waitForObject(names.open_project_file_Remember_my_choice_CheckBox)
         if checkBoxToVerify.checked == False:
-            #test.log("Checkbox already checked")
+            test.log("Checkbox already checked")
             self.click(checkBoxToVerify)
         else:
             return
