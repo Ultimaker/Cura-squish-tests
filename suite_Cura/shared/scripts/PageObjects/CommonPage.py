@@ -12,13 +12,14 @@ import time
 import names
 import gettext
 import shutil
-import sys #To get the current operating system.
+#To get the current operating system
+import sys
 
 
 
 class PageObject:
     def __init__(self):
-        self.cura_version = '4.5'
+        self.cura_version = '4.7'
         self.cura_resources = CuraResources(self.cura_version)
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
 
