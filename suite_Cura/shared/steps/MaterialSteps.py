@@ -18,17 +18,21 @@ def step(context, expected_material):
     actual_material = materials.getExtruderOneMaterial()
     test.compare(expected_material, actual_material.text, f"Actual material: {actual_material.text}" )
 
+
 @Then("the material '|any|' has been added")
 def step(context, material_name):
     materials.verifyMaterialPresent(material_name)
+
 
 @Then("the material '|any|' has not been added")
 def step(context, material_name):
     materials.verifyMaterialNotPresent(material_name)
 
+
 @Then("the material '|any|' is selected")
 def step(context, material_name):
     materials.verifyMaterialSelected(material_name)
+
 
 @Then("the material property '|word|' is '|any|'")
 def step(context, property_name, property_value):
@@ -36,26 +40,52 @@ def step(context, property_name, property_value):
     if actual_value != property_value:
         test.fail(f"The property {property_name} was {actual_value} instead of {property_value}.")
 
+
 @Step("I select |word| material")
 def step(context, action):
     preferences.selectPreferencesMenu(action)
+  
     
 @Step("I select '|any|'")
 def step(context, action):
+<<<<<<< Updated upstream
     materials.unlinkMaterial(action)
 
+=======
+    materials.selectButton(action)
+   
+    
+>>>>>>> Stashed changes
 @Step("I change the material name to '|any|'")
 def step(context, new_name):
     materials.renameMaterial(new_name)
+
 
 @Step("I change the material property '|word|' to '|any|'")
 def step(context, property_name, property_value):
     materials.setProperty(property_name, property_value)
 
+
 @Step("I confirm changing the diameter")
 def step(context):
     materials.confirmDialog()
 
+
 @Step("I deny changing the diameter")
 def step(context):
+<<<<<<< Updated upstream
     materials.denyDialog()
+=======
+    materials.denyDialog()
+
+    
+@Step("I select '|any|' tab")
+def step(context, tabname):
+    materials.selectTab(tabname)
+
+
+@Step("I change the material print settings '|any|' property to '|word|'")
+def step(context, property_name, property_value):
+    materials.setPrintSettingsProperty(property_name, property_value)
+    
+>>>>>>> Stashed changes

@@ -64,26 +64,57 @@ class Materials(PageObject):
         self.write(input, "<Ctrl+A>")
         self.write(input, new_name)
         self.write(input, "<Return>") #Clear the focus.
+<<<<<<< Updated upstream
+=======
+        
+    def setPrintSettingsPropertyTexts(self, setting):
+        tooltip_dict = {
+         "Default Printing Temperature": "The default temperature used for printing. This should be the \"base\" temperature of a material. All other print temperatures should use offsets based on this value",
+         "Default Build Plate Temperature": "The default temperature used for the heated build plate. This should be the \"base\" temperature of a build plate. All other print temperatures should use offsets based on this value",
+         "Standby Temperature": "The temperature of the nozzle when another nozzle is currently used for printing.",
+         "Retraction Distance": "The length of material retracted during a retraction move.",
+         "Retraction Speed": "The speed at which the filament is retracted and primed during a retraction move.",
+         "Fan Speed": "The speed at which the print cooling fans spin.",
+        }
+        text = tooltip_dict.get(setting)
+        return text
+        
+        
+    def setPrintSettingsProperty(self, property_name, property_value):
+        tooltip_text = self.setPrintSettingsPropertyTexts(property_name)
+        tooltip_area = waitForObject(self.replaceObjectProperty(names.mat_setting_line, tooltip_text))
+        input = self.getChildrenOfType(tooltip_area, "TextInputWithHandles")[0] # Should only be one Spinbox in here.      
+        self.clear(input)
+        self.write(input, property_value)
+        self.write(input, "<Return>") #Clear the focus.
+
+>>>>>>> Stashed changes
 
     def getProperty(self, property_name):
         spinbox = waitForObject(self.property_name_to_obj[property_name])
-        input = self.getChildrenOfType(spinbox, "TextInputWithHandles")[0] #Should only be one TextInputWithHandles in here.
+        input = self.getChildrenOfType(spinbox, "TextInputWithHandles")[0] # Should only be one TextInputWithHandles in here.
 
-        #These property spinboxes are localised, annoyingly, which makes them sometimes use periods and sometimes use commas as radix.
-        return str(input.text).replace(",", ".") #Our code must always work with periods as radix.
+        """ 
+        These property spinboxes are localised, annoyingly, 
+        which makes them sometimes use periods and sometimes use commas as radix
+        """
+        return str(input.text).replace(",", ".") # Our code must always work with periods as radix.
 
     def setProperty(self, property_name, property_value):
         spinbox = waitForObject(self.property_name_to_obj[property_name])
-        input = self.getChildrenOfType(spinbox, "TextInputWithHandles")[0] #Should only be one TextInputWithHandles in here.
+        input = self.getChildrenOfType(spinbox, "TextInputWithHandles")[0] # Should only be one TextInputWithHandles in here.
 
-        #These property spinboxes are localised, annoyingly, which makes them sometimes use periods and sometimes use commas as radix.
-        if "," in str(input.text): #Naively detect if the localisation is using commas. Doesn't work if the current value happens to have round numbers.
+        """
+        These property spinboxes are localised, annoyingly, 
+        which makes them sometimes use periods and sometimes use commas as radix
+        """
+        if "," in str(input.text): # Naively detect if the localisation is using commas. Doesn't work if the current value happens to have round numbers.
             property_value = property_value.replace(".", ",")
         else:
             property_value = property_value.replace(",", ".")
 
         self.write(input, property_value)
-        squish.keyPress("<Return>") #Clear the focus.
+        squish.keyPress("<Return>") # Clear the focus.
         squish.keyRelease("<Return>")
 
     def confirmDialog(self):

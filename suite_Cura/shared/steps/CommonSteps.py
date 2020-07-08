@@ -41,6 +41,15 @@ def step(context):
 @Step("I restart Cura")
 def step(context):
     page_object.restartCura()
+<<<<<<< Updated upstream
+=======
+  
+    
+@Step("I restart Cura with a project file as argument")
+def step(context):
+    page_object.restartCuraWithArguments()
+
+>>>>>>> Stashed changes
 
 @Step("A model has been sliced")
 def step(context):
@@ -77,10 +86,10 @@ def step(context):
     cura.navigateTo("Edit", "Clear Build Plate")
 
 
-@Step("I select the '|any|' printer and '|any|' profile")
-def step(context, printer_type, profile):
+@Step("I select the '|any|' printer with |word| intent and '|any|' profile")
+def step(context, printer_type, intent, profile):
     printer.selectPrinter(printer_type)
-    print_settings.selectProfile(profile)
+    print_settings.selectProfile(intent, profile)
 
 
 @Step("I save a sliced model as '|any|'")
@@ -124,6 +133,14 @@ def step(context, extruder_nr):
 def step(context, extruder_nr, nozzle_type):
     assert(cura.checkNozzleTypeText(extruder_nr, nozzle_type))
 
+<<<<<<< Updated upstream
+=======
+
+@Then("the |any| nozzle is of type '|any|'")
+def step(context, extruder_nr, nozzle_type):
+    assert(cura.checkNozzleTypeText(extruder_nr, nozzle_type))
+
+>>>>>>> Stashed changes
 @When("I select printcore '|any|'")
 def step(context, print_core):
     cura.selectPrintCore(print_core)
@@ -146,4 +163,29 @@ def step(context):
 
 @Step("I choose to load '|any|'")
 def step(context, filename):
+<<<<<<< Updated upstream
     cura.loadOtherTypeFiles(filename)        
+=======
+    cura.loadOtherTypeFiles(filename)
+ 
+    
+@Step("I check the Remember my choice checkbox")
+def step(context):
+    cura.rememberMyChoice()
+  
+    
+@Step("I select open as project")
+def step(context):
+    cura.openFileAsProject()
+    cura.openFileFromSummary()
+
+    
+@Then("the open as project window does not appear")
+def step(context):
+    #test.compare(None, names.open_project_file_Remember_my_choice_CheckBox, f"The Open as Project Window does not appear anymore")
+    try:
+        names.open_project_file_Remember_my_choice_CheckBox
+    except NameError:
+        pass
+
+>>>>>>> Stashed changes

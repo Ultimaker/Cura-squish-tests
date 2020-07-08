@@ -4,7 +4,7 @@ from Helpers.GetObjectsByProperties import ObjectDescendants
 from Helpers.SquishModuleHelper import importSquishSymbols
 import names
 
-import time  # for workaround
+import time  # For workaround
 
 
 class Printer(PageObject):
@@ -44,8 +44,10 @@ class Printer(PageObject):
         elif not object.exists(names.mwi_printer_config_drop):
             self.click(names.mwi_lst_extruders)
 
-            # When the printer is to be set to is a newly added one, it may still be in the process of syncing.
-            # However, the extruder-menu won't update when its open, so open and close the menu until synced. 
+            """
+            When the printer is to be set to is a newly added one, it may still be in the process of syncing.
+            However, the extruder-menu won't update when its open, so open and close the menu until synced.
+            """ 
             check_time = time.time() + 20.0  # <- Don't to wait until the end of time.
             while (time.time() < check_time) and not object.exists(names.btn_to_config):
                 snooze(1.0)

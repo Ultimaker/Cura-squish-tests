@@ -2,7 +2,11 @@ Feature: Printer management
 
   Scenario: Switching extruders should cause profile change
     Given Cura has been started with preset configurations
+<<<<<<< Updated upstream
     And I select the 'Ultimaker 3' printer and 'Fine - 0.1mm' profile
+=======
+    And I select the 'Ultimaker S5' printer with Draft intent and 'Fine - 0.1 mm' profile
+>>>>>>> Stashed changes
     When the 1 nozzle is of type 'AA 0.4'
     And the 2 nozzle is of type 'AA 0.4'
     And I select the 2 extruder
@@ -32,7 +36,11 @@ Feature: Printer management
 
   Scenario: Check if networked printers show up in the monitor page
     Given Cura is running
+<<<<<<< Updated upstream
     And I select the '0Frankie' printer and 'Fine - 0.1mm' profile
+=======
+    And I select the '0Dany-Cura' printer with Visual intent and 'Fine - 0.1 mm' profile
+>>>>>>> Stashed changes
     And I synchronize with the printers configuration
     Then I observe '0Frankie' in the monitor page
 

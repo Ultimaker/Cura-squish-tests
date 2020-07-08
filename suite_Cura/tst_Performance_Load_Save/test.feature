@@ -7,14 +7,14 @@ Feature: Performance of loading and saving files
     And the file load time is printed
 
   Scenario: Loading 3MF project
-    Given Cura is running
+    Given Cura has been started with preset configurations
     And I clear the buildplate
-    When I load project UM3_Robot.3mf in performance mode
-    Then the file load time is retrieved from the log
+    When I load project POS.3mf in performance mode
+	Then the file load time is retrieved from the log
     And the file load time is printed
 
   Scenario: Saving file as project
-    Given Cura is running
+    Given Cura has been started with preset configurations
     And I clear the buildplate
     When I load file 'Robot.stl'
     And I save the file as a project in performance mode

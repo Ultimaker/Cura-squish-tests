@@ -12,16 +12,25 @@ import time
 import names
 import gettext
 import shutil
-import sys #To get the current operating system.
+# To get the current operating system
+import sys
+# Needed for the scrolling
+import pynput
+from pynput.mouse import Controller
+
 
 
 class PageObject:
     def __init__(self):
+<<<<<<< Updated upstream
         self.cura_version = '4.2'
+=======
+        self.cura_version = '4.6'
+>>>>>>> Stashed changes
         self.cura_resources = CuraResources(self.cura_version)
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
 
-        # Imports functions and members of squish
+        # Imports functions and members of Squish
         importSquishSymbols()
 
     def startCuraNoConfig(self):
@@ -43,14 +52,76 @@ class PageObject:
                 if line.startswith("AUT="):
                     aut = (line.split("AUT=")[1]).rstrip()
                     break
+<<<<<<< Updated upstream
         
         startApplication(aut)
         waitForObject(names.mwi, 50000)
 
+=======
+        if aut:
+            startApplication(aut)
+        else:
+            attachToApplication("cura_app.py")
+            
+        waitForObject(names.mwi, 50000)
+        if object.exists(names.mwi_changelog):
+            self.click(names.mwi_changelog_btn_close)
+        if object.exists(names.wel_main):
+            self.click(waitForObject(names.onb_btn_next))
+            self.click(waitForObject(names.onb_btn_accept_agreement))
+            self.click(waitForObject(names.onb_btn_next))
+            self.click(waitForObject(names.onb_btn_next))
+            self.click(waitForObject(names.pdg_cbo_local_printer))
+            self.click(self.findObjectWithText(names.pdg_rbtn_printer, 'Ultimaker 3'))
+        
+    def startCuraWithArguments(self):
+        
+        # Get registered AUT name from conf file
+        suite_conf = os.path.join(squishinfo.testCase, "..", "suite.conf")
+        aut = None
+
+        with open(suite_conf) as file:
+            line = file.readline()
+            while line:
+                if line.startswith("AUT="):
+                    aut = (line.split("AUT=")[1]).rstrip()
+                    break
+        try:
+            projFile = "3mf" in aut
+            startApplication(aut)
+            waitForObject(names.open_project_file_QQuickWindowQmlImpl, 50000)
+        except LookupError:
+            test.log("No project file given as an argument to Cura")
+            
+>>>>>>> Stashed changes
     def restartCura(self):
         squish.snooze(12) #Allow autosave to kick in.
         squish.currentApplicationContext().detach()
         self.startCura()
+<<<<<<< Updated upstream
+=======
+        
+    def restartCuraWithArguments(self):
+        squish.snooze(12) #Allow autosave to kick in.
+        squish.currentApplicationContext().detach()
+                
+        # Get registered AUT name from conf file
+        suite_conf = os.path.join(squishinfo.testCase, "..", "suite.conf")
+        aut = None
+
+        with open(suite_conf) as file:
+            line = file.readline()
+            while line:
+                if line.startswith("AUT="):
+                    aut = (line.split("AUT=")[1]).rstrip()
+                    break
+        try:
+            projFile = "3mf" in aut
+            startApplication(aut)
+            waitForObject(names.open_Project_QQuickWindowQmlImpl, 50000)
+        except LookupError:
+            test.log("No project file given as an argument to Cura")
+>>>>>>> Stashed changes
 
     def startCuraConfigVersion(self, config_version):
         self.presetPreferences()
@@ -126,11 +197,11 @@ class PageObject:
         return child_obj_list
 
     @staticmethod
-    def click(obj, time_out = 15000, snooze = 100):
+    def click(obj, time_out = 30000, snooze = 100):
         squish.snooze(snooze / 1000)
         squish.mouseClick(waitForObject(obj, time_out))
 
-    ##  Clears a text field.
+    # Clears a text field.
     @staticmethod
     def clear(obj):
         item = waitForObject(obj)
@@ -233,9 +304,21 @@ class PageObject:
 
     @staticmethod
     def mouseClickMenuItem(obj):
-        """mouseClick() on menu items is unreliable, so use native mouse actions"""
+        # mouseClick() on menu items is unreliable, so use native mouse actions
 
         x = 5
         y = 5
         mousePress(obj, x, y, MouseButton.LeftButton)
         mouseRelease(obj, x, y, MouseButton.LeftButton)
+        
+    @staticmethod
+    def mouseScrolling(x, y):
+        """ 
+        Method that implements a scrolling mechanism. The first integer is for 
+        horizontal which is left to right scroll; a positive integer will scroll 
+        right vice versa. The second integer is for vertical which is up to down 
+        scroll; a positive integer will scroll up vice versa
+        """
+            
+        mouse_scroll = Controller()
+        mouse_scroll.scroll(x, y)

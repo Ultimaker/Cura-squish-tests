@@ -11,6 +11,7 @@ cura = Cura()
 def step(context):
     print_settings.enableGradualInfill()
 
+
 @Step("the following custom profiles are available")
 def step(context):
     # Navigate to Preferences > Profiles
@@ -21,8 +22,10 @@ def step(context):
     # Drop initial row with column headers
     expected_profiles.pop(0)
     
-    # getCustomProfiles return QQuickText objects
-    # This statement retrieves the text, which is a QString obj, and converts it to a String obj
+    """
+    getCustomProfiles return QQuickText objects
+    This statement retrieves the text, which is a QString obj, and converts it to a String obj
+    """
     actual_profile_objs = print_settings.getCustomProfiles()
     profile_list = [str(x.text) for x in actual_profile_objs]
     
@@ -31,10 +34,11 @@ def step(context):
     context.userData = {}
     context.userData['profiles'] = actual_profile_objs
     
-    # context.table creates lists for each row. This statement merges them together
+    # The context.table creates lists for each row. This statement merges them together
     expected_profiles = [item for sublist in expected_profiles for item in sublist]
 
     test.compare(Counter(profile_list), Counter(expected_profiles))
+    
     
 @When("I |word| profile '|any|'")
 def step(context, action, profile):
@@ -42,8 +46,9 @@ def step(context, action, profile):
     preferences.selectPreferencesMenu(action)
     cura.pressCloseButton()
 
+
 @Then("the print settings display profile '|any|'")
 def step(context, expected_profile):
-    # The print settings menu contains the layer height aswell. We only want the profile name.
+    # The print settings menu contains the layer height as well. We only want the profile name.
     current_profile = str(print_settings.getCurrentPrintProfile().text).split()[0]
     test.compare(expected_profile, current_profile)

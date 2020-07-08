@@ -23,7 +23,7 @@ Feature: Material manager
 	    Given Cura is running
 	    When I navigate to menu Preferences and Configure Cura
 	    And I navigate to Materials in preferences
-	    And I select 'Custom Custom Material' material in preferences
+	    And I select 'Custom Custom Material' material from the 'Custom' list in preferences
 	    And I select Remove material
 	    Then I confirm the removal
 	    Then the material 'Custom Custom Material' has not been added
@@ -72,6 +72,7 @@ Feature: Material manager
 	    And the material property 'Diameter' is '3.33 mm'
 	    And I close the preferences
 
+<<<<<<< Updated upstream
     #Scenario: Customise a material
     	#And I create a new material with the following properties
     	 #|Display Name |Brand|
@@ -79,3 +80,43 @@ Feature: Material manager
     	#And I give the new material 'andreea' name
     	#Then the material overview contains the name: 'andreea'
 		#And I close the preferences
+=======
+ 	Scenario: Export material
+ 		Given Cura is running
+ 		When I navigate to menu Preferences and Configure Cura
+	    And I navigate to Materials in preferences
+	    And I select Duplicate material
+	    And I change the material name to 'Export'
+	    Then I select 'Print settings' tab
+	    And I change the material print settings 'Default Printing Temperature' property to '220'
+	    And I change the material print settings 'Default Build Plate Temperature' property to '65'
+   		And I change the material print settings 'Retraction Distance' property to '8'
+   		And I change the material print settings 'Retraction Speed' property to '30'
+   		And I change the material print settings 'Standby Temperature' property to '190'
+   		And I change the material print settings 'Fan Speed' property to '75'
+   		Then I select Export material
+   		And I save the file as 'materialExport'
+   		Then the file 'materialExport' is a valid 'material'
+
+	Scenario: Intent profiles for the same material type
+    	Given Cura has been started with preset configurations
+    	When I navigate to menu Preferences and Configure Cura
+    	#And I navigate to Printers in preferences
+    	#And I select Add printer
+    	#And I add a non-networked Ultimaker S5 printer
+    	#Then the printer overview contains a 'Ultimaker S5' printer
+    	And I navigate to Materials in preferences
+    	And I select 'Ultimaker Blue PLA' material from the 'Ultimaker' brand with the 'PLA' type in preferences
+   		And I select Activate material
+    	And I close the preferences
+    	Then Extruder one makes use of material 'Ultimaker Blue PLA'
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes

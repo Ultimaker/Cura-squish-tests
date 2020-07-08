@@ -4,8 +4,9 @@ from Helpers.SquishModuleHelper import importSquishSymbols
 import squish
 from PageObjects.PerformancePage import Performance
 import names
+# For casting to int, since Squish defines its own int().
+import builtins
 
-import builtins  # For casting to int, since Squish defines its own int().
 
 class Cura(PageObject):
     def __init__(self):
@@ -16,7 +17,7 @@ class Cura(PageObject):
         self.click(names.btn_close)
         waitForObject(names.mwi)
 
-    #     Top-level navigation bar
+    # Top-level navigation bar
     def navigateTo(self, menu_item, submenu_item, lang=None):
         menu_object = self.findObjectWithText(names.mnu_item, menu_item, "plainText", lang=lang)
         self.click(menu_object)
@@ -27,6 +28,7 @@ class Cura(PageObject):
     def navigateToStageMenu(self, stage_item):
         if "Marketplace" in stage_item:
             self.click(names.mwi_btn_marketplace)
+            waitForObject(names.mar_scroll_bar)
 
     def selectExtruderTab(self, extruder_nr_str):
         self.click(names.mwi_lst_extruders)  # NOTE: Only if not open yet!
@@ -75,7 +77,7 @@ class Cura(PageObject):
         if track_time:
             return Performance.trackSliceTime()
 
-    #     After model has been sliced
+    # After model has been sliced
     def saveToFile(self, file_name):
         self.click(names.mwi_btn_save_to_file, 40000)
 
@@ -96,7 +98,7 @@ class Cura(PageObject):
 
     def openFileFromSummary(self, track_time=False):
         self.click(names.btn_open_save_summary)
-
+        
         if track_time:
             return Performance.trackFileloadTime()
 

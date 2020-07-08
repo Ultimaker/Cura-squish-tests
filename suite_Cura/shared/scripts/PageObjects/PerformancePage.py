@@ -37,7 +37,7 @@ class Performance(PageObject):
     def trackFileloadTime(self):
         start_time = time.time()
 
-        waitForObjectExists(names.mwi_btn_slice).visible
+        waitForObject(names.mwi_btn_slice)
 
         t = time.time() - start_time
         return t

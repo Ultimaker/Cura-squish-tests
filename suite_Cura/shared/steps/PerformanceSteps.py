@@ -83,9 +83,11 @@ def step(context, size):
     cura.navigateTo("Edit", "Select All Models")
     cura.scaleModel(size)
 
+
 @Step("I open POS tool")
 def step(context):
     cura.openPOS()
+
 
 @Step("I modify the setting Infill Density to |any|")
 def step(context, infill_density):

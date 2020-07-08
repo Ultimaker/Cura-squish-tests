@@ -8,9 +8,11 @@ class PrintSettings(PageObject):
     def __init__(self):
         importSquishSymbols()
 
-    # Note case sensitive, but you only need the first part of the profile name.
-    # From Print Settings (not preferences)
-    def selectProfile(self, profile):
+    """
+    Note case sensitive, but you only need the first part of the profile name.
+    From Print Settings (not preferences)
+    """
+    def selectProfile(self, intent, profile):
         if not object.exists(names.win_print_settings):
             self.click(names.mwi_print_settings)
             waitForObject(names.win_print_settings)
@@ -20,7 +22,38 @@ class PrintSettings(PageObject):
             self.click(names.prs_btn_custom)
 
         self.click(names.prs_btn_sel_profile)
+<<<<<<< Updated upstream
         self.click(self.findObjectWithText(names.sub_mnu_item, profile, exact_match=True))
+=======
+        
+        # Verifying the whole profiles dropdown list is visible
+        waitForObject(names.prs_profile_list)
+        
+        """
+        Differentiating between printers that have intent profiles and ones that don't, 
+        since the dropdown will look different for each case
+        """
+        active_printer = Printer.selectedPrinter(self)
+        if Printer.isIntentPrinter(Printer, active_printer):
+            assert intent != "no", test.log("No intent profile was added in the test step! Test Case aborted...")
+            # Optional log
+            #test.log("The selected printer is: " + str(active_printer) + " and has intent profiles to choose from.")
+            
+            self.findObjectWithText(names.prs_intent_name, intent, exact_match=True)
+            children = []
+            for child in object.children(names.btn_close):
+                if text(child) == profile:
+                    self.click(child)
+            #self.click(self.findObjectWithText(names.profile_sub_mnu_item, profile, exact_match=True))
+        else:
+            # Optional log
+            #test.log("The " + str(active_printer) + " printer does not have any intent profiles, yet.")
+            
+            # choose the desired profile
+            self.click(self.findObjectWithText(names.profile_sub_mnu_item, profile, exact_match=True))
+            
+        #self.click(self.findObjectWithText(names.sub_mnu_item, profile, exact_match=True))
+>>>>>>> Stashed changes
 
         # Close print settings in case it interferes with other steps
         self.click(names.mwi_print_settings)
@@ -34,7 +67,7 @@ class PrintSettings(PageObject):
         if profiles_obj is None:
             profiles_obj = []
 
-        #Get all descendants of type QQuickRectangle.
+        # Get all descendants of type QQuickRectangle.
         profiles = self.getChildrenOfType(findObject(names.pfs_profile_list), "QQuickRectangle")
         for rect in profiles:
             profile_obj_list = self.getChildrenOfType(findObject(objectMap.realName(rect)), "QQuickText")

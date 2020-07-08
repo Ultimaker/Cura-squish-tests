@@ -7,14 +7,16 @@ from squish import *
 
 
 class ObjectDescendants:
-    # This class recursively searches for objects
-    # It goes through all descendants of the parent object
-
+    """
+    This class recursively searches for objects
+    It goes through all descendants of the parent object
+    """
     @classmethod
     def getObjects(cls, parent_obj, property_names_values, max_find_count=-1, verbose=False):
-        """Pass negative max_find_count parameter to find all matching objects.
-        Special property "type" allows searching for the object type."""
-
+        """
+        Pass negative max_find_count parameter to find all matching objects.
+        Special property "type" allows searching for the object type.
+        """
         return cls.getObjectsImpl(
             squish.findObject(parent_obj),
             property_names_values,
@@ -50,8 +52,7 @@ class ObjectDescendants:
     def hasPropertiesAndValues(cls, obj, properties_names_values, verbose):
         # Verify type early to minimize property value comparisons:
         if "type" in properties_names_values:
-            # Strip away QML/QtQuick specific appendices to the
-            # class name:
+            # Strip away QML/QtQuick specific appendices to the class name:
             cn = className(obj)
             if "_QMLTYPE_" in cn:
                 cn = cn.split("_QMLTYPE_", 1)[0]

@@ -26,7 +26,8 @@ class AddPrinter(PageObject):
 
     def addLocalPrinter(self, printer):
         self.click(names.pdg_cbo_local_printer)
-        self.click(self.findObjectWithText(names.pdg_rbtn_printer, printer))
+        self.setTextFieldValue(names.prs_name_field, printer)
+        #self.click(self.findObjectWithText(names.pdg_rbtn_printer, printer))
         self.click(names.pdg_btn_add_printer)
 
     def addLocalPrinterFromOnb(self, printer):
