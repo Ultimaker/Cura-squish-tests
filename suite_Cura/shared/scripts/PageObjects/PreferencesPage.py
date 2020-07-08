@@ -2,6 +2,9 @@
 from PageObjects.CommonPage import PageObject
 from Helpers.SquishModuleHelper import importSquishSymbols
 import names
+# Needed for the scrolling
+import pynput
+from pynput.mouse import Controller
 
 
 class Preferences(PageObject):

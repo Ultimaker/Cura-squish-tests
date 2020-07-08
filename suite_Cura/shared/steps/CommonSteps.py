@@ -87,10 +87,10 @@ def step(context):
     cura.navigateTo("Edit", "Clear Build Plate")
 
 
-@Step("I select the '|any|' printer and '|any|' profile")
-def step(context, printer_type, profile):
+@Step("I select the '|any|' printer with |word| intent and '|any|' profile")
+def step(context, printer_type, intent, profile):
     printer.selectPrinter(printer_type)
-    print_settings.selectProfile(profile)
+    print_settings.selectProfile(intent, profile)
 
 
 @Step("I save a sliced model as '|any|'")

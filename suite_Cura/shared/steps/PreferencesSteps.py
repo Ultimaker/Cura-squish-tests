@@ -1,8 +1,13 @@
 from PageObjects.PreferencesPage import Preferences
-import configparser #To validate exported profiles.
-import os #To remove the exported profile.
-import os.path #To save exported profiles in the test data directory.
-import zipfile #To validate exported profiles.
+#To validate exported profiles
+import configparser
+#To remove the exported profile
+import os
+#To save exported profiles in the test data directory
+import os.path
+#To validate exported profiles
+import zipfile
+
 
 preferences = Preferences()
 

@@ -6,6 +6,8 @@ mwi = {"type": "MainWindow", "unnamed": 1, "visible": True}
 mwi_untitled = {"title": "Untitled - Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
 mwi_ovl = {"container": mwi, "type": "Overlay", "unnamed": 1, "visible": True}
 qqw_qml = {"type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+# Welcome dialog (wel) - on first use
+wel_main = {"container": mwi, "id": "welcomeDialogItem", "type": "WelcomeDialogItem", "unnamed": 1, "visible": True}
 
 # Cura Main Page
 mwi_btn_open_file = {"checkable": False, "container": mwi, "id": "openFileButton", "type": "Button", "unnamed": 1, "visible": True}
@@ -151,6 +153,7 @@ mat_input_retraction_distance = {"container": mat_panel_details, "index": 2, "ty
 mat_input_retraction_speed = {"container": mat_panel_details, "index": 3, "type": "TooltipArea", "unnamed": 1, "visible": True}
 mat_input_standby_temperature = {"container": mat_panel_details, "index": 4, "type": "TooltipArea", "unnamed": 1, "visible": True}
 mat_input_fan_speed = {"container": mat_panel_details, "index": 5, "type": "TooltipArea", "unnamed": 1, "visible": True}
+mat_scroll_bar = {"container": qqw_qml, "id": "vscrollbar", "type": "ScrollBar", "unnamed": 1, "visible": True}
 
 
 # custom brand
@@ -191,10 +194,11 @@ win_print_settings = {"container": mwi, "type": "PrintSetupSelectorContents", "u
 prs_btn_custom = {"checkable": False, "container": mwi, "id": "customSettingsButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 prs_custom_view = {"container": mwi, "id": "customPrintSetup", "type": "CustomPrintSetup", "unnamed": 1, "visible": True}
 prs_btn_recommended = {"container": mwi, "text": "Recommended", "type": "Label", "unnamed": 1, "visible": True}
-#prs_btn_sel_profile_43 = {"container": prs_custom_view, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
+prs_btn_sel_profile = {"container": prs_custom_view, "id": "globalProfileSelection", "type": "Button", "unnamed": 1, "visible": True}
 prs_btn_sel_profile = {"checkable": False, "container": mwi, "id": "intentSelection", "type": "Button", "unnamed": 1, "visible": True} # new addition in v4.4 due to the intents
 prs_profile_list = {"container": mwi, "type": "PopupItem", "unnamed": 1, "visible": True}
 prs_chk_gradual_infill = {"container": mwi, "id": "enableGradualInfillCheckBox", "type": "CheckBox", "unnamed": 1, "visible": True}
+prs_intent_name = {"container": mwi_ovl, "text": "", "type": "Label", "unnamed": 1, "visible": True}
 
 # Marketplace (mar)
 mwi_btn_marketplace = {"checkable": False, "container": mwi, "id": "marketplaceButton", "type": "Button", "unnamed": 1, "visible": True}
@@ -203,6 +207,8 @@ mar_downloads = {"container": win_marketplace, "id": "viewDownloads", "type": "S
 mar_view = {"container": win_marketplace, "type": "ScrollView", "unnamed": 1, "visible": True}
 mar_btn_quit_cura = {"checkable": False, "container": win_marketplace, "id": "restartButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 mar_btn_install = {"container": mar_view, "id": "installButton", "type": "ToolboxProgressButton", "unnamed": 1, "visible": True}
+mar_scroll_bar = {"container": mar_downloads, "type": "ScrollBar", "unnamed": 1, "visible": True}
+mar_featured = {"container": mar_downloads, "text": "Featured", "type": "Text", "unnamed": 1, "visible": True}
 
 plugin_auto_orientation = {"container": mar_downloads, "text": "Auto-Orientation", "type": "Text", "unnamed": 1, "visible": True}
 plugin_barbarian_units = {"container": mar_view, "text": "Barbarian Units", "type": "Text", "unnamed": 1, "visible": True}
@@ -211,6 +217,7 @@ plugin_customer_supports = {"container": mar_view, "text": "Custom Supports", "t
 # Plugin License Agreement
 win_plugin = {"title": "Plugin License Agreement", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 plugin_lcs_btn_accept = {"container": win_plugin, "id": "acceptButton", "type": "Button", "unnamed": 1, "visible": True}
+plugin_lcs_btn_agree = {"checkable": False, "container": win_plugin, "text": "Agree", "type": "ActionButton", "unnamed": 1, "visible": True}
 plugin_btn_installed = {"checkable": False, "container": mar_view, "id": "installedButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 ext_btn_variant = {"container": mwi_ovl, "id": "variantSelection", "type": "Button", "unnamed": 1, "visible": True}
@@ -222,6 +229,7 @@ win_add_printer = {"title": "Add Printer", "type": "QQuickWindowQmlImpl", "unnam
 gen_net_printer_view = {"container": win_add_printer, "id": "networkPrinterScrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
 btn_net_printer = {"text": "", "checkable": False, "container": gen_net_printer_view, "type": "MachineSelectorButton", "unnamed": 1, "visible": True}
 btn_add_printer = {"container": win_add_printer, "text": "Add", "type": "Label", "unnamed": 1, "visible": True}
+prs_name_field = {"container": win_add_printer, "echoMode": 0, "id": "printerNameTextField", "type": "TextField", "unnamed": 1, "visible": True}
 btn_printer_sync = {"container": mwi_ovl, "type": "ConfigurationItem", "unnamed": 1, "visible": True}
 btn_to_config = {"container": mwi_ovl, "text": "Configurations", "type": "Label", "unnamed": 1, "visible": True}
 mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Rectangle", "unnamed": 1, "visible": True}
