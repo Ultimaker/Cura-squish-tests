@@ -32,15 +32,16 @@ class Cura(PageObject):
             waitForObject(names.mar_scroll_bar)
 
     def selectExtruderTab(self, extruder_nr_str):
-        self.click(names.mwi_lst_extruders)  # NOTE: Only if not open yet!
+        self.click(names.mwi_printer_config_drop)  # NOTE: Only if not open yet!
         extruder_nr = builtins.int(extruder_nr_str)
         if extruder_nr > 0:
             self.click({"checkable": True, "container": names.mwi_ovl, "occurrence": extruder_nr, "type": "TabButton", "unnamed": 1, "visible": True})
 
     def checkNozzleTypeText(self, extruder_nr_str, nozzle_text):
-        extruder_nr = builtins.int(extruder_nr_str)
-        obj_extruder_container = {"container": names.mwi_lst_extruders, "index": (extruder_nr - 1), "type": "Item", "unnamed": 1, "visible": True}
-        obj_nozzle_label = {"container": obj_extruder_container, "text": nozzle_text, "type": "Label", "unnamed": 1, "visible": True}
+        #extruder_nr = builtins.int(extruder_nr_str)
+        #obj_extruder_container = {"container": names.mwi}
+        obj_nozzle_label = {"container": names.mwi, "text": nozzle_text, "type": "Label", "unnamed": 1, "visible": True}
+        #self.click(obj_nozzle_label)
         return object.exists(obj_nozzle_label)
 
     def selectPrintCore(self, print_core):
