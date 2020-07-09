@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
+import os
 from PageObjects.CommonPage import PageObject
 from Helpers.SquishModuleHelper import importSquishSymbols
 import squish
 from PageObjects.PerformancePage import Performance
 import names
-
-import builtins  # For casting to int, since Squish defines its own int().
+# For casting to int, since Squish defines its own int()
+import builtins
+import sys
 
 class Cura(PageObject):
     def __init__(self):
@@ -27,17 +29,19 @@ class Cura(PageObject):
     def navigateToStageMenu(self, stage_item):
         if "Marketplace" in stage_item:
             self.click(names.mwi_btn_marketplace)
+            waitForObject(names.mar_scroll_bar)
 
     def selectExtruderTab(self, extruder_nr_str):
-        self.click(names.mwi_lst_extruders)  # NOTE: Only if not open yet!
+        self.click(names.mwi_printer_config_drop)  # NOTE: Only if not open yet!
         extruder_nr = builtins.int(extruder_nr_str)
         if extruder_nr > 0:
             self.click({"checkable": True, "container": names.mwi_ovl, "occurrence": extruder_nr, "type": "TabButton", "unnamed": 1, "visible": True})
 
     def checkNozzleTypeText(self, extruder_nr_str, nozzle_text):
-        extruder_nr = builtins.int(extruder_nr_str)
-        obj_extruder_container = {"container": names.mwi_lst_extruders, "index": (extruder_nr - 1), "type": "Item", "unnamed": 1, "visible": True}
-        obj_nozzle_label = {"container": obj_extruder_container, "text": nozzle_text, "type": "Label", "unnamed": 1, "visible": True}
+        #extruder_nr = builtins.int(extruder_nr_str)
+        #obj_extruder_container = {"container": names.mwi}
+        obj_nozzle_label = {"container": names.mwi, "text": nozzle_text, "type": "Label", "unnamed": 1, "visible": True}
+        #self.click(obj_nozzle_label)
         return object.exists(obj_nozzle_label)
 
     def selectPrintCore(self, print_core):
@@ -102,7 +106,8 @@ class Cura(PageObject):
 
     def saveAsProject(self, track_time):
         self.click(names.btn_open_save_summary)
-        self.setTextFieldValue(names.fdg_input_name, "UM3_Robot_SAVE.3mf")
+        self.click(self.findObjectWithText(names.fdg_save_userfolder, os.getlogin()))
+        self.setTextFieldValue(names.fdg_input_name, "UM3_Robot__Saved.3mf")
         self.click(names.fdg_btn_save)
 
         if object.exists(names.mbo_confirm_dialog):
@@ -146,7 +151,7 @@ class Cura(PageObject):
     def rememberMyChoice(self):
         checkBoxToVerify = waitForObject(names.open_project_file_Remember_my_choice_CheckBox)
         if checkBoxToVerify.checked == False:
-            #test.log("Checkbox already checked")
+            test.log("Checkbox already checked")
             self.click(checkBoxToVerify)
         else:
             return
