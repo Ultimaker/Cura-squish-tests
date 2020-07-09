@@ -106,7 +106,7 @@ class PrintSettings(PageObject):
     def showAllSettings(self):
         self.gotoCustomSettings()
         self.click(names.btn_settings_visibility)
-        submenu_object = self.findObjectWithText(names.sub_mnu_item, "Show All Settings")
+        submenu_object = self.findObjectWithText(names.sub_mnu_item, "All")
         self.click(submenu_object)
 
     def checkTextboxSetting(self, tab_name, setting_name, setting_value_str):
