@@ -31,7 +31,7 @@ class Marketplace(PageObject):
             
             # Do the actual scroll
             mousecheck = Controller()
-            mousecheck.scroll(0, -5)
+            mousecheck.scroll(0, -3)
             self.selectPlugin(plugin_item)
             
         
