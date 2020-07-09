@@ -3,7 +3,6 @@ from objectmaphelper import *
 
 # Main Window (mwi)
 mwi = {"type": "MainWindow", "unnamed": 1, "visible": True}
-mwi_untitled = {"title": "Untitled - Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
 mwi_ovl = {"container": mwi, "type": "Overlay", "unnamed": 1, "visible": True}
 qqw_qml = {"type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 # Welcome dialog (wel) - on first use
@@ -232,12 +231,10 @@ btn_add_printer = {"container": win_add_printer, "text": "Add", "type": "Label",
 prs_name_field = {"container": win_add_printer, "echoMode": 0, "id": "printerNameTextField", "type": "TextField", "unnamed": 1, "visible": True}
 btn_printer_sync = {"container": mwi_ovl, "type": "ConfigurationItem", "unnamed": 1, "visible": True}
 btn_to_config = {"container": mwi_ovl, "text": "Configurations", "type": "Label", "unnamed": 1, "visible": True}
-mwi_printer_config_drop = {"container": mwi_ovl, "id": "background", "type": "Rectangle", "unnamed": 1, "visible": True}
+mwi_printer_config_drop = {"container": mwi, "id": "printerSetup", "type": "ConfigurationMenu", "unnamed": 1, "visible": True}
 mwi_monitor_tab = {"container": mwi, "text": "MONITOR", "type": "Button", "unnamed": 1, "visible": True}
 mwi_prepare_tab = {"container": mwi, "text": "PREPARE", "type": "Button", "unnamed": 1, "visible": True}
 lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "visible": True}
 open_project_file_QQuickWindowQmlImpl = {"title": "Open project file", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 open_project_file_Remember_my_choice_CheckBox = {"container": open_project_file_QQuickWindowQmlImpl, "id": "rememberChoiceCheckBox", "text": "Remember my choice", "type": "CheckBox", "unnamed": 1, "visible": True}
 open_Project_QQuickWindowQmlImpl = {"title": "Open Project", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
-
-
