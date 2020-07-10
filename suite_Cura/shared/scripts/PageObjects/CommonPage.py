@@ -50,8 +50,8 @@ class PageObject:
         startApplication(aut)
         
         waitForObject(names.mwi, 50000)
-        if object.exists(names.mwi_changelog):
-            self.click(names.mwi_changelog_btn_close)
+        #if object.exists(names.mwi_changelog):
+        #    self.click(names.mwi_changelog_btn_close)
         
     def startCuraWithArguments(self):
         
