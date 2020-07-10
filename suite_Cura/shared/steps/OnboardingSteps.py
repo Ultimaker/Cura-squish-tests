@@ -32,7 +32,11 @@ def step(context):
 @When("I agree to my data being collected")
 def step(context):
     onboarding.navigateNextPage()
-
+    
+@When("I skip the signing in")
+def step(context):
+    onboarding.skipAccount()
+    
 
 @When("I finish the onboarding flow")
 def step(context):

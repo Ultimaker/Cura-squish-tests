@@ -56,10 +56,8 @@ mwi_chk_uniform_scaling = {"container": mwi, "id": "uniformScalingCheckbox", "ty
 
 # Onboarding (onb)
 onb_panel = {"container": mwi, "id": "wizardPanel", "type": "WizardPanel", "unnamed": 1, "visible": True}
-obn_page_title = {"container": onb_panel, "type": "Label", "unnamed": 1, "visible": True}
-onb_btn_next = {"checkable": False, "container": onb_panel, "id": "getStartedButton", "type": "ActionButton", "unnamed": 1, "visible": True}
-
-# onb landing
+obn_page_title = {"container": onb_panel, "id": "titleLabel", "type": "Label", "unnamed": 1, "visible": True}
+onb_btn_next = {"checkable": False, "container": onb_panel, "id": "getStartedButton", "type": "ActionButton", "unnamed": 1, "visible": True}# onb landing
 onb_btn_get_started = {"checkable": False, "container": onb_panel, "id": "getStartedButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 # onb licence
@@ -67,7 +65,7 @@ onb_btn_accept_agreement = {"checkable": False, "container": onb_panel, "id": "a
 onb_btn_decline_close = {"checkable": False, "container": mwi, "id": "declineButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 
 # onb changelog
-#onb_win_changelog = {"container": onb_panel, "id": "whatsNewTextArea", "type": "ScrollableTextArea", "unnamed": 1, "visible": True}
+onb_win_changelog = {"container": onb_panel, "id": "whatsNewTextArea", "type": "ScrollableTextArea", "unnamed": 1, "visible": True}
 mwi_changelog = {"container": mwi, "id": "panelBackground", "type": "Rectangle", "unnamed": 1, "visible": True}
 mwi_changelog_btn_close = {"checkable": False, "container": onb_panel, "id": "getStartedButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 
@@ -75,6 +73,7 @@ mwi_changelog_btn_close = {"checkable": False, "container": onb_panel, "id": "ge
 onb_btn_create_acc = {"checkable": False, "container": mwi, "id": "createAccountButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 onb_btn_sign_in = {"container": mwi, "id": "signInButton", "type": "Label", "unnamed": 1, "visible": True}
 onb_btn_finish = {"checkable": False, "container": mwi, "id": "finishButton", "type": "ActionButton", "unnamed": 1, "visible": True}
+onb_btn_skip = {"container": mwi, "text": "Skip", "type": "Label", "unnamed": 1, "visible": True}
 
 # File Dialog (fdg)
 fdg = {"name": "QFileDialog", "type": "QFileDialog", "visible": 1}
@@ -228,4 +227,5 @@ lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "
 open_project_file_QQuickWindowQmlImpl = {"title": "Open project file", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 open_project_file_Remember_my_choice_CheckBox = {"container": open_project_file_QQuickWindowQmlImpl, "id": "rememberChoiceCheckBox", "text": "Remember my choice", "type": "CheckBox", "unnamed": 1, "visible": True}
 open_Project_QQuickWindowQmlImpl = {"title": "Open Project", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
-
+ultimaker_Cura_MainWindow = {"title": "Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
+ultimaker_Cura_Skip_Label = {"container": ultimaker_Cura_MainWindow, "text": "Skip", "type": "Label", "unnamed": 1, "visible": True}

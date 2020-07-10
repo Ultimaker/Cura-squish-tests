@@ -17,6 +17,9 @@ class Onboarding(PageObject):
 
     def navigateNextPage(self):
         self.click(names.onb_btn_next)
+        
+    def skipAccount(self):
+        self.click(names.onb_btn_skip)
 
     def finishWizard(self):
         self.click(names.onb_btn_finish)
@@ -40,8 +43,9 @@ class Onboarding(PageObject):
         
         switcher = {
             'Data Collection': [names.onb_btn_next],
-            'Changelog': [names.onb_win_changelog, names.onb_btn_next],
+            'Changelog': [names.onb_btn_next],
             'User Agreement': [names.onb_btn_decline_close, names.onb_btn_accept_agreement],
+            'Ultimaker Account' :[names.onb_btn_skip],
             'Printer': printer_list,
             'Cloud': [names.onb_btn_create_acc, names.onb_btn_sign_in, names.onb_btn_finish]
         }
