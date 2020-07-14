@@ -76,7 +76,7 @@ mwi_changelog_btn_close = {"checkable": False, "container": onb_panel, "id": "ge
 onb_btn_create_acc = {"checkable": False, "container": mwi, "id": "createAccountButton", "type": "ActionButton", "unnamed": 1, "visible": True}
 onb_btn_sign_in = {"container": mwi, "id": "signInButton", "type": "Label", "unnamed": 1, "visible": True}
 onb_btn_finish = {"checkable": False, "container": mwi, "id": "finishButton", "type": "ActionButton", "unnamed": 1, "visible": True}
-
+onb_btn_skip = {"container": mwi, "text": "Skip", "type": "Label", "unnamed": 1, "visible": True}
 # File Dialog (fdg)
 fdg = {"name": "QFileDialog", "type": "QFileDialog", "visible": 1}
 fdg_lbl_name = {"name": "fileNameLabel", "type": "QLabel", "visible": 1, "window": fdg}
@@ -238,3 +238,5 @@ lbl_in_monitor = {"container": mwi, "text": "", "type": "Label", "unnamed": 1, "
 open_project_file_QQuickWindowQmlImpl = {"title": "Open project file", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 open_project_file_Remember_my_choice_CheckBox = {"container": open_project_file_QQuickWindowQmlImpl, "id": "rememberChoiceCheckBox", "text": "Remember my choice", "type": "CheckBox", "unnamed": 1, "visible": True}
 open_Project_QQuickWindowQmlImpl = {"title": "Open Project", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
+ultimaker_Cura_MainWindow = {"title": "Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
+ultimaker_Cura_Skip_Label = {"container": ultimaker_Cura_MainWindow, "text": "Skip", "type": "Label", "unnamed": 1, "visible": True}
