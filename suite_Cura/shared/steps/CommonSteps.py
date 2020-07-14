@@ -87,10 +87,10 @@ def step(context):
     cura.navigateTo("Edit", "Clear Build Plate")
 
 
-@Step("I select the '|any|' printer and '|any|' profile")
-def step(context, printer_type, profile):
+@Step("I select the '|any|' printer with |word| intent and '|any|' profile")
+def step(context, printer_type, intent, profile):
     printer.selectPrinter(printer_type)
-    print_settings.selectProfile(profile)
+    print_settings.selectProfile(intent, profile)
 
 
 @Step("I save a sliced model as '|any|'")
@@ -102,8 +102,8 @@ def step(context, file_name):
 def step(context, location):
     if "Marketplace" == location:
         marketplace.quitCura()
-    else:
-        test.fail(f"Closing cura from {location} not implemented")
+    else: 
+        test.fail(f"Closing cura from {location} not implemented.")
 
 
 @Given("I slice the object")

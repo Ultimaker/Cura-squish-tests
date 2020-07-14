@@ -1,0 +1,419 @@
+2020-07-08 12:34:00,900 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FileLogger
+2020-07-08 12:34:00,911 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdateChecker
+2020-07-08 12:34:00,921 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdater
+2020-07-08 12:34:00,929 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzReader
+2020-07-08 12:34:00,936 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzWriter
+2020-07-08 12:34:00,942 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeProfileReader
+2020-07-08 12:34:00,963 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeReader
+2020-07-08 12:34:00,971 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeWriter
+2020-07-08 12:34:00,984 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ImageReader
+2020-07-08 12:34:00,992 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LegacyProfileReader
+2020-07-08 12:34:01,001 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalContainerProvider
+2020-07-08 12:34:01,012 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalFileOutputDevice
+2020-07-08 12:34:01,021 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MachineSettingsAction
+2020-07-08 12:34:01,029 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ModelChecker
+2020-07-08 12:34:01,038 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MonitorStage
+2020-07-08 12:34:01,055 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PerObjectSettingsTool
+2020-07-08 12:34:01,066 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PostProcessingPlugin
+2020-07-08 12:34:01,074 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PrepareStage
+2020-07-08 12:34:01,081 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PreviewStage
+2020-07-08 12:34:01,092 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RemovableDriveOutputDevice
+2020-07-08 12:34:01,100 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SentryLogger
+2020-07-08 12:34:01,168 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimulationView
+2020-07-08 12:34:01,180 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SliceInfoPlugin
+2020-07-08 12:34:01,194 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SolidView
+2020-07-08 12:34:01,205 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SupportEraser
+2020-07-08 12:34:01,243 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:34:01,245 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:34:01,248 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:34:01,250 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:34:01,253 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:34:01,255 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:34:01,257 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:34:01,259 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:34:01,264 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin Toolbox
+2020-07-08 12:34:01,274 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin CameraTool
+2020-07-08 12:34:01,285 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MirrorTool
+2020-07-08 12:34:01,297 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RotateTool
+2020-07-08 12:34:01,311 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ScaleTool
+2020-07-08 12:34:01,318 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SelectionTool
+2020-07-08 12:34:01,331 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TranslateTool
+2020-07-08 12:34:01,339 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TrimeshReader
+2020-07-08 12:34:01,353 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPReader
+2020-07-08 12:34:01,365 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPWriter
+2020-07-08 12:34:01,475 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UM3NetworkPrinting
+2020-07-08 12:34:01,507 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin USBPrinting
+2020-07-08 12:34:01,515 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UltimakerMachineActions
+2020-07-08 12:34:01,524 - INFO - [Thread-1] UpdateChecker.UpdateCheckerJob.run [40]: Checking for new version of cura
+2020-07-08 12:34:01,526 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UpdateChecker
+2020-07-08 12:34:01,550 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade21to22
+2020-07-08 12:34:01,558 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade22to24
+2020-07-08 12:34:01,568 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade25to26
+2020-07-08 12:34:01,576 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade26to27
+2020-07-08 12:34:01,585 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade27to30
+2020-07-08 12:34:01,593 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade30to31
+2020-07-08 12:34:01,601 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade32to33
+2020-07-08 12:34:01,607 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade33to34
+2020-07-08 12:34:01,616 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade34to35
+2020-07-08 12:34:01,623 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade35to40
+2020-07-08 12:34:01,631 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade40to41
+2020-07-08 12:34:01,641 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade41to42
+2020-07-08 12:34:01,649 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade42to43
+2020-07-08 12:34:01,660 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade43to44
+2020-07-08 12:34:01,669 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade44to45
+2020-07-08 12:34:01,677 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade45to46
+2020-07-08 12:34:01,685 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade46to47
+2020-07-08 12:34:01,692 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimpleView
+2020-07-08 12:34:01,711 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin X3DReader
+2020-07-08 12:34:01,718 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XRayView
+2020-07-08 12:34:01,740 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XmlMaterialProfile
+2020-07-08 12:34:01,743 - DEBUG - [MainThread] UM.PluginRegistry.loadPlugins [374]: Loading all plugins took 1.118171215057373 seconds
+2020-07-08 12:34:01,750 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [160]: Looking for old configuration files to upgrade.
+2020-07-08 12:34:01,758 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [226]: The preferences file cannot be found or it is corrupted, so we will use default values
+2020-07-08 12:34:01,761 - INFO - [MainThread] UM.Qt.QtApplication.startSplashWindowPhase [235]: The preferences file 'None' cannot be found, will use default values
+2020-07-08 12:34:04,748 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [360]: Loading metadata into container registry took 2.9644718170166016 seconds
+2020-07-08 12:34:05,159 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [111]: Select build plate: 0
+2020-07-08 12:34:05,165 - INFO - [MainThread] cura.CuraApplication.run [751]: Initializing machine error checker
+2020-07-08 12:34:05,169 - INFO - [MainThread] cura.CuraApplication.run [756]: Initializing machine manager
+2020-07-08 12:34:05,174 - INFO - [MainThread] cura.CuraApplication.run [761]: Initializing container manager
+2020-07-08 12:34:05,282 - DEBUG - [MainThread] UM.Scene.Camera._preferencesChanged [255]: Changing perspective mode to perspective.
+2020-07-08 12:34:05,333 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [158]: Loading theme file: /tmp/.mount_UltimaEuOMSh/usr/bin/resources/themes/cura-light/theme.json
+2020-07-08 12:34:06,021 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [231]: Loaded theme /tmp/.mount_UltimaEuOMSh/usr/bin/resources/themes/cura-light
+2020-07-08 12:34:07,590 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [311]: Creating post processing plugin view.
+2020-07-08 12:34:07,595 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: BQ_PauseAtHeight
+2020-07-08 12:34:07,600 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: ChangeAtZ
+2020-07-08 12:34:07,603 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: ColorMix
+2020-07-08 12:34:07,604 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2020-07-08 12:34:07,606 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: DisplayRemainingTimeOnLCD
+2020-07-08 12:34:07,607 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: FilamentChange
+2020-07-08 12:34:07,609 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: InsertAtLayerChange
+2020-07-08 12:34:07,613 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: PauseAtHeight
+2020-07-08 12:34:07,614 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: PauseAtHeightRepRapFirmwareDuet
+2020-07-08 12:34:07,617 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: PauseAtHeightforRepetier
+2020-07-08 12:34:07,619 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: RetractContinue
+2020-07-08 12:34:07,620 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: SearchAndReplace
+2020-07-08 12:34:07,627 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: Stretch
+2020-07-08 12:34:07,629 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: TimeLapse
+2020-07-08 12:34:07,630 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [180]: Begin loading of script: UsePreviousProbeMeasurements
+2020-07-08 12:34:07,831 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [321]: Post processing view created.
+2020-07-08 12:34:08,568 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [89]: There was no auth data or access token
+2020-07-08 12:34:08,571 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [89]: There was no auth data or access token
+2020-07-08 12:34:08,575 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [89]: There was no auth data or access token
+2020-07-08 12:34:09,191 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/Dialogs/WorkspaceSummaryDialog.qml:146: TypeError: Cannot read property 'extruderList' of null
+2020-07-08 12:34:09,194 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/PrintSetupSelector/Custom/CustomPrintSetup.qml:76:29: Unable to assign null to double
+2020-07-08 12:34:09,205 - DEBUG - [MainThread] UM.Controller.setActiveStage [180]: Setting active stage to PrepareStage
+2020-07-08 12:34:09,354 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:09,360 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/Menus/ConfigurationMenu/ConfigurationMenu.qml:143: TypeError: Cannot read property 'hasRemoteConnection' of null
+2020-07-08 12:34:09,385 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/Menus/ConfigurationMenu/ConfigurationMenu.qml:47: TypeError: Cannot read property 'hasMaterials' of null
+2020-07-08 12:34:09,388 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/Menus/ConfigurationMenu/ConfigurationMenu.qml:118: TypeError: Cannot read property 'hasMaterials' of null
+2020-07-08 12:34:09,390 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/ActionButton.qml:101: ReferenceError: contentWidth is not defined
+2020-07-08 12:34:09,393 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/ActionButton.qml:101: ReferenceError: contentWidth is not defined
+2020-07-08 12:34:09,396 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/Menus/ConfigurationMenu/CustomConfiguration.qml:247: TypeError: Cannot read property 'hasMaterials' of null
+2020-07-08 12:34:09,399 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/Menus/ConfigurationMenu/CustomConfiguration.qml:308: TypeError: Cannot read property 'hasVariants' of null
+2020-07-08 12:34:09,402 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaEuOMSh/usr/bin/resources/qml/Menus/ConfigurationMenu/ConfigurationMenu.qml:35: TypeError: Cannot read property 'hasMaterials' of null
+2020-07-08 12:34:09,498 - DEBUG - [MainThread] UM.Controller.setActiveView [108]: Setting active view to SolidView
+2020-07-08 12:34:09,501 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [111]: Creating model checker view.
+2020-07-08 12:34:09,517 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [120]: Model checker view created.
+2020-07-08 12:34:09,517 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [71]: Creating dialog [MoreInfoWindow.qml]
+2020-07-08 12:34:09,537 - DEBUG - [MainThread] Toolbox.src.Toolbox._makeRequestByType [542]: Requesting [updates] metadata from server.
+2020-07-08 12:34:09,542 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [112]: No auth data to retrieve the access_token from
+2020-07-08 12:34:09,545 - WARNING - [MainThread] UM.Logger.warning [128]: Cannot add authorization to Cloud Api request
+2020-07-08 12:34:09,554 - DEBUG - [MainThread] cura.CuraApplication.run [799]: Booting Cura took 9.371806144714355 seconds
+2020-07-08 12:34:09,564 - INFO - [MainThread] UM.TaskManagement.HttpRequestManager._processRequest [346]: Request [3579cc6e00614857ae2fffd4c35d5eab] started
+2020-07-08 12:34:09,567 - DEBUG - [MainThread] UM.TaskManagement.HttpRequestManager._processNextRequestsInQueue [317]: No more requests to process, stop
+2020-07-08 12:34:09,576 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:34:09,579 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [39]: No active GlobalStack, set CustomQualityProfilesDropDownMenuModel as empty.
+2020-07-08 12:34:09,582 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:34:09,586 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [75]: No active GlobalStack, set quality profile model as empty.
+2020-07-08 12:34:09,832 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [207]: Support for Vertex Array Objects: True
+2020-07-08 12:34:09,845 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [112]: Initialized OpenGL subsystems.
+2020-07-08 12:34:09,848 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [113]: OpenGL Version:  4.1.0 NVIDIA 435.21
+2020-07-08 12:34:09,852 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [114]: OpenGL Vendor:   NVIDIA Corporation
+2020-07-08 12:34:09,855 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [115]: OpenGL Renderer: Quadro P500/PCIe/SSE2
+2020-07-08 12:34:09,859 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [116]: GLSL Version:    4.0.0
+2020-07-08 12:34:09,863 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/default.shader]...
+2020-07-08 12:34:09,913 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/selection.shader]...
+2020-07-08 12:34:09,926 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/select_face.shader]...
+2020-07-08 12:34:09,936 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/default.shader]...
+2020-07-08 12:34:09,941 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/composite.shader]...
+2020-07-08 12:34:09,959 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/overhang.shader]...
+2020-07-08 12:34:09,978 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/striped.shader]...
+2020-07-08 12:34:09,997 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/transparent_object.shader]...
+2020-07-08 12:34:10,010 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/striped.shader]...
+2020-07-08 12:34:10,016 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/xray.shader]...
+2020-07-08 12:34:10,026 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/xray_composite.shader]...
+2020-07-08 12:34:10,045 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/platform.shader]...
+2020-07-08 12:34:10,063 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/xray.shader]...
+2020-07-08 12:34:10,135 - INFO - [MainThread] UM.TaskManagement.HttpRequestManager._onRequestFinished [408]: Request [3579cc6e00614857ae2fffd4c35d5eab] finished.
+2020-07-08 12:34:10,137 - DEBUG - [MainThread] UM.TaskManagement.HttpRequestManager._processNextRequestsInQueue [317]: No more requests to process, stop
+2020-07-08 12:34:19,726 - DEBUG - [MainThread] cura.AutoSave._onTimeout [60]: Autosaving preferences, instances and profiles
+2020-07-08 12:34:21,393 - INFO - [MainThread] cura.CuraApplication.writeToLog [570]: User accepted the User-Agreement.
+2020-07-08 12:34:27,765 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [358]: Trying to add a machine with the definition id [ultimaker_s5]
+2020-07-08 12:34:28,074 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition ultimaker_s5 failed to pickle.
+2020-07-08 12:34:29,702 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [106]: Adding container tree for ultimaker_s5 took 1.624704360961914 seconds.
+2020-07-08 12:34:29,841 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:34:29,899 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[ultimaker_s5_extruder_left #2] added to [Ultimaker S5] at position [0]
+2020-07-08 12:34:29,906 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:34:29,945 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[ultimaker_s5_extruder_right #2] added to [Ultimaker S5] at position [1]
+2020-07-08 12:34:29,949 - WARNING - [MainThread] UM.Decorators.deprecated_function [23]: <function GlobalStack.extruders at 0x40bdf98> is deprecated (since 4.4): Please use extruderList instead.
+2020-07-08 12:34:29,953 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [ultimaker_s5]
+2020-07-08 12:34:29,990 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [ultimaker_s5_extruder_right #2] has already been added to this stack [Ultimaker S5]
+2020-07-08 12:34:29,993 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [ultimaker_s5_extruder_right #2] has already been registered on machine [Ultimaker S5], not doing anything
+2020-07-08 12:34:29,996 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [ultimaker_s5_extruder_left #2] has already been added to this stack [Ultimaker S5]
+2020-07-08 12:34:29,998 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [ultimaker_s5_extruder_left #2] has already been registered on machine [Ultimaker S5], not doing anything
+2020-07-08 12:34:30,002 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-08 12:34:30,109 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:30,135 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:30,177 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:30,181 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:30,186 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:30,218 - DEBUG - [MainThread] cura.UI.WelcomePagesModel.goToNextPage [132]: Page [machine_actions] should not be displayed, look for the next page.
+2020-07-08 12:34:30,611 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [92]: You have a(n) Ultimaker S5 in the printer list. Do firmware-check.
+2020-07-08 12:34:30,655 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:34:30,790 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [109]: Reading firmware version of Ultimaker S5: checked = 0.0.0 - latest = 5.7.2
+2020-07-08 12:34:30,804 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:34:30,812 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:34:30,844 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/default.shader]...
+2020-07-08 12:34:30,849 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaEuOMSh/usr/bin/resources/shaders/grid.shader]...
+2020-07-08 12:34:31,058 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:34:31,062 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:34:31,948 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 1.3s
+2020-07-08 12:34:38,749 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [358]: Trying to add a machine with the definition id [ultimaker_s3]
+2020-07-08 12:34:39,198 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition ultimaker_s3 failed to pickle.
+2020-07-08 12:34:41,074 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [106]: Adding container tree for ultimaker_s3 took 1.8707752227783203 seconds.
+2020-07-08 12:34:41,113 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:34:41,159 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[ultimaker_s3_extruder_left #2] added to [Ultimaker S3] at position [0]
+2020-07-08 12:34:41,166 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:34:41,206 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[ultimaker_s3_extruder_right #2] added to [Ultimaker S3] at position [1]
+2020-07-08 12:34:41,213 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [ultimaker_s3]
+2020-07-08 12:34:41,250 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [ultimaker_s3_extruder_right #2] has already been added to this stack [Ultimaker S3]
+2020-07-08 12:34:41,253 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [ultimaker_s3_extruder_right #2] has already been registered on machine [Ultimaker S3], not doing anything
+2020-07-08 12:34:41,256 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [ultimaker_s3_extruder_left #2] has already been added to this stack [Ultimaker S3]
+2020-07-08 12:34:41,259 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [ultimaker_s3_extruder_left #2] has already been registered on machine [Ultimaker S3], not doing anything
+2020-07-08 12:34:41,263 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-08 12:34:41,372 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:41,399 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:41,447 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:41,451 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:41,456 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:41,462 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:41,467 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:41,490 - DEBUG - [MainThread] cura.UI.WelcomePagesModel.goToNextPage [132]: Page [machine_actions] should not be displayed, look for the next page.
+2020-07-08 12:34:41,640 - INFO - [Thread-6] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [92]: You have a(n) Ultimaker S3 in the printer list. Do firmware-check.
+2020-07-08 12:34:41,668 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:34:41,807 - INFO - [Thread-6] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [109]: Reading firmware version of Ultimaker S3: checked = 0.0.0 - latest = 5.7.2
+2020-07-08 12:34:41,820 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:34:41,828 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:34:42,007 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:34:42,011 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:34:42,904 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 1.2s
+2020-07-08 12:34:51,727 - DEBUG - [MainThread] cura.AutoSave._onTimeout [60]: Autosaving preferences, instances and profiles
+2020-07-08 12:34:53,955 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [358]: Trying to add a machine with the definition id [ultimaker3]
+2020-07-08 12:34:54,397 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition ultimaker3 failed to pickle.
+2020-07-08 12:34:56,194 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [106]: Adding container tree for ultimaker3 took 1.792262315750122 seconds.
+2020-07-08 12:34:56,230 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:34:56,275 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[ultimaker3_extruder_left #2] added to [Ultimaker 3] at position [0]
+2020-07-08 12:34:56,281 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:34:56,320 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[ultimaker3_extruder_right #2] added to [Ultimaker 3] at position [1]
+2020-07-08 12:34:56,327 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [ultimaker3]
+2020-07-08 12:34:56,363 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [ultimaker3_extruder_left #2] has already been added to this stack [Ultimaker 3]
+2020-07-08 12:34:56,366 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [ultimaker3_extruder_left #2] has already been registered on machine [Ultimaker 3], not doing anything
+2020-07-08 12:34:56,368 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [ultimaker3_extruder_right #2] has already been added to this stack [Ultimaker 3]
+2020-07-08 12:34:56,371 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [ultimaker3_extruder_right #2] has already been registered on machine [Ultimaker 3], not doing anything
+2020-07-08 12:34:56,374 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-08 12:34:56,478 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:56,504 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:56,553 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:56,557 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:56,562 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:56,568 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:56,573 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:34:56,633 - DEBUG - [MainThread] cura.UI.WelcomePagesModel.goToNextPage [132]: Page [machine_actions] should not be displayed, look for the next page.
+2020-07-08 12:34:57,234 - INFO - [Thread-8] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [92]: You have a(n) Ultimaker 3 in the printer list. Do firmware-check.
+2020-07-08 12:34:57,263 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:34:57,416 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:34:57,424 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:34:57,435 - INFO - [Thread-8] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [109]: Reading firmware version of Ultimaker 3: checked = 0.0.0 - latest = 5.2.11-20190503.0
+2020-07-08 12:34:57,724 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:34:57,728 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:34:58,527 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 1.3s
+2020-07-08 12:35:03,844 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [358]: Trying to add a machine with the definition id [ultimaker2_plus]
+2020-07-08 12:35:04,330 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition ultimaker2_plus failed to pickle.
+2020-07-08 12:35:05,654 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [106]: Adding container tree for ultimaker2_plus took 1.3201184272766113 seconds.
+2020-07-08 12:35:05,727 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[ultimaker2_plus_extruder_0 #2] added to [Ultimaker 2+] at position [0]
+2020-07-08 12:35:05,734 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [ultimaker2_plus]
+2020-07-08 12:35:05,767 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [ultimaker2_plus_extruder_0 #2] has already been added to this stack [Ultimaker 2+]
+2020-07-08 12:35:05,770 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [ultimaker2_plus_extruder_0 #2] has already been registered on machine [Ultimaker 2+], not doing anything
+2020-07-08 12:35:05,774 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-08 12:35:05,908 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:05,956 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:05,962 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:05,967 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:05,974 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:06,015 - DEBUG - [MainThread] cura.UI.WelcomePagesModel.goToNextPage [132]: Page [machine_actions] should not be displayed, look for the next page.
+2020-07-08 12:35:06,216 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [74]: No machine with name Ultimaker 2+ in list of firmware to check.
+2020-07-08 12:35:06,244 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:35:06,394 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:35:06,402 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:35:06,626 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:35:06,630 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:35:07,014 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 0.8s
+2020-07-08 12:35:15,727 - DEBUG - [MainThread] cura.AutoSave._onTimeout [60]: Autosaving preferences, instances and profiles
+2020-07-08 12:35:20,017 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [358]: Trying to add a machine with the definition id [custom]
+2020-07-08 12:35:20,277 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition custom failed to pickle.
+2020-07-08 12:35:20,613 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [106]: Adding container tree for custom took 0.3314223289489746 seconds.
+2020-07-08 12:35:20,652 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [102]: Could not find preferred nozzle . Falling back to empty.
+2020-07-08 12:35:20,672 - WARNING - [MainThread] UM.Settings.InstanceContainer.setCachedValues [157]: Unable set values to be lazy loaded when values are already loaded 
+2020-07-08 12:35:20,732 - WARNING - [MainThread] UM.Settings.InstanceContainer.setCachedValues [157]: Unable set values to be lazy loaded when values are already loaded 
+2020-07-08 12:35:20,782 - WARNING - [MainThread] UM.Settings.InstanceContainer.setCachedValues [157]: Unable set values to be lazy loaded when values are already loaded 
+2020-07-08 12:35:20,812 - WARNING - [MainThread] UM.Settings.InstanceContainer.setCachedValues [157]: Unable set values to be lazy loaded when values are already loaded 
+2020-07-08 12:35:20,853 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[custom_extruder_1 #2] added to [Custom FFF printer] at position [0]
+2020-07-08 12:35:20,864 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [102]: Could not find preferred nozzle . Falling back to empty.
+2020-07-08 12:35:20,901 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[custom_extruder_2 #2] added to [Custom FFF printer] at position [1]
+2020-07-08 12:35:20,911 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [102]: Could not find preferred nozzle . Falling back to empty.
+2020-07-08 12:35:20,948 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[custom_extruder_3 #2] added to [Custom FFF printer] at position [2]
+2020-07-08 12:35:20,958 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [102]: Could not find preferred nozzle . Falling back to empty.
+2020-07-08 12:35:20,994 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[custom_extruder_4 #2] added to [Custom FFF printer] at position [3]
+2020-07-08 12:35:21,004 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [102]: Could not find preferred nozzle . Falling back to empty.
+2020-07-08 12:35:21,042 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[custom_extruder_5 #2] added to [Custom FFF printer] at position [4]
+2020-07-08 12:35:21,051 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [102]: Could not find preferred nozzle . Falling back to empty.
+2020-07-08 12:35:21,088 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[custom_extruder_6 #2] added to [Custom FFF printer] at position [5]
+2020-07-08 12:35:21,098 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [102]: Could not find preferred nozzle . Falling back to empty.
+2020-07-08 12:35:21,134 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[custom_extruder_7 #2] added to [Custom FFF printer] at position [6]
+2020-07-08 12:35:21,144 - WARNING - [MainThread] cura.Settings.CuraStackBuilder.createExtruderStackWithDefaultSetup [102]: Could not find preferred nozzle . Falling back to empty.
+2020-07-08 12:35:21,180 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[custom_extruder_8 #2] added to [Custom FFF printer] at position [7]
+2020-07-08 12:35:21,187 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [custom]
+2020-07-08 12:35:21,195 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [custom_extruder_8 #2] has already been added to this stack [Custom FFF printer]
+2020-07-08 12:35:21,198 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [custom_extruder_8 #2] has already been registered on machine [Custom FFF printer], not doing anything
+2020-07-08 12:35:21,201 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [custom_extruder_1 #2] has already been added to this stack [Custom FFF printer]
+2020-07-08 12:35:21,204 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [custom_extruder_1 #2] has already been registered on machine [Custom FFF printer], not doing anything
+2020-07-08 12:35:21,207 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [custom_extruder_4 #2] has already been added to this stack [Custom FFF printer]
+2020-07-08 12:35:21,210 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [custom_extruder_4 #2] has already been registered on machine [Custom FFF printer], not doing anything
+2020-07-08 12:35:21,213 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [custom_extruder_5 #2] has already been added to this stack [Custom FFF printer]
+2020-07-08 12:35:21,216 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [custom_extruder_5 #2] has already been registered on machine [Custom FFF printer], not doing anything
+2020-07-08 12:35:21,219 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [custom_extruder_6 #2] has already been added to this stack [Custom FFF printer]
+2020-07-08 12:35:21,221 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [custom_extruder_6 #2] has already been registered on machine [Custom FFF printer], not doing anything
+2020-07-08 12:35:21,224 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [custom_extruder_3 #2] has already been added to this stack [Custom FFF printer]
+2020-07-08 12:35:21,227 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [custom_extruder_3 #2] has already been registered on machine [Custom FFF printer], not doing anything
+2020-07-08 12:35:21,230 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [custom_extruder_2 #2] has already been added to this stack [Custom FFF printer]
+2020-07-08 12:35:21,232 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [custom_extruder_2 #2] has already been registered on machine [Custom FFF printer], not doing anything
+2020-07-08 12:35:21,235 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [custom_extruder_7 #2] has already been added to this stack [Custom FFF printer]
+2020-07-08 12:35:21,237 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [custom_extruder_7 #2] has already been registered on machine [Custom FFF printer], not doing anything
+2020-07-08 12:35:21,241 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-08 12:35:21,263 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:21,478 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:21,483 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:21,489 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:21,716 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [74]: No machine with name Custom FFF printer in list of firmware to check.
+2020-07-08 12:35:21,754 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:35:21,938 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:35:21,948 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:35:22,220 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:35:22,223 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:35:22,612 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 0.9s
+2020-07-08 12:35:25,173 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:25,214 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:25,218 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:25,224 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:25,356 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:35:25,359 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:35:25,442 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:35:25,847 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 0.4s
+2020-07-08 12:35:26,171 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:26,228 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:26,233 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:26,240 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:26,327 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:35:26,331 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:35:26,421 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:35:26,833 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 0.4s
+2020-07-08 12:35:31,675 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:31,711 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:31,714 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:31,721 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:35:31,867 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:35:31,870 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:35:32,028 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:35:32,419 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 0.4s
+2020-07-08 12:35:41,729 - DEBUG - [MainThread] cura.AutoSave._onTimeout [60]: Autosaving preferences, instances and profiles
+2020-07-08 12:36:10,796 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [358]: Trying to add a machine with the definition id [creality_cr10]
+2020-07-08 12:36:11,135 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition creality_cr10 failed to pickle.
+2020-07-08 12:36:12,006 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [106]: Adding container tree for creality_cr10 took 0.8665404319763184 seconds.
+2020-07-08 12:36:12,092 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[creality_base_extruder_0 #2] added to [Creality CR-10] at position [0]
+2020-07-08 12:36:12,098 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [creality_cr10]
+2020-07-08 12:36:12,374 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition creality_base failed to pickle.
+2020-07-08 12:36:12,435 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [creality_base_extruder_0 #2] has already been added to this stack [Creality CR-10]
+2020-07-08 12:36:12,438 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [creality_base_extruder_0 #2] has already been registered on machine [Creality CR-10], not doing anything
+2020-07-08 12:36:12,443 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-08 12:36:12,529 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:12,589 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:12,637 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:12,643 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:12,683 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [74]: No machine with name Creality CR-10 in list of firmware to check.
+2020-07-08 12:36:12,725 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:36:13,021 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:36:13,029 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:36:13,374 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:36:13,377 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:36:13,701 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 1.0s
+2020-07-08 12:36:22,727 - DEBUG - [MainThread] cura.AutoSave._onTimeout [60]: Autosaving preferences, instances and profiles
+2020-07-08 12:36:37,055 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [358]: Trying to add a machine with the definition id [creality_cr10spro]
+2020-07-08 12:36:37,612 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition creality_cr10spro failed to pickle.
+2020-07-08 12:36:38,514 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [106]: Adding container tree for creality_cr10spro took 0.8968613147735596 seconds.
+2020-07-08 12:36:38,577 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[creality_base_extruder_0 #3] added to [Creality CR-10S Pro] at position [0]
+2020-07-08 12:36:38,583 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [creality_cr10spro]
+2020-07-08 12:36:38,591 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [creality_base_extruder_0 #3] has already been added to this stack [Creality CR-10S Pro]
+2020-07-08 12:36:38,594 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [creality_base_extruder_0 #3] has already been registered on machine [Creality CR-10S Pro], not doing anything
+2020-07-08 12:36:38,598 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-08 12:36:38,690 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:38,741 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:38,788 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:38,797 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:38,807 - INFO - [Thread-2] STLReader.STLReader.load_file [60]: Using legacy code to load STL data.
+2020-07-08 12:36:38,950 - DEBUG - [Thread-2] UM.Mesh.MeshData.calculateNormalsFromVertices [548]: Calculating normals took 0.002535581588745117 seconds
+2020-07-08 12:36:38,952 - DEBUG - [Thread-2] STLReader.STLReader._read [104]: Loaded a mesh with 52032 vertices
+2020-07-08 12:36:38,970 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [74]: No machine with name Creality CR-10S Pro in list of firmware to check.
+2020-07-08 12:36:39,013 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:36:39,204 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:36:39,212 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:36:39,765 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 0.8s
+2020-07-08 12:36:48,729 - DEBUG - [MainThread] cura.AutoSave._onTimeout [60]: Autosaving preferences, instances and profiles
+2020-07-08 12:36:56,692 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [358]: Trying to add a machine with the definition id [creality_ender3]
+2020-07-08 12:36:57,047 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition creality_ender3 failed to pickle.
+2020-07-08 12:36:58,050 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [106]: Adding container tree for creality_ender3 took 0.9984869956970215 seconds.
+2020-07-08 12:36:58,114 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[creality_base_extruder_0 #4] added to [Creality Ender-3] at position [0]
+2020-07-08 12:36:58,121 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [creality_ender3]
+2020-07-08 12:36:58,129 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [creality_base_extruder_0 #4] has already been added to this stack [Creality Ender-3]
+2020-07-08 12:36:58,132 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [creality_base_extruder_0 #4] has already been registered on machine [Creality Ender-3], not doing anything
+2020-07-08 12:36:58,136 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-08 12:36:58,224 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:58,272 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:58,321 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:58,331 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:36:58,340 - INFO - [Thread-3] STLReader.STLReader.load_file [60]: Using legacy code to load STL data.
+2020-07-08 12:36:58,377 - DEBUG - [Thread-3] UM.Mesh.MeshData.calculateNormalsFromVertices [548]: Calculating normals took 0.0005068778991699219 seconds
+2020-07-08 12:36:58,378 - DEBUG - [Thread-3] STLReader.STLReader._read [104]: Loaded a mesh with 8520 vertices
+2020-07-08 12:36:58,398 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [74]: No machine with name Creality Ender-3 in list of firmware to check.
+2020-07-08 12:36:58,438 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:36:58,635 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:36:58,643 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:36:59,188 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 0.8s
+2020-07-08 12:37:08,727 - DEBUG - [MainThread] cura.AutoSave._onTimeout [60]: Autosaving preferences, instances and profiles
+2020-07-08 12:37:21,476 - INFO - [MainThread] cura.Settings.MachineManager.addMachine [358]: Trying to add a machine with the definition id [creality_ender5]
+2020-07-08 12:37:21,819 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [286]: The definition cache for definition creality_ender5 failed to pickle.
+2020-07-08 12:37:22,874 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [106]: Adding container tree for creality_ender5 took 1.0494427680969238 seconds.
+2020-07-08 12:37:22,936 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [184]: Extruder[creality_base_extruder_0 #5] added to [Creality Ender-5] at position [0]
+2020-07-08 12:37:22,943 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [creality_ender5]
+2020-07-08 12:37:22,952 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [179]: Extruder [creality_base_extruder_0 #5] has already been added to this stack [Creality Ender-5]
+2020-07-08 12:37:22,955 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [156]: Extruder [creality_base_extruder_0 #5] has already been registered on machine [Creality Ender-5], not doing anything
+2020-07-08 12:37:22,959 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-08 12:37:23,046 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:37:23,095 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:37:23,146 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:37:23,157 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:37:23,193 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [74]: No machine with name Creality Ender-5 in list of firmware to check.
+2020-07-08 12:37:23,238 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [135]: New error check scheduled.
+2020-07-08 12:37:23,436 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [34]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:37:23,444 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [63]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:37:23,986 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [187]: Error check finished, result = False, time = 0.7s
+2020-07-08 12:37:32,728 - DEBUG - [MainThread] cura.AutoSave._onTimeout [60]: Autosaving preferences, instances and profiles

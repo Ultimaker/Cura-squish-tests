@@ -12,13 +12,14 @@ import time
 import names
 import gettext
 import shutil
-import sys #To get the current operating system.
+#To get the current operating system
+import sys
 
 
 
 class PageObject:
     def __init__(self):
-        self.cura_version = '4.5'
+        self.cura_version = '4.7'
         self.cura_resources = CuraResources(self.cura_version)
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
 
@@ -49,8 +50,8 @@ class PageObject:
         startApplication(aut)
         
         waitForObject(names.mwi, 50000)
-       # if object.exists(names.mwi_changelog):
-            #self.click(names.mwi_changelog_btn_close)
+        #if object.exists(names.mwi_changelog):
+        #    self.click(names.mwi_changelog_btn_close)
         
     def startCuraWithArguments(self):
         

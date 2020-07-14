@@ -1,0 +1,1085 @@
+2020-07-08 12:39:33,718 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FileLogger
+2020-07-08 12:39:33,729 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdateChecker
+2020-07-08 12:39:33,741 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdater
+2020-07-08 12:39:33,748 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzReader
+2020-07-08 12:39:33,756 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzWriter
+2020-07-08 12:39:33,763 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeProfileReader
+2020-07-08 12:39:33,783 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeReader
+2020-07-08 12:39:33,793 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeWriter
+2020-07-08 12:39:33,806 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ImageReader
+2020-07-08 12:39:33,815 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LegacyProfileReader
+2020-07-08 12:39:33,824 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalContainerProvider
+2020-07-08 12:39:33,838 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalFileOutputDevice
+2020-07-08 12:39:33,847 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MachineSettingsAction
+2020-07-08 12:39:33,857 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ModelChecker
+2020-07-08 12:39:33,867 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MonitorStage
+2020-07-08 12:39:33,885 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PerObjectSettingsTool
+2020-07-08 12:39:33,897 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PostProcessingPlugin
+2020-07-08 12:39:33,906 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PrepareStage
+2020-07-08 12:39:33,956 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PreviewStage
+2020-07-08 12:39:33,969 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RemovableDriveOutputDevice
+2020-07-08 12:39:33,978 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SentryLogger
+2020-07-08 12:39:34,008 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimulationView
+2020-07-08 12:39:34,019 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SliceInfoPlugin
+2020-07-08 12:39:34,033 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SolidView
+2020-07-08 12:39:34,044 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SupportEraser
+2020-07-08 12:39:34,084 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:39:34,087 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:39:34,089 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:39:34,092 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:39:34,095 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:39:34,097 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:39:34,099 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-08 12:39:34,102 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-08 12:39:34,107 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin Toolbox
+2020-07-08 12:39:34,117 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin CameraTool
+2020-07-08 12:39:34,130 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MirrorTool
+2020-07-08 12:39:34,146 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RotateTool
+2020-07-08 12:39:34,159 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ScaleTool
+2020-07-08 12:39:34,169 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SelectionTool
+2020-07-08 12:39:34,182 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TranslateTool
+2020-07-08 12:39:34,191 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TrimeshReader
+2020-07-08 12:39:34,205 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPReader
+2020-07-08 12:39:34,218 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPWriter
+2020-07-08 12:39:34,337 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UM3NetworkPrinting
+2020-07-08 12:39:34,370 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin USBPrinting
+2020-07-08 12:39:34,379 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UltimakerMachineActions
+2020-07-08 12:39:34,391 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UpdateChecker
+2020-07-08 12:39:34,392 - INFO - [Thread-1] UpdateChecker.UpdateCheckerJob.run [40]: Checking for new version of cura
+2020-07-08 12:39:34,415 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade21to22
+2020-07-08 12:39:34,423 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade22to24
+2020-07-08 12:39:34,433 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade25to26
+2020-07-08 12:39:34,443 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade26to27
+2020-07-08 12:39:34,451 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade27to30
+2020-07-08 12:39:34,460 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade30to31
+2020-07-08 12:39:34,469 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade32to33
+2020-07-08 12:39:34,476 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade33to34
+2020-07-08 12:39:34,484 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade34to35
+2020-07-08 12:39:34,492 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade35to40
+2020-07-08 12:39:34,501 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade40to41
+2020-07-08 12:39:34,511 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade41to42
+2020-07-08 12:39:34,520 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade42to43
+2020-07-08 12:39:34,530 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade43to44
+2020-07-08 12:39:34,540 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade44to45
+2020-07-08 12:39:34,549 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade45to46
+2020-07-08 12:39:34,558 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade460to462
+2020-07-08 12:39:34,567 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade462to47
+2020-07-08 12:39:34,576 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimpleView
+2020-07-08 12:39:34,595 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin X3DReader
+2020-07-08 12:39:34,604 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XRayView
+2020-07-08 12:39:34,626 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XmlMaterialProfile
+2020-07-08 12:39:34,633 - DEBUG - [MainThread] UM.PluginRegistry.loadPlugins [373]: Loading all plugins took 1.1956055164337158 seconds
+2020-07-08 12:39:34,640 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [163]: Looking for old configuration files to upgrade.
+2020-07-08 12:39:34,666 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10S+Pro_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,669 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-3_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,671 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_left+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,674 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_1+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,677 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+2%2B_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,679 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_2+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,682 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Custom+FFF+printer_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,685 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker2_plus_extruder_0+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,687 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_left+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,689 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+3_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,692 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_5+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,694 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%234_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,696 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%233_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,699 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_right+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,702 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_left+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,704 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-5_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,706 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,709 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_right+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,711 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S5_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,713 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_8+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,716 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S3_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,718 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_4+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,721 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_6+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,723 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_7+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,725 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_3+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,728 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,730 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_right+%232_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,732 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%235_settings.inst.cfg] with type [definition_changes] and source version [4000013]
+2020-07-08 12:39:34,749 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_left+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,751 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_right+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,754 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%235.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,756 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_8+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,759 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_5+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,761 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_right+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,763 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,766 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_7+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,768 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_3+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,770 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_right+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,773 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_4+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,775 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_left+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,777 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%234.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,780 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%233.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,782 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker2_plus_extruder_0+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,785 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_left+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,788 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_2+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,790 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_6+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,792 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_1+%232.extruder.cfg] with type [extruder_train] and source version [4000013]
+2020-07-08 12:39:34,802 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-3.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,805 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S3.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,807 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+2%2B.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,809 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+3.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,812 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-5.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,814 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,817 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S5.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,820 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10S+Pro.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,822 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Custom+FFF+printer.global.cfg] with type [machine_stack] and source version [4000013]
+2020-07-08 12:39:34,827 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./cura.cfg] with type [preferences] and source version [6000013]
+2020-07-08 12:39:34,850 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker2_plus_extruder_0+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,852 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_left+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,855 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_left+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,857 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_4+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,859 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+3_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,862 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,864 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_right+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,867 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S3_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,869 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_5+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,871 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_3+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,873 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%233_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,876 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-3_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,878 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%235_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,881 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker3_extruder_right+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,883 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_2+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,886 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s5_extruder_right+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,888 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+Ender-5_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,891 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Creality+CR-10S+Pro_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,893 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Custom+FFF+printer_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,895 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./ultimaker_s3_extruder_left+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,898 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+2%2B_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,900 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_6+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,903 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_8+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,905 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%234_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,907 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./Ultimaker+S5_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,910 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./creality_base_extruder_0+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,912 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_7+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,915 - INFO - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [336]: Create upgrade task for configuration file [./custom_extruder_1+%232_user.inst.cfg] with type [user] and source version [4000013]
+2020-07-08 12:39:34,933 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10S+Pro_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,944 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-3_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,953 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_left+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,961 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_1+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,969 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+2%2B_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,976 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_2+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,986 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Custom+FFF+printer_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:34,995 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker2_plus_extruder_0+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,007 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_left+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,015 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+3_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,024 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_5+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,032 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%234_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,042 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%233_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,051 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_right+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,059 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_left+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,067 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-5_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,075 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,083 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_right+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,093 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S5_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,102 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_8+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,111 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S3_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,125 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_4+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,138 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_6+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,147 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_7+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,155 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_3+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,164 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,173 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_right+%232_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,181 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%235_settings.inst.cfg to version 4000015.
+2020-07-08 12:39:35,197 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_left+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,208 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_right+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,218 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%235.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,227 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_8+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,235 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_5+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,245 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_right+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,255 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,263 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_7+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,271 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_3+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,286 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_right+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,297 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_4+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,306 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_left+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,324 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%234.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,337 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%233.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,346 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker2_plus_extruder_0+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,354 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_left+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,361 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_2+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,369 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_6+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,378 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_1+%232.extruder.cfg to version 4000015.
+2020-07-08 12:39:35,387 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-3.global.cfg to version 4000015.
+2020-07-08 12:39:35,396 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S3.global.cfg to version 4000015.
+2020-07-08 12:39:35,405 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+2%2B.global.cfg to version 4000015.
+2020-07-08 12:39:35,412 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+3.global.cfg to version 4000015.
+2020-07-08 12:39:35,420 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-5.global.cfg to version 4000015.
+2020-07-08 12:39:35,429 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10.global.cfg to version 4000015.
+2020-07-08 12:39:35,438 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S5.global.cfg to version 4000015.
+2020-07-08 12:39:35,446 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10S+Pro.global.cfg to version 4000015.
+2020-07-08 12:39:35,454 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Custom+FFF+printer.global.cfg to version 4000015.
+2020-07-08 12:39:35,469 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./cura.cfg to version 6000015.
+2020-07-08 12:39:35,483 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker2_plus_extruder_0+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,495 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_left+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,505 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_left+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,516 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_4+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,528 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+3_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,538 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,547 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_right+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,555 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S3_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,570 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_5+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,583 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_3+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,591 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%233_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,604 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-3_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,614 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%235_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,624 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker3_extruder_right+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,631 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_2+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,641 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s5_extruder_right+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,649 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+Ender-5_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,659 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Creality+CR-10S+Pro_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,667 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Custom+FFF+printer_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,678 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./ultimaker_s3_extruder_left+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,688 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+2%2B_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,696 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_6+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,704 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_8+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,712 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%234_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,721 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./Ultimaker+S5_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,731 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./creality_base_extruder_0+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,740 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_7+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,749 - INFO - [MainThread] UM.VersionUpgradeManager._upgradeFile [421]: Upgraded ./custom_extruder_1+%232_user.inst.cfg to version 4000015.
+2020-07-08 12:39:35,752 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [175]: Checking and performing updates took 1.1129798889160156
+2020-07-08 12:39:37,403 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [361]: Loading metadata into container registry took 1.617210865020752 seconds
+2020-07-08 12:39:37,415 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [142]: Select build plate: 0
+2020-07-08 12:39:37,418 - INFO - [MainThread] cura.CuraApplication.run [781]: Initializing machine error checker
+2020-07-08 12:39:37,812 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender5 failed to pickle.
+2020-07-08 12:39:37,822 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [creality_ender5]
+2020-07-08 12:39:38,170 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_base failed to pickle.
+2020-07-08 12:39:38,227 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[creality_base_extruder_0 #5] added to [Creality Ender-5] at position [0]
+2020-07-08 12:39:38,228 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-5 in list of firmware to check.
+2020-07-08 12:39:38,797 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender5 took 0.5618131160736084 seconds.
+2020-07-08 12:39:38,812 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ChangeAtZ
+2020-07-08 12:39:38,815 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ColorMix
+2020-07-08 12:39:38,817 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2020-07-08 12:39:38,818 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayRemainingTimeOnLCD
+2020-07-08 12:39:38,820 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: FilamentChange
+2020-07-08 12:39:38,821 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: InsertAtLayerChange
+2020-07-08 12:39:38,826 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: PauseAtHeight
+2020-07-08 12:39:38,828 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: RetractContinue
+2020-07-08 12:39:38,829 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: SearchAndReplace
+2020-07-08 12:39:38,835 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: Stretch
+2020-07-08 12:39:38,837 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: TimeLapse
+2020-07-08 12:39:38,838 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: UsePreviousProbeMeasurements
+2020-07-08 12:39:38,871 - INFO - [MainThread] cura.CuraApplication.run [786]: Initializing machine manager
+2020-07-08 12:39:38,876 - INFO - [MainThread] cura.CuraApplication.run [791]: Initializing container manager
+2020-07-08 12:39:39,112 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition fdmprinter failed to pickle.
+2020-07-08 12:39:39,122 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-08 12:39:39,145 - DEBUG - [MainThread] UM.Scene.Camera._preferencesChanged [255]: Changing perspective mode to perspective.
+2020-07-08 12:39:39,297 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [158]: Loading theme file: /tmp/.mount_UltimaOjbGZT/usr/bin/resources/themes/cura-light/theme.json
+2020-07-08 12:39:39,944 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [246]: Loaded theme /tmp/.mount_UltimaOjbGZT/usr/bin/resources/themes/cura-light
+2020-07-08 12:39:41,433 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [336]: Creating post processing plugin view.
+2020-07-08 12:39:41,778 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [346]: Post processing view created.
+2020-07-08 12:39:42,530 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-08 12:39:42,941 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-08 12:39:42,944 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-08 12:39:42,964 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:39:43,316 - DEBUG - [MainThread] UM.Controller.setActiveStage [180]: Setting active stage to PrepareStage
+2020-07-08 12:39:43,513 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-08 12:39:43,626 - DEBUG - [MainThread] UM.Controller.setActiveView [108]: Setting active view to SolidView
+2020-07-08 12:39:43,629 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [117]: Creating model checker view.
+2020-07-08 12:39:43,641 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [126]: Model checker view created.
+2020-07-08 12:39:43,642 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [76]: Creating dialog [MoreInfoWindow.qml]
+2020-07-08 12:39:43,677 - DEBUG - [MainThread] Toolbox.src.Toolbox._makeRequestByType [551]: Requesting [updates] metadata from server.
+2020-07-08 12:39:43,684 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [124]: No auth data to retrieve the access_token from
+2020-07-08 12:39:43,688 - WARNING - [MainThread] UM.Logger.warning [128]: Cannot add authorization to Cloud Api request
+2020-07-08 12:39:44,035 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10spro failed to pickle.
+2020-07-08 12:39:44,045 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:44,058 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:44,092 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:44,480 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker2_plus failed to pickle.
+2020-07-08 12:39:44,782 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender3 failed to pickle.
+2020-07-08 12:39:45,090 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker3 failed to pickle.
+2020-07-08 12:39:45,100 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:45,570 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker_s5 failed to pickle.
+2020-07-08 12:39:45,889 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker_s3 failed to pickle.
+2020-07-08 12:39:45,898 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:46,221 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10 failed to pickle.
+2020-07-08 12:39:46,474 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition custom failed to pickle.
+2020-07-08 12:39:46,490 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-08 12:39:46,497 - DEBUG - [MainThread] cura.CuraApplication.run [830]: Booting Cura took 13.528033256530762 seconds
+2020-07-08 12:39:46,520 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10S Pro in list of firmware to check.
+2020-07-08 12:39:46,531 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Ultimaker 2+ in list of firmware to check.
+2020-07-08 12:39:46,533 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-3 in list of firmware to check.
+2020-07-08 12:39:46,540 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker 3 in the printer list. Do firmware-check.
+2020-07-08 12:39:46,545 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S5 in the printer list. Do firmware-check.
+2020-07-08 12:39:46,556 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10 in list of firmware to check.
+2020-07-08 12:39:46,556 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S3 in the printer list. Do firmware-check.
+2020-07-08 12:39:46,558 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Custom FFF printer in list of firmware to check.
+2020-07-08 12:39:46,830 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker 3: checked = 5.2.11-20190503.0 - latest = 5.2.11-20190503.0
+2020-07-08 12:39:46,837 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:39:46,849 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S3: checked = 5.7.2 - latest = 5.7.2
+2020-07-08 12:39:46,851 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S5: checked = 5.7.2 - latest = 5.7.2
+2020-07-08 12:39:46,855 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:39:47,020 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-08 12:39:47,030 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-08 12:39:47,695 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_cr10spro took 0.6920812129974365 seconds.
+2020-07-08 12:39:47,848 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [210]: Support for Vertex Array Objects: True
+2020-07-08 12:39:47,861 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [112]: Initialized OpenGL subsystems.
+2020-07-08 12:39:47,864 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [113]: OpenGL Version:  4.1.0 NVIDIA 435.21
+2020-07-08 12:39:47,867 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [114]: OpenGL Vendor:   NVIDIA Corporation
+2020-07-08 12:39:47,870 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [115]: OpenGL Renderer: Quadro P500/PCIe/SSE2
+2020-07-08 12:39:47,873 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [116]: GLSL Version:    4.0.0
+2020-07-08 12:39:47,877 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/default.shader]...
+2020-07-08 12:39:47,924 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/selection.shader]...
+2020-07-08 12:39:47,937 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/select_face.shader]...
+2020-07-08 12:39:47,949 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/default.shader]...
+2020-07-08 12:39:47,954 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/composite.shader]...
+2020-07-08 12:39:47,971 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/overhang.shader]...
+2020-07-08 12:39:47,990 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/striped.shader]...
+2020-07-08 12:39:48,007 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/transparent_object.shader]...
+2020-07-08 12:39:48,021 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/striped.shader]...
+2020-07-08 12:39:48,026 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/xray.shader]...
+2020-07-08 12:39:48,036 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/xray_composite.shader]...
+2020-07-08 12:39:48,056 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/default.shader]...
+2020-07-08 12:39:48,060 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/grid.shader]...
+2020-07-08 12:39:48,077 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/platform.shader]...
+2020-07-08 12:39:48,097 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaOjbGZT/usr/bin/resources/shaders/xray.shader]...
+2020-07-08 12:39:49,264 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker2_plus took 1.0645434856414795 seconds.
+2020-07-08 12:39:49,467 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 10.3s
+2020-07-08 12:39:50,515 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender3 took 0.740546703338623 seconds.
+2020-07-08 12:39:52,979 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker3 took 1.4583992958068848 seconds.
+2020-07-08 12:39:55,427 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker_s5 took 1.9431419372558594 seconds.
+2020-07-08 12:39:56,735 - DEBUG - [MainThread] cura.AutoSave._onTimeout [59]: Autosaving preferences, instances and profiles
+2020-07-08 12:39:58,051 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker_s3 took 2.1190249919891357 seconds.
+2020-07-08 12:39:59,195 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_cr10 took 0.6387083530426025 seconds.
+2020-07-08 12:40:00,063 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for custom took 0.36271119117736816 seconds.
+2020-07-09 08:56:46,901 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FileLogger
+2020-07-09 08:56:46,912 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdateChecker
+2020-07-09 08:56:46,925 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdater
+2020-07-09 08:56:46,932 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzReader
+2020-07-09 08:56:46,940 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzWriter
+2020-07-09 08:56:46,947 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeProfileReader
+2020-07-09 08:56:46,967 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeReader
+2020-07-09 08:56:46,977 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeWriter
+2020-07-09 08:56:46,989 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ImageReader
+2020-07-09 08:56:46,998 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LegacyProfileReader
+2020-07-09 08:56:47,008 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalContainerProvider
+2020-07-09 08:56:47,023 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalFileOutputDevice
+2020-07-09 08:56:47,033 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MachineSettingsAction
+2020-07-09 08:56:47,043 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ModelChecker
+2020-07-09 08:56:47,052 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MonitorStage
+2020-07-09 08:56:47,069 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PerObjectSettingsTool
+2020-07-09 08:56:47,082 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PostProcessingPlugin
+2020-07-09 08:56:47,090 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PrepareStage
+2020-07-09 08:56:47,139 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PreviewStage
+2020-07-09 08:56:47,154 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RemovableDriveOutputDevice
+2020-07-09 08:56:47,165 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SentryLogger
+2020-07-09 08:56:47,194 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimulationView
+2020-07-09 08:56:47,205 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SliceInfoPlugin
+2020-07-09 08:56:47,218 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SolidView
+2020-07-09 08:56:47,230 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SupportEraser
+2020-07-09 08:56:47,269 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 08:56:47,272 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 08:56:47,274 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 08:56:47,276 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 08:56:47,279 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 08:56:47,281 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 08:56:47,283 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 08:56:47,285 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 08:56:47,290 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin Toolbox
+2020-07-09 08:56:47,300 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin CameraTool
+2020-07-09 08:56:47,311 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MirrorTool
+2020-07-09 08:56:47,329 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RotateTool
+2020-07-09 08:56:47,342 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ScaleTool
+2020-07-09 08:56:47,349 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SelectionTool
+2020-07-09 08:56:47,361 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TranslateTool
+2020-07-09 08:56:47,371 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TrimeshReader
+2020-07-09 08:56:47,385 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPReader
+2020-07-09 08:56:47,397 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPWriter
+2020-07-09 08:56:47,512 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UM3NetworkPrinting
+2020-07-09 08:56:47,549 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin USBPrinting
+2020-07-09 08:56:47,558 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UltimakerMachineActions
+2020-07-09 08:56:47,570 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UpdateChecker
+2020-07-09 08:56:47,570 - INFO - [Thread-1] UpdateChecker.UpdateCheckerJob.run [40]: Checking for new version of cura
+2020-07-09 08:56:47,594 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade21to22
+2020-07-09 08:56:47,603 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade22to24
+2020-07-09 08:56:47,613 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade25to26
+2020-07-09 08:56:47,623 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade26to27
+2020-07-09 08:56:47,632 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade27to30
+2020-07-09 08:56:47,640 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade30to31
+2020-07-09 08:56:47,649 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade32to33
+2020-07-09 08:56:47,656 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade33to34
+2020-07-09 08:56:47,665 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade34to35
+2020-07-09 08:56:47,677 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade35to40
+2020-07-09 08:56:47,688 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade40to41
+2020-07-09 08:56:47,698 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade41to42
+2020-07-09 08:56:47,705 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade42to43
+2020-07-09 08:56:47,714 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade43to44
+2020-07-09 08:56:47,725 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade44to45
+2020-07-09 08:56:47,733 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade45to46
+2020-07-09 08:56:47,743 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade460to462
+2020-07-09 08:56:47,751 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade462to47
+2020-07-09 08:56:47,758 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimpleView
+2020-07-09 08:56:47,781 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin X3DReader
+2020-07-09 08:56:47,789 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XRayView
+2020-07-09 08:56:47,811 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XmlMaterialProfile
+2020-07-09 08:56:47,814 - DEBUG - [MainThread] UM.PluginRegistry.loadPlugins [373]: Loading all plugins took 1.185253381729126 seconds
+2020-07-09 08:56:47,822 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [163]: Looking for old configuration files to upgrade.
+2020-07-09 08:56:47,896 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [175]: Checking and performing updates took 0.07385897636413574
+2020-07-09 08:56:49,585 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [361]: Loading metadata into container registry took 1.6529879570007324 seconds
+2020-07-09 08:56:49,596 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [142]: Select build plate: 0
+2020-07-09 08:56:49,599 - INFO - [MainThread] cura.CuraApplication.run [781]: Initializing machine error checker
+2020-07-09 08:56:49,981 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender5 failed to pickle.
+2020-07-09 08:56:49,990 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [creality_ender5]
+2020-07-09 08:56:50,257 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_base failed to pickle.
+2020-07-09 08:56:50,308 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[creality_base_extruder_0 #5] added to [Creality Ender-5] at position [0]
+2020-07-09 08:56:50,310 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-5 in list of firmware to check.
+2020-07-09 08:56:50,894 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender5 took 0.5775558948516846 seconds.
+2020-07-09 08:56:50,908 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ChangeAtZ
+2020-07-09 08:56:50,911 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ColorMix
+2020-07-09 08:56:50,913 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2020-07-09 08:56:50,914 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayRemainingTimeOnLCD
+2020-07-09 08:56:50,915 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: FilamentChange
+2020-07-09 08:56:50,916 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: InsertAtLayerChange
+2020-07-09 08:56:50,921 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: PauseAtHeight
+2020-07-09 08:56:50,923 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: RetractContinue
+2020-07-09 08:56:50,924 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: SearchAndReplace
+2020-07-09 08:56:50,931 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: Stretch
+2020-07-09 08:56:50,933 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: TimeLapse
+2020-07-09 08:56:50,934 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: UsePreviousProbeMeasurements
+2020-07-09 08:56:50,965 - INFO - [MainThread] cura.CuraApplication.run [786]: Initializing machine manager
+2020-07-09 08:56:50,970 - INFO - [MainThread] cura.CuraApplication.run [791]: Initializing container manager
+2020-07-09 08:56:51,201 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition fdmprinter failed to pickle.
+2020-07-09 08:56:51,212 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 08:56:51,235 - DEBUG - [MainThread] UM.Scene.Camera._preferencesChanged [255]: Changing perspective mode to perspective.
+2020-07-09 08:56:51,374 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [158]: Loading theme file: /tmp/.mount_UltimaWlycMg/usr/bin/resources/themes/cura-light/theme.json
+2020-07-09 08:56:52,034 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [246]: Loaded theme /tmp/.mount_UltimaWlycMg/usr/bin/resources/themes/cura-light
+2020-07-09 08:56:53,716 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [336]: Creating post processing plugin view.
+2020-07-09 08:56:54,010 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [346]: Post processing view created.
+2020-07-09 08:56:54,838 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-09 08:56:55,241 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-09 08:56:55,244 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-09 08:56:55,264 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:56:55,444 - DEBUG - [MainThread] UM.Controller.setActiveStage [180]: Setting active stage to PrepareStage
+2020-07-09 08:56:55,584 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:56:55,730 - DEBUG - [MainThread] UM.Controller.setActiveView [108]: Setting active view to SolidView
+2020-07-09 08:56:55,733 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [117]: Creating model checker view.
+2020-07-09 08:56:55,748 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [126]: Model checker view created.
+2020-07-09 08:56:55,748 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [76]: Creating dialog [MoreInfoWindow.qml]
+2020-07-09 08:56:55,771 - DEBUG - [MainThread] Toolbox.src.Toolbox._makeRequestByType [551]: Requesting [updates] metadata from server.
+2020-07-09 08:56:55,776 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [124]: No auth data to retrieve the access_token from
+2020-07-09 08:56:55,779 - WARNING - [MainThread] UM.Logger.warning [128]: Cannot add authorization to Cloud Api request
+2020-07-09 08:56:55,820 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:56:56,109 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker_s5 failed to pickle.
+2020-07-09 08:56:56,518 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker3 failed to pickle.
+2020-07-09 08:56:56,853 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10spro failed to pickle.
+2020-07-09 08:56:56,864 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:56:56,885 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:56:57,136 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition custom failed to pickle.
+2020-07-09 08:56:57,148 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:56:57,463 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender3 failed to pickle.
+2020-07-09 08:56:57,478 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:56:57,932 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker_s3 failed to pickle.
+2020-07-09 08:56:57,940 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:56:58,240 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker2_plus failed to pickle.
+2020-07-09 08:56:58,550 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10 failed to pickle.
+2020-07-09 08:56:58,554 - DEBUG - [MainThread] cura.CuraApplication.run [830]: Booting Cura took 13.632046461105347 seconds
+2020-07-09 08:56:58,575 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S5 in the printer list. Do firmware-check.
+2020-07-09 08:56:58,579 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker 3 in the printer list. Do firmware-check.
+2020-07-09 08:56:58,579 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10S Pro in list of firmware to check.
+2020-07-09 08:56:58,592 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Custom FFF printer in list of firmware to check.
+2020-07-09 08:56:58,597 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-3 in list of firmware to check.
+2020-07-09 08:56:58,603 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S3 in the printer list. Do firmware-check.
+2020-07-09 08:56:58,609 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Ultimaker 2+ in list of firmware to check.
+2020-07-09 08:56:58,612 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10 in list of firmware to check.
+2020-07-09 08:56:58,725 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker 3: checked = 5.2.11-20190503.0 - latest = 5.2.11-20190503.0
+2020-07-09 08:56:58,727 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S3: checked = 5.7.2 - latest = 5.7.2
+2020-07-09 08:56:58,727 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S5: checked = 5.7.2 - latest = 5.7.2
+2020-07-09 08:56:58,732 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:56:58,747 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:56:58,938 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:56:58,943 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:56:59,043 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [210]: Support for Vertex Array Objects: True
+2020-07-09 08:56:59,061 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [112]: Initialized OpenGL subsystems.
+2020-07-09 08:56:59,086 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [113]: OpenGL Version:  4.1.0 NVIDIA 435.21
+2020-07-09 08:56:59,112 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [114]: OpenGL Vendor:   NVIDIA Corporation
+2020-07-09 08:56:59,136 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [115]: OpenGL Renderer: Quadro P500/PCIe/SSE2
+2020-07-09 08:56:59,162 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [116]: GLSL Version:    4.0.0
+2020-07-09 08:56:59,198 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/default.shader]...
+2020-07-09 08:56:59,291 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/selection.shader]...
+2020-07-09 08:56:59,341 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/select_face.shader]...
+2020-07-09 08:56:59,394 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/default.shader]...
+2020-07-09 08:56:59,436 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/composite.shader]...
+2020-07-09 08:56:59,489 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/overhang.shader]...
+2020-07-09 08:56:59,539 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/striped.shader]...
+2020-07-09 08:56:59,599 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/transparent_object.shader]...
+2020-07-09 08:56:59,633 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/striped.shader]...
+2020-07-09 08:56:59,655 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/xray.shader]...
+2020-07-09 08:56:59,692 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/xray_composite.shader]...
+2020-07-09 08:56:59,743 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/default.shader]...
+2020-07-09 08:56:59,800 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/grid.shader]...
+2020-07-09 08:56:59,854 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/platform.shader]...
+2020-07-09 08:56:59,925 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaWlycMg/usr/bin/resources/shaders/xray.shader]...
+2020-07-09 08:57:01,467 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker_s5 took 2.4068145751953125 seconds.
+2020-07-09 08:57:01,692 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 10.5s
+2020-07-09 08:57:03,248 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker3 took 1.275771141052246 seconds.
+2020-07-09 08:57:04,258 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_cr10spro took 0.5054585933685303 seconds.
+2020-07-09 08:57:04,545 - WARNING - [MainThread] UM.PluginRegistry._populateMetaData [678]: Could not find plugin extruder_stack
+2020-07-09 08:57:04,549 - WARNING - [MainThread] UM.PluginRegistry._populateMetaData [678]: Could not find plugin global_stack
+2020-07-09 08:57:04,554 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [60]: Could not get metadata of container Unknown because it was not found.
+2020-07-09 08:57:04,799 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [60]: Could not get metadata of container Unknown because it was not found.
+2020-07-09 08:57:04,832 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsDetailsPanel.qml:91: TypeError: Cannot read property 'container_node' of null
+2020-07-09 08:57:04,934 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsBrandSection.qml:94:5: QML Column: Binding loop detected for property "height"
+2020-07-09 08:57:05,021 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsPage.qml:272:13: QML MaterialsList: Binding loop detected for property "height"
+2020-07-09 08:57:05,025 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsList.qml:136:5: QML Column: Binding loop detected for property "height"
+2020-07-09 08:57:05,488 - WARNING - [MainThread] UM.Settings.InstanceContainer.setCachedValues [161]: Unable set values to be lazy loaded when values are already loaded 
+2020-07-09 08:57:05,515 - ERROR - [Thread-2] UM.Logger.logException [106]: Exception: Job <cura.Machines.ContainerTree.ContainerTree._MachineNodeLoadJob object at 0x57bc818> caused an exception
+2020-07-09 08:57:05,530 - ERROR - [Thread-2] UM.Logger.logException [110]: Traceback (most recent call last):
+2020-07-09 08:57:05,542 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/UM/JobQueue.py", line 132, in run
+2020-07-09 08:57:05,557 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/ContainerTree.py", line 184, in run
+2020-07-09 08:57:05,573 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/ContainerTree.py", line 118, in __getitem__
+2020-07-09 08:57:05,590 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/MachineNode.py", line 50, in __init__
+2020-07-09 08:57:05,593 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/MachineNode.py", line 166, in _loadAll
+2020-07-09 08:57:05,596 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/VariantNode.py", line 40, in __init__
+2020-07-09 08:57:05,613 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/VariantNode.py", line 68, in _loadAll
+2020-07-09 08:57:05,617 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/MaterialNode.py", line 35, in __init__
+2020-07-09 08:57:05,620 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/MaterialNode.py", line 108, in _loadAll
+2020-07-09 08:57:05,623 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/QualityNode.py", line 33, in __init__
+2020-07-09 08:57:05,626 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/cura/Machines/QualityNode.py", line 42, in _loadAll
+2020-07-09 08:57:05,629 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/UM/Settings/ContainerRegistry.py", line 150, in findInstanceContainersMetadata
+2020-07-09 08:57:05,632 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/UM/Settings/ContainerRegistry.py", line 256, in findContainersMetadata
+2020-07-09 08:57:05,635 - ERROR - [Thread-2] UM.Logger.logException [110]:   File "/build/master/build/inst/lib/python3.5/site-packages/UM/Settings/ContainerQuery.py", line 98, in execute
+2020-07-09 08:57:05,638 - ERROR - [Thread-2] UM.Logger.logException [110]: KeyError: (False, 'definition', 'fdmprinter', 'quality_type', 'high', 'type', 'intent', 'material', None)
+2020-07-09 08:57:05,896 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsBrandSection.qml:94:5: QML Column: Binding loop detected for property "height"
+2020-07-09 08:57:05,900 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsTypeSection.qml:108:5: QML Column: Binding loop detected for property "height"
+2020-07-09 08:57:05,908 - DEBUG - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1202]: Updating quality/quality_changes due to material change
+2020-07-09 08:57:05,911 - DEBUG - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1207]: Current quality type = [standard]
+2020-07-09 08:57:05,914 - INFO - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1221]: Current available quality type [standard] is available, applying changes.
+2020-07-09 08:57:05,922 - DEBUG - [MainThread] cura.Settings.MachineManager._updateIntentWithQuality [1245]: Updating intent due to quality change
+2020-07-09 08:57:06,033 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:57:06,046 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:57:06,071 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 08:57:06,348 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:57:06,351 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:57:06,776 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 0.7s
+2020-07-09 08:57:15,671 - DEBUG - [MainThread] cura.AutoSave._onTimeout [59]: Autosaving preferences, instances and profiles
+2020-07-09 08:57:16,008 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10s4 failed to pickle.
+2020-07-09 08:57:16,466 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition alya3dp failed to pickle.
+2020-07-09 08:57:16,743 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition lotmaxx_sc60 failed to pickle.
+2020-07-09 08:57:17,040 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition tronxy_xy2pro failed to pickle.
+2020-07-09 08:57:17,383 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr20pro failed to pickle.
+2020-07-09 08:57:17,672 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition tronxy_x failed to pickle.
+2020-07-09 08:57:17,974 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition tronxy_d01 failed to pickle.
+2020-07-09 08:57:18,502 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition imade3d_jellybox failed to pickle.
+2020-07-09 08:57:18,756 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition kupido failed to pickle.
+2020-07-09 08:57:19,066 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition tronxy_x5sa failed to pickle.
+2020-07-09 08:57:19,325 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition cartesio failed to pickle.
+2020-07-09 08:57:19,663 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition tronxy_x5sa_400 failed to pickle.
+2020-07-09 08:57:19,985 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10mini failed to pickle.
+2020-07-09 08:57:20,301 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition tronxy_x5sa_500 failed to pickle.
+2020-07-09 08:57:20,911 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition tronxy_xy2 failed to pickle.
+2020-07-09 08:57:21,241 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10s failed to pickle.
+2020-07-09 08:57:21,559 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition tronxy_xy3 failed to pickle.
+2020-07-09 08:57:21,871 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender2 failed to pickle.
+2020-07-09 08:57:22,192 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr20 failed to pickle.
+2020-07-09 08:57:22,515 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender4 failed to pickle.
+2020-07-09 08:57:22,831 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10s5 failed to pickle.
+2020-07-09 08:57:23,080 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition alyanx3dp failed to pickle.
+2020-07-09 08:57:23,489 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:57:23,499 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:57:37,413 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [60]: Could not get metadata of container Unknown because it was not found.
+2020-07-09 08:57:37,705 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsPage.qml:272:13: QML MaterialsList: Binding loop detected for property "height"
+2020-07-09 08:57:37,709 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsList.qml:136:5: QML Column: Binding loop detected for property "height"
+2020-07-09 08:57:38,747 - DEBUG - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1202]: Updating quality/quality_changes due to material change
+2020-07-09 08:57:38,751 - DEBUG - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1207]: Current quality type = [standard]
+2020-07-09 08:57:38,754 - INFO - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1221]: Current available quality type [standard] is available, applying changes.
+2020-07-09 08:57:38,763 - DEBUG - [MainThread] cura.Settings.MachineManager._updateIntentWithQuality [1245]: Updating intent due to quality change
+2020-07-09 08:57:38,866 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:57:38,875 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:57:38,899 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 08:57:39,172 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:57:39,175 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:57:39,608 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsDetailsPanel.qml:74:9: QML MaterialsView: Binding loop detected for property "linkedMaterialNames"
+2020-07-09 08:57:40,028 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 1.1s
+2020-07-09 08:57:41,396 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [60]: Could not get metadata of container Unknown because it was not found.
+2020-07-09 08:57:41,653 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsPage.qml:272:13: QML MaterialsList: Binding loop detected for property "height"
+2020-07-09 08:57:41,657 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsList.qml:136:5: QML Column: Binding loop detected for property "height"
+2020-07-09 08:57:42,531 - INFO - [MainThread] LocalContainerProvider.LocalContainerProvider.removeContainer [222]: Deleting file /home/vagos/.local/share/cura/4.7/materials/custom_material.xml.fdm_material.
+2020-07-09 08:57:42,540 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_alyanx3dp
+2020-07-09 08:57:42,548 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_ender2
+2020-07-09 08:57:42,556 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_cr10spro
+2020-07-09 08:57:42,561 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_tronxy_d01
+2020-07-09 08:57:42,566 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_tronxy_x5sa_400
+2020-07-09 08:57:42,570 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_tronxy_x
+2020-07-09 08:57:42,576 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_cr20pro
+2020-07-09 08:57:42,580 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_cr10
+2020-07-09 08:57:42,585 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_tronxy_x5sa_500
+2020-07-09 08:57:42,590 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_cartesio
+2020-07-09 08:57:42,594 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_kupido
+2020-07-09 08:57:42,599 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_imade3d_jellybox_0.4_mm
+2020-07-09 08:57:42,604 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_alya3dp
+2020-07-09 08:57:42,610 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_cartesio_0.25mm_thermoplastic_extruder
+2020-07-09 08:57:42,615 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_cr10mini
+2020-07-09 08:57:42,619 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_tronxy_xy3
+2020-07-09 08:57:42,624 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_tronxy_xy2
+2020-07-09 08:57:42,629 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_tronxy_xy2pro
+2020-07-09 08:57:42,634 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_cr10s5
+2020-07-09 08:57:42,639 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_ender5
+2020-07-09 08:57:42,643 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_imade3d_jellybox
+2020-07-09 08:57:42,647 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material
+2020-07-09 08:57:42,652 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_cartesio_0.4mm_thermoplastic_extruder
+2020-07-09 08:57:42,657 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_tronxy_x5sa
+2020-07-09 08:57:42,661 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_cartesio_0.8mm_thermoplastic_extruder
+2020-07-09 08:57:42,666 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_base
+2020-07-09 08:57:42,670 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_cr10s
+2020-07-09 08:57:42,675 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_ender4
+2020-07-09 08:57:42,680 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_cr10s4
+2020-07-09 08:57:42,684 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_ender3
+2020-07-09 08:57:42,689 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_lotmaxx_sc60
+2020-07-09 08:57:42,694 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.removeContainer [460]: Removed container custom_material_creality_cr20
+2020-07-09 08:57:44,636 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [60]: Could not get metadata of container Unknown because it was not found.
+2020-07-09 08:57:44,904 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsPage.qml:272:13: QML MaterialsList: Binding loop detected for property "height"
+2020-07-09 08:57:44,909 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_UltimaWlycMg/usr/bin/resources/qml/Preferences/Materials/MaterialsList.qml:136:5: QML Column: Binding loop detected for property "height"
+2020-07-09 08:57:45,549 - DEBUG - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1202]: Updating quality/quality_changes due to material change
+2020-07-09 08:57:45,552 - DEBUG - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1207]: Current quality type = [standard]
+2020-07-09 08:57:45,556 - INFO - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1221]: Current available quality type [standard] is available, applying changes.
+2020-07-09 08:57:45,563 - DEBUG - [MainThread] cura.Settings.MachineManager._updateIntentWithQuality [1245]: Updating intent due to quality change
+2020-07-09 08:57:45,663 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:57:45,668 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:57:45,689 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 08:57:45,997 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:57:46,000 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:57:46,407 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 0.7s
+2020-07-09 08:57:55,673 - DEBUG - [MainThread] cura.AutoSave._onTimeout [59]: Autosaving preferences, instances and profiles
+2020-07-09 08:59:33,204 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FileLogger
+2020-07-09 08:59:33,216 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdateChecker
+2020-07-09 08:59:33,227 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdater
+2020-07-09 08:59:33,233 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzReader
+2020-07-09 08:59:33,241 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzWriter
+2020-07-09 08:59:33,248 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeProfileReader
+2020-07-09 08:59:33,268 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeReader
+2020-07-09 08:59:33,278 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeWriter
+2020-07-09 08:59:33,291 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ImageReader
+2020-07-09 08:59:33,299 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LegacyProfileReader
+2020-07-09 08:59:33,308 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalContainerProvider
+2020-07-09 08:59:33,321 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalFileOutputDevice
+2020-07-09 08:59:33,330 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MachineSettingsAction
+2020-07-09 08:59:33,340 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ModelChecker
+2020-07-09 08:59:33,349 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MonitorStage
+2020-07-09 08:59:33,365 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PerObjectSettingsTool
+2020-07-09 08:59:33,378 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PostProcessingPlugin
+2020-07-09 08:59:33,386 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PrepareStage
+2020-07-09 08:59:33,436 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PreviewStage
+2020-07-09 08:59:33,452 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RemovableDriveOutputDevice
+2020-07-09 08:59:33,461 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SentryLogger
+2020-07-09 08:59:33,491 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimulationView
+2020-07-09 08:59:33,502 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SliceInfoPlugin
+2020-07-09 08:59:33,515 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SolidView
+2020-07-09 08:59:33,527 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SupportEraser
+2020-07-09 08:59:33,564 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 08:59:33,567 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 08:59:33,569 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 08:59:33,572 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 08:59:33,574 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 08:59:33,576 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 08:59:33,578 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 08:59:33,581 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 08:59:33,585 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin Toolbox
+2020-07-09 08:59:33,595 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin CameraTool
+2020-07-09 08:59:33,606 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MirrorTool
+2020-07-09 08:59:33,622 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RotateTool
+2020-07-09 08:59:33,637 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ScaleTool
+2020-07-09 08:59:33,645 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SelectionTool
+2020-07-09 08:59:33,658 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TranslateTool
+2020-07-09 08:59:33,668 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TrimeshReader
+2020-07-09 08:59:33,683 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPReader
+2020-07-09 08:59:33,695 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPWriter
+2020-07-09 08:59:33,812 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UM3NetworkPrinting
+2020-07-09 08:59:33,846 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin USBPrinting
+2020-07-09 08:59:33,855 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UltimakerMachineActions
+2020-07-09 08:59:33,867 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UpdateChecker
+2020-07-09 08:59:33,868 - INFO - [Thread-1] UpdateChecker.UpdateCheckerJob.run [40]: Checking for new version of cura
+2020-07-09 08:59:33,889 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade21to22
+2020-07-09 08:59:33,897 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade22to24
+2020-07-09 08:59:33,907 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade25to26
+2020-07-09 08:59:33,915 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade26to27
+2020-07-09 08:59:33,924 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade27to30
+2020-07-09 08:59:33,932 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade30to31
+2020-07-09 08:59:33,942 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade32to33
+2020-07-09 08:59:33,948 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade33to34
+2020-07-09 08:59:33,957 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade34to35
+2020-07-09 08:59:33,964 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade35to40
+2020-07-09 08:59:33,978 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade40to41
+2020-07-09 08:59:33,989 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade41to42
+2020-07-09 08:59:33,997 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade42to43
+2020-07-09 08:59:34,006 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade43to44
+2020-07-09 08:59:34,016 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade44to45
+2020-07-09 08:59:34,025 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade45to46
+2020-07-09 08:59:34,035 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade460to462
+2020-07-09 08:59:34,044 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade462to47
+2020-07-09 08:59:34,052 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimpleView
+2020-07-09 08:59:34,070 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin X3DReader
+2020-07-09 08:59:34,079 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XRayView
+2020-07-09 08:59:34,102 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XmlMaterialProfile
+2020-07-09 08:59:34,105 - DEBUG - [MainThread] UM.PluginRegistry.loadPlugins [373]: Loading all plugins took 1.1736526489257812 seconds
+2020-07-09 08:59:34,113 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [163]: Looking for old configuration files to upgrade.
+2020-07-09 08:59:34,173 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [332]: Failed to get file version: ../custom_material+%232.xml.fdm_material, skip it
+2020-07-09 08:59:34,175 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [332]: Failed to get file version: ../custom_material.xml.fdm_material, skip it
+2020-07-09 08:59:34,195 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [175]: Checking and performing updates took 0.08302688598632812
+2020-07-09 08:59:35,969 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [361]: Loading metadata into container registry took 1.7251155376434326 seconds
+2020-07-09 08:59:35,980 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [142]: Select build plate: 0
+2020-07-09 08:59:35,983 - INFO - [MainThread] cura.CuraApplication.run [781]: Initializing machine error checker
+2020-07-09 08:59:36,372 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender5 failed to pickle.
+2020-07-09 08:59:36,381 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [creality_ender5]
+2020-07-09 08:59:36,660 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_base failed to pickle.
+2020-07-09 08:59:36,709 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[creality_base_extruder_0 #5] added to [Creality Ender-5] at position [0]
+2020-07-09 08:59:36,710 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-5 in list of firmware to check.
+2020-07-09 08:59:37,207 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender5 took 0.48905420303344727 seconds.
+2020-07-09 08:59:37,221 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ChangeAtZ
+2020-07-09 08:59:37,224 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ColorMix
+2020-07-09 08:59:37,225 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2020-07-09 08:59:37,227 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayRemainingTimeOnLCD
+2020-07-09 08:59:37,228 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: FilamentChange
+2020-07-09 08:59:37,229 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: InsertAtLayerChange
+2020-07-09 08:59:37,234 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: PauseAtHeight
+2020-07-09 08:59:37,236 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: RetractContinue
+2020-07-09 08:59:37,237 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: SearchAndReplace
+2020-07-09 08:59:37,244 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: Stretch
+2020-07-09 08:59:37,245 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: TimeLapse
+2020-07-09 08:59:37,246 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: UsePreviousProbeMeasurements
+2020-07-09 08:59:37,277 - INFO - [MainThread] cura.CuraApplication.run [786]: Initializing machine manager
+2020-07-09 08:59:37,282 - INFO - [MainThread] cura.CuraApplication.run [791]: Initializing container manager
+2020-07-09 08:59:37,521 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition fdmprinter failed to pickle.
+2020-07-09 08:59:37,531 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 08:59:37,556 - DEBUG - [MainThread] UM.Scene.Camera._preferencesChanged [255]: Changing perspective mode to perspective.
+2020-07-09 08:59:37,703 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [158]: Loading theme file: /tmp/.mount_Ultima40lPj1/usr/bin/resources/themes/cura-light/theme.json
+2020-07-09 08:59:38,431 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [246]: Loaded theme /tmp/.mount_Ultima40lPj1/usr/bin/resources/themes/cura-light
+2020-07-09 08:59:39,829 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [336]: Creating post processing plugin view.
+2020-07-09 08:59:40,133 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [346]: Post processing view created.
+2020-07-09 08:59:40,961 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-09 08:59:41,377 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-09 08:59:41,380 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-09 08:59:41,400 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:59:41,544 - DEBUG - [MainThread] UM.Controller.setActiveStage [180]: Setting active stage to PrepareStage
+2020-07-09 08:59:41,710 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:59:41,805 - DEBUG - [MainThread] UM.Controller.setActiveView [108]: Setting active view to SolidView
+2020-07-09 08:59:41,807 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [117]: Creating model checker view.
+2020-07-09 08:59:41,816 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [126]: Model checker view created.
+2020-07-09 08:59:41,816 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [76]: Creating dialog [MoreInfoWindow.qml]
+2020-07-09 08:59:41,859 - DEBUG - [MainThread] Toolbox.src.Toolbox._makeRequestByType [551]: Requesting [updates] metadata from server.
+2020-07-09 08:59:41,864 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [124]: No auth data to retrieve the access_token from
+2020-07-09 08:59:41,868 - WARNING - [MainThread] UM.Logger.warning [128]: Cannot add authorization to Cloud Api request
+2020-07-09 08:59:41,899 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:59:42,207 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker2_plus failed to pickle.
+2020-07-09 08:59:42,549 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition custom failed to pickle.
+2020-07-09 08:59:42,856 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_ender3 failed to pickle.
+2020-07-09 08:59:42,866 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:59:42,882 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:59:43,639 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10 failed to pickle.
+2020-07-09 08:59:43,672 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:59:43,998 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker_s5 failed to pickle.
+2020-07-09 08:59:44,315 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition ultimaker_s3 failed to pickle.
+2020-07-09 08:59:44,344 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:59:44,714 - WARNING - [MainThread] LocalContainerProvider.LocalContainerProvider._saveCachedDefinition [295]: The definition cache for definition creality_cr10spro failed to pickle.
+2020-07-09 08:59:44,739 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 08:59:44,746 - DEBUG - [MainThread] cura.CuraApplication.run [830]: Booting Cura took 12.260534048080444 seconds
+2020-07-09 08:59:44,771 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Ultimaker 2+ in list of firmware to check.
+2020-07-09 08:59:44,773 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Custom FFF printer in list of firmware to check.
+2020-07-09 08:59:44,775 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-3 in list of firmware to check.
+2020-07-09 08:59:44,783 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker 3 in the printer list. Do firmware-check.
+2020-07-09 08:59:44,783 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10 in list of firmware to check.
+2020-07-09 08:59:44,794 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S5 in the printer list. Do firmware-check.
+2020-07-09 08:59:44,794 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S3 in the printer list. Do firmware-check.
+2020-07-09 08:59:44,809 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10S Pro in list of firmware to check.
+2020-07-09 08:59:44,923 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:59:44,937 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:59:44,943 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S5: checked = 5.7.2 - latest = 5.7.2
+2020-07-09 08:59:44,957 - INFO - [Thread-4] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S3: checked = 5.7.2 - latest = 5.7.2
+2020-07-09 08:59:44,962 - INFO - [Thread-3] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker 3: checked = 5.2.11-20190503.0 - latest = 5.2.11-20190503.0
+2020-07-09 08:59:45,098 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:59:45,102 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:59:45,197 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [210]: Support for Vertex Array Objects: True
+2020-07-09 08:59:45,211 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [112]: Initialized OpenGL subsystems.
+2020-07-09 08:59:45,214 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [113]: OpenGL Version:  4.1.0 NVIDIA 435.21
+2020-07-09 08:59:45,218 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [114]: OpenGL Vendor:   NVIDIA Corporation
+2020-07-09 08:59:45,221 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [115]: OpenGL Renderer: Quadro P500/PCIe/SSE2
+2020-07-09 08:59:45,223 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [116]: GLSL Version:    4.0.0
+2020-07-09 08:59:45,226 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/default.shader]...
+2020-07-09 08:59:45,293 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/selection.shader]...
+2020-07-09 08:59:45,353 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/select_face.shader]...
+2020-07-09 08:59:45,411 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/default.shader]...
+2020-07-09 08:59:45,443 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/composite.shader]...
+2020-07-09 08:59:45,507 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/overhang.shader]...
+2020-07-09 08:59:45,561 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/striped.shader]...
+2020-07-09 08:59:45,609 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/transparent_object.shader]...
+2020-07-09 08:59:45,654 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/striped.shader]...
+2020-07-09 08:59:45,686 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/xray.shader]...
+2020-07-09 08:59:45,732 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/xray_composite.shader]...
+2020-07-09 08:59:45,772 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/default.shader]...
+2020-07-09 08:59:45,799 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/grid.shader]...
+2020-07-09 08:59:45,865 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/platform.shader]...
+2020-07-09 08:59:46,065 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_Ultima40lPj1/usr/bin/resources/shaders/xray.shader]...
+2020-07-09 08:59:46,622 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker2_plus took 1.3448817729949951 seconds.
+2020-07-09 08:59:46,808 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 9.3s
+2020-07-09 08:59:47,427 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for custom took 0.3010704517364502 seconds.
+2020-07-09 08:59:48,913 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender3 took 0.4720895290374756 seconds.
+2020-07-09 08:59:50,896 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker3 took 1.4787874221801758 seconds.
+2020-07-09 08:59:51,865 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_cr10 took 0.4629666805267334 seconds.
+2020-07-09 08:59:54,550 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker_s5 took 2.1796445846557617 seconds.
+2020-07-09 08:59:54,662 - DEBUG - [MainThread] cura.AutoSave._onTimeout [59]: Autosaving preferences, instances and profiles
+2020-07-09 08:59:54,853 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [ultimaker_s5]
+2020-07-09 08:59:54,870 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[ultimaker_s5_extruder_right #2] added to [Ultimaker S5] at position [1]
+2020-07-09 08:59:54,873 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[ultimaker_s5_extruder_left #2] added to [Ultimaker S5] at position [0]
+2020-07-09 08:59:54,877 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-09 08:59:54,932 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:59:54,951 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:59:54,994 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:59:55,004 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:59:55,010 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:59:55,016 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 08:59:56,936 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 08:59:57,928 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker_s3 took 2.8717432022094727 seconds.
+2020-07-09 08:59:58,027 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:59:58,036 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:59:58,192 - DEBUG - [Thread-6] UM.Mesh.MeshData.calculateNormalsFromVertices [552]: Calculating normals took 0.004010677337646484 seconds
+2020-07-09 08:59:58,379 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 08:59:58,382 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 08:59:59,360 - DEBUG - [Thread-2] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_cr10spro took 0.9274716377258301 seconds.
+2020-07-09 08:59:59,984 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 3.1s
+2020-07-09 09:00:04,673 - DEBUG - [MainThread] cura.AutoSave._onTimeout [59]: Autosaving preferences, instances and profiles
+2020-07-09 09:00:06,137 - WARNING - [MainThread] UM.PluginRegistry._populateMetaData [678]: Could not find plugin global_stack
+2020-07-09 09:00:06,141 - WARNING - [MainThread] UM.PluginRegistry._populateMetaData [678]: Could not find plugin extruder_stack
+2020-07-09 09:00:06,146 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [60]: Could not get metadata of container Unknown because it was not found.
+2020-07-09 09:00:06,392 - WARNING - [MainThread] cura.Settings.ContainerManager.getContainerMetaDataEntry [60]: Could not get metadata of container Unknown because it was not found.
+2020-07-09 09:00:06,415 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsDetailsPanel.qml:91: TypeError: Cannot read property 'container_node' of null
+2020-07-09 09:00:06,519 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsPage.qml:272:13: QML MaterialsList: Binding loop detected for property "height"
+2020-07-09 09:00:06,522 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsBrandSection.qml:94:5: QML Column: Binding loop detected for property "height"
+2020-07-09 09:00:06,525 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsList.qml:149:9: QML MaterialsBrandSection: Binding loop detected for property "height"
+2020-07-09 09:00:06,528 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsList.qml:136:5: QML Column: Binding loop detected for property "height"
+2020-07-09 09:00:19,903 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsBrandSection.qml:94:5: QML Column: Binding loop detected for property "height"
+2020-07-09 09:00:19,915 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsPage.qml:272:13: QML MaterialsList: Binding loop detected for property "height"
+2020-07-09 09:00:19,922 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsList.qml:136:5: QML Column: Binding loop detected for property "height"
+2020-07-09 09:00:19,928 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsBrandSection.qml:94:5: QML Column: Binding loop detected for property "height"
+2020-07-09 09:00:19,932 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [406]: file:///tmp/.mount_Ultima40lPj1/usr/bin/resources/qml/Preferences/Materials/MaterialsList.qml:160:23: QML MaterialsBrandSection: Binding loop detected for property "height"
+2020-07-09 09:00:29,674 - DEBUG - [MainThread] cura.AutoSave._onTimeout [59]: Autosaving preferences, instances and profiles
+2020-07-09 09:02:51,649 - INFO - [MainThread] UM.Controller.deleteAllNodesWithMeshData [468]: Clearing scene
+2020-07-09 09:02:51,661 - INFO - [MainThread] cura.CuraApplication._removeNodesWithLayerData [1984]: Clearing scene
+2020-07-09 09:16:50,654 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FileLogger
+2020-07-09 09:16:50,666 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdateChecker
+2020-07-09 09:16:50,679 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin FirmwareUpdater
+2020-07-09 09:16:50,685 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzReader
+2020-07-09 09:16:50,693 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeGzWriter
+2020-07-09 09:16:50,700 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeProfileReader
+2020-07-09 09:16:50,722 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeReader
+2020-07-09 09:16:50,731 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin GCodeWriter
+2020-07-09 09:16:50,745 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ImageReader
+2020-07-09 09:16:50,753 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LegacyProfileReader
+2020-07-09 09:16:50,762 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalContainerProvider
+2020-07-09 09:16:50,776 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin LocalFileOutputDevice
+2020-07-09 09:16:50,784 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MachineSettingsAction
+2020-07-09 09:16:50,794 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ModelChecker
+2020-07-09 09:16:50,803 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MonitorStage
+2020-07-09 09:16:50,821 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PerObjectSettingsTool
+2020-07-09 09:16:50,833 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PostProcessingPlugin
+2020-07-09 09:16:50,839 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PrepareStage
+2020-07-09 09:16:50,889 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin PreviewStage
+2020-07-09 09:16:50,901 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RemovableDriveOutputDevice
+2020-07-09 09:16:50,909 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SentryLogger
+2020-07-09 09:16:50,941 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimulationView
+2020-07-09 09:16:50,953 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SliceInfoPlugin
+2020-07-09 09:16:50,967 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SolidView
+2020-07-09 09:16:50,979 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SupportEraser
+2020-07-09 09:16:51,017 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 09:16:51,019 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 09:16:51,022 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 09:16:51,024 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 09:16:51,026 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 09:16:51,028 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 09:16:51,031 - WARNING - [MainThread] UM.Logger.logException [106]: Exception: Failed to load packages for Marketplace
+2020-07-09 09:16:51,033 - WARNING - [MainThread] UM.Logger.logException [110]: NoneType: None
+2020-07-09 09:16:51,038 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin Toolbox
+2020-07-09 09:16:51,048 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin CameraTool
+2020-07-09 09:16:51,059 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin MirrorTool
+2020-07-09 09:16:51,076 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin RotateTool
+2020-07-09 09:16:51,090 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin ScaleTool
+2020-07-09 09:16:51,098 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SelectionTool
+2020-07-09 09:16:51,111 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TranslateTool
+2020-07-09 09:16:51,121 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin TrimeshReader
+2020-07-09 09:16:51,134 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPReader
+2020-07-09 09:16:51,146 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UFPWriter
+2020-07-09 09:16:51,257 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UM3NetworkPrinting
+2020-07-09 09:16:51,290 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin USBPrinting
+2020-07-09 09:16:51,299 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UltimakerMachineActions
+2020-07-09 09:16:51,311 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin UpdateChecker
+2020-07-09 09:16:51,312 - INFO - [Thread-1] UpdateChecker.UpdateCheckerJob.run [40]: Checking for new version of cura
+2020-07-09 09:16:51,334 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade21to22
+2020-07-09 09:16:51,341 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade22to24
+2020-07-09 09:16:51,351 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade25to26
+2020-07-09 09:16:51,360 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade26to27
+2020-07-09 09:16:51,371 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade27to30
+2020-07-09 09:16:51,379 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade30to31
+2020-07-09 09:16:51,389 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade32to33
+2020-07-09 09:16:51,397 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade33to34
+2020-07-09 09:16:51,406 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade34to35
+2020-07-09 09:16:51,414 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade35to40
+2020-07-09 09:16:51,427 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade40to41
+2020-07-09 09:16:51,438 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade41to42
+2020-07-09 09:16:51,447 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade42to43
+2020-07-09 09:16:51,456 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade43to44
+2020-07-09 09:16:51,465 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade44to45
+2020-07-09 09:16:51,477 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade45to46
+2020-07-09 09:16:51,485 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade460to462
+2020-07-09 09:16:51,494 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin VersionUpgrade462to47
+2020-07-09 09:16:51,501 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin SimpleView
+2020-07-09 09:16:51,521 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin X3DReader
+2020-07-09 09:16:51,530 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XRayView
+2020-07-09 09:16:51,550 - INFO - [MainThread] UM.Logger.info [122]: Loaded plugin XmlMaterialProfile
+2020-07-09 09:16:51,555 - DEBUG - [MainThread] UM.PluginRegistry.loadPlugins [373]: Loading all plugins took 1.1791157722473145 seconds
+2020-07-09 09:16:51,562 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [163]: Looking for old configuration files to upgrade.
+2020-07-09 09:16:51,623 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [332]: Failed to get file version: ../custom_material+%232.xml.fdm_material, skip it
+2020-07-09 09:16:51,625 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [332]: Failed to get file version: ../custom_material.xml.fdm_material, skip it
+2020-07-09 09:16:51,645 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [175]: Checking and performing updates took 0.08278346061706543
+2020-07-09 09:16:53,375 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [361]: Loading metadata into container registry took 1.6964378356933594 seconds
+2020-07-09 09:16:53,387 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [142]: Select build plate: 0
+2020-07-09 09:16:53,390 - INFO - [MainThread] cura.CuraApplication.run [781]: Initializing machine error checker
+2020-07-09 09:16:53,802 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [ultimaker_s5]
+2020-07-09 09:16:53,838 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 09:16:53,850 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 09:16:53,862 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[ultimaker_s5_extruder_left #2] added to [Ultimaker S5] at position [0]
+2020-07-09 09:16:53,865 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[ultimaker_s5_extruder_right #2] added to [Ultimaker S5] at position [1]
+2020-07-09 09:16:53,867 - INFO - [Thread-2] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S5 in the printer list. Do firmware-check.
+2020-07-09 09:16:54,055 - INFO - [Thread-2] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S5: checked = 5.7.2 - latest = 5.7.2
+2020-07-09 09:16:55,357 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker_s5 took 1.4838788509368896 seconds.
+2020-07-09 09:16:55,370 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ChangeAtZ
+2020-07-09 09:16:55,372 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: ColorMix
+2020-07-09 09:16:55,373 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2020-07-09 09:16:55,374 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: DisplayRemainingTimeOnLCD
+2020-07-09 09:16:55,376 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: FilamentChange
+2020-07-09 09:16:55,377 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: InsertAtLayerChange
+2020-07-09 09:16:55,381 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: PauseAtHeight
+2020-07-09 09:16:55,383 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: RetractContinue
+2020-07-09 09:16:55,384 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: SearchAndReplace
+2020-07-09 09:16:55,389 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: Stretch
+2020-07-09 09:16:55,391 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: TimeLapse
+2020-07-09 09:16:55,392 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [202]: Begin loading of script: UsePreviousProbeMeasurements
+2020-07-09 09:16:55,437 - INFO - [MainThread] cura.CuraApplication.run [786]: Initializing machine manager
+2020-07-09 09:16:55,443 - INFO - [MainThread] cura.CuraApplication.run [791]: Initializing container manager
+2020-07-09 09:16:55,752 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 09:16:55,803 - DEBUG - [MainThread] UM.Scene.Camera._preferencesChanged [255]: Changing perspective mode to perspective.
+2020-07-09 09:16:56,056 - DEBUG - [Thread-3] UM.Mesh.MeshData.calculateNormalsFromVertices [552]: Calculating normals took 0.0012774467468261719 seconds
+2020-07-09 09:16:56,162 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [158]: Loading theme file: /tmp/.mount_UltimaIW7a8R/usr/bin/resources/themes/cura-light/theme.json
+2020-07-09 09:16:56,835 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [246]: Loaded theme /tmp/.mount_UltimaIW7a8R/usr/bin/resources/themes/cura-light
+2020-07-09 09:16:58,329 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [336]: Creating post processing plugin view.
+2020-07-09 09:16:58,565 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [346]: Post processing view created.
+2020-07-09 09:16:59,339 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-09 09:16:59,788 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-09 09:16:59,791 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService._parseJWT [100]: There was no auth data or access token
+2020-07-09 09:16:59,811 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:16:59,835 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:16:59,987 - DEBUG - [MainThread] UM.Controller.setActiveStage [180]: Setting active stage to PrepareStage
+2020-07-09 09:17:00,129 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:00,269 - DEBUG - [MainThread] UM.Controller.setActiveView [108]: Setting active view to SolidView
+2020-07-09 09:17:00,272 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [117]: Creating model checker view.
+2020-07-09 09:17:00,287 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [126]: Model checker view created.
+2020-07-09 09:17:00,288 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [76]: Creating dialog [MoreInfoWindow.qml]
+2020-07-09 09:17:00,318 - DEBUG - [MainThread] Toolbox.src.Toolbox._makeRequestByType [551]: Requesting [updates] metadata from server.
+2020-07-09 09:17:00,323 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [124]: No auth data to retrieve the access_token from
+2020-07-09 09:17:00,327 - WARNING - [MainThread] UM.Logger.warning [128]: Cannot add authorization to Cloud Api request
+2020-07-09 09:17:00,379 - WARNING - [MainThread] UM.Settings.InstanceContainer.setCachedValues [161]: Unable set values to be lazy loaded when values are already loaded 
+2020-07-09 09:17:00,404 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 09:17:00,437 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 09:17:01,212 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 09:17:02,878 - WARNING - [MainThread] UM.Settings.DefinitionContainer._preprocessParsedJson [299]: Unable to override setting machine_nozzle_head_distance
+2020-07-09 09:17:03,371 - DEBUG - [MainThread] cura.CuraApplication.run [830]: Booting Cura took 13.429279804229736 seconds
+2020-07-09 09:17:03,396 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-5 in list of firmware to check.
+2020-07-09 09:17:03,402 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10S Pro in list of firmware to check.
+2020-07-09 09:17:03,412 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality CR-10 in list of firmware to check.
+2020-07-09 09:17:03,416 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Custom FFF printer in list of firmware to check.
+2020-07-09 09:17:03,418 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Creality Ender-3 in list of firmware to check.
+2020-07-09 09:17:03,420 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [79]: No machine with name Ultimaker 2+ in list of firmware to check.
+2020-07-09 09:17:03,423 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker 3 in the printer list. Do firmware-check.
+2020-07-09 09:17:03,443 - INFO - [Thread-6] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [93]: You have a(n) Ultimaker S3 in the printer list. Do firmware-check.
+2020-07-09 09:17:03,508 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 09:17:03,522 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 09:17:03,551 - INFO - [Thread-5] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker 3: checked = 5.2.11-20190503.0 - latest = 5.2.11-20190503.0
+2020-07-09 09:17:03,581 - INFO - [Thread-6] FirmwareUpdateChecker.FirmwareUpdateCheckerJob.run [110]: Reading firmware version of Ultimaker S3: checked = 5.7.2 - latest = 5.7.2
+2020-07-09 09:17:03,792 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [210]: Support for Vertex Array Objects: True
+2020-07-09 09:17:03,809 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [112]: Initialized OpenGL subsystems.
+2020-07-09 09:17:03,814 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [113]: OpenGL Version:  4.1.0 NVIDIA 435.21
+2020-07-09 09:17:03,818 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [114]: OpenGL Vendor:   NVIDIA Corporation
+2020-07-09 09:17:03,821 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [115]: OpenGL Renderer: Quadro P500/PCIe/SSE2
+2020-07-09 09:17:03,825 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [116]: GLSL Version:    4.0.0
+2020-07-09 09:17:03,829 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/default.shader]...
+2020-07-09 09:17:03,884 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/selection.shader]...
+2020-07-09 09:17:03,897 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/select_face.shader]...
+2020-07-09 09:17:03,907 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/default.shader]...
+2020-07-09 09:17:03,912 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/composite.shader]...
+2020-07-09 09:17:03,930 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/overhang.shader]...
+2020-07-09 09:17:03,948 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/striped.shader]...
+2020-07-09 09:17:03,965 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/transparent_object.shader]...
+2020-07-09 09:17:03,978 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/striped.shader]...
+2020-07-09 09:17:03,983 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/xray.shader]...
+2020-07-09 09:17:03,993 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/xray_composite.shader]...
+2020-07-09 09:17:04,012 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/default.shader]...
+2020-07-09 09:17:04,017 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/grid.shader]...
+2020-07-09 09:17:04,034 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/platform.shader]...
+2020-07-09 09:17:04,078 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [58]: Loading shader file [/tmp/.mount_UltimaIW7a8R/usr/bin/resources/shaders/xray.shader]...
+2020-07-09 09:17:04,147 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 09:17:04,150 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 09:17:05,246 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 9.5s
+2020-07-09 09:17:05,460 - DEBUG - [Thread-4] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender5 took 1.0511400699615479 seconds.
+2020-07-09 09:17:06,313 - DEBUG - [Thread-4] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_cr10spro took 0.34776830673217773 seconds.
+2020-07-09 09:17:07,241 - DEBUG - [Thread-4] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_cr10 took 0.4152512550354004 seconds.
+2020-07-09 09:17:07,919 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [74]: Default machine actions added for machine definition [ultimaker3]
+2020-07-09 09:17:07,967 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[ultimaker3_extruder_right #2] added to [Ultimaker 3] at position [1]
+2020-07-09 09:17:07,992 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [194]: Extruder[ultimaker3_extruder_left #2] added to [Ultimaker 3] at position [0]
+2020-07-09 09:17:08,058 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-09 09:17:08,078 - DEBUG - [Thread-4] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for custom took 0.33254027366638184 seconds.
+2020-07-09 09:17:10,034 - DEBUG - [Thread-4] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for creality_ender3 took 1.4404194355010986 seconds.
+2020-07-09 09:17:10,654 - DEBUG - [MainThread] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker3 took 2.5912864208221436 seconds.
+2020-07-09 09:17:11,837 - DEBUG - [Thread-4] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker2_plus took 1.2876522541046143 seconds.
+2020-07-09 09:17:11,843 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:11,862 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:11,902 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:11,907 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:11,913 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:11,919 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:11,924 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:12,410 - DEBUG - [Thread-7] UM.Mesh.MeshData.calculateNormalsFromVertices [552]: Calculating normals took 0.0019488334655761719 seconds
+2020-07-09 09:17:12,426 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 09:17:12,485 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 09:17:12,493 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 09:17:12,691 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 09:17:12,694 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 09:17:15,277 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 2.8s
+2020-07-09 09:17:16,640 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [58]: Default machine actions have been added for machine definition [ultimaker_s5], do nothing.
+2020-07-09 09:17:16,647 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [189]: Extruder [ultimaker_s5_extruder_left #2] has already been added to this stack [Ultimaker S5]
+2020-07-09 09:17:16,650 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [189]: Extruder [ultimaker_s5_extruder_right #2] has already been added to this stack [Ultimaker S5]
+2020-07-09 09:17:16,702 - DEBUG - [Thread-4] cura.Machines.ContainerTree.__getitem__ [120]: Adding container tree for ultimaker_s3 took 3.8469526767730713 seconds.
+2020-07-09 09:17:16,705 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-09 09:17:16,721 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:16,739 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:16,770 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:16,774 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:16,779 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:16,786 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:16,791 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:16,967 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 09:17:17,090 - DEBUG - [Thread-8] UM.Mesh.MeshData.calculateNormalsFromVertices [552]: Calculating normals took 0.002657175064086914 seconds
+2020-07-09 09:17:17,104 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 09:17:17,112 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 09:17:18,001 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 1.0s
+2020-07-09 09:17:19,855 - INFO - [MainThread] cura.UI.MachineActionManager.addDefaultMachineActions [58]: Default machine actions have been added for machine definition [ultimaker3], do nothing.
+2020-07-09 09:17:19,882 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [189]: Extruder [ultimaker3_extruder_right #2] has already been added to this stack [Ultimaker 3]
+2020-07-09 09:17:19,886 - WARNING - [MainThread] cura.Settings.GlobalStack.addExtruder [189]: Extruder [ultimaker3_extruder_left #2] has already been added to this stack [Ultimaker 3]
+2020-07-09 09:17:19,890 - INFO - [MainThread] UM.Logger.info [122]: Initializing Active Machine...
+2020-07-09 09:17:19,909 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:19,929 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:19,961 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:19,965 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:19,970 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:19,977 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:19,983 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [28]: Updating NozzleModel.
+2020-07-09 09:17:20,637 - DEBUG - [Thread-1] UM.Mesh.MeshData.calculateNormalsFromVertices [552]: Calculating normals took 0.0028870105743408203 seconds
+2020-07-09 09:17:20,649 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [155]: New error check scheduled.
+2020-07-09 09:17:20,670 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [33]: Updating CustomQualityProfilesDropDownMenuModel.
+2020-07-09 09:17:20,673 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [62]: Updating QualityProfilesDropDownMenuModel.
+2020-07-09 09:17:21,543 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [214]: Error check finished, result = False, time = 0.9s
+2020-07-09 09:17:26,841 - DEBUG - [MainThread] cura.TaskManagement.OnExitCallbackManager.triggerNextCallback [51]: No more on-app-exit callbacks to process. Tell the app to exit.
+2020-07-09 09:17:26,854 - INFO - [MainThread] cura.CuraApplication.closeApplication [602]: Close application
+2020-07-09 09:17:26,865 - DEBUG - [MainThread] UM.Qt.QtApplication.windowClosed [470]: Shutting down cura
+2020-07-09 09:17:26,893 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [315]: Attempting to kill the engine process
+2020-07-09 09:17:26,894 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [321]: Killing engine process
+2020-07-09 09:17:26,895 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [324]: Engine process is killed. Received return code -15

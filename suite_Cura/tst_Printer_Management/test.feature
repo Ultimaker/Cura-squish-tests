@@ -1,8 +1,8 @@
-Feature: Printer management
+Feature: Printer management of local printers
 
   Scenario: Switching extruders should cause profile change
     Given Cura has been started with preset configurations
-    And I select the 'Ultimaker 3' printer and 'Fine - 0.1 mm' profile
+    And I select the 'Ultimaker 3' printer with no intent and 'Fine - 0.1 mm' profile
     When the 1 nozzle is of type 'AA 0.4'
     And the 2 nozzle is of type 'AA 0.4'
     And I select the 2 extruder
@@ -19,30 +19,6 @@ Feature: Printer management
     And I select Add printer
     And I add a non-networked Ultimaker 2 Extended+ printer
     Then the printer overview contains a 'Ultimaker 2 Extended+' printer
-    And I close the preferences
-
-  Scenario: Add detected networked printer from printer preferences
-    Given Cura is running
-    When I navigate to menu Preferences and Configure Cura
-    And I navigate to Printers in preferences
-    And I select Add printer
-    And I add a network printer with name '0Frankie'
-    Then the printer overview contains a '0Frankie' printer
-    And I close the preferences
-
-  Scenario: Check if networked printers show up in the monitor page
-    Given Cura is running
-    And I select the '0Frankie' printer and 'Fine - 0.1mm' profile
-    And I synchronize with the printers configuration
-    Then I observe '0Frankie' in the monitor page
-
-  Scenario: Add networked printer via IP from printer preferences
-    Given Cura is running
-    When I navigate to menu Preferences and Configure Cura
-    And I navigate to Printers in preferences
-    And I select Add printer
-    And I add a network printer with address 10.183.3.145
-    Then the printer overview contains a '0Frankie' printer
     And I close the preferences
 
   Scenario: Activating a printer in printer manager
@@ -70,13 +46,3 @@ Feature: Printer management
     And I select Remove printer
     Then the printer 'terri' doesn't exist anymore
 
-
-  Scenario: TestCase - run cura from CMD
-    Given Cura has been started with a project file as argument
-    And I check the Remember my choice checkbox
-    And I select open as project
-    When I navigate to menu Preferences and Configure Cura
-    And I navigate to Printers in preferences
-    And I close the preferences
-    And I restart Cura with a project file as argument
-    Then the open as project window does not appear

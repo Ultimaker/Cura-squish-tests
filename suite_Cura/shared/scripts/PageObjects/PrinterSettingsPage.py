@@ -11,7 +11,7 @@ class PrintSettings(PageObject):
 
     # Note case sensitive, but you only need the first part of the profile name.
     # From Print Settings (not preferences)
-    def selectProfile(self, profile):
+    def selectProfile(self, intent, profile):
         if not object.exists(names.win_print_settings):
             self.click(names.mwi_print_settings)
             waitForObject(names.win_print_settings)
@@ -29,9 +29,8 @@ class PrintSettings(PageObject):
         # since the dropdown will look different for each case
         active_printer = Printer.selectedPrinter(self)
         if Printer.isIntentPrinter(Printer, active_printer):
-            
-            # optional log
-            #test.log("The selected printer is: " + str(active_printer) + " and has intent profiles to choose from.")
+            assert intent != "no", test.log("No intent profile was added in the test step! Test Case aborted...")
+            test.log("The selected printer is: " + str(active_printer) + " and has intent profiles to choose from.")
             
             self.click(self.findObjectWithText(names.profile_sub_mnu_item, profile, exact_match=True))
         else:
