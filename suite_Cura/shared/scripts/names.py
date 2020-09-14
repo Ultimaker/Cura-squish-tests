@@ -28,8 +28,9 @@ mwi_btn_preview = {"checkable": False, "container": mwi, "id": "previewStageShor
 
 # Extruders
 mwi_lst_extruders = {"container": mwi, "id": "extrudersList", "type": "ListView", "unnamed": 1, "visible": True}
-mwi_item_extruder = {"container": mwi_lst_extruders, "index": 0, "type": "Item", "unnamed": 1, "visible": True}
-mwi_lbl_extruder = {"container": mwi_item_extruder, "type": "Label", "unnamed": 1, "visible": True}
+#mwi_item_extruder = {"container": mwi_lst_extruders, "index": 0, "type": "Item", "unnamed": 1, "visible": True}
+#mwi_lbl_extruder = {"container": mwi_item_extruder, "type": "Label", "unnamed": 1, "visible": True}
+mwi_lbl_extruder = {"container": mwi, "text": "Custom Custom Material", "type": "Label", "unnamed": 1, "visible": True}
 
 # Menu (mnu, top level menu bar)
 mnu_bar = {"container": mwi, "id": "menuBarLoader", "type": "Loader", "unnamed": 1, "visible": True}
@@ -136,6 +137,7 @@ prf_mnu_btn = {"container": qqw_qml, "id": "activateMenuButton", "type": "Button
 #mat_base_page = {"container": qqw_qml, "id": "base", "type": "MaterialsPage", "unnamed": 1, "visible": True}
 mat_win = {"title": "Preferences", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 mat_panel_details = {"container": mat_win, "id": "materialDetailsView", "type": "MaterialsView", "unnamed": 1, "visible": True}
+base_tabbar_TabBar = {"container": mat_panel_details, "objectName": "tabbar", "type": "TabBar", "visible": True}
 mat_btn_selection = {"container": mwi_ovl, "id": "materialSelection", "type": "Button", "unnamed": 1, "visible": True}
 mat_create_material = {"container": ":win_mps", "iconName": "list-add", "text": "Create", "type": "Button", "unnamed": 1, "visible": True}
 mat_btn_unlink = {"container": qqw_qml, "id": "unlinkMaterialButton", "text": "Unlink Material", "type": "Button", "unnamed": 1, "visible": True}
@@ -146,7 +148,7 @@ mat_input_cost = {"container": mat_panel_details, "id": "spoolCostSpinBox", "typ
 mat_input_weight = {"container": mat_panel_details, "id": "spoolWeightSpinBox", "type": "SpinBox", "unnamed": 1, "visible": True}
 mat_material_item = {"container": mat_win, "text": "Custom Custom Material", "type": "Text", "unnamed": 1, "visible": True}
 mat_setting_line = {"container": mat_panel_details, "type": "TooltipArea", "unnamed": 1, "visible": True}
-mat_printsettings_tab = {"container": mat_panel_details, "id": "styleitem", "type": "StyleItem1", "unnamed": 1, "visible": True}
+mat_printsettings_tab = {"container": base_tabbar_TabBar, "id": "styleitem", "type": "StyleItem1", "unnamed": 1, "visible": True}
 mat_input_build_temperature = {"container": mat_panel_details, "index": 1, "type": "TooltipArea", "unnamed": 1, "visible": True}
 mat_input_retraction_distance = {"container": mat_panel_details, "index": 2, "type": "TooltipArea", "unnamed": 1, "visible": True}
 mat_input_retraction_speed = {"container": mat_panel_details, "index": 3, "type": "TooltipArea", "unnamed": 1, "visible": True}
@@ -239,4 +241,5 @@ open_project_file_QQuickWindowQmlImpl = {"title": "Open project file", "type": "
 open_project_file_Remember_my_choice_CheckBox = {"container": open_project_file_QQuickWindowQmlImpl, "id": "rememberChoiceCheckBox", "text": "Remember my choice", "type": "CheckBox", "unnamed": 1, "visible": True}
 open_Project_QQuickWindowQmlImpl = {"title": "Open Project", "type": "QQuickWindowQmlImpl", "unnamed": 1, "visible": True}
 ultimaker_Cura_MainWindow = {"title": "Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
-ultimaker_Cura_Skip_Label = {"container": ultimaker_Cura_MainWindow, "text": "Skip", "type": "Label", "unnamed": 1, "visible": True}
+ultimaker_Cura_Custom_Custom_Material_Label = {"container": ultimaker_Cura_MainWindow, "text": "Custom Custom Material", "type": "Label", "unnamed": 1, "visible": True}
+preferences_base_MaterialsPage = {"container": mat_win, "id": "base", "type": "MaterialsPage", "unnamed": 1, "visible": True}
