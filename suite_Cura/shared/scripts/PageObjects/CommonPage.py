@@ -174,7 +174,7 @@ class PageObject:
         return child_obj_list
 
     @staticmethod
-    def click(obj, time_out = 15000, snooze = 100):
+    def click(obj, time_out = 20000, snooze = 200):
         squish.snooze(snooze / 1000)
         squish.mouseClick(waitForObject(obj, time_out))
 
