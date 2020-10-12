@@ -148,6 +148,11 @@ class Cura(PageObject):
         squish.clickButton(waitForObject(names.fdg_btn_open))
         squish.clickButton(waitForObject(names.mbo_btn_OK))
         
+        
+    def closeGenericCategory(self):
+        squish.mouseClick(names.mat_general_category_arrow)
+        
+    
     def rememberMyChoice(self):
         checkBoxToVerify = waitForObject(names.open_project_file_Remember_my_choice_CheckBox)
         if checkBoxToVerify.checked == False:
