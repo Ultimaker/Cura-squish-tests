@@ -186,3 +186,6 @@ def step(context):
     except NameError:
         pass
 
+@Step("I close the generic category")
+def step(context):
+    cura.closeGenericCategory()

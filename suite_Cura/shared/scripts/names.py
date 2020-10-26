@@ -165,7 +165,8 @@ mat_scroll_bar = {"container": qqw_qml, "id": "vscrollbar", "type": "ScrollBar",
 
 # custom brand
 mat_cbo_custom = {"container": qqw_qml, "id": "brandSection", "sectionName": "Custom", "type": "MaterialsBrandSection", "unnamed": 1, "visible": True}
-
+mat_ScrollView = {"container": mat_win, "id": "materialScrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
+mat_general_category_arrow = {"container": mat_ScrollView, "id": "brand_header", "type": "Row", "unnamed": 1, "visible": True}
 # material section of brand
 mat_header = {"container": mat_cbo_custom, "id": "material_type_header", "type": "Row", "unnamed": 1, "visible": True}
 mat_header_custom = {"container": mat_header, "text": "PLA", "type": "Text", "unnamed": 1, "visible": True}
@@ -244,3 +245,5 @@ open_Project_QQuickWindowQmlImpl = {"title": "Open Project", "type": "QQuickWind
 ultimaker_Cura_MainWindow = {"title": "Ultimaker Cura", "type": "MainWindow", "unnamed": 1, "visible": True}
 ultimaker_Cura_Custom_Custom_Material_Label = {"container": ultimaker_Cura_MainWindow, "text": "Custom Custom Material", "type": "Label", "unnamed": 1, "visible": True}
 preferences_base_MaterialsPage = {"container": mat_win, "id": "base", "type": "MaterialsPage", "unnamed": 1, "visible": True}
+base_materialScrollView_ScrollView = {"container": preferences_base_MaterialsPage, "id": "materialScrollView", "type": "ScrollView", "unnamed": 1, "visible": True}
+materialScrollView_brand_header_Row = {"container": base_materialScrollView_ScrollView, "id": "brand_header", "occurrence": 2, "type": "Row", "unnamed": 1, "visible": True}
