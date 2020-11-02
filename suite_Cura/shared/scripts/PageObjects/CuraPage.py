@@ -82,8 +82,7 @@ class Cura(PageObject):
     #     After model has been sliced
     def saveToFile(self, file_name):
         self.click(names.mwi_btn_save_to_file, 40000)
-
-        self.setTextFieldValue(names.fdg_input_name, file_name)
+        self.setTextFieldValue(names.fdg_input_name, self.testdata_dir + '\\' + file_name)
 
         self.click(names.fdg_cbo_file_type)
         squish.mouseClick(waitForObjectItem(names.fdg_cbo_file_type, "G-code File (*\\.gcode)"))
