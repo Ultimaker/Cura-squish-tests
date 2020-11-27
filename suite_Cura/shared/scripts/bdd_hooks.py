@@ -26,7 +26,7 @@ def hook(context, current_data=None):
 
     if context.userData:
         # Here we declare the file we want to use to store the performance output of our tests
-        performance_results = findFile("scripts", "TestResults/Performance.json")
+        performance_results = findFile("scripts", "TestResults/Performance.xlsx")
 
         # Get only the extension of the file
         f_base, f_ext = os.path.splitext(performance_results)
