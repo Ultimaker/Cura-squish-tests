@@ -34,18 +34,19 @@ def hook(context, current_data=None):
         if f_ext == ".xlsx":
             # read the excel sheet in case it has values already inserted
             try:
-                df = pd.read_excel(performance_results)
+                df = pd.read_excel(performance_results, engine="openpyxl")
+                now = datetime.datetime.now()
+                exceldata = pd.DataFrame({'Measurement': [next(iter(context.userData.values()))], 'Datetime': [now.strftime("%Y-%m-%d %H:%M:%S")]}, index=[context.title])
+
+                if "Measurement" in df:
+                    append_df_to_excel(performance_results, exceldata)
+                else:
+                    with pd.ExcelWriter(performance_results) as writer:
+                        exceldata.to_excel(writer)
+                        
             except Exception as e:
                 print(e)
             
-            now = datetime.datetime.now()
-            exceldata = pd.DataFrame({'Measurement': [next(iter(context.userData.values()))], 'Datetime': [now.strftime("%Y-%m-%d %H:%M:%S")]}, index=[context.title])
-
-            if "Measurement" in df:
-                append_df_to_excel(performance_results, exceldata)
-            else:
-                with pd.ExcelWriter(performance_results) as writer:
-                    exceldata.to_excel(writer)
         else:
             with open(performance_results, "r") as new_file:
                 try:
@@ -101,7 +102,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None, truncat
 
     Returns: None
     """
-    
+
     # ignore [engine] parameter if it was passed
     if 'engine' in to_excel_kwargs:
         to_excel_kwargs.pop('engine')
@@ -111,7 +112,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None, truncat
     try:
         # try to open an existing workbook
         writer.book = load_workbook(filename)
-        
+
         # get the last row in the existing Excel sheet if it was not specified explicitly
         if startrow is None and sheet_name in writer.book.sheetnames:
             startrow = writer.book[sheet_name].max_row
@@ -124,7 +125,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None, truncat
             writer.book.remove(writer.book.worksheets[idx])
             # create an empty sheet [sheet_name] using old index
             writer.book.create_sheet(sheet_name, idx)
-        
+
         # copy existing sheets
         writer.sheets = {ws.title:ws for ws in writer.book.worksheets}
     except FileNotFoundError:
