@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import json
+import squish
 import datetime
 import pandas as pd
 from openpyxl import load_workbook
@@ -31,12 +32,15 @@ def hook(context, current_data=None):
         # Get only the extension of the file
         f_base, f_ext = os.path.splitext(performance_results)
         
+        cura_aut = currentApplicationContext()
+        aut_path = cura_aut.cwd
+        
         if f_ext == ".xlsx":
             # read the excel sheet in case it has values already inserted
             try:
                 df = pd.read_excel(performance_results, engine="openpyxl")
                 now = datetime.datetime.now()
-                exceldata = pd.DataFrame({'Measurement': [next(iter(context.userData.values()))], 'Datetime': [now.strftime("%Y-%m-%d %H:%M:%S")]}, index=[context.title])
+                exceldata = pd.DataFrame({'Measurement': [next(iter(context.userData.values()))], 'Datetime': [now.strftime("%Y-%m-%d %H:%M:%S")], 'Cura Build': [os.path.basename(os.path.normpath(aut_path))]}, index=[context.title])
 
                 if "Measurement" in df:
                     append_df_to_excel(performance_results, exceldata)
