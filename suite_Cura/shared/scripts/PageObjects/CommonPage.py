@@ -19,7 +19,7 @@ import sys
 
 class PageObject:
     def __init__(self):
-        self.cura_version = '4.7'
+        self.cura_version = '4.9'
         self.cura_resources = CuraResources(self.cura_version)
         self.testdata_dir = os.path.join(os.getcwd(), squish.findFile("testdata", ""))
 
